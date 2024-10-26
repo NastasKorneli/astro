@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Astro</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Astro.2ix</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Astro.2ix</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">Gedanken</a></li>
+                        <li><a href="#works" class="smoothscroll">Elemente</a></li>
+                        <li><a href="#contact" class="smoothscroll">Sag Hallo</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Carl Gustav Jung
+                        </div>
+                    
+                        <h1 class="text-huge-title">
+                            "Wer nach außen <br>
+                            schaut, träumt; <br>
+                             wer nach innen <br>
+                            schaut, <br>
+                            erwacht."
+                        </h1>
+                    </div>
+                    
+                    
+
+                    <ul class="intro-social">
+                        <li><a href="https://www.facebook.com/korneli.nastas/">Facebook</a></li>
+                           
+                        <li><a href="https://x.com/KorneliNastas">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/korneli_nastas/">Instagram</a></li>
+                    </ul>
+
+                </div> <!-- end intro content -->
+
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                </a>
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- ### about
+            ================================================== -->
+            <section id="about" class="s-about target-section">
+
+
+                <div class="row about-info wide" data-animate-block>
+
+                    <div class="column lg-6 md-12">
+                        <div class="col mb-4 portfolio-item graphicdesign photography">
+                            <a>
+                                <img src="https://i.pinimg.com/originals/bc/68/25/bc68252a5cadefbd6eaebb6a5480519a.gif"
+                                    class="img-fluid" alt="portfolio"
+                                    style=" width: 550px ; height: 550px; object-fit: cover; border-radius: 50%;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text">
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                Verlier dich nicht in Gedanken
+                            </h2>
+                            <p class="attention-getter" data-animate-el>
+                                Lassen Sie die Sorgen los und tauchen Sie in die Welt der Astrologie ein – das Leben wird dadurch heiterer und klarer.
+                            </p>
+                            <p class="attention-getter" data-animate-el>
+                                Erstellen Sie Ihre persönliche Horoskopkarte, und Sie werden vieles über sich selbst verstehen. Bei Fragen wenden Sie sich gern an einen erfahrenen Astrologen.
+                            </p>
+                            <a href="#0" class="btn btn--medium u-fullwidth" data-animate-el>Fragen Sie den Astrologen</a>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <section>
+                    <div class="container" style="max-width: 1600px; margin: 0 auto;">
+                        <!-- Заголовок в центре -->
+                        <div class="text-center mb-4">
+                            <h1 class="fs-5 mb-0">Vedischer Horoskop erstellen</h1>
+                        </div>
+                        <br>
+                        <!-- Поля и кнопка в тонкой рамке -->
+                        <div style="background-image: url(images/portfolio/9.gif); 
+                                    background-blend-mode: overlay; 
+                                    background-color: rgba(125, 125, 125, 0.23); 
+                                    background-position: center; 
+                                    border: 3px solid rgba(0, 0, 0, 0.16); 
+                                    border-radius: 40px; 
+                                    padding: 20px; 
+                                    display: flex; 
+                                    gap: 20px; 
+                                    align-items: center; 
+                                    justify-content: center; 
+                                    flex-wrap: nowrap;">
+                            
+                            <!-- Поля с метками сверху и затемненным фоном -->
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="name" style="color: #fff; font-weight: bold; margin-bottom: 5px;">Name</label>
+                                <input id="name" type="text" class="form-control" 
+                                       style="width: 140px; color: #fff; caret-color: #fff; background-color: rgba(1, 69, 14, 0.666);; font-weight: bold; border: none;" autocomplete="off">
+                            </div>
+                
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="date" style="color: #fff; font-weight: bold; margin-bottom: 5px;">TT.MM.JJJJ</label>
+                                <input id="date" type="text" class="form-control" 
+                                       style="width: 140px; color: #fff; caret-color: #fff; background-color:  rgba(1, 69, 14, 0.666); font-weight: bold; border: none;" autocomplete="off">
+                            </div>
+                
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="time" style="color: #fff; font-weight: bold; margin-bottom: 5px;">HH:MM:SS</label>
+                                <input id="time" type="text" class="form-control" 
+                                       style="width: 140px; color: #fff; caret-color: #fff; background-color:  rgba(1, 69, 14, 0.666); font-weight: bold; border: none;" autocomplete="off">
+                            </div>
+                
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="place" style="color: #fff; font-weight: bold; margin-bottom: 5px;">Ort</label>
+                                <input id="place" type="text" class="form-control" 
+                                       style="width: 140px; color: #fff; caret-color: #fff; background-color:  rgba(1, 69, 14, 0.666); font-weight: bold; border: none;" autocomplete="off">
+                            </div>
+                
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">Breitengrad</label>
+                                <input id="latitude" type="text" class="form-control" 
+                                       style="width: 140px; color: #fff; caret-color: #fff; background-color:  rgba(1, 69, 14, 0.666); font-weight: bold; border: none;" autocomplete="off">
+                            </div>
+                
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="longitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">Längengrad</label>
+                                <input id="longitude" type="text" class="form-control" 
+                                       style="width: 140px; color: #fff; caret-color: #fff; background-color:  rgba(1, 69, 14, 0.666); font-weight: bold; border: none;" autocomplete="off">
+                            </div>
+                
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="timezone" style="color: #fff; font-weight: bold; margin-bottom: 5px;">Zeitzone</label>
+                                <input id="timezone" type="text" class="form-control" 
+                                       style="width: 140px; color: #fff; caret-color: #fff; background-color:  rgba(1, 69, 14, 0.666); font-weight: bold; border: none;" autocomplete="off">
+                            </div>
+                
+                            <!-- Кнопка на одном уровне с полями -->
+                            <div style="display: flex; align-items: center;">
+                                <button id="chart-calculate" class="btn btn-primary btn-sm">Berechnen</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <style>
+                /* Стили для белого, жирного текста с верхним регистром для placeholder */
+                ::placeholder {
+                    color: #fff !important;
+                    opacity: 1; /* Полная непрозрачность для белого текста */
+                    text-transform: uppercase; /* Все буквы заглавные */
+                    font-weight: bold; /* Жирный текст */
+                }
+                </style>
+                
+                
+                                
+                <div class="row about-expertise" data-animate-block>
+                    <div class="column lg-12">
+                
+                        <h2 class="text-pretitle" data-animate-el>Die Vorteile der Astrologie</h2>
+                
+                        <ul class="skills-list h1" data-animate-el>
+                            <li>Selbsterkenntnis</li>
+                            <li>Partnerschaft</li>
+                            <li>Zukunftsplanung</li>
+                            <li>Stärken entwickeln</li>
+                            <li>Schwächen erkennen.</li>
+                           
+                        </ul>
+                
+                    </div>
+                </div>
+                <div class="row about-timelines" data-animate-block>
+
+                    <div class="column lg-6 tab-12">
+                
+                        <h2 class="text-pretitle" data-animate-el>
+                            Nutzen der Astrologie
+                        </h2>
+                
+                        <div class="timeline" data-animate-el>
+                
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Selbsterkenntnis</h4>
+                                    <h5 class="timeline__meta">Astrologische Einblicke</h5>
+                                    <p class="timeline__timeframe">Jederzeit nutzbar</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Astrologie bietet wertvolle Einblicke in Ihre Persönlichkeit, einzigartigen Stärken und verborgenen Potenziale und hilft Ihnen, sich selbst besser zu verstehen und tiefer zu reflektieren. </p> <p>  Durch die detaillierte Analyse Ihrer astrologischen Karte können Sie neue und spannende Facetten Ihrer eigenen Identität entdecken.</p>
+                                </div>
+                            </div>
+                
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Partnerschaft</h4>
+                                    <h5 class="timeline__meta">Verständnis und Harmonie</h5>
+                                    <p class="timeline__timeframe">Individuell anwendbar</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Durch astrologische Deutungen entdecken Sie die Dynamik und Harmonie in Ihren Beziehungen und gewinnen ein tieferes Verständnis für die individuellen Bedürfnisse Ihres Partners. </p> <p> Astrologie kann Ihnen helfen, eine harmonische Balance in Ihrer Partnerschaft zu finden und Ihre Kommunikation auf eine neue Ebene zu heben.</p>
+                                </div>
+                            </div>
+                
+                        </div> <!-- end timeline -->
+                
+                    </div> <!-- end column -->
+                
+                    <div class="column lg-6 tab-12">
+                
+                        <h2 class="text-pretitle" data-animate-el>
+                            Persönliche Entwicklung
+                        </h2>
+                
+                        <div class="timeline" data-animate-el>
+                
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Zukunftsplanung</h4>
+                                    <h5 class="timeline__meta">Mit Klarheit voranschreiten</h5>
+                                    <p class="timeline__timeframe">In jeder Lebensphase</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Astrologie unterstützt Sie bei der bewussten Planung Ihrer Zukunft und hilft, klare und fundierte Entscheidungen zu treffen, die im Einklang mit Ihren inneren Zielen stehen. </p> <p> Mit astrologischen Einblicken können Sie künftige Herausforderungen besser einschätzen und Ihre Schritte vorausschauend gestalten.</p>
+                                </div>
+                            </div>
+                
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Schwächen in Stärken verwandeln</h4>
+                                    <h5 class="timeline__meta">Selbstverbesserung</h5>
+                                    <p class="timeline__timeframe">Ein lebenslanger Prozess</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Nutzen Sie die Erkenntnisse der Astrologie, um Ihre Schwächen zu identifizieren und in Stärken zu verwandeln, für ein erfüllteres Leben und stetige persönliche Entwicklung. </p> <p> Durch das Verstehen und Akzeptieren Ihrer weniger starken Seiten können Sie gezielt daran arbeiten, positive Veränderungen anzustoßen.</p>
+                                </div>
+                            </div>
+                
+                        </div> <!-- end timeline -->
+                
+                    </div> <!-- end column -->
+                
+                </div> <!-- end about-timelines -->
+                
+            </section> <!-- end s-about -->
+
+
+            <!-- ### works
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+                
+                        <h2 class="text-pretitle" data-animate-el>
+                            Astrologische Elemente
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Die folgenden sechs Elemente ermöglichen tiefgehende Einblicke in das Leben und die Persönlichkeit.
+                        </p>
+                
+                        <ul class="folio-list row block-lg-one-half st block-stack-on-1000">
+                
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/2.gif" srcset="images/portfolio/2.gif 1x, images/portfolio/2.gif 2x" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Zeichen des Tierkreises
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Die zwölf Sternzeichen und ihre einzigartigen Merkmale.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/6.gif" srcset="images/portfolio/6.gif 1x, images/portfolio/6.gif 2x" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Planeten
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Die Einflüsse der Himmelskörper auf das Leben.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                           
+                
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/7.gif" srcset="images/portfolio/7.gif 1x, images/portfolio/7.gif 2x" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Aspekte der Planeten
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Die Beziehungen zwischen den Planeten und ihre Bedeutungen.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-05">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/1.gif" srcset="images/portfolio/1.gif 1x, images/portfolio/1.gif 2x" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Planetenperioden
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Zeitabschnitte, in denen Planeten bestimmte Einflüsse ausüben.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-06">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/5.gif" srcset="images/portfolio/5.gif 1x, images/portfolio/5.gif 2x" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Nakshatras
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Die 27 Mondstationen der vedischen Astrologie und ihre Einflüsse.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/4.gif" srcset="images/portfolio/4.gif 1x, images/portfolio/4.gif 2x" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Häuser im Horoskop
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Die verschiedenen Aspekte des Lebens werden beleuchtet.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul> <!-- end folio-list -->
+                
+                    </div> <!-- end column -->
+                
+                    <!-- Modal Templates Popup -->
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Zeichen des Tierkreises</h5>
+                                <p>
+                                    Die zwölf Sternzeichen sind viel mehr als bloße astrologische Symbole – sie verkörpern verschiedene Dimensionen menschlicher Erfahrungen und Lebensansätze. Jedes Zeichen, vom feurigen Widder bis zum mystischen Fische, ist einzigartig in seiner Energie, seinen Stärken und Herausforderungen. Die Sternzeichen wirken wie ein Spiegel, der uns unsere inneren Motivationen, Charakterzüge und Verhaltensmuster zeigt. <strong>Sie offenbaren uns, wer wir im Kern sind und was uns antreibt.</strong>
+                                </p>
+                                <p>
+                                    In der Astrologie hat jedes Zeichen eine tiefe Verbindung zu bestimmten Planeten, Elementen und Qualitäten, die unseren Lebensweg beeinflussen. Der Löwe, geführt von der Sonne, steht für Selbstbewusstsein und Ausdruck; die Waage, geprägt von der Venus, repräsentiert Harmonie und Ästhetik. Indem wir unser Sternzeichen verstehen, können wir auch besser verstehen, welche Stärken und Herausforderungen uns im Leben begleiten und welche Lebensthemen immer wieder in den Vordergrund treten.
+                                </p>
+                                <p>
+                                    <strong>Die Sternzeichen inspirieren uns, unser wahres Selbst zu entdecken</strong> und den Lebensweg zu beschreiten, der uns erfüllt und wachsen lässt. Durch die Erforschung der zwölf Zeichen gewinnen wir eine Landkarte unseres Inneren, die uns Orientierung und Einsicht in unsere persönlichen Beziehungen, Karriereschritte und spirituellen Entwicklungen bietet. Die Tierkreiszeichen sind eine Einladung, unser eigenes Potenzial anzunehmen und es in die Welt zu tragen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Planeten</h5>
+                                <p>
+                                    Die Planeten sind die kraftvollen Akteure in der Astrologie, die unseren Alltag, unsere Persönlichkeit und unsere Lebenserfahrungen tief beeinflussen. Jeder Planet trägt eine besondere Energie und symbolisiert bestimmte Lebensprinzipien. Merkur, der Planet der Kommunikation, prägt unsere Denkweise und Ausdruckskraft, während Venus, der Planet der Liebe, uns in den Bereichen Beziehungen, Ästhetik und Harmonie beeinflusst. Die äußeren Planeten wie Uranus, Neptun und Pluto stehen für kollektive, transformative Kräfte und symbolisieren größere Zyklen, die uns auf tiefere, oft unbewusste Weise prägen.
+                                </p>
+                                <p>
+                                    <strong>Die Position der Planeten zum Zeitpunkt unserer Geburt bildet eine Art energetischen Fingerabdruck, der uns ein Leben lang begleitet.</strong> Diese planetaren Energien interagieren miteinander und entfalten im Laufe der Zeit unterschiedliche Einflüsse, die sich in Lebensereignissen, inneren Wachstumsprozessen und Beziehungen widerspiegeln. Wenn Mars zum Beispiel stark in unserem Horoskop steht, erleben wir möglicherweise viel Tatendrang und Entschlossenheit, während eine starke Mondpräsenz Sensibilität und Empathie verstärken kann.
+                                </p>
+                                <p>
+                                    Indem wir die Planeten und ihre Einflüsse verstehen, lernen wir uns selbst und unsere Lebensreise besser kennen. Die Planeten helfen uns, uns unserer inneren Stärken und Herausforderungen bewusst zu werden und zu erkennen, wie wir im Einklang mit den kosmischen Kräften handeln können, um ein erfüllteres Leben zu führen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Häuser im Horoskop</h5>
+                                <p>
+                                    Die zwölf Häuser im Horoskop repräsentieren die verschiedenen Lebensbereiche, die unser Dasein prägen. Jedes Haus symbolisiert einen bestimmten Aspekt unseres Lebens: Das erste Haus betrifft das Selbst und die persönliche Identität, das vierte Haus steht für Zuhause und Familie, das zehnte für Karriere und öffentliches Ansehen. <strong>Die Häuser sind wie Fenster, durch die wir das Leben in all seinen Facetten erfahren.</strong>
+                                </p>
+                                <p>
+                                    Planeten, die in bestimmten Häusern positioniert sind, beeinflussen stark, wie wir uns in diesen Lebensbereichen verhalten und welche Herausforderungen oder Geschenke uns dort begegnen. Ein starker Saturn im zweiten Haus könnte zu einem bewussten Umgang mit Finanzen führen, während ein prominenter Jupiter im neunten Haus die Lust auf Reisen und geistige Expansion verstärkt. Die Häuser ermöglichen es uns, zu erkennen, welche Lebensbereiche für uns von besonderer Bedeutung sind und wo unser größtes Wachstumspotenzial liegt.
+                                </p>
+                                <p>
+                                    Die Auseinandersetzung mit den Häusern im Horoskop ist ein faszinierender Weg, die eigenen Lebensprioritäten und Themen zu verstehen. Indem wir uns bewusst werden, welche Bereiche unseres Lebens besonders aktiv sind, können wir gezielt daran arbeiten, Harmonie und Erfüllung zu schaffen. Die Häuser bieten Orientierung und Klarheit für eine ganzheitliche Lebensgestaltung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="modal-04" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Aspekte der Planeten</h5>
+                                <p>
+                                    Die Aspekte der Planeten – die Winkelverhältnisse, die sie zueinander bilden – bringen Bewegung und Dynamik in unser Horoskop. Ein Trigon, ein harmonischer Winkel, zeigt unterstützende Einflüsse an, während ein Quadrat Spannungen und Herausforderungen symbolisiert. Diese Aspekte sind die feinen Verbindungen, die wie unsichtbare Fäden die Energien der Planeten verknüpfen und unsere inneren Entwicklungen steuern.
+                                </p>
+                                <p>
+                                    <strong>Jeder Aspekt stellt eine Art kosmische Kommunikation dar, die uns Hinweise auf persönliche Konflikte, innere Kämpfe und auch unterstützende Kräfte gibt.</strong> Eine Opposition zwischen Mond und Venus könnte uns herausfordern, unsere Bedürfnisse in Beziehungen klar zu definieren, während ein Sextil zwischen Merkur und Mars eine scharfe Denkweise und schnellen Verstand symbolisiert.
+                                </p>
+                                <p>
+                                    Indem wir die Aspekte verstehen und die planetaren Einflüsse analysieren, können wir Einsichten in unsere inneren Spannungen und Potenziale gewinnen. Die Aspekte fungieren wie Wegweiser, die uns auf unserem Lebensweg Orientierung geben und uns ermutigen, unsere Herausforderungen anzunehmen und uns den Entwicklungen zu stellen, die das Leben für uns bereithält.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="modal-05" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Planetenperioden</h5>
+                                <p>
+                                    Die Planetenperioden, auch bekannt als Dashas in der vedischen Astrologie, markieren besondere Lebensphasen, die von den Energien eines bestimmten Planeten dominiert werden. Während dieser Perioden kann der Einfluss eines Planeten stark in den Vordergrund treten und unsere Lebensumstände und Entscheidungen beeinflussen. Eine Mars-Dasha könnte eine Phase der Entschlossenheit und des Willens sein, während eine Mond-Dasha uns einfühlsamer und emotional offener machen kann.
+                                </p>
+                                <p>
+                                    <strong>Jede Planetenperiode bringt neue Herausforderungen und Wachstumsmöglichkeiten mit sich.</strong> Diese Phasen helfen uns, die Höhen und Tiefen des Lebens besser zu verstehen und anzunehmen. Die Dashas laden uns ein, mit den kosmischen Rhythmen zu fließen und die Energien der Planeten als Wegbegleiter auf unserer Lebensreise zu nutzen.
+                                </p>
+                                <p>
+                                    Die Kenntnis der Planetenperioden bietet uns die Möglichkeit, uns auf die bevorstehenden Lebensphasen vorzubereiten und uns in Einklang mit den planetaren Einflüssen zu bewegen. Die Dashas sind ein mächtiges Werkzeug, um das Leben mit einer höheren Ebene des Bewusstseins zu betrachten und die kosmischen Zyklen als wertvolle Führung zu schätzen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="modal-06" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Nakshatras</h5>
+                                <p>
+                                    Die 27 Nakshatras sind die mystischen Mondhäuser der vedischen Astrologie und bieten tiefe Einblicke in unsere emotionale und spirituelle Natur. Jedes Nakshatra trägt einzigartige Energien und offenbart uns spezifische Themen und Qualitäten. Die Nakshatras erzählen von unseren verborgenen Motiven, unseren emotionalen Reaktionen und spirituellen Bestrebungen. <strong>Sie sind wie kosmische Symbole, die uns die innere Landschaft unseres Bewusstseins näherbringen.</strong>
+                                </p>
+                                <p>
+                                    Ein Nakshatra wie Ashwini steht für Energie und Heilung, während Shravana die Qualitäten des Zuhörens und Lernens betont. Jedes Nakshatra beeinflusst unsere Persönlichkeit auf subtiler Ebene und wirkt auf unsere Beziehungen, Karriere und spirituelle Entwicklung ein. Diese alten Mondhäuser spiegeln unsere tiefen Seelenverbindungen und spirituellen Absichten wider.
+                                </p>
+                                <p>
+                                    Die Nakshatras sind eine Einladung, unsere innere Reise mit größerem Bewusstsein und Einsicht zu betrachten. Durch die Arbeit mit den Nakshatras lernen wir, die kosmische Weisheit zu akzeptieren und unser Leben auf eine Weise zu führen, die im Einklang mit unserem höheren Selbst steht. Die Mondhäuser sind wertvolle Begleiter auf dem Weg zu innerem Frieden und spiritueller Erfüllung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                
+                </div> <!-- end works-portfolio -->
+                
+           
+
+                <div class="row testimonials">
+                    <div class="column lg-12" data-animate-block>
+                
+                        <div class="swiper-container testimonial-slider" data-animate-el>
+                
+                            <div class="swiper-wrapper">
+                
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>B. V. Raman</strong>
+                                            <span>Indischer Astrologe</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                        "Astrologie ist die Sprache des Universums. Wer sie versteht, kann die Geheimnisse des Lebens 
+                                        und der Zeit entschlüsseln."
+                                    </p>
+                                </div> <!-- end testimonial-slider__slide -->
+                
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>K. N. Rao</strong>
+                                            <span>Experte für vedische Astrologie</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                        "Astrologie zeigt uns nicht nur die Zukunft, sondern auch den Weg zur Selbsterkenntnis und zum inneren Frieden."
+                                    </p>
+                                </div> <!-- end testimonial-slider__slide -->
+                
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>Dr. S. S. Chatterjee</strong>
+                                            <span>Astrologe und Forscher</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                        "Die Planeten sind wie Lehrer, die uns Lektionen in Geduld, Weisheit und Stärke vermitteln."
+                                    </p>
+                                </div> <!-- end testimonial-slider__slide -->
+                
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>Vedic Pandit</strong>
+                                            <span>Astrologischer Berater</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                        "In der vedischen Astrologie spiegelt jede planetarische Bewegung unser inneres Wachstum und die universelle Harmonie wider."
+                                    </p>
+                                </div> <!-- end testimonial-slider__slide -->
+                
+                            </div> <!-- end swiper-wrapper -->
+                
+                            <div class="swiper-pagination"></div>
+                
+                        </div> <!-- end swiper-container -->
+                
+                    </div> <!-- end column -->
+                </div> <!-- end row testimonials -->
+                
+
+            </section> <!-- end s-works -->
+            <section>
+                <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+                    
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="images/portfolio/9.gif" srcset="images/portfolio/9.gif 1x, images/portfolio/9.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Mystik der Sterne</div>
+                                    <div class="folio-list__item-title">Die Geheimnisse des Zodiaks</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="images/portfolio/10.gif" srcset="images/portfolio/10.gif 1x, images/portfolio/10.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Planetenwege</div>
+                                    <div class="folio-list__item-title">Kosmische Einflüsse verstehen</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="images/portfolio/11.gif" srcset="images/portfolio/11.gif 1x, images/portfolio/11.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Sternenhäuser</div>
+                                    <div class="folio-list__item-title">Einblicke in Lebensbereiche</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+                    
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="images/portfolio/12.gif" srcset="images/portfolio/12.gif 1x, images/portfolio/12.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Aspekte und Winkel</div>
+                                    <div class="folio-list__item-title">Kräfte zwischen den Planeten</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="images/portfolio/13.gif" srcset="images/portfolio/13.gif 1x, images/portfolio/13.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Zeitzyklen der Planeten</div>
+                                    <div class="folio-list__item-title">Phasen der Transformation</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="images/portfolio/15.gif" srcset="images/portfolio/15.gif 1x, images/portfolio/15.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Nakshatras</div>
+                                    <div class="folio-list__item-title">Die 27 Mondhäuser</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+            
+            
+            <style>
+                .btn-outline-warning:hover {
+                    color: #ffffff; /* Цвет текста при наведении */
+                    background-color: #d49f00; /* Цвет фона при наведении */
+                    border-color: forestgreen /* Цвет границы при наведении */
+                }
+                .btn-outline-warning {
+                    background-color: rgba(34, 139, 34, 0.068);
+                    border-radius: 20px; 
+                    border: 3px solid  rgba(34, 139, 34, 0.11)  ;
+                }
+            </style>
+            
+            <section class="projects-section bg-warning-subtle" style="display: flex; justify-content: center; align-items: flex-start; padding: 5%;">
+                <div class="container text-center" style="max-width: 900px;">
+                   
+                    <div class="d-flex flex-wrap justify-content-center">
+                        
+                        <a href="#" class="btn btn-outline-warning me-2 mb-2">Sterne</a>
+                        <a href="#" class="btn btn-outline-warning me-2 mb-2">Planeten</a>
+                        <a href="#" class="btn btn-outline-warning me-2 mb-2">Nakshatra</a>
+                        <a href="#" class="btn btn-outline-warning me-2 mb-2">Karma</a>
+                        <a href="#" class="btn btn-outline-warning me-2 mb-2">Meditation</a>
+                        <a href="#" class="btn btn-outline-warning me-2 mb-2">Häuser</a>
+                        <a href="#" class="btn btn-outline-warning me-2 mb-2">Analysen</a>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            <br>
+ 
+            <section id="contact" class="s-contact target-section">
+
+                <div class="row contact-top">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">
+                            Kontakt aufnehmen
+                        </h2>
+            
+                        <p class="h1">
+                            Ich freue mich, von Ihnen zu hören.
+                            Ob Sie eine Frage zur Astrologie haben oder einfach über das Universum und spirituelle Themen sprechen möchten – schreiben Sie mir.
+                        </p>
+                    </div>
+                </div> <!-- end contact-top -->
+            
+                <div class="row contact-bottom">
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Kontakt</h3>
+                        <p class="contact-links">
+                            <a href="mailto:korneli.nastas@gmail.com" class="mailtoui">korneli.nastas@gmail.com</a> <br>
+                            <a href="tel:+1975432345">0157 381 81 756</a>
+                        </p>
+                    </div>
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Soziale Netzwerke</h3>
+                        <ul class="contact-social">
+                            <li><a href="https://www.facebook.com/korneli.nastas/">Facebook</a></li>
+                           
+                            <li><a href="https://x.com/KorneliNastas">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/korneli_nastas/">Instagram</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="column lg-4 md-12 contact-block">
+                        <a href="mailto:korneli.nastas@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Sag Hallo.</a>
+                    </div>
+                </div> <!-- end contact-bottom -->
+            
+            </section> <!-- end contact -->
+            
+
+        </main> <!-- end s-content -->
+
+
+        <!-- ## footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>© Copyright ASTRO.2IX 2024</span> 
+                    <span>Design by <a href="https://www.kn.2ix.de/">Korneli Nastas</a> Photo By <a href="https://fotoreisen.2ix.de">Foto Reisen</a></span>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
