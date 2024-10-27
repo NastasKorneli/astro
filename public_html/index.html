@@ -24,6 +24,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5Z0Rgr/PMeBPp6Uw5LrVz0MVeFFcYFgZjCmeSIjYGOaVDJ+GIb6syZxfQOJCwP3y" crossorigin="anonymous">
+
+
+
 
 </head>
 
@@ -67,7 +71,7 @@
                         <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
                         <li><a href="#about" class="smoothscroll">Gedanken</a></li>
                         <li><a href="#works" class="smoothscroll">Elemente</a></li>
-                        <li><a href="#contact" class="smoothscroll">Sag Hallo</a></li>
+                        <li><a href="#contact" class="smoothscroll">Horoskope</a></li>
                     </ul>
                 </nav>
             </div>
@@ -143,26 +147,27 @@
                                 Verlier dich nicht in Gedanken
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                                Lassen Sie die Sorgen los und tauchen Sie in die Welt der Astrologie ein – das Leben wird dadurch heiterer und klarer.
+                                Lass die Sorgen los und tauche in die Welt der Astrologie ein – dein Leben wird dadurch heiterer und klarer.
                             </p>
                             <p class="attention-getter" data-animate-el>
-                                Erstellen Sie Ihre persönliche Horoskopkarte, und Sie werden vieles über sich selbst verstehen. Bei Fragen wenden Sie sich gern an einen erfahrenen Astrologen.
-                                <a href="mailto:korneli.nastas@gmail.com" class=" mailtoui btn btn--medium u-fullwidth contact-btn">Fragen Sie den Astrologen</a>
+                                Erstelle deine persönliche Horoskopkarte, und du wirst vieles über dich selbst verstehen. Bei Fragen kannst du dich gerne an einen erfahrenen Astrologen wenden.
+                                <a href="mailto:korneli.nastas@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Frag mich zum Beispiel</a>
                             </p>
                       
                        
                     </div>
                     
                 </div> 
-                <section>
+                
+                <!-- <section>
                     <div class="container" style="max-width: 1380px; margin: 0 auto;">
-                        <!-- Заголовок в центре -->
+                      
                         <div class="text-center mb-4">
                             <h1 class="fs-5 mb-0">Vedischer Horoskop erstellen</h1>
                         </div>
                         <br>
-                        <!-- Поля и кнопка в тонкой рамке -->
-                        <div style="background-image: url(images/portfolio/9.gif); 
+                      
+                        <div style="background-image: url(https://kn.2ix.de/508b6c9011dbb4411dd4a89936101b93.gif); 
                                     background-blend-mode: overlay; 
                                     background-color: rgba(112, 112, 112, 0.366); 
                                     background-position: center; 
@@ -177,7 +182,7 @@
                                     justify-content: center; 
                                     flex-wrap: nowrap;">
                             
-                            <!-- Поля с метками сверху и затемненным фоном -->
+                         
                             <div style="display: flex; flex-direction: column; align-items: flex-start;">
                                 <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;Name</label>
                                 <input 
@@ -256,13 +261,13 @@
                                 >
                             </div>
                 
-                            <!-- Кнопка на одном уровне с полями -->
+                         
                             <div style="display: flex; align-items: center;">
                                 <button id="chart-calculate" class="btn btn-primary btn-sm">Berechnen</button>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 
                 <style>
                 /* Стили для белого, жирного текста с верхним регистром для placeholder */
@@ -273,25 +278,35 @@
                     font-weight: bold; /* Жирный текст */
                 }
                 </style>
+   
                 
-                
-                                
-                <div class="row about-expertise" data-animate-block>
-                    <div class="column lg-12">
-                
-                        <h2 class="text-pretitle" data-animate-el>Die Vorteile der Astrologie</h2>
-                
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Selbsterkenntnis</li>
-                            <li>Partnerschaft</li>
-                            <li>Zukunftsplanung</li>
-                            <li>Stärken entwickeln</li>
-                            <li>Schwächen erkennen.</li>
-                           
-                        </ul>
-                
-                    </div>
-                </div>
+     <style>
+        .skills-list li {
+    display: block; /* Убедитесь, что каждый элемент списка отображается на отдельной строке */
+    margin-bottom: 10px; /* Добавьте отступы между элементами, чтобы они не были слишком плотно */
+}
+.skills-list {
+    list-style: none; /* Удаляет стандартные маркеры списка */
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list li {
+    display: block;
+}
+     </style>                           
+   <div class="row about-expertise" data-animate-block>
+    <div class="column lg-12">
+        <h2 class="text-pretitle" data-animate-el>Die Vorteile der vedischen Astrologie</h2>
+        <ul class="skills-list h1" data-animate-el>
+            <li>Tradition trifft Moderne</li>
+            <li>Klarheit und Balance</li>
+            <li>Weisheit im Alltag</li>
+            <li>Sie bietet praktische Lösungen</li>
+            <li>die einfach anwendbar sind.</li>
+        </ul>
+    </div>
+</div>
                 <div class="row about-timelines" data-animate-block>
 
                     <div class="column lg-6 tab-12">
@@ -390,7 +405,7 @@
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-01">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/2.gif" srcset="images/portfolio/2.gif 1x, images/portfolio/2.gif 2x" alt="">
+                                        <img src="https://kn.2ix.de/6212485181ca055f760855d98d3ee4bc.gif" srcset="https://kn.2ix.de/6212485181ca055f760855d98d3ee4bc.gif 1x, https://kn.2ix.de/6212485181ca055f760855d98d3ee4bc.gif 2x" alt="">
                                     </div>
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
@@ -406,7 +421,7 @@
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-02">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/6.gif" srcset="images/portfolio/6.gif 1x, images/portfolio/6.gif 2x" alt="">
+                                        <img src="https://kn.2ix.de/8e06c7abc6cdb90eefbcf3f211bfcfcc.gif" srcset="https://kn.2ix.de/8e06c7abc6cdb90eefbcf3f211bfcfcc.gif 1x, https://kn.2ix.de/8e06c7abc6cdb90eefbcf3f211bfcfcc.gif 2x" alt="">
                                     </div>
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
@@ -424,7 +439,7 @@
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-04">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/7.gif" srcset="images/portfolio/7.gif 1x, images/portfolio/7.gif 2x" alt="">
+                                        <img src="https://kn.2ix.de/1f5cdf2e82bc3e1493836385d0ec41f6.gif" srcset="https://kn.2ix.de/1f5cdf2e82bc3e1493836385d0ec41f6.gif 1x, https://kn.2ix.de/1f5cdf2e82bc3e1493836385d0ec41f6.gif 2x" alt="">
                                     </div>
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
@@ -440,7 +455,7 @@
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-05">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/1.gif" srcset="images/portfolio/1.gif 1x, images/portfolio/1.gif 2x" alt="">
+                                        <img src="https://kn.2ix.de/8f7c827cc87f66b69c38095684be7143.gif" srcset="https://kn.2ix.de/8f7c827cc87f66b69c38095684be7143.gif 1x, https://kn.2ix.de/8f7c827cc87f66b69c38095684be7143.gif 2x" alt="">
                                     </div>
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
@@ -456,7 +471,7 @@
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-06">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/5.gif" srcset="images/portfolio/5.gif 1x, images/portfolio/5.gif 2x" alt="">
+                                        <img src="https://kn.2ix.de/f45097033247cf279e7aafd3a9aeb7b6.gif" srcset="ihttps://kn.2ix.de/f45097033247cf279e7aafd3a9aeb7b6.gif 1x, https://kn.2ix.de/f45097033247cf279e7aafd3a9aeb7b6.gif 2x" alt="">
                                     </div>
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
@@ -471,7 +486,7 @@
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-03">
                                     <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/4.gif" srcset="images/portfolio/4.gif 1x, images/portfolio/4.gif 2x" alt="">
+                                        <img src="https://kn.2ix.de/3ae46ca70adb75a2cfd979e8d1a0c47a.gif" srcset="ihttps://kn.2ix.de/3ae46ca70adb75a2cfd979e8d1a0c47a.gif 1x, https://kn.2ix.de/3ae46ca70adb75a2cfd979e8d1a0c47a.gif 2x" alt="">
                                     </div>
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
@@ -490,7 +505,7 @@
                     <!-- Modal Templates Popup -->
                     <div id="modal-01" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/2.gif" style="width: 700px;" alt="">
+                            <img src="https://kn.2ix.de/6212485181ca055f760855d98d3ee4bc.gif" style="width: 700px;" alt="">
                             <div class="modal-popup__desc">
                                 <h5>Zeichen des Tierkreises</h5>
                                 <p>
@@ -506,7 +521,7 @@
                     
                     <div id="modal-02" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/6.gif" style="width: 700px;" alt="">
+                            <img src="https://kn.2ix.de/8e06c7abc6cdb90eefbcf3f211bfcfcc.gif" style="width: 700px;" alt="">
                             <div class="modal-popup__desc">
                                 <h5>Planeten</h5>
                                 <p>
@@ -522,7 +537,7 @@
                     
                     <div id="modal-03" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/4.gif" style="width: 700px;" alt="">
+                            <img src="https://kn.2ix.de/3ae46ca70adb75a2cfd979e8d1a0c47a.gif" style="width: 700px;" alt="">
                             <div class="modal-popup__desc">
                                 <h5>Häuser im Horoskop</h5>
                                 <p>
@@ -538,7 +553,7 @@
                     
                     <div id="modal-04" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/7.gif" style="width: 700px;" alt="">
+                            <img src="https://kn.2ix.de/1f5cdf2e82bc3e1493836385d0ec41f6.gif" style="width: 700px;" alt="">
                             <div class="modal-popup__desc">
                                 <h5>Aspekte der Planeten</h5>
                                 <p>
@@ -554,7 +569,7 @@
                     
                     <div id="modal-05" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/1.gif" style="width: 700px;" alt="">
+                            <img src="https://kn.2ix.de/8f7c827cc87f66b69c38095684be7143.gif" style="width: 700px;" alt="">
                             <div class="modal-popup__desc">
                                 <h5>Planetenperioden</h5>
                                 <p>
@@ -570,7 +585,7 @@
                     
                     <div id="modal-06" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/5.gif" style="width: 700px;" alt="">
+                            <img src="https://kn.2ix.de/f45097033247cf279e7aafd3a9aeb7b6.gif" style="width: 700px;" alt="">
                             <div class="modal-popup__desc">
                                 <h5>Nakshatras</h5>
                                 <p>
@@ -663,11 +678,21 @@
             </section> <!-- end s-works -->
             <section>
                 <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-                    
                     <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
-                                <img src="images/portfolio/9.gif" srcset="images/portfolio/9.gif 1x, images/portfolio/9.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <img src="https://i.pinimg.com/originals/a3/a7/3d/a3a73da5ff8f678fc6d8e7c646398297.gif" srcset="https://i.pinimg.com/originals/a3/a7/3d/a3a73da5ff8f678fc6d8e7c646398297.gif 1x, https://i.pinimg.com/originals/a3/a7/3d/a3a73da5ff8f678fc6d8e7c646398297.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Planetenwege</div>
+                                    <div class="folio-list__item-title">Kosmische Einflüsse verstehen</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="https://i.pinimg.com/originals/19/fd/f3/19fdf34eb6e99008c2b0161477d3bf74.gif" srcset="https://i.pinimg.com/originals/19/fd/f3/19fdf34eb6e99008c2b0161477d3bf74.gif 1x, https://i.pinimg.com/originals/19/fd/f3/19fdf34eb6e99008c2b0161477d3bf74.gif 2x" alt="" style="width: 100%; height: 100%;">
                                 <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Mystik der Sterne</div>
                                     <div class="folio-list__item-title">Die Geheimnisse des Zodiaks</div>
@@ -676,22 +701,12 @@
                         </div>
                     </div>
             
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/10.gif" srcset="images/portfolio/10.gif 1x, images/portfolio/10.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                    <div class="folio-list__item-cat">Planetenwege</div>
-                                    <div class="folio-list__item-title">Kosmische Einflüsse verstehen</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+          
             
                     <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
-                                <img src="images/portfolio/11.gif" srcset="images/portfolio/11.gif 1x, images/portfolio/11.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <img src="https://i.pinimg.com/originals/fc/60/5e/fc605ef2022f7ec015739ae13b40fd51.gif" srcset="https://i.pinimg.com/originals/fc/60/5e/fc605ef2022f7ec015739ae13b40fd51.gif 1x, https://i.pinimg.com/originals/fc/60/5e/fc605ef2022f7ec015739ae13b40fd51.gif 2x" alt="" style="width: 100%; height: 100%;">
                                 <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Sternenhäuser</div>
                                     <div class="folio-list__item-title">Einblicke in Lebensbereiche</div>
@@ -706,7 +721,7 @@
                     <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
-                                <img src="images/portfolio/12.gif" srcset="images/portfolio/12.gif 1x, images/portfolio/12.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <img src="https://i.pinimg.com/originals/7a/b7/3c/7ab73cdb25c0a2e0e21735f7fc0ae3f4.gif" srcset="https://i.pinimg.com/originals/7a/b7/3c/7ab73cdb25c0a2e0e21735f7fc0ae3f4.gif 1x, https://i.pinimg.com/originals/7a/b7/3c/7ab73cdb25c0a2e0e21735f7fc0ae3f4.gif 2x" alt="" style="width: 100%; height: 100%;">
                                 <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Aspekte und Winkel</div>
                                     <div class="folio-list__item-title">Kräfte zwischen den Planeten</div>
@@ -714,11 +729,21 @@
                             </a>
                         </div>
                     </div>
-            
                     <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
-                                <img src="images/portfolio/13.gif" srcset="images/portfolio/13.gif 1x, images/portfolio/13.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <img src="https://i.pinimg.com/originals/71/ba/76/71ba761722086e9419dbad43010ecaef.gif" srcset="https://i.pinimg.com/originals/71/ba/76/71ba761722086e9419dbad43010ecaef.gif 1x, https://i.pinimg.com/originals/71/ba/76/71ba761722086e9419dbad43010ecaef.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Nakshatras</div>
+                                    <div class="folio-list__item-title">Die 27 Mondhäuser in der Liebe</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="ihttps://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif" srcset="https://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif 1x, https://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif 2x" alt="" style="width: 100%; height: 100%;">
                                 <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Zeitzyklen der Planeten</div>
                                     <div class="folio-list__item-title">Phasen der Transformation</div>
@@ -727,17 +752,7 @@
                         </div>
                     </div>
             
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/15.gif" srcset="images/portfolio/15.gif 1x, images/portfolio/15.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                    <div class="folio-list__item-cat">Nakshatras</div>
-                                    <div class="folio-list__item-title">Die 27 Mondhäuser</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    
             
                 </div>
             </section>
@@ -772,11 +787,62 @@
                     </div>
                 </div>
             </section>
-            
-            
-            
-            <br>
- 
+            <section class="image-section" style="height: auto; padding: 20px 0; overflow: hidden; display: flex; align-items: flex-start; justify-content: center;">
+                <div style="flex: 1; position: relative; text-align: center;">
+                    <img src="https://i.pinimg.com/originals/73/8b/36/738b36c9a799c3ab00ea4a9c8aa73445.gif" alt="description" style="width: 40%; height: auto; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; transition: border-radius 1s ease-in-out; position: static;">
+                </div>
+                <div style="flex: 1; position: relative; text-align: center;">
+                    <img src="https://i.pinimg.com/originals/73/8b/36/738b36c9a799c3ab00ea4a9c8aa73445.gif" alt="description" style="width: 40%; height: auto; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; transition: border-radius 1s ease-in-out; position: static;">
+                </div>
+                <div style="flex: 1; position: relative; text-align: center;">
+                    <img src="https://i.pinimg.com/originals/73/8b/36/738b36c9a799c3ab00ea4a9c8aa73445.gif" alt="description" style="width: 40%; height: auto; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; transition: border-radius 1s ease-in-out; position: static;">
+                </div>
+            </section>
+            <section id="faq" style="padding: 40px 20px;">
+                <div class="container" style="max-width: 600px; margin: 0 auto;">
+              
+                
+                  <!-- Центрированное изображение -->
+                  <div class="text-center my-4">
+                    <img src="https://scontent-ham3-1.xx.fbcdn.net/v/t1.6435-9/83006380_2767897389897479_3349479397391335424_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=9Ri5Kvwy2OkQ7kNvgH8e3CK&_nc_zt=23&_nc_ht=scontent-ham3-1.xx&_nc_gid=AfC9cEZF0r4V57LYm4ZcJAN&oh=00_AYCzpchzaUkWTK8r5_QvGbDdQAXZVLho7LXxP7WeH1IYKw&oe=6745C8E5" alt="FAQ Image" style="max-width: 100%; height: auto; border-radius: 40px;">
+                  </div>
+              
+                  <!-- Вопросы и ответы золотистым цветом -->
+                  <div class="accordion mt-5" id="accordionAstrologyFAQ" style="color: goldenrod;">
+              
+                    <!-- Вопрос и ответ 1 -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" style="font-weight: bold;">
+                        Kann Astrologie bei Problemen helfen?
+                      </h3>
+                      <p>– Ja, sie gibt oft neue Perspektiven und Lösungsansätze.</p>
+                    </div>
+              
+                    <!-- Вопрос и ответ 2 -->
+                    <div class="accordion-item mt-4">
+                      <h3 class="accordion-header" style="font-weight: bold;">
+                        Bieten Sie Beratungen an?
+                      </h3>
+                      <p>– Ja, ich glaube, dass es jedem helfen kann.</p>
+                    </div>
+              
+                    <!-- Вопрос и ответ 3 -->
+                    <div class="accordion-item mt-4">
+                      <h3 class="accordion-header" style="font-weight: bold;">
+                        Brauche ich Vorkenntnisse?
+                      </h3>
+                      <p>– Nein, ich erkläre alles verständlich für Sie.</p>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+              
+              
+              
+              
+              
+              
             <section id="contact" class="s-contact target-section">
 
                 <div class="row contact-top">
@@ -786,8 +852,7 @@
                         </h2>
             
                         <p class="h1">
-                            Ich freue mich, von Ihnen zu hören.
-                            Ob Sie eine Frage zur Astrologie haben oder einfach über das Universum und spirituelle Themen sprechen möchten – schreiben Sie mir.
+                            Ich freue mich, von dir zu hören. Ob du eine Frage zur Astrologie hast oder Hilfe brauchst, um die Ergebnisse deines Horoskops besser zu verstehen – schreib mir.
                         </p>
                     </div>
                 </div> <!-- end contact-top -->
@@ -820,9 +885,30 @@
 
         </main> <!-- end s-content -->
 
-
+        <style>
+            #kundli-container {
+            width: 100%;
+            height: 820px;
+            overflow: hidden; /* Обрезает содержимое, которое выходит за рамки контейнера */
+            background-color: hsla(51, 30%, 30%, 1);
+            
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для более приятного внешнего вида */
+        }
+        
+        #kundliwidgetid iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        </style>
+            <div id="kundli-container">
+                <script type="text/javascript" src="https://kundli.click/widget-embed-js?wid=3f00c3aab3bee68b370222e6906286b4"></script>
+                <div id="kundliwidgetid"></div>
+            </div>
         <!-- ## footer
         ================================================== -->
+        <br>
         <footer class="s-footer">
 
             <div class="row">
@@ -848,5 +934,10 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7ie1L2/3N9rs1iB/i3Z1vn5SRFRpf6uuB6L" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+6/BaapjUpeAYyj8rIbh4u+7IY5f+" crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
