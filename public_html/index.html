@@ -13,8 +13,16 @@
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS
-    ================================================== -->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTLZ50B2T8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TTLZ50B2T8');
+</script>
+
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -23,7 +31,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5Z0Rgr/PMeBPp6Uw5LrVz0MVeFFcYFgZjCmeSIjYGOaVDJ+GIb6syZxfQOJCwP3y" crossorigin="anonymous">
 
 
@@ -71,7 +79,7 @@
                         <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
                         <li><a href="#about" class="smoothscroll">Gedanken</a></li>
                         <li><a href="#works" class="smoothscroll">Elemente</a></li>
-                        <li><a href="#contact" class="smoothscroll">Horoskope</a></li>
+                        <li><a href="#contact" class="smoothscroll">Horoskop</a></li>
                     </ul>
                 </nav>
             </div>
@@ -150,7 +158,7 @@
                                 Lass die Sorgen los und tauche in die Welt der Astrologie ein – dein Leben wird dadurch heiterer und klarer.
                             </p>
                             <p class="attention-getter" data-animate-el>
-                                Erstelle deine persönliche Horoskopkarte, und du wirst vieles über dich selbst verstehen. Bei Fragen kannst du dich gerne an einen erfahrenen Astrologen wenden.
+                                Erstelle deine persönliche Horoskop, und du wirst vieles über dich selbst verstehen. Bei Fragen kannst du dich gerne an einen erfahrenen Astrologen wenden.
                                 <a href="mailto:korneli.nastas@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Frag mich zum Beispiel</a>
                             </p>
                       
@@ -159,126 +167,11 @@
                     
                 </div> 
                 
-                <!-- <section>
-                    <div class="container" style="max-width: 1380px; margin: 0 auto;">
-                      
-                        <div class="text-center mb-4">
-                            <h1 class="fs-5 mb-0">Vedischer Horoskop erstellen</h1>
-                        </div>
-                        <br>
-                      
-                        <div style="background-image: url(https://kn.2ix.de/508b6c9011dbb4411dd4a89936101b93.gif); 
-                                    background-blend-mode: overlay; 
-                                    background-color: rgba(112, 112, 112, 0.366); 
-                                    background-position: center; 
-                                  
-                                    
-                                    border: 3px solid rgba(0, 0, 0, 0.16); 
-                                    border-radius: 40px; 
-                                    padding-top: 25px; 
-                                    display: flex; 
-                                    gap: 20px; 
-                                    align-items: center; 
-                                    justify-content: center; 
-                                    flex-wrap: nowrap;">
-                            
-                         
-                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;Name</label>
-                                <input 
-                                    id="latitude" 
-                                    type="text" 
-                                    class="form-control" 
-                                    style="width: 140px; color: #fff; caret-color: #fff; border: solid 1px #382525; border-radius: 20px; background-color: rgba(226, 168, 80, 0.636); font-weight: bold;" 
-                                    autocomplete="off"
-                                >
-                            </div>
-                
-                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;TT.MM.JJJJ</label>
-                                <input 
-                                    id="latitude" 
-                                    type="text" 
-                                    class="form-control" 
-                                    style="width: 140px; color: #fff; caret-color: #fff; border: solid 1px #382525; border-radius: 20px; background-color: rgba(226, 168, 80, 0.636); font-weight: bold;" 
-                                    autocomplete="off"
-                                >
-                            </div>
-                
-                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;HH:MM:SS</label>
-                                <input 
-                                    id="latitude" 
-                                    type="text" 
-                                    class="form-control" 
-                                    style="width: 140px; color: #fff; caret-color: #fff; border: solid 1px #382525; border-radius: 20px; background-color: rgba(226, 168, 80, 0.636); font-weight: bold;" 
-                                    autocomplete="off"
-                                >
-                            </div>
-                
-                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;Ort</label>
-                                <input 
-                                    id="latitude" 
-                                    type="text" 
-                                    class="form-control" 
-                                    style="width: 140px; color: #fff; caret-color: #fff; border: solid 1px #382525; border-radius: 20px; background-color: rgba(226, 168, 80, 0.636); font-weight: bold;" 
-                                    autocomplete="off"
-                                >
-                            </div>
-                
-                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;Breitengrad</label>
-                                <input 
-                                    id="latitude" 
-                                    type="text" 
-                                    class="form-control" 
-                                    style="width: 140px; color: #fff; caret-color: #fff; border: solid 1px #382525; border-radius: 20px; background-color: rgba(226, 168, 80, 0.636); font-weight: bold;" 
-                                    autocomplete="off"
-                                >
-                            </div>
-                            
-                
-                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;Längengrad</label>
-                                <input 
-                                    id="latitude" 
-                                    type="text" 
-                                    class="form-control" 
-                                    style="width: 140px; color: #fff; caret-color: #fff; border: solid 1px #382525; border-radius: 20px; background-color: rgba(226, 168, 80, 0.636); font-weight: bold;" 
-                                    autocomplete="off"
-                                >
-                            </div>
-                
-                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                <label for="latitude" style="color: #fff; font-weight: bold; margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;Zeitzone</label>
-                                <input 
-                                    id="latitude" 
-                                    type="text" 
-                                    class="form-control" 
-                                    style="width: 140px; color: #fff; caret-color: #fff; border: solid 1px #382525; border-radius: 20px; background-color: rgba(226, 168, 80, 0.636); font-weight: bold;" 
-                                    autocomplete="off"
-                                >
-                            </div>
-                
-                         
-                            <div style="display: flex; align-items: center;">
-                                <button id="chart-calculate" class="btn btn-primary btn-sm">Berechnen</button>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-                
-                <style>
-                /* Стили для белого, жирного текста с верхним регистром для placeholder */
-                ::placeholder {
-                    color: #fff !important;
-                    opacity: 1; /* Полная непрозрачность для белого текста */
-                    text-transform: uppercase; /* Все буквы заглавные */
-                    font-weight: bold; /* Жирный текст */
-                }
-                </style>
-   
+   </div>
+</section>
+
+            
+              
                 
      <style>
         .skills-list li {
@@ -294,7 +187,8 @@
 .skills-list li {
     display: block;
 }
-     </style>                           
+     </style>         
+     <section>                
    <div class="row about-expertise" data-animate-block>
     <div class="column lg-12">
         <h2 class="text-pretitle" data-animate-el>Die Vorteile der vedischen Astrologie</h2>
@@ -682,7 +576,7 @@
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
                                 <img src="https://i.pinimg.com/originals/a3/a7/3d/a3a73da5ff8f678fc6d8e7c646398297.gif" srcset="https://i.pinimg.com/originals/a3/a7/3d/a3a73da5ff8f678fc6d8e7c646398297.gif 1x, https://i.pinimg.com/originals/a3/a7/3d/a3a73da5ff8f678fc6d8e7c646398297.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Planetenwege</div>
                                     <div class="folio-list__item-title">Kosmische Einflüsse verstehen</div>
                                 </div>
@@ -693,7 +587,7 @@
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
                                 <img src="https://i.pinimg.com/originals/19/fd/f3/19fdf34eb6e99008c2b0161477d3bf74.gif" srcset="https://i.pinimg.com/originals/19/fd/f3/19fdf34eb6e99008c2b0161477d3bf74.gif 1x, https://i.pinimg.com/originals/19/fd/f3/19fdf34eb6e99008c2b0161477d3bf74.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Mystik der Sterne</div>
                                     <div class="folio-list__item-title">Die Geheimnisse des Zodiaks</div>
                                 </div>
@@ -707,7 +601,7 @@
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
                                 <img src="https://i.pinimg.com/originals/fc/60/5e/fc605ef2022f7ec015739ae13b40fd51.gif" srcset="https://i.pinimg.com/originals/fc/60/5e/fc605ef2022f7ec015739ae13b40fd51.gif 1x, https://i.pinimg.com/originals/fc/60/5e/fc605ef2022f7ec015739ae13b40fd51.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Sternenhäuser</div>
                                     <div class="folio-list__item-title">Einblicke in Lebensbereiche</div>
                                 </div>
@@ -722,7 +616,7 @@
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
                                 <img src="https://i.pinimg.com/originals/7a/b7/3c/7ab73cdb25c0a2e0e21735f7fc0ae3f4.gif" srcset="https://i.pinimg.com/originals/7a/b7/3c/7ab73cdb25c0a2e0e21735f7fc0ae3f4.gif 1x, https://i.pinimg.com/originals/7a/b7/3c/7ab73cdb25c0a2e0e21735f7fc0ae3f4.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Aspekte und Winkel</div>
                                     <div class="folio-list__item-title">Kräfte zwischen den Planeten</div>
                                 </div>
@@ -733,7 +627,7 @@
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
                                 <img src="https://i.pinimg.com/originals/71/ba/76/71ba761722086e9419dbad43010ecaef.gif" srcset="https://i.pinimg.com/originals/71/ba/76/71ba761722086e9419dbad43010ecaef.gif 1x, https://i.pinimg.com/originals/71/ba/76/71ba761722086e9419dbad43010ecaef.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Nakshatras</div>
                                     <div class="folio-list__item-title">Die 27 Mondhäuser in der Liebe</div>
                                 </div>
@@ -743,8 +637,8 @@
                     <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
                         <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
                             <a href="#" title="static background">
-                                <img src="ihttps://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif" srcset="https://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif 1x, https://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif 2x" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
+                                <img src="https://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif" srcset="https://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif 1x, https://i.pinimg.com/originals/6e/b4/43/6eb44391a66b0559962e59ca87fa603f.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
                                     <div class="folio-list__item-cat">Zeitzyklen der Planeten</div>
                                     <div class="folio-list__item-title">Phasen der Transformation</div>
                                 </div>
@@ -799,39 +693,42 @@
                 </div>
             </section>
             <section id="faq" style="padding: 40px 20px;">
-                <div class="container" style="max-width: 600px; margin: 0 auto;">
+                <div class="container" style="max-width: 900px; margin: 0 auto;">
               
                 
                   <!-- Центрированное изображение -->
                   <div class="text-center my-4">
-                    <img src="https://scontent-ham3-1.xx.fbcdn.net/v/t1.6435-9/83006380_2767897389897479_3349479397391335424_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=9Ri5Kvwy2OkQ7kNvgH8e3CK&_nc_zt=23&_nc_ht=scontent-ham3-1.xx&_nc_gid=AfC9cEZF0r4V57LYm4ZcJAN&oh=00_AYCzpchzaUkWTK8r5_QvGbDdQAXZVLho7LXxP7WeH1IYKw&oe=6745C8E5" alt="FAQ Image" style="max-width: 100%; height: auto; border-radius: 40px;">
+                    <img src="https://kn.2ix.de/83006380_2767897389897479_3349479397391335424_n%20(3).jpg" alt="FAQ Image" style="max-width: 100%; height: auto; border-radius: 60px;">
                   </div>
               
                   <!-- Вопросы и ответы золотистым цветом -->
-                  <div class="accordion mt-5" id="accordionAstrologyFAQ" style="color: goldenrod;">
+                  <div class="accordion mt-5" id="accordionAstrologyFAQ" style="color: #a1a1a2;">
               
                     <!-- Вопрос и ответ 1 -->
                     <div class="accordion-item">
-                      <h3 class="accordion-header" style="font-weight: bold;">
+                      <h2 class="accordion-header" style="font-weight: bold;">
                         Kann Astrologie bei Problemen helfen?
-                      </h3>
-                      <p>– Ja, sie gibt oft neue Perspektiven und Lösungsansätze.</p>
+                      </h2>
+                      <p>– Ja, Astrologie kann dir bei Problemen helfen, indem sie neue Perspektiven und Lösungsansätze bietet. Wenn wir dein Horoskop analysieren, können wir spezifische Herausforderungen identifizieren und verstehen, wie sie mit deinen persönlichen Stärken und Schwächen zusammenhängen. Oft zeigt die Astrologie Muster auf, die im Alltag nicht sofort erkennbar sind.</p> <p>
+Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Strategien zu entwickeln, um mit schwierigen Situationen umzugehen. Viele Menschen finden Trost und Klarheit in der astrologischen Beratung, da sie ihnen ermöglicht, ihre Lebensumstände aus einem anderen Blickwinkel zu betrachten. So wird es einfacher für dich, Lösungen zu finden und positive Veränderungen herbeizuführen.</p>
                     </div>
               
                     <!-- Вопрос и ответ 2 -->
                     <div class="accordion-item mt-4">
-                      <h3 class="accordion-header" style="font-weight: bold;">
+                      <h2 class="accordion-header" style="font-weight: bold;">
                         Bieten Sie Beratungen an?
-                      </h3>
-                      <p>– Ja, ich glaube, dass es jedem helfen kann.</p>
+                      </h2>
+                      <p>– Ja, ich biete Beratungen an, und ich glaube, dass sie jedem helfen können. In meinen Sitzungen gehe ich auf deine individuellen Fragen und Anliegen ein. Egal, ob du nach Orientierung in deinem Beruf, in Beziehungen oder in anderen Lebensbereichen suchst, die astrologische Beratung kann dir wertvolle Einsichten und Klarheit bieten.</p> <p>
+                        Ich nutze die Astrologie, um dir zu zeigen, wie die Sterne und Planeten deine persönlichen Stärken und Herausforderungen beeinflussen. So kannst du besser verstehen, wie du deine Ziele erreichen und Hindernisse überwinden kannst. Es ist eine Möglichkeit, dein Leben bewusster zu gestalten und neue Wege zu entdecken..</p>
                     </div>
               
                     <!-- Вопрос и ответ 3 -->
                     <div class="accordion-item mt-4">
-                      <h3 class="accordion-header" style="font-weight: bold;">
+                      <h2 class="accordion-header" style="font-weight: bold;">
                         Brauche ich Vorkenntnisse?
-                      </h3>
-                      <p>– Nein, ich erkläre alles verständlich für Sie.</p>
+                      </h2>
+                      <p>– Nein, du brauchst keine Vorkenntnisse! Ich erkläre alles verständlich und Schritt für Schritt. Egal, ob du neu in der Astrologie bist oder schon etwas darüber weißt, ich passe die Beratung an dein Verständnis an.</p> <p>
+                        Mein Ziel ist es, dass du dich wohlfühlst und alle Informationen klar und nachvollziehbar sind. So kannst du die astrologischen Konzepte leicht erfassen und sie in deinem Leben anwenden. Du kannst jederzeit Fragen stellen, und ich bin hier, um dir zu helfen, alles zu verstehen.</p>
                     </div>
               
                   </div>
@@ -839,7 +736,86 @@
               </section>
               
               
-              
+              <section>
+                <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="https://i.pinimg.com/originals/45/e2/38/45e238987ca9b3bd6ad24a001f5b647e.gif" srcset="https://i.pinimg.com/originals/45/e2/38/45e238987ca9b3bd6ad24a001f5b647e.gif 1x, https://i.pinimg.com/originals/45/e2/38/45e238987ca9b3bd6ad24a001f5b647e.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Planetenwege</div>
+                                    <div class="folio-list__item-title">Kosmische Einflüsse verstehen</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="https://i.pinimg.com/originals/39/68/92/396892ee41d900ba78a3e56741e20561.gif" srcset="https://i.pinimg.com/originals/39/68/92/396892ee41d900ba78a3e56741e20561.gif 1x, https://i.pinimg.com/originals/39/68/92/396892ee41d900ba78a3e56741e20561.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Mystik der Sterne</div>
+                                    <div class="folio-list__item-title">Die Geheimnisse des Zodiaks</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+          
+            
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="https://i.pinimg.com/originals/50/86/04/508604eef93b5b750da2d4ee0c0431e2.gif" srcset="https://i.pinimg.com/originals/50/86/04/508604eef93b5b750da2d4ee0c0431e2.gif 1x, https://i.pinimg.com/originals/50/86/04/508604eef93b5b750da2d4ee0c0431e2.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Sternenhäuser</div>
+                                    <div class="folio-list__item-title">Einblicke in Lebensbereiche</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+                    
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="https://i.pinimg.com/originals/b2/01/d9/b201d944de5069d8f6c25596beb1d678.gif" srcset="https://i.pinimg.com/originals/b2/01/d9/b201d944de5069d8f6c25596beb1d678.gif 1x, https://i.pinimg.com/originals/b2/01/d9/b201d944de5069d8f6c25596beb1d678.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Aspekte und Winkel</div>
+                                    <div class="folio-list__item-title">Kräfte zwischen den Planeten</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="https://i.pinimg.com/originals/8b/fe/6d/8bfe6de2a1452d20e20e05d060ca1e1b.gif" srcset="https://i.pinimg.com/originals/8b/fe/6d/8bfe6de2a1452d20e20e05d060ca1e1b.gif 1x, https://i.pinimg.com/originals/8b/fe/6d/8bfe6de2a1452d20e20e05d060ca1e1b.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Nakshatras</div>
+                                    <div class="folio-list__item-title">Die 27 Mondhäuser in der Liebe</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
+                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
+                            <a href="#" title="static background">
+                                <img src="https://i.pinimg.com/originals/4c/ad/35/4cad353b26842c8852cb32218b123049.gif" srcset="https://i.pinimg.com/originals/4c/ad/35/4cad353b26842c8852cb32218b123049.gif 1x, https://i.pinimg.com/originals/4c/ad/35/4cad353b26842c8852cb32218b123049.gif 2x" alt="" style="width: 100%; height: 100%;">
+                                <div style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                                    <div class="folio-list__item-cat">Zeitzyklen der Planeten</div>
+                                    <div class="folio-list__item-title">Phasen der Transformation</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    
+            
+                </div>
+            </section>
               
               
               
@@ -906,9 +882,99 @@
                 <script type="text/javascript" src="https://kundli.click/widget-embed-js?wid=3f00c3aab3bee68b370222e6906286b4"></script>
                 <div id="kundliwidgetid"></div>
             </div>
-        <!-- ## footer
-        ================================================== -->
-        <br>
+            <section>                
+            <div class="row about-expertise" data-animate-block>
+             <div class="column lg-12">
+                 <h2 class="text-pretitle" data-animate-el>Janma Patrika </h2>
+                 <ul class="skills-list h1" data-animate-el>
+                     <li>Hauptbestandteile - Geburtsdetails</li>
+                     
+                 </ul>
+             </div>
+         </div>
+                         <div class="row about-timelines" data-animate-block>
+         
+                             <div class="column lg-6 tab-12">
+                         
+                                 <h2 class="text-pretitle" data-animate-el>
+                                    Erstellung
+                                 </h2>
+                         
+                                 <div class="timeline" data-animate-el>
+                         
+                                     <div class="timeline__block">
+                                         <div class="timeline__bullet"></div>
+                                         <div class="timeline__header">
+                                             <h4 class="timeline__title">Panchang</h4>
+                                             <h5 class="timeline__meta">detaillierte Informationen</h5>
+                                             <p class="timeline__timeframe">astrologischer Almanach</p>
+                                         </div>
+                                         <div class="timeline__desc">
+                                             <p>Ein Panchang ist ein wichtiger astrologischer Kalender in der vedischen Astrologie, der detaillierte Informationen über astronomische und astrologische Aspekte eines bestimmten Tages liefert. </p> <p>  Insgesamt ist der Panchang ein komplexes und vielseitiges Instrument, das tief in der indischen Kultur und Astrologie verwurzelt ist und auch heute noch von vielen Menschen für die Planung und Orientierung im Alltag genutzt wird.</p>
+                                         </div>
+                                     </div>
+                         
+                                     <div class="timeline__block">
+                                         <div class="timeline__bullet"></div>
+                                         <div class="timeline__header">
+                                             <h4 class="timeline__title">Lagna-Diagramm</h4>
+                                             <h5 class="timeline__meta">Aszendent-Diagramm</h5>
+                                             <p class="timeline__timeframe">Interpretation</p>
+                                         </div>
+                                         <div class="timeline__desc">
+                                             <p>Das Lagna und seine Position in einem bestimmten Rashi (Tierkreiszeichen) und Nakshatra (Mondhaus) geben Aufschluss über verschiedene Aspekte des Lebens
+                                                Der Lagna-Herrscher (der Planet, der das Zeichen des Aszendenten regiert) spielt ebenfalls eine wichtige Rolle in der Interpretation</p> <p> Es dient als Grundlage für die Erstellung anderer wichtiger Diagramme wie das Navamsa-Diagramm.</p>
+                                         </div>
+                                     </div>
+                         
+                                 </div> <!-- end timeline -->
+                         
+                             </div> <!-- end column -->
+                         
+                             <div class="column lg-6 tab-12">
+                         
+                                 <h2 class="text-pretitle" data-animate-el>
+                                    Entwicklung
+                                 </h2>
+                         
+                                 <div class="timeline" data-animate-el>
+                         
+                                     <div class="timeline__block">
+                                         <div class="timeline__bullet"></div>
+                                         <div class="timeline__header">
+                                             <h4 class="timeline__title">Rasi Diagramm</h4>
+                                             <h5 class="timeline__meta">Janma Rashi / Geburts-Rashi</h5>
+                                             <p class="timeline__timeframe">Definition und Bedeutung</p>
+                                         </div>
+                                         <div class="timeline__desc">
+                                             <p>Das Rasi-Diagramm zeigt die Position der Planeten in den zwölf Tierkreiszeichen (Rashis) zum Zeitpunkt der Geburt.
+                                                Es wird auch als Mond-Diagramm bezeichnet, da es auf der Position des Mondes basiert. </p> <p> Die Positionen der Planeten in den verschiedenen Häusern und ihre Beziehungen zueinander werden analysiert.
+                                                    Besondere Aufmerksamkeit gilt dem Haus, in dem sich der Mond befindet, da es als Geburts-Rashi gilt.</p>
+                                         </div>
+                                     </div>
+                         
+                                     <div class="timeline__block">
+                                         <div class="timeline__bullet"></div>
+                                         <div class="timeline__header">
+                                             <h4 class="timeline__title">Navamsa Diagramm</h4>
+                                             <h5 class="timeline__meta">D9-Diagramm</h5>
+                                             <p class="timeline__timeframe">spiritueller Entwicklung</p>
+                                         </div>
+                                         <div class="timeline__desc">
+                                             <p>Das Navamsa-Diagramm wird oft als "Frucht" des Geburtshoroskops bezeichnet.
+                                                Es gibt Aufschluss über die Qualität und Stärke der Planetenpositionen im Geburtshoroskop.</p> <p> Besonders wichtig ist es für die Analyse von Ehe und Partnerschaft.
+                                                    Es wird auch zur Beurteilung der spirituellen Entwicklung und des Karmas einer Person herangezogen.</p>
+                                         </div>
+                                     </div>
+                         
+                                 </div> <!-- end timeline -->
+                         
+                             </div> <!-- end column -->
+                         
+                         </div> <!-- end about-timelines -->
+                         
+                     </section> 
+      
         <footer class="s-footer">
 
             <div class="row">
