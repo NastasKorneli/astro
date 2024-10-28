@@ -293,224 +293,214 @@
              
             </div>
             <br>
+<style>
+    .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* затемнённый фон */
+    z-index: 2000; /* Повышенный z-index */
+}
+
+.modal-popup {
+    position: relative;
+    width: 80%;
+    max-width: 1500px;
+    margin: 10% auto;
+    background-color: hsla(168, 62%, 16%, 1); /* Черный фон */
+    color: #ffffff; /* Белый текст */
+    padding: 20px;
+    border-radius: 8px;
+    border: 4px solid rgba(226, 168, 80, 0.35); /* Темно-золотая прозрачная рамка */
+    z-index: 3000; /* Еще более высокий z-index */
+}
+.modal-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-popup img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px; /* Добавлен отступ в 20px снизу */
+    display: block;
+    border-radius: 30px;
+}
+
+
+</style>
 <section id="works" class="s-works target-section">
     <div class="row works-portfolio">
 
         <div class="column lg-12" data-animate-block>
-    
+
             <h2 class="text-pretitle" data-animate-el>
                 Astrologische Elemente
             </h2>
             <p class="h1" data-animate-el>
                 Die folgenden sechs Elemente ermöglichen tiefgehende Einblicke in das Leben und die Persönlichkeit.
             </p>
-    
+
             <ul class="folio-list row block-lg-one-half st block-stack-on-1000">
-    
-        
-    
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-02">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-02">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/2.webp" srcset="images/portfolio/2.webp 1x, images/portfolio/2.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Planeten
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die Einflüsse der Himmelskörper auf das Leben.
-                            </div>
+                            <div class="folio-list__item-cat">Planeten</div>
+                            <div class="folio-list__item-title">Die Einflüsse der Himmelskörper auf das Leben.</div>
                         </div>
                     </a>
                 </li>
-    
-       
-    
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-05">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-05">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/4.webp" srcset="images/portfolio/4.webp 1x, images/portfolio/4.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Planetenperioden
-                            </div>
-                            <div class="folio-list__item-title">
-                                Zeitabschnitte, in denen Planeten bestimmte Einflüsse ausüben.
-                            </div>
+                            <div class="folio-list__item-cat">Planetenperioden</div>
+                            <div class="folio-list__item-title">Zeitabschnitte, in denen Planeten bestimmte Einflüsse ausüben.</div>
                         </div>
                     </a>
                 </li>
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-01">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-01">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/1.webp" srcset="images/portfolio/1.webp 1x, images/portfolio/1.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Zeichen des Tierkreises
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die zwölf Sternzeichen und ihre einzigartigen Merkmale.
-                            </div>
+                            <div class="folio-list__item-cat">Zeichen des Tierkreises</div>
+                            <div class="folio-list__item-title">Die zwölf Sternzeichen und ihre einzigartigen Merkmale.</div>
                         </div>
                     </a>
                 </li>
-    
-         
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-04">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-04">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/3.webp" srcset="images/portfolio/3.webp 1x, images/portfolio/3.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Aspekte der Planeten
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die Beziehungen zwischen den Planeten und ihre Bedeutungen.
-                            </div>
+                            <div class="folio-list__item-cat">Aspekte der Planeten</div>
+                            <div class="folio-list__item-title">Die Beziehungen zwischen den Planeten und ihre Bedeutungen.</div>
                         </div>
                     </a>
                 </li>
-    
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-06">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-06">
                         <div class="folio-list__item-pic">
-                            <img src="images/portfolio/5.webp" srcset="iimages/portfolio/5.webp 1x, images/portfolio/5.webp 2x" alt="">
+                            <img src="images/portfolio/5.webp" srcset="images/portfolio/5.webp 1x, images/portfolio/5.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Nakshatras
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die 27 Mondstationen der vedischen Astrologie und ihre Einflüsse.
-                            </div>
+                            <div class="folio-list__item-cat">Nakshatras</div>
+                            <div class="folio-list__item-title">Die 27 Mondstationen der vedischen Astrologie und ihre Einflüsse.</div>
                         </div>
                     </a>
                 </li>
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-03">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-03">
                         <div class="folio-list__item-pic">
-                            <img src="images/portfolio/6.webp" srcset="iimages/portfolio/6.webp 1x, images/portfolio/6.webp 2x" alt="">
+                            <img src="images/portfolio/6.webp" srcset="images/portfolio/6.webp 1x, images/portfolio/6.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Häuser im Horoskop
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die verschiedenen Aspekte des Lebens werden beleuchtet.
-                            </div>
+                            <div class="folio-list__item-cat">Häuser im Horoskop</div>
+                            <div class="folio-list__item-title">Die verschiedenen Aspekte des Lebens werden beleuchtet.</div>
                         </div>
                     </a>
                 </li>
             </ul> <!-- end folio-list -->
-    
+
         </div> <!-- end column -->
-    
+
         <!-- Modal Templates Popup -->
         <div id="modal-01" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-01').style.display='none';">&times;</span>
                 <img src="images/portfolio/1.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
                     <h5>Zeichen des Tierkreises</h5>
-                    <p>
-                        Die zwölf Sternzeichen sind viel mehr als bloße astrologische Symbole – sie verkörpern verschiedene Dimensionen menschlicher Erfahrungen und Lebensansätze. Jedes Zeichen, vom feurigen Widder bis zum mystischen Fische, ist einzigartig in seiner Energie, seinen Stärken und Herausforderungen. Die Sternzeichen wirken wie ein Spiegel, der uns unsere inneren Motivationen, Charakterzüge und Verhaltensmuster zeigt. <strong>Sie offenbaren uns, wer wir im Kern sind und was uns antreibt.</strong>
-                    </p>
-                    <p>
-                        In der Astrologie hat jedes Zeichen eine tiefe Verbindung zu bestimmten Planeten, Elementen und Qualitäten, die unseren Lebensweg beeinflussen. Der Löwe, geführt von der Sonne, steht für Selbstbewusstsein und Ausdruck; die Waage, geprägt von der Venus, repräsentiert Harmonie und Ästhetik. Indem wir unser Sternzeichen verstehen, können wir auch besser verstehen, welche Stärken und Herausforderungen uns im Leben begleiten und welche Lebensthemen immer wieder in den Vordergrund treten.
-                    </p>
-               
+                    <p>Die zwölf Sternzeichen sind viel mehr als bloße astrologische Symbole – sie verkörpern verschiedene Dimensionen menschlicher Erfahrungen und Lebensansätze. Jedes Zeichen, vom feurigen Widder bis zum mystischen Fische, ist einzigartig in seiner Energie, seinen Stärken und Herausforderungen. Die Sternzeichen wirken wie ein Spiegel, der uns unsere inneren Motivationen, Charakterzüge und Verhaltensmuster zeigt. <strong>Sie offenbaren uns, wer wir im Kern sind und was uns antreibt.</strong></p>
+                    <p>In der Astrologie hat jedes Zeichen eine tiefe Verbindung zu bestimmten Planeten, Elementen und Qualitäten, die unseren Lebensweg beeinflussen. Der Löwe, geführt von der Sonne, steht für Selbstbewusstsein und Ausdruck; die Waage, geprägt von der Venus, repräsentiert Harmonie und Ästhetik. Indem wir unser Sternzeichen verstehen, können wir auch besser verstehen, welche Stärken und Herausforderungen uns im Leben begleiten und welche Lebensthemen immer wieder in den Vordergrund treten.</p>
                 </div>
             </div>
         </div>
-        
+
         <div id="modal-02" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-02').style.display='none';">&times;</span>
                 <img src="images/portfolio/2.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
                     <h5>Planeten</h5>
-                    <p>
-                        Die Planeten sind die kraftvollen Akteure in der Astrologie, die unseren Alltag, unsere Persönlichkeit und unsere Lebenserfahrungen tief beeinflussen. Jeder Planet trägt eine besondere Energie und symbolisiert bestimmte Lebensprinzipien. Merkur, der Planet der Kommunikation, prägt unsere Denkweise und Ausdruckskraft, während Venus, der Planet der Liebe, uns in den Bereichen Beziehungen, Ästhetik und Harmonie beeinflusst. Die äußeren Planeten wie Uranus, Neptun und Pluto stehen für kollektive, transformative Kräfte und symbolisieren größere Zyklen, die uns auf tiefere, oft unbewusste Weise prägen.
-                    </p>
-                    <p>
-                        <strong>Die Position der Planeten zum Zeitpunkt unserer Geburt bildet eine Art energetischen Fingerabdruck, der uns ein Leben lang begleitet.</strong> Diese planetaren Energien interagieren miteinander und entfalten im Laufe der Zeit unterschiedliche Einflüsse, die sich in Lebensereignissen, inneren Wachstumsprozessen und Beziehungen widerspiegeln. Wenn Mars zum Beispiel stark in unserem Horoskop steht, erleben wir möglicherweise viel Tatendrang und Entschlossenheit, während eine starke Mondpräsenz Sensibilität und Empathie verstärken kann.
-                    </p>
-                 
+                    <p>Die Planeten sind die kraftvollen Akteure in der Astrologie, die unseren Alltag, unsere Persönlichkeit und unsere Lebenserfahrungen tief beeinflussen. Jeder Planet trägt eine besondere Energie und symbolisiert bestimmte Lebensprinzipien. Merkur, der Planet der Kommunikation, prägt unsere Denkweise und Ausdruckskraft, während Venus, der Planet der Liebe, uns in den Bereichen Beziehungen, Ästhetik und Harmonie beeinflusst. Die äußeren Planeten wie Uranus, Neptun und Pluto stehen für kollektive, transformative Kräfte und symbolisieren größere Zyklen, die uns auf tiefere, oft unbewusste Weise prägen.</p>
+                    <p><strong>Die Position der Planeten zum Zeitpunkt unserer Geburt bildet eine Art energetischen Fingerabdruck, der uns ein Leben lang begleitet.</strong> Diese planetaren Energien interagieren miteinander und entfalten im Laufe der Zeit unterschiedliche Einflüsse, die sich in Lebensereignissen, inneren Wachstumsprozessen und Beziehungen widerspiegeln.</p>
                 </div>
             </div>
         </div>
-        
+
         <div id="modal-03" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-03').style.display='none';">&times;</span>
                 <img src="images/portfolio/6.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
                     <h5>Häuser im Horoskop</h5>
-                    <p>
-                        Die zwölf Häuser im Horoskop repräsentieren die verschiedenen Lebensbereiche, die unser Dasein prägen. Jedes Haus symbolisiert einen bestimmten Aspekt unseres Lebens: Das erste Haus betrifft das Selbst und die persönliche Identität, das vierte Haus steht für Zuhause und Familie, das zehnte für Karriere und öffentliches Ansehen. <strong>Die Häuser sind wie Fenster, durch die wir das Leben in all seinen Facetten erfahren.</strong>
-                    </p>
-                    <p>
-                        Planeten, die in bestimmten Häusern positioniert sind, beeinflussen stark, wie wir uns in diesen Lebensbereichen verhalten und welche Herausforderungen oder Geschenke uns dort begegnen. Ein starker Saturn im zweiten Haus könnte zu einem bewussten Umgang mit Finanzen führen, während ein prominenter Jupiter im neunten Haus die Lust auf Reisen und geistige Expansion verstärkt. Die Häuser ermöglichen es uns, zu erkennen, welche Lebensbereiche für uns von besonderer Bedeutung sind und wo unser größtes Wachstumspotenzial liegt.
-                    </p>
-                 
+                    <p>Die zwölf Häuser im Horoskop repräsentieren die verschiedenen Lebensbereiche, die unser Dasein prägen. Jedes Haus symbolisiert einen bestimmten Aspekt unseres Lebens: Das erste Haus betrifft das Selbst und die persönliche Identität, das vierte Haus steht für Zuhause und Familie, das zehnte für Karriere und öffentliches Ansehen. <strong>Die Häuser sind wie Fenster, durch die wir das Leben in all seinen Facetten erfahren.</strong></p>
+                    <p>Planeten, die in bestimmten Häusern positioniert sind, beeinflussen stark, wie wir uns in diesen Lebensbereichen verhalten und welche Herausforderungen oder Geschenke uns dort begegnen.</p>
                 </div>
             </div>
         </div>
-        
+
         <div id="modal-04" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-04').style.display='none';">&times;</span>
                 <img src="images/portfolio/3.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
                     <h5>Aspekte der Planeten</h5>
-                    <p>
-                        Die Aspekte der Planeten – die Winkelverhältnisse, die sie zueinander bilden – bringen Bewegung und Dynamik in unser Horoskop. Ein Trigon, ein harmonischer Winkel, zeigt unterstützende Einflüsse an, während ein Quadrat Spannungen und Herausforderungen symbolisiert. Diese Aspekte sind die feinen Verbindungen, die wie unsichtbare Fäden die Energien der Planeten verknüpfen und unsere inneren Entwicklungen steuern.
-                    </p>
-                    <p>
-                        <strong>Jeder Aspekt stellt eine Art kosmische Kommunikation dar, die uns Hinweise auf persönliche Konflikte, innere Kämpfe und auch unterstützende Kräfte gibt.</strong> Eine Opposition zwischen Mond und Venus könnte uns herausfordern, unsere Bedürfnisse in Beziehungen klar zu definieren, während ein Sextil zwischen Merkur und Mars eine scharfe Denkweise und schnellen Verstand symbolisiert.
-                    </p>
-               
+                    <p>Die Aspekte der Planeten – die Winkelverhältnisse, die sie zueinander bilden – bringen Bewegung und Dynamik in unser Horoskop. Ein Trigon, ein harmonischer Winkel, zeigt unterstützende Einflüsse an, während ein Quadrat Spannungen und Herausforderungen symbolisiert. Diese Aspekte sind die feinen Verbindungen, die wie unsichtbare Fäden die Energien der Planeten verknüpfen und unsere inneren Entwicklungen steuern.</p>
                 </div>
             </div>
         </div>
-        
-       
-        
-        <div id="modal-06" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/5.webp" style="width: 700px;" alt="">
-                <div class="modal-popup__desc">
-                    <h5>Nakshatras</h5>
-                    <p>
-                        Die 27 Nakshatras sind die mystischen Mondhäuser der vedischen Astrologie und bieten tiefe Einblicke in unsere emotionale und spirituelle Natur. Jedes Nakshatra trägt einzigartige Energien und offenbart uns spezifische Themen und Qualitäten. Die Nakshatras erzählen von unseren verborgenen Motiven, unseren emotionalen Reaktionen und spirituellen Bestrebungen. <strong>Sie sind wie kosmische Symbole, die uns die innere Landschaft unseres Bewusstseins näherbringen.</strong>
-                    </p>
-                    <p>
-                        Ein Nakshatra wie Ashwini steht für Energie und Heilung, während Shravana die Qualitäten des Zuhörens und Lernens betont. Jedes Nakshatra beeinflusst unsere Persönlichkeit auf subtiler Ebene und wirkt auf unsere Beziehungen, Karriere und spirituelle Entwicklung ein. Diese alten Mondhäuser spiegeln unsere tiefen Seelenverbindungen und spirituellen Absichten wider.
-                    </p>
-                  
-                </div>
-            </div>
-        </div>
+
         <div id="modal-05" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-05').style.display='none';">&times;</span>
                 <img src="images/portfolio/4.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
                     <h5>Planetenperioden</h5>
-                    <p>
-                        Die Planetenperioden, auch bekannt als Dashas in der vedischen Astrologie, markieren besondere Lebensphasen, die von den Energien eines bestimmten Planeten dominiert werden. Während dieser Perioden kann der Einfluss eines Planeten stark in den Vordergrund treten und unsere Lebensumstände und Entscheidungen beeinflussen. Eine Mars-Dasha könnte eine Phase der Entschlossenheit und des Willens sein, während eine Mond-Dasha uns einfühlsamer und emotional offener machen kann.
-                    </p>
-                    <p>
-                        <strong>Jede Planetenperiode bringt neue Herausforderungen und Wachstumsmöglichkeiten mit sich.</strong> Diese Phasen helfen uns, die Höhen und Tiefen des Lebens besser zu verstehen und anzunehmen. Die Dashas laden uns ein, mit den kosmischen Rhythmen zu fließen und die Energien der Planeten als Wegbegleiter auf unserer Lebensreise zu nutzen.
-                    </p>
-                  
+                    <p>Die Planetenperioden, auch bekannt als Dashas in der vedischen Astrologie, markieren besondere Lebensphasen, die von den Energien eines bestimmten Planeten dominiert werden. Während dieser Perioden kann der Einfluss eines Planeten stark in den Vordergrund treten und unsere Lebensumstände und Entscheidungen beeinflussen.</p>
                 </div>
             </div>
         </div>
-        
-    
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-06').style.display='none';">&times;</span>
+                <img src="images/portfolio/5.webp" style="width: 700px;" alt="">
+                <div class="modal-popup__desc">
+                    <h5>Nakshatras</h5>
+                    <p>Die 27 Nakshatras sind die mystischen Mondhäuser der vedischen Astrologie und bieten tiefe Einblicke in unsere emotionale und spirituelle Natur. Jedes Nakshatra trägt einzigartige Energien und offenbart uns spezifische Themen und Qualitäten.</p>
+                </div>
+            </div>
+        </div>
+
     </div> <!-- end works-portfolio -->
-    
 </section>
+
+
+
+
+
 
 <section>
     <div class="row testimonials">
@@ -759,51 +749,7 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
 
 
 
-        <style>
-            .modal {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                z-index: 1000;
-            }
-        
-            .modal-popup {
-                position: relative;
-                width: 80%;
-                max-width: 1500px;
-                margin: 10% auto;
-                background-color: #141516; /* Черный фон */
-                color: #ffffff; /* Белый текст */
-                padding: 20px;
-                border-radius: 8px;
-                border: 4px solid rgba(226, 168, 80, 0.35); /* Темно-золотая прозрачная рамка */
-            }
-        
-            .close {
-                position: absolute;
-                top: 10px;
-                right: 20px;
-                font-size: 24px;
-                color: #ffffff;
-                cursor: pointer;
-            }
-        
-            .modal-popup h2 {
-                font-family: 'DM Serif Display', serif;
-                font-size: 28px;
-                color: rgb(245, 207, 151);; /* Золотистый цвет для заголовков */
-                margin-bottom: 10px;
-            }
-        
-            .modal-popup p, .modal-popup ul {
-                font-family: 'Public Sans', sans-serif;
-                color: #ffffff; /* Белый текст */
-            }
-        </style>
+
         
  <section class="projects-section bg-warning-subtle" style="display: flex; justify-content: center; align-items: flex-start; padding: 5%;">
     <div class="container text-center" style="max-width: 900px;">
@@ -826,10 +772,10 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
         <section style="font-family: 'Public Sans', sans-serif; height: 400px; overflow-y: auto; padding: 20px;">
             <p><em>(auf Deutsch: Avakhada-Rad)</em> — ein faszinierendes Konzept in der vedischen Astrologie, das tief in die Beziehungen zwischen Menschen und ihren Namen eintaucht. Dieses Chakra wird verwendet, um potenzielle Freunde und Feinde eines Individuums anhand seines Namens zu identifizieren.</p>
             
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Bedeutung und Zweck</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Bedeutung und Zweck</h3>
             <p>Das Avakhada Chakra, auch bekannt als <strong>Vair Chakra</strong>, wird verwendet, um zwischen positiven und negativen Beziehungen in einem Leben zu unterscheiden. Es liefert einen symbolischen „Kompass“, der zeigt, welche Menschen unterstützend wirken und welche potenziell konfliktreich sein könnten.</p>
             
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Wie es funktioniert</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Wie es funktioniert</h3>
             <p>Dieses System ordnet Buchstaben des Namens bestimmten Kategorien zu, die als <em>Vargas</em> bezeichnet werden. Die Beziehung zwischen diesen Vargas wird genutzt, um Freundschaften oder Feindschaften zu identifizieren.</p>
             <ul style="margin: 10px 0 10px 20px;">
                 <li><strong>5. Varga:</strong> gilt als Feind.</li>
@@ -837,7 +783,7 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
                 <li><strong>3. Varga:</strong> gilt als neutral.</li>
             </ul>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Anwendung in der Praxis</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Anwendung in der Praxis</h3>
             <p>Astrologen verwenden das Avakhada Chakra, um Beziehungen und soziale Dynamiken zu analysieren und tiefere Einblicke in zwischenmenschliche Interaktionen zu gewinnen. Es bietet eine spirituelle Perspektive auf die Art und Weise, wie Menschen durch ihre Namen miteinander verbunden sind.</p>
 
             <p style="margin-top: 20px;">Das Avakhada Chakra ist ein mächtiges Werkzeug, das eine einzigartige Weisheit über die Dynamik zwischenmenschlicher Beziehungen basierend auf alten vedischen Prinzipien enthüllt.</p>
@@ -852,7 +798,7 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
         <section style="font-family: 'Public Sans', sans-serif; height: 400px; overflow-y: auto; padding: 20px;">
             <p>In der vedischen Astrologie spielen Planeten (<em>Grahas</em>) eine essenzielle Rolle und spiegeln die Energien wider, die unsere Schicksale formen. Jeder Planet ist Träger einzigartiger Qualitäten und symbolisiert besondere Bereiche des Lebens.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Die sieben wichtigsten Planeten</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Die sieben wichtigsten Planeten</h3>
             <ul style="margin: 10px 0 10px 20px;">
                 <li><strong>Die Sonne (Surya):</strong> Verkörpert das Selbst, Vitalität und Führungsqualitäten.</li>
                 <li><strong>Der Mond (Chandra):</strong> Steht für Emotionen, Intuition und inneren Frieden.</li>
@@ -863,7 +809,7 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
                 <li><strong>Saturn (Shani):</strong> Steht für Disziplin, Geduld und das Gesetz des Karmas.</li>
             </ul>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Einfluss der Planeten auf das Leben</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Einfluss der Planeten auf das Leben</h3>
             <p>Die Position und Bewegung der Planeten zum Zeitpunkt unserer Geburt erzeugen einen individuellen „kosmischen Fingerabdruck“. Dieser beeinflusst unsere Persönlichkeit und das Schicksal in verschiedenen Lebensbereichen.</p>
             <p>Vedische Astrologen glauben, dass die Planeten in bestimmten Zeiten stärker wirken. Diese Phasen, bekannt als <strong>Dasha</strong> (Planetenperioden), bringen je nach planetarem Einfluss spezifische Herausforderungen und Möglichkeiten.</p>
 
@@ -879,13 +825,13 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
         <section style="font-family: 'Public Sans', sans-serif; height: 400px; overflow-y: auto; padding: 20px;">
             <p>In der vedischen Astrologie sind die <strong>Nakshatras</strong> die mystischen Mondhäuser, die das Verhalten und die Persönlichkeit eines Menschen tief beeinflussen. Diese 27 Stationen sind wie ein kosmischer Pfad, der die Reisen des Mondes symbolisiert und tiefe Einsichten in die Emotionen, Bestrebungen und das spirituelle Wesen eines Individuums bietet.</p>
             
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Die Bedeutung der Nakshatras</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Die Bedeutung der Nakshatras</h3>
             <p>Jede Nakshatra hat ihre eigene Energie und ihr eigenes Thema, das einzigartig auf die Persönlichkeit und den Lebensweg eines Menschen wirkt. Einige Nakshatras betonen Heilung und Energie (wie <strong>Ashwini</strong>), während andere die innere Weisheit und das Zuhören fördern (wie <strong>Shravana</strong>).</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Einflüsse der Nakshatras</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Einflüsse der Nakshatras</h3>
             <p>Die Nakshatra des Mondes bei der Geburt eines Menschen beeinflusst das emotionale Profil, die Herangehensweise an Beziehungen und die spirituellen Neigungen. Jede Nakshatra ist mit bestimmten Devas (Göttern) verbunden, die die Energie dieses Mondhauses repräsentieren und seine Einflüsse verstärken.</p>
             
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Spirituelle Bedeutung</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Spirituelle Bedeutung</h3>
             <p>Nakshatras werden oft als die „Sterne des Schicksals“ betrachtet und bieten eine Verbindung zwischen dem kosmischen Bewusstsein und der menschlichen Seele. Sie helfen den Menschen, tiefer in ihre seelischen und spirituellen Anliegen einzutauchen.</p>
 
             <p style="margin-top: 20px;">Nakshatras bieten eine einzigartige Perspektive auf die spirituelle Reise und fördern das Verständnis der tiefen Verbindungen zwischen dem Universum und dem menschlichen Bewusstsein.</p>
@@ -900,13 +846,13 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
         <section style="font-family: 'Public Sans', sans-serif; height: 400px; overflow-y: auto; padding: 20px;">
             <p>Das <strong>Ghat Chakra</strong> ist ein bedeutendes Werkzeug in der vedischen Astrologie, das dazu dient, externe Einflüsse auf das Leben eines Menschen zu analysieren und Schutzmaßnahmen vor negativen Energien zu empfehlen. Es ist eine Art energetisches Schutzschild, das uns hilft, Harmonie und Balance zu bewahren.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Bedeutung und Zweck</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Bedeutung und Zweck</h3>
             <p>Das Ghat Chakra wird oft verwendet, um herauszufinden, wie bestimmte Einflüsse (wie Planetenkonstellationen und das Verhalten anderer Menschen) unsere emotionale und physische Stabilität beeinflussen können. Dieses Chakra bietet wertvolle Einblicke und Praktiken zur Stärkung des individuellen Schutzes.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Anwendung des Ghat Chakra</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Anwendung des Ghat Chakra</h3>
             <p>Astrologen analysieren das Ghat Chakra, um geeignete Schutzmaßnahmen zu empfehlen, einschließlich Meditation, Mantras und Yantras. Diese Praktiken können helfen, negative Energien zu neutralisieren und das Wohlbefinden zu stärken.</p>
             
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Verbindung zur spirituellen Energie</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Verbindung zur spirituellen Energie</h3>
             <p>Indem das Ghat Chakra den Fokus auf die inneren und äußeren Kräfte lenkt, bietet es eine tiefere Verbindung zur eigenen spirituellen Energie und zur kosmischen Harmonie.</p>
 
             <p style="margin-top: 20px;">Das Ghat Chakra ist ein wertvolles Instrument zur Bewahrung des Gleichgewichts und zur Schaffung eines friedlichen, geschützten Lebensumfelds.</p>
@@ -924,13 +870,13 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
         <section style="font-family: 'Public Sans', sans-serif; height: 400px; overflow-y: auto; padding: 20px;">
             <p>Das <strong>Lagna Chart</strong>, auch bekannt als Aszendenten-Diagramm, ist ein zentrales Werkzeug der vedischen Astrologie, das die Persönlichkeit, das Verhalten und den Lebensweg einer Person beschreibt. Durch die Analyse des Lagna, also des Aszendenten, können Astrologen tiefere Einblicke in die einzigartigen Eigenschaften und Potenziale eines Menschen gewinnen.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Was ist der Lagna?</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Was ist der Lagna?</h3>
             <p>Der Lagna ist das Zeichen, das zum Zeitpunkt der Geburt im Osten aufsteigt. Es bestimmt den ersten Eindruck, den eine Person auf andere macht, sowie die grundlegende Lebensausrichtung und Persönlichkeit. Das Lagna Chart zeigt auch die „Häuser“ der verschiedenen Lebensbereiche, von Beziehungen bis zu Karriere.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Wichtigkeit des Lagna Chart</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Wichtigkeit des Lagna Chart</h3>
             <p>Das Lagna Chart bietet einen einzigartigen Blick auf das Selbst und ist ein Schlüsselelement zur Vorhersage des Lebensverlaufs, einschließlich wichtiger Ereignisse und Herausforderungen. Es wird als „Seelenspiegel“ betrachtet, der zeigt, welche Einflüsse das Leben prägen und welche inneren Ressourcen zur Verfügung stehen.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Spirituelle Perspektive</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Spirituelle Perspektive</h3>
             <p>Das Lagna Chart verbindet das äußere Verhalten eines Menschen mit seinem inneren Selbst. Es stellt eine Brücke zwischen der physischen und der spirituellen Welt dar und hilft, die karmische Reise und die spirituelle Entwicklung zu verstehen.</p>
 
             <p style="margin-top: 20px;">Durch das Lagna Chart entdecken wir unsere wahre Essenz und verstehen den Weg, den unsere Seele im Laufe des Lebens beschreiten möchte.</p>
@@ -947,13 +893,13 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
         <section style="font-family: 'Public Sans', sans-serif; height: 400px; overflow-y: auto; padding: 20px;">
             <p>Das System der <strong>Vinshottari Antar Dashas</strong> ist eine der detailliertesten Methoden in der vedischen Astrologie, um den Einfluss der Planeten auf verschiedene Lebensphasen zu analysieren. Diese Dashas teilen das Leben in Abschnitte, die jeweils unter dem Einfluss eines bestimmten Planeten stehen und das Schicksal in vielfältiger Weise prägen.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Was sind Antar Dashas?</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Was sind Antar Dashas?</h3>
             <p>Die Antar Dashas sind Unterphasen innerhalb eines größeren planetaren Zeitabschnitts (Mahadasha). Sie bieten eine präzisere Einsicht in kurzfristige Ereignisse und Veränderungen, die durch die aktuelle planetare Energie beeinflusst werden.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Einfluss der Vinshottari Antar Dashas</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Einfluss der Vinshottari Antar Dashas</h3>
             <p>Die verschiedenen Phasen der Antar Dashas wirken sich auf Bereiche wie Karriere, Beziehungen, Gesundheit und spirituelle Entwicklung aus. Zum Beispiel könnte die Antar Dasha des Mars eine Zeit der Energie und Durchsetzungskraft bringen, während die des Mondes Sensibilität und emotionale Tiefe verstärken kann.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Spirituelle Bedeutung</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Spirituelle Bedeutung</h3>
             <p>Die Vinshottari Antar Dashas bieten eine tiefere spirituelle Perspektive auf die Lebensreise. Jede Phase wird als eine Möglichkeit zur Entwicklung betrachtet und bringt einzigartige Lektionen und Herausforderungen mit sich.</p>
 
             <p style="margin-top: 20px;">Das Wissen um die Vinshottari Antar Dashas erlaubt es uns, besser auf die Rhythmen des Lebens einzugehen und die Weisheit der Planetenzyklen zu nutzen.</p>
@@ -969,13 +915,13 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
         <section style="font-family: 'Public Sans', sans-serif; height: 400px; overflow-y: auto; padding: 20px;">
             <p>Das <strong>Navamsha Chart</strong>, auch als <strong>D-9 Chart</strong> bekannt, ist eines der bedeutendsten Diagramme in der vedischen Astrologie und gilt als das „Seelen-Diagramm“. Es zeigt das verborgene Potenzial und die karmischen Lektionen eines Individuums und vertieft das Verständnis über den Lebensweg.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Wichtigkeit des Navamsha Chart</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Wichtigkeit des Navamsha Chart</h3>
             <p>Das D-9 Chart wird oft genutzt, um die wahre Stärke und das spirituelle Potenzial eines Menschen zu enthüllen. Es zeigt, wie die verschiedenen Planeten im Leben eines Menschen zusammenarbeiten und wie diese Energien im Laufe der Zeit reifen und sich entwickeln.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Verbindung zur Ehe und Beziehungen</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Verbindung zur Ehe und Beziehungen</h3>
             <p>Navamsha spielt auch eine wichtige Rolle bei der Analyse der Ehe und der langfristigen Partnerschaften. Es offenbart, wie sich die Beziehungen eines Menschen entwickeln und welche Herausforderungen oder Segnungen er in Bezug auf Partnerschaften erleben könnte.</p>
 
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: hsla(51, 30%, 30%, 1); margin-top: 15px;">Spirituelle und karmische Dimension</h3>
+            <h3 style="font-family: 'DM Serif Display', serif; font-size: 22px; color: rgb(255, 255, 255); margin-top: 15px;">Spirituelle und karmische Dimension</h3>
             <p>Das Navamsha Chart beleuchtet die karmischen Verbindungen und die spirituellen Lektionen, die ein Individuum in diesem Leben erleben soll. Es bietet tiefere Einblicke in die inneren Motivationen und zeigt, wie man seine Seele in Einklang mit dem kosmischen Bewusstsein bringt.</p>
 
             <p style="margin-top: 20px;">Das Navamsha Chart ist der Schlüssel zu den verborgensten Aspekten der Persönlichkeit und bietet eine Reise in das tiefste Selbst.</p>
@@ -1170,48 +1116,87 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
    
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-<script>
-    // Открытие модального окна
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-}
-
-// Закрытие модального окна
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-
-// Обработчик кликов на кнопках
-document.querySelectorAll('.btn[data-modal]').forEach(button => {
-    button.addEventListener('click', function(event) {
-        event.preventDefault();
-        const modalId = this.getAttribute('data-modal');
-        openModal(modalId);
-    });
-});
-
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const modalButtons = document.querySelectorAll('[data-modal]');
-
-        modalButtons.forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault(); // Предотвращаем переход по ссылке
-                const modalId = button.getAttribute('data-modal');
-                openModal(modalId);
+    <script>
+        // Функция для открытия модального окна
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "block";
+            }
+        }
+    
+        // Функция для закрытия модального окна
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            // Навешиваем событие для всех ссылок с атрибутом data-modal
+            document.querySelectorAll('[data-modal]').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Предотвращаем переход по ссылке
+                    const modalId = this.getAttribute('data-modal'); // Получаем значение data-modal
+                    openModal(modalId); // Открываем модальное окно с соответствующим ID
+                });
+            });
+    
+            // Закрытие модального окна при клике вне его области
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.addEventListener('click', function(event) {
+                    if (!event.target.closest('.modal-popup')) {
+                        closeModal(modal.id); // Закрываем модальное окно
+                    }
+                });
             });
         });
-    });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentModal = null; // Переменная для отслеживания открытого модального окна
+    
+            // Находим все ссылки с атрибутом data-modal
+            document.querySelectorAll('.folio-list__item-link').forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+    
+                    // Определяем ID модального окна, которое нужно открыть
+                    const modalId = link.getAttribute('data-modal');
+                    const modal = document.getElementById(modalId);
+    
+                    // Закрываем текущее модальное окно, если оно открыто
+                    if (currentModal && currentModal !== modal) {
+                        currentModal.style.display = 'none';
+                    }
+    
+                    // Открываем новое модальное окно
+                    modal.style.display = 'block';
+                    currentModal = modal; // Обновляем текущее модальное окно
+    
+                    // Закрытие модального окна при клике на "X"
+                    modal.querySelector('.close').onclick = () => {
+                        modal.style.display = 'none';
+                        currentModal = null; // Сбрасываем текущее модальное окно
+                    };
+                });
+            });
+    
+            // Закрытие модального окна при клике вне окна
+            window.addEventListener('click', (event) => {
+                if (currentModal && event.target === currentModal) {
+                    currentModal.style.display = 'none';
+                    currentModal = null; // Сбрасываем текущее модальное окно
+                }
+            });
+        });
+    </script>
+    
+    
+    
 
-    function openModal(modalId) {
-        document.getElementById(modalId).style.display = 'block';
-    }
 
-    function closeModal(modalId) {
-        document.getElementById(modalId).style.display = 'none';
-    }
-</script>
    
 </body>
 </html>
