@@ -162,13 +162,14 @@
    </div>
 </section>
 
+
 <section>                
     <div class="row about-expertise" data-animate-block>
      <div class="column lg-12">
          <h2 class="text-pretitle" data-animate-el>Die Vorteile der vedischen Astrologie</h2>
          <ul class="skills-list h1" data-animate-el>
              <li>Tradition trifft Moderne</li>
-             <li>Klarheit und Balance</li>
+            
              <li>Weisheit im Alltag</li>
              <li>Sie bietet praktische Lösungen</li>
              <li>die einfach anwendbar sind.</li>
@@ -255,264 +256,260 @@
              <br>
              <br>
              <br>
-             <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-                <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                    <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                        <a href="#" title="static background">
-                            <img src="images/portfolio/53_result.webp" alt="" style="width: 100%; height: 100%;">
-                            <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
-                                <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Kosmische Verbindungen</div>
-                                <div class="folio-list__item-title">Die Magie der planetaren Aspekte</div>
-                            </div>
-                        </a>
+             <section>
+                <div class="responsive-row">
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Sternzeichen und Häuser">
+                                <img src="images/portfolio/53_result.webp" alt="">
+                                <div class="entry__info">
+                                    <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Kosmische Verbindungen</div>
+                                    <div class="folio-list__item-title">Die Magie der planetaren Aspekte</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                    <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                        <a href="#" title="static background">
-                            <img src="images/portfolio/223344_result.webp" alt="" style="width: 100%; height: 100%;">
-                            <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
-                                <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Astrologische Häuser</div>
-                                <div class="folio-list__item-title">Einblicke in Schicksal und Lebensweg</div>
-                            </div>
-                        </a>
+            
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Nakshatras">
+                                <img src="images/portfolio/223344_result.webp" alt="">
+                                <div class="entry__info">
+                                    <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Astrologische Häuser</div>
+                                    <div class="folio-list__item-title">Einblicke in Schicksal und Lebensweg</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                    <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                        <a href="#" title="static background">
-                            <img src="images/portfolio/48_result.webp" alt="" style="width: 100%; height: 100%;">
-                            <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
-                                <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Mondhäuser</div>
-                                <div class="folio-list__item-title">Die Rolle der Nakshatras in der Liebe</div>
-                            </div>
-                        </a>
+            
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Zeitzyklen der Planeten">
+                                <img src="images/portfolio/48_result.webp" alt="">
+                                <div class="entry__info">
+                                    <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Mondhäuser</div>
+                                    <div class="folio-list__item-title">Die Rolle der Nakshatras in der Liebe</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+           
+                    
                 </div>
-        
-             
-            </div>
+            </section>
+          
             <br>
-<section id="works" class="s-works target-section">
+<style>
+    .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* затемнённый фон */
+    z-index: 2000; /* Повышенный z-index */
+}
+
+.modal-popup {
+    position: relative;
+    width: 80%;
+    max-width: 1500px;
+    margin: 10% auto;
+    background-color: hsla(168, 62%, 16%, 1); /* Черный фон */
+    color: #ffffff; /* Белый текст */
+    padding: 20px;
+    border-radius: 8px;
+    border: 4px solid rgba(226, 168, 80, 0.35); /* Темно-золотая прозрачная рамка */
+    z-index: 3000; /* Еще более высокий z-index */
+    
+}
+.modal-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-popup img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px; /* Добавлен отступ в 20px снизу */
+    display: block;
+    border-radius: 30px;
+}
+
+
+</style>
+<section id="works" class="s-works target-section ">
     <div class="row works-portfolio">
 
         <div class="column lg-12" data-animate-block>
-    
+
             <h2 class="text-pretitle" data-animate-el>
                 Astrologische Elemente
             </h2>
             <p class="h1" data-animate-el>
                 Die folgenden sechs Elemente ermöglichen tiefgehende Einblicke in das Leben und die Persönlichkeit.
             </p>
-    
+
             <ul class="folio-list row block-lg-one-half st block-stack-on-1000">
-    
-        
-    
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-02">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-02">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/2.webp" srcset="images/portfolio/2.webp 1x, images/portfolio/2.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Planeten
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die Einflüsse der Himmelskörper auf das Leben.
-                            </div>
+                            <div class="folio-list__item-cat">Planeten</div>
+                            <div class="folio-list__item-title">Die Einflüsse der Himmelskörper auf das Leben.</div>
                         </div>
                     </a>
                 </li>
-    
-       
-    
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-05">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-05">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/4.webp" srcset="images/portfolio/4.webp 1x, images/portfolio/4.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Planetenperioden
-                            </div>
-                            <div class="folio-list__item-title">
-                                Zeitabschnitte, in denen Planeten bestimmte Einflüsse ausüben.
-                            </div>
+                            <div class="folio-list__item-cat">Planetenperioden</div>
+                            <div class="folio-list__item-title">Zeitabschnitte, in denen Planeten bestimmte Einflüsse ausüben.</div>
                         </div>
                     </a>
                 </li>
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-01">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-01">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/1.webp" srcset="images/portfolio/1.webp 1x, images/portfolio/1.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Zeichen des Tierkreises
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die zwölf Sternzeichen und ihre einzigartigen Merkmale.
-                            </div>
+                            <div class="folio-list__item-cat">Zeichen des Tierkreises</div>
+                            <div class="folio-list__item-title">Die zwölf Sternzeichen und ihre einzigartigen Merkmale.</div>
                         </div>
                     </a>
                 </li>
-    
-         
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-04">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-04">
                         <div class="folio-list__item-pic">
                             <img src="images/portfolio/3.webp" srcset="images/portfolio/3.webp 1x, images/portfolio/3.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Aspekte der Planeten
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die Beziehungen zwischen den Planeten und ihre Bedeutungen.
-                            </div>
+                            <div class="folio-list__item-cat">Aspekte der Planeten</div>
+                            <div class="folio-list__item-title">Die Beziehungen zwischen den Planeten und ihre Bedeutungen.</div>
                         </div>
                     </a>
                 </li>
-    
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-06">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-06">
                         <div class="folio-list__item-pic">
-                            <img src="images/portfolio/5.webp" srcset="iimages/portfolio/5.webp 1x, images/portfolio/5.webp 2x" alt="">
+                            <img src="images/portfolio/5.webp" srcset="images/portfolio/5.webp 1x, images/portfolio/5.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Nakshatras
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die 27 Mondstationen der vedischen Astrologie und ihre Einflüsse.
-                            </div>
+                            <div class="folio-list__item-cat">Nakshatras</div>
+                            <div class="folio-list__item-title">Die 27 Mondstationen der vedischen Astrologie und ihre Einflüsse.</div>
                         </div>
                     </a>
                 </li>
+
                 <li class="folio-list__item column" data-animate-el>
-                    <a class="folio-list__item-link" href="#modal-03">
+                    <a class="folio-list__item-link" href="#" data-modal="modal-03">
                         <div class="folio-list__item-pic">
-                            <img src="images/portfolio/6.webp" srcset="iimages/portfolio/6.webp 1x, images/portfolio/6.webp 2x" alt="">
+                            <img src="images/portfolio/6.webp" srcset="images/portfolio/6.webp 1x, images/portfolio/6.webp 2x" alt="">
                         </div>
                         <div class="folio-list__item-text">
-                            <div class="folio-list__item-cat">
-                                Häuser im Horoskop
-                            </div>
-                            <div class="folio-list__item-title">
-                                Die verschiedenen Aspekte des Lebens werden beleuchtet.
-                            </div>
+                            <div class="folio-list__item-cat">Häuser im Horoskop</div>
+                            <div class="folio-list__item-title">Die verschiedenen Aspekte des Lebens werden beleuchtet.</div>
                         </div>
                     </a>
                 </li>
             </ul> <!-- end folio-list -->
-    
+
         </div> <!-- end column -->
-    
+
         <!-- Modal Templates Popup -->
         <div id="modal-01" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-01').style.display='none';">&times;</span>
                 <img src="images/portfolio/1.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5>Zeichen des Tierkreises</h5>
-                    <p>
-                        Die zwölf Sternzeichen sind viel mehr als bloße astrologische Symbole – sie verkörpern verschiedene Dimensionen menschlicher Erfahrungen und Lebensansätze. Jedes Zeichen, vom feurigen Widder bis zum mystischen Fische, ist einzigartig in seiner Energie, seinen Stärken und Herausforderungen. Die Sternzeichen wirken wie ein Spiegel, der uns unsere inneren Motivationen, Charakterzüge und Verhaltensmuster zeigt. <strong>Sie offenbaren uns, wer wir im Kern sind und was uns antreibt.</strong>
-                    </p>
-                    <p>
-                        In der Astrologie hat jedes Zeichen eine tiefe Verbindung zu bestimmten Planeten, Elementen und Qualitäten, die unseren Lebensweg beeinflussen. Der Löwe, geführt von der Sonne, steht für Selbstbewusstsein und Ausdruck; die Waage, geprägt von der Venus, repräsentiert Harmonie und Ästhetik. Indem wir unser Sternzeichen verstehen, können wir auch besser verstehen, welche Stärken und Herausforderungen uns im Leben begleiten und welche Lebensthemen immer wieder in den Vordergrund treten.
-                    </p>
-               
+                    <h5 style="color: #ffeb3b;">Zeichen des Tierkreises</h5>
+                    <p>Die zwölf Sternzeichen sind viel mehr als bloße astrologische Symbole – sie verkörpern verschiedene Dimensionen menschlicher Erfahrungen und Lebensansätze. Jedes Zeichen, vom feurigen Widder bis zum mystischen Fische, ist einzigartig in seiner Energie, seinen Stärken und Herausforderungen. Die Sternzeichen wirken wie ein Spiegel, der uns unsere inneren Motivationen, Charakterzüge und Verhaltensmuster zeigt. <strong>Sie offenbaren uns, wer wir im Kern sind und was uns antreibt.</strong></p>
+                    <p>In der Astrologie hat jedes Zeichen eine tiefe Verbindung zu bestimmten Planeten, Elementen und Qualitäten, die unseren Lebensweg beeinflussen. Der Löwe, geführt von der Sonne, steht für Selbstbewusstsein und Ausdruck; die Waage, geprägt von der Venus, repräsentiert Harmonie und Ästhetik. Indem wir unser Sternzeichen verstehen, können wir auch besser verstehen, welche Stärken und Herausforderungen uns im Leben begleiten und welche Lebensthemen immer wieder in den Vordergrund treten.</p>
                 </div>
             </div>
         </div>
-        
+
         <div id="modal-02" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-02').style.display='none';">&times;</span>
                 <img src="images/portfolio/2.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5>Planeten</h5>
-                    <p>
-                        Die Planeten sind die kraftvollen Akteure in der Astrologie, die unseren Alltag, unsere Persönlichkeit und unsere Lebenserfahrungen tief beeinflussen. Jeder Planet trägt eine besondere Energie und symbolisiert bestimmte Lebensprinzipien. Merkur, der Planet der Kommunikation, prägt unsere Denkweise und Ausdruckskraft, während Venus, der Planet der Liebe, uns in den Bereichen Beziehungen, Ästhetik und Harmonie beeinflusst. Die äußeren Planeten wie Uranus, Neptun und Pluto stehen für kollektive, transformative Kräfte und symbolisieren größere Zyklen, die uns auf tiefere, oft unbewusste Weise prägen.
-                    </p>
-                    <p>
-                        <strong>Die Position der Planeten zum Zeitpunkt unserer Geburt bildet eine Art energetischen Fingerabdruck, der uns ein Leben lang begleitet.</strong> Diese planetaren Energien interagieren miteinander und entfalten im Laufe der Zeit unterschiedliche Einflüsse, die sich in Lebensereignissen, inneren Wachstumsprozessen und Beziehungen widerspiegeln. Wenn Mars zum Beispiel stark in unserem Horoskop steht, erleben wir möglicherweise viel Tatendrang und Entschlossenheit, während eine starke Mondpräsenz Sensibilität und Empathie verstärken kann.
-                    </p>
-                 
+                    <h5 style="color: #ffeb3b;">Planeten</h5>
+                    <p>Die Planeten sind die kraftvollen Akteure in der Astrologie, die unseren Alltag, unsere Persönlichkeit und unsere Lebenserfahrungen tief beeinflussen. Jeder Planet trägt eine besondere Energie und symbolisiert bestimmte Lebensprinzipien. Merkur, der Planet der Kommunikation, prägt unsere Denkweise und Ausdruckskraft, während Venus, der Planet der Liebe, uns in den Bereichen Beziehungen, Ästhetik und Harmonie beeinflusst. Die äußeren Planeten wie Uranus, Neptun und Pluto stehen für kollektive, transformative Kräfte und symbolisieren größere Zyklen, die uns auf tiefere, oft unbewusste Weise prägen.</p>
+                    <p><strong>Die Position der Planeten zum Zeitpunkt unserer Geburt bildet eine Art energetischen Fingerabdruck, der uns ein Leben lang begleitet.</strong> Diese planetaren Energien interagieren miteinander und entfalten im Laufe der Zeit unterschiedliche Einflüsse, die sich in Lebensereignissen, inneren Wachstumsprozessen und Beziehungen widerspiegeln.</p>
                 </div>
             </div>
         </div>
-        
+
         <div id="modal-03" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-03').style.display='none';">&times;</span>
                 <img src="images/portfolio/6.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5>Häuser im Horoskop</h5>
-                    <p>
-                        Die zwölf Häuser im Horoskop repräsentieren die verschiedenen Lebensbereiche, die unser Dasein prägen. Jedes Haus symbolisiert einen bestimmten Aspekt unseres Lebens: Das erste Haus betrifft das Selbst und die persönliche Identität, das vierte Haus steht für Zuhause und Familie, das zehnte für Karriere und öffentliches Ansehen. <strong>Die Häuser sind wie Fenster, durch die wir das Leben in all seinen Facetten erfahren.</strong>
-                    </p>
-                    <p>
-                        Planeten, die in bestimmten Häusern positioniert sind, beeinflussen stark, wie wir uns in diesen Lebensbereichen verhalten und welche Herausforderungen oder Geschenke uns dort begegnen. Ein starker Saturn im zweiten Haus könnte zu einem bewussten Umgang mit Finanzen führen, während ein prominenter Jupiter im neunten Haus die Lust auf Reisen und geistige Expansion verstärkt. Die Häuser ermöglichen es uns, zu erkennen, welche Lebensbereiche für uns von besonderer Bedeutung sind und wo unser größtes Wachstumspotenzial liegt.
-                    </p>
-                 
+                    <h5 style="color: #ffeb3b;">Häuser im Horoskop</h5>
+                    <p>Die zwölf Häuser im Horoskop repräsentieren die verschiedenen Lebensbereiche, die unser Dasein prägen. Jedes Haus symbolisiert einen bestimmten Aspekt unseres Lebens: Das erste Haus betrifft das Selbst und die persönliche Identität, das vierte Haus steht für Zuhause und Familie, das zehnte für Karriere und öffentliches Ansehen. <strong>Die Häuser sind wie Fenster, durch die wir das Leben in all seinen Facetten erfahren.</strong></p>
+                    <p>Planeten, die in bestimmten Häusern positioniert sind, beeinflussen stark, wie wir uns in diesen Lebensbereichen verhalten und welche Herausforderungen oder Geschenke uns dort begegnen.</p>
                 </div>
             </div>
         </div>
-        
+
         <div id="modal-04" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-04').style.display='none';">&times;</span>
                 <img src="images/portfolio/3.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5>Aspekte der Planeten</h5>
-                    <p>
-                        Die Aspekte der Planeten – die Winkelverhältnisse, die sie zueinander bilden – bringen Bewegung und Dynamik in unser Horoskop. Ein Trigon, ein harmonischer Winkel, zeigt unterstützende Einflüsse an, während ein Quadrat Spannungen und Herausforderungen symbolisiert. Diese Aspekte sind die feinen Verbindungen, die wie unsichtbare Fäden die Energien der Planeten verknüpfen und unsere inneren Entwicklungen steuern.
-                    </p>
-                    <p>
-                        <strong>Jeder Aspekt stellt eine Art kosmische Kommunikation dar, die uns Hinweise auf persönliche Konflikte, innere Kämpfe und auch unterstützende Kräfte gibt.</strong> Eine Opposition zwischen Mond und Venus könnte uns herausfordern, unsere Bedürfnisse in Beziehungen klar zu definieren, während ein Sextil zwischen Merkur und Mars eine scharfe Denkweise und schnellen Verstand symbolisiert.
-                    </p>
-               
+                    <h5 style="color: #ffeb3b;">Aspekte der Planeten</h5>
+                    <p>Die Aspekte der Planeten – die Winkelverhältnisse, die sie zueinander bilden – bringen Bewegung und Dynamik in unser Horoskop. Ein Trigon, ein harmonischer Winkel, zeigt unterstützende Einflüsse an, während ein Quadrat Spannungen und Herausforderungen symbolisiert. Diese Aspekte sind die feinen Verbindungen, die wie unsichtbare Fäden die Energien der Planeten verknüpfen und unsere inneren Entwicklungen steuern.</p>
                 </div>
             </div>
         </div>
-        
-       
-        
-        <div id="modal-06" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/5.webp" style="width: 700px;" alt="">
-                <div class="modal-popup__desc">
-                    <h5>Nakshatras</h5>
-                    <p>
-                        Die 27 Nakshatras sind die mystischen Mondhäuser der vedischen Astrologie und bieten tiefe Einblicke in unsere emotionale und spirituelle Natur. Jedes Nakshatra trägt einzigartige Energien und offenbart uns spezifische Themen und Qualitäten. Die Nakshatras erzählen von unseren verborgenen Motiven, unseren emotionalen Reaktionen und spirituellen Bestrebungen. <strong>Sie sind wie kosmische Symbole, die uns die innere Landschaft unseres Bewusstseins näherbringen.</strong>
-                    </p>
-                    <p>
-                        Ein Nakshatra wie Ashwini steht für Energie und Heilung, während Shravana die Qualitäten des Zuhörens und Lernens betont. Jedes Nakshatra beeinflusst unsere Persönlichkeit auf subtiler Ebene und wirkt auf unsere Beziehungen, Karriere und spirituelle Entwicklung ein. Diese alten Mondhäuser spiegeln unsere tiefen Seelenverbindungen und spirituellen Absichten wider.
-                    </p>
-                  
-                </div>
-            </div>
-        </div>
+
         <div id="modal-05" hidden>
             <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-05').style.display='none';">&times;</span>
                 <img src="images/portfolio/4.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5>Planetenperioden</h5>
-                    <p>
-                        Die Planetenperioden, auch bekannt als Dashas in der vedischen Astrologie, markieren besondere Lebensphasen, die von den Energien eines bestimmten Planeten dominiert werden. Während dieser Perioden kann der Einfluss eines Planeten stark in den Vordergrund treten und unsere Lebensumstände und Entscheidungen beeinflussen. Eine Mars-Dasha könnte eine Phase der Entschlossenheit und des Willens sein, während eine Mond-Dasha uns einfühlsamer und emotional offener machen kann.
-                    </p>
-                    <p>
-                        <strong>Jede Planetenperiode bringt neue Herausforderungen und Wachstumsmöglichkeiten mit sich.</strong> Diese Phasen helfen uns, die Höhen und Tiefen des Lebens besser zu verstehen und anzunehmen. Die Dashas laden uns ein, mit den kosmischen Rhythmen zu fließen und die Energien der Planeten als Wegbegleiter auf unserer Lebensreise zu nutzen.
-                    </p>
-                  
+                    <h5 style="color: #ffeb3b;">Planetenperioden</h5>
+                    <p>Die Planetenperioden, auch bekannt als Dashas in der vedischen Astrologie, markieren besondere Lebensphasen, die von den Energien eines bestimmten Planeten dominiert werden. Während dieser Perioden kann der Einfluss eines Planeten stark in den Vordergrund treten und unsere Lebensumstände und Entscheidungen beeinflussen.</p>
                 </div>
             </div>
         </div>
-        
-    
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <span class="close" onclick="document.getElementById('modal-06').style.display='none';">&times;</span>
+                <img src="images/portfolio/5.webp" style="width: 700px;" alt="">
+                <div class="modal-popup__desc">
+                    <h5 style="color: #ffeb3b;">Nakshatras</h5>
+                    <p>Die 27 Nakshatras sind die mystischen Mondhäuser der vedischen Astrologie und bieten tiefe Einblicke in unsere emotionale und spirituelle Natur. Jedes Nakshatra trägt einzigartige Energien und offenbart uns spezifische Themen und Qualitäten.</p>
+                </div>
+            </div>
+        </div>
+
     </div> <!-- end works-portfolio -->
-    
 </section>
 
-<section>
+
+
+
+
+
+<section >
     <div class="row testimonials">
         <div class="column lg-12" data-animate-block>
     
@@ -532,6 +529,7 @@
                             "Astrologie ist die Sprache des Universums. Wer sie versteht, kann die Geheimnisse des Lebens 
                             und der Zeit entschlüsseln."
                         </p>
+                     
                     </div> <!-- end testimonial-slider__slide -->
     
                     <div class="testimonial-slider__slide swiper-slide">
@@ -584,17 +582,64 @@
     
 
 </section> 
+<style>
+    section .responsive-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки для двух рядов по 3 элемента */
+   
+    max-width: 1200px; /* Центрирование и ограничение ширины */
+    margin: 0 auto; /* Центрируем на странице */
+}
 
+section .column.entry {
+    max-width: 100%; /* Ширина блока подстраивается под сетку */
+    box-sizing: border-box;
+}
+
+.entry__thumb {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.entry__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.entry__info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+/* Default styling for text */
+
+
+/* Hover effect for text color */
+.entry__thumb:hover .folio-list__item-cat,
+.entry__thumb:hover .folio-list__item-title {
+    color: #ebc183 /* change to gold on hover */
+}
+
+
+</style>
             <br>
             <br>
-            <section>
-                <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-                 
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/46_result.webp" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+            <section >
+                <div class="responsive-row">
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Sternenhäuser">
+                                <img src="images/portfolio/46_result.webp" alt="">
+                                <div class="entry__info">
                                     <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Sternenhäuser</div>
                                     <div class="folio-list__item-title">Einblicke in Lebensbereiche</div>
                                 </div>
@@ -602,11 +647,11 @@
                         </div>
                     </div>
             
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/45_result.webp" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Mystik der Sterne">
+                                <img src="images/portfolio/45_result.webp" alt="">
+                                <div class="entry__info">
                                     <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Mystik der Sterne</div>
                                     <div class="folio-list__item-title">Die Geheimnisse des Zodiaks</div>
                                 </div>
@@ -614,27 +659,29 @@
                         </div>
                     </div>
             
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/44_result.webp" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Planetenwege">
+                                <img src="images/portfolio/44_result.webp" alt="">
+                                <div class="entry__info">
                                     <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Planetenwege</div>
                                     <div class="folio-list__item-title">Kosmische Einflüsse verstehen</div>
                                 </div>
                             </a>
                         </div>
                     </div>
-
-
+           
+                    
                 </div>
-            
-                <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/49_result.webp" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+            </section>
+            <br>
+            <section >
+                <div class="responsive-row">
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Sternzeichen und Häuser">
+                                <img src="images/portfolio/49_result.webp" alt="">
+                                <div class="entry__info">
                                     <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Sternzeichen und Häuser</div>
                                     <div class="folio-list__item-title">Die Reise der Seele durch den Kosmos</div>
                                 </div>
@@ -642,11 +689,11 @@
                         </div>
                     </div>
             
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/222_result.webp" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Nakshatras">
+                                <img src="images/portfolio/222_result.webp" alt="">
+                                <div class="entry__info">
                                     <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Nakshatras</div>
                                     <div class="folio-list__item-title">Die 27 Mondhäuser in der Liebe</div>
                                 </div>
@@ -654,20 +701,26 @@
                         </div>
                     </div>
             
-                    <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                        <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                            <a href="#" title="static background">
-                                <img src="images/portfolio/1234567890_result.webp" alt="" style="width: 100%; height: 100%;">
-                                <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
+                    <div class="column entry">
+                        <div class="entry__thumb">
+                            <a href="#" title="Zeitzyklen der Planeten">
+                                <img src="images/portfolio/1234567890_result.webp" alt="">
+                                <div class="entry__info">
                                     <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Zeitzyklen der Planeten</div>
                                     <div class="folio-list__item-title">Phasen der Transformation</div>
                                 </div>
                             </a>
                         </div>
                     </div>
+           
+                    
                 </div>
             </section>
-               <br>
+
+            
+            <br>
+
+
                <br>    
                
 
@@ -684,126 +737,122 @@
               <div class="accordion mt-5" id="accordionAstrologyFAQ" style="color: #a1a1a2;">
           
                 <!-- Вопрос и ответ 1 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" style="font-weight: bold;">
-                    Kann Astrologie bei Problemen helfen?
-                  </h2>
-                  <br>
-                  <p>Ja, Astrologie kann dir bei Problemen helfen, indem sie neue Perspektiven und Lösungsansätze bietet. Wenn wir dein Horoskop analysieren, können wir spezifische Herausforderungen identifizieren und verstehen, wie sie mit deinen persönlichen Stärken und Schwächen zusammenhängen. Oft zeigt die Astrologie Muster auf, die im Alltag nicht sofort erkennbar sind.</p> <p>
-Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Strategien zu entwickeln, um mit schwierigen Situationen umzugehen. Viele Menschen finden Trost und Klarheit in der astrologischen Beratung, da sie ihnen ermöglicht, ihre Lebensumstände aus einem anderen Blickwinkel zu betrachten. So wird es einfacher für dich, Lösungen zu finden und positive Veränderungen herbeizuführen.</p>
-                </div>
-          
-                <!-- Вопрос и ответ 2 -->
-                <div class="accordion-item mt-4">
-                  <h2 class="accordion-header" style="font-weight: bold;">
-                    Bieten Sie Beratungen an?
-                  </h2>
-                  <br>
-                  <p>Ja, ich biete Beratungen an, und ich glaube, dass sie jedem helfen können. In meinen Sitzungen gehe ich auf deine individuellen Fragen und Anliegen ein. Egal, ob du nach Orientierung in deinem Beruf, in Beziehungen oder in anderen Lebensbereichen suchst, die astrologische Beratung kann dir wertvolle Einsichten und Klarheit bieten.</p> <p>
-                    Ich nutze die Astrologie, um dir zu zeigen, wie die Sterne und Planeten deine persönlichen Stärken und Herausforderungen beeinflussen. So kannst du besser verstehen, wie du deine Ziele erreichen und Hindernisse überwinden kannst. Es ist eine Möglichkeit, dein Leben bewusster zu gestalten und neue Wege zu entdecken..</p>
-                </div>
-          
-                <!-- Вопрос и ответ 3 -->
-                <div class="accordion-item mt-4">
-                  <h2 class="accordion-header" style="font-weight: bold;">
-                    Brauche ich Vorkenntnisse?
-                  </h2>
-                  <br>
-                  <p>Nein, du brauchst keine Vorkenntnisse! Ich erkläre alles verständlich und Schritt für Schritt. Egal, ob du neu in der Astrologie bist oder schon etwas darüber weißt, ich passe die Beratung an dein Verständnis an.</p> <p>
-                    Mein Ziel ist es, dass du dich wohlfühlst und alle Informationen klar und nachvollziehbar sind. So kannst du die astrologischen Konzepte leicht erfassen und sie in deinem Leben anwenden. Du kannst jederzeit Fragen stellen, und ich bin hier, um dir zu helfen, alles zu verstehen.</p>
-                </div>
+                <div class="accordion-item"> <h2 class="accordion-header" style="font-weight: bold;"> Funktioniert Prašna-Horoskop wirklich? </h2> <br> <p>Absolut! Jede Frage, die gestellt wird, hat eine tiefere kosmische Bedeutung. Im Moment der Fragestellung sind die Planeten so positioniert, dass sie genau das widerspiegeln, was gerade gebraucht wird. Prašna nutzt diese Synchronizität, um eine klare Antwort zu geben – es ist, als würde das Universum direkt sprechen.</p> </div> <!-- Вопрос и Antwort 2 --> <div class="accordion-item mt-4"> <h2 class="accordion-header" style="font-weight: bold;"> Wie genau sind die Antworten? </h2> <br> <p>Die Genauigkeit ist oft verblüffend! Die erstellte Karte zeigt genau die Energien, die umgeben und die aktuelle Situation beeinflussen. Viele Menschen sind überrascht, wie direkt Prašna den Kern ihrer Fragen trifft – ob es um Liebe, Beruf oder persönliche Entscheidungen geht.</p> </div> <!-- Вопрос и Antwort 3 --> <div class="accordion-item mt-4"> <h2 class="accordion-header" style="font-weight: bold;"> Braucht man das Geburtshoroskop dafür? </h2> <br> <p>Nein, für Prašna braucht es keine Geburtsdaten. Alles, was zählt, ist der Moment der Frage. Dieser Moment enthält bereits alle Antworten, um Klarheit zu schaffen. Natürlich kann das Geburtshoroskop zusätzliche Einblicke geben, aber Prašna ist perfekt für den aktuellen Moment und gibt präzise Antworten ohne Geburtsinformationen.</p> </div> <!-- Вопрос и Antwort 4 --> <div class="accordion-item mt-4"> <h2 class="accordion-header" style="font-weight: bold;"> Kann man es einfach ausprobieren? </h2> <br> <p>Natürlich! Selbst wenn die Frage "einfach so" gestellt wird, gibt es immer einen tieferen Grund dafür. Wenn die Frage auftaucht, ist es genau der richtige Moment, sie zu stellen. Prašna zeigt, was der Kosmos im Augenblick bereit hat – die Antwort könnte überraschen!</p> </div>
           
               </div>
             </div>
           </section>
 
-          <div class="row block-large-1-3 block-medium-1-2 block-tab-full" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-            <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                    <a href="#" title="static background">
-                        <img src="images/portfolio/34_result.webp" alt="" style="width: 100%; height: 100%;">
-                        <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
-                            <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Planetenzyklen</div>
-                            <div class="folio-list__item-title">Transformation und spirituelles Wachstum</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                    <a href="#" title="static background">
-                        <img src="images/portfolio/24_result.webp" alt="" style="width: 100%; height: 100%;">
-                        <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
-                            <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Kosmische Energien</div>
-                            <div class="folio-list__item-title">Geheimnisse der Planeteneinflüsse</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-    
-            <div class="column entry" style="flex: 1 1 30%; max-width: 400px; margin-bottom: 20px;">
-                <div class="entry__thumb" style="position: relative; width: 100%; height: 230px;">
-                    <a href="#" title="static background">
-                        <img src="images/portfolio/33.webp" alt="" style="width: 100%; height: 100%;">
-                        <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background: rgba(0, 0, 0, 0.302); padding: 5px 10px; border-radius: 5px;">
-                            <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Sternenweisheit</div>
-                            <div class="folio-list__item-title">Astrologische Einblicke und Geheimnisse</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-    
-         
-        </div>
 
 
+        <section>
+            <div class="responsive-row">
+                <div class="column entry">
+                    <div class="entry__thumb">
+                        <a href="#" title="Sternzeichen und Häuser">
+                            <img src="images/portfolio/34_result.webp" alt="">
+                            <div class="entry__info">
+                                <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Planetenzyklen</div>
+                                <div class="folio-list__item-title">Transformation und spirituelles Wachstum</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="column entry">
+                    <div class="entry__thumb">
+                        <a href="#" title="Nakshatras">
+                            <img src="images/portfolio/24_result.webp" alt="">
+                            <div class="entry__info">
+                                <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Kosmische Energien</div>
+                                <div class="folio-list__item-title">Geheimnisse der Planeteneinflüsse</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="column entry">
+                    <div class="entry__thumb">
+                        <a href="#" title="Zeitzyklen der Planeten">
+                            <img src="images/portfolio/33.webp" alt="">
+                            <div class="entry__info">
+                                <div class="folio-list__item-cat" style="color: rgb(255, 255, 255);">Sternenweisheit</div>
+                                <div class="folio-list__item-title">Astrologische Einblicke und Geheimnisse</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+       
+                
+            </div>
+        </section>
 
-        <style>
-            .modal {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                z-index: 1000;
-            }
+        <section>                
+            <div class="row about-expertise" data-animate-block>
+                <div class="column lg-12">
+                  
+                   
+                </div>
+            </div>
+            <div class="row about-timelines" data-animate-block>
+                <div class="column lg-6 tab-12">
+                    <h2 class="text-pretitle" data-animate-el>Nutzen der Prashna-Astrologie</h2>
+                    <div class="timeline" data-animate-el>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <h4 class="timeline__title">Schnelle Einsicht</h4>
+                                <h5 class="timeline__meta">Antworten im Moment</h5>
+                                <p class="timeline__timeframe">Sofort verfügbar</p>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Prashna-Astrologie ist eine vedische Methode, die das Stellen von Fragen und das Erhalten präziser Antworten anhand der Planetenkonstellationen zum Zeitpunkt der Frage ermöglicht. </p>
+                            </div>
+                        </div>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <h4 class="timeline__title">Analyse der Prashna-Astrologie</h4>
+                                <h5 class="timeline__meta">Deutung des Aszendenten</h5>
+                                <p class="timeline__timeframe">Präzise Analyse</p>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>In der Prashna-Astrologie wird der Aszendent (Lagna) analysiert, um den Verlauf einer Situation zu verstehen. Der Lagnesh, also der Herrscher des Aszendenten, liefert durch seine Stellung im Zeichen und im Haus wichtige Hinweise auf den Ausgang der Frage. Aspekte anderer Planeten und ihre Einflüsse auf den Lagnesh ermöglichen es dem Astrologen, präzise Vorhersagen zu treffen und fundierte Schlussfolgerungen zu ziehen.</p>
+                            </div>
+                        </div>
+                    </div> <!-- end timeline -->
+                </div> <!-- end column -->
+                <div class="column lg-6 tab-12">
+                    <h2 class="text-pretitle" data-animate-el>Grundlagen der Prashna-Astrologie</h2>
+                    <div class="timeline" data-animate-el>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <h4 class="timeline__title">Astrologische Software</h4>
+                                <h5 class="timeline__meta">Präzise Berechnung der Prashna</h5>
+                                <p class="timeline__timeframe">Jetzt ausprobieren</p>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Vor dir steht eine astrologische Software, die es ermöglicht, Prashna-Astrologie völlig präzise zu berechnen. Du kannst dich selbst ausprobieren und sehen, wie großartig diese Methode ist, indem du Fragen stellst und ihre Genauigkeit überprüfst.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <h4 class="timeline__title">Aspekte und Häuser</h4>
+                                <h5 class="timeline__meta">Wichtige Planetenaspekte</h5>
+                                <p class="timeline__timeframe">Genauer Einblick</p>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Die Aspekte der Planeten auf den Lagnesh sowie ihre Position in den Häusern liefern tiefgehende Einsichten in die Natur der Frage. Diese Analyse zeigt, welche planetarischen Energien die Situation unterstützen oder behindern. Der Zustand des Lagnesh, seine Würde und die Aspekte, die auf ihn einwirken, sind entscheidend für das Verständnis der Fragestellung.</p>
+                            </div>
+                        </div>
+                    </div> <!-- end timeline -->
+                </div> <!-- end column -->
+            </div> <!-- end about-timelines -->
+        </section>
         
-            .modal-popup {
-                position: relative;
-                width: 80%;
-                max-width: 1500px;
-                margin: 10% auto;
-                background-color: hsla(168, 62%, 16%, 1);/* Черный фон */
-                color: #ffffff; /* Белый текст */
-                padding: 20px;
-                border-radius: 8px;
-                border: 4px solid rgba(226, 168, 80, 0.35); /* Темно-золотая прозрачная рамка */
-            }
         
-            .close {
-                position: absolute;
-                top: 10px;
-                right: 20px;
-                font-size: 24px;
-                color: #ffffff;
-                cursor: pointer;
-            }
-        
-            .modal-popup h2 {
-                font-family: 'DM Serif Display', serif;
-                font-size: 28px;
-                color: rgb(255, 255, 255);; /* Золотистый цвет для заголовков */
-                margin-bottom: 10px;
-            }
-        
-            .modal-popup p, .modal-popup ul {
-                font-family: 'Public Sans', sans-serif;
-                color: #eabe7b; /* Белый текст */
-            }
-        </style>
         
  <section class="projects-section bg-warning-subtle" style="display: flex; justify-content: center; align-items: flex-start; padding: 5%;">
     <div class="container text-center" style="max-width: 900px;">
@@ -1170,48 +1219,130 @@ Diese Einsichten können dir helfen, Entscheidungen bewusster zu treffen und Str
    
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-<script>
-    // Открытие модального окна
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-}
-
-// Закрытие модального окна
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-
-// Обработчик кликов на кнопках
-document.querySelectorAll('.btn[data-modal]').forEach(button => {
-    button.addEventListener('click', function(event) {
-        event.preventDefault();
-        const modalId = this.getAttribute('data-modal');
-        openModal(modalId);
-    });
-});
-
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const modalButtons = document.querySelectorAll('[data-modal]');
-
-        modalButtons.forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault(); // Предотвращаем переход по ссылке
-                const modalId = button.getAttribute('data-modal');
-                openModal(modalId);
+    <script>
+        // Функция для открытия модального окна
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "block";
+            }
+        }
+    
+        // Функция для закрытия модального окна
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            // Навешиваем событие для всех ссылок с атрибутом data-modal
+            document.querySelectorAll('[data-modal]').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Предотвращаем переход по ссылке
+                    const modalId = this.getAttribute('data-modal'); // Получаем значение data-modal
+                    openModal(modalId); // Открываем модальное окно с соответствующим ID
+                });
             });
+    
+            // Закрытие модального окна при клике вне его области
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.addEventListener('click', function(event) {
+                    if (!event.target.closest('.modal-popup')) {
+                        closeModal(modal.id); // Закрываем модальное окно
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentModal = null; // Переменная для отслеживания открытого модального окна
+    
+            // Находим все ссылки с атрибутом data-modal
+            document.querySelectorAll('.folio-list__item-link').forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+    
+                    // Определяем ID модального окна, которое нужно открыть
+                    const modalId = link.getAttribute('data-modal');
+                    const modal = document.getElementById(modalId);
+    
+                    // Закрываем текущее модальное окно, если оно открыто
+                    if (currentModal && currentModal !== modal) {
+                        currentModal.style.display = 'none';
+                    }
+    
+                    // Открываем новое модальное окно
+                    modal.style.display = 'block';
+                    currentModal = modal; // Обновляем текущее модальное окно
+    
+                    // Закрытие модального окна при клике на "X"
+                    modal.querySelector('.close').onclick = () => {
+                        modal.style.display = 'none';
+                        currentModal = null; // Сбрасываем текущее модальное окно
+                    };
+                });
+            });
+    
+            // Закрытие модального окна при клике вне окна
+            window.addEventListener('click', (event) => {
+                if (currentModal && event.target === currentModal) {
+                    currentModal.style.display = 'none';
+                    currentModal = null; // Сбрасываем текущее модальное окно
+                }
+            });
+        });
+    </script>
+    
+   <script>
+    function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        closeAllModals();  // Закрыть все открытые модальные окна
+        modal.style.display = "block";  // Открыть нужное окно
+        modal.scrollIntoView({ behavior: "smooth", block: "center" });  // Прокрутка к модальному окну
+    }
+}
+
+function closeAllModals() {
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.style.display = "none";
+    });
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Обработчики событий для открытия модальных окон
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[data-modal]').forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const modalId = this.getAttribute('data-modal');
+            openModal(modalId);
         });
     });
 
-    function openModal(modalId) {
-        document.getElementById(modalId).style.display = 'block';
-    }
+    // Закрытие модального окна при клике вне его области
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', function(event) {
+            if (!event.target.closest('.modal-popup')) {
+                closeModal(modal.id);
+            }
+        });
+    });
+});
 
-    function closeModal(modalId) {
-        document.getElementById(modalId).style.display = 'none';
-    }
-</script>
+   </script> 
+    
+
+
    
 </body>
 </html>
