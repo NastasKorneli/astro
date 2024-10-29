@@ -2890,14 +2890,13 @@ img.u-pull-left {
 .mobile-home-link a,
 .main-nav a {
   display: block;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 400;
   line-height: var(--header-height);
   text-transform: uppercase;
   letter-spacing: 0.35em;
   color: white;
   transition-property: color, background-color;
-  letter-spacing:3,5px;
 }
 
 .mobile-home-link a:focus,
@@ -3059,14 +3058,13 @@ img.u-pull-left {
   }
 
   .main-nav a {
-    
     font-family: var(--font-2);
     font-size: var(--text-md);
     font-weight: 400;
     line-height: var(--vspace-0_875);
     text-transform: none;
     letter-spacing: 0;
-    padding: var(--vspace-0_5) 1.8rem;
+    padding: var(--vspace-0_5) 2.8rem;
     color: var(--color-text);
   }
 
