@@ -34,6 +34,7 @@
 
 </head>
 
+
 <body id="top">
 
 
@@ -75,14 +76,27 @@
                         </a></li>
                         
                         
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">Gedanken</a></li>
-                        <li><a href="#works" class="smoothscroll">Elemente</a></li>
-                        <li><a href="#contact" class="smoothscroll">Horoskop</a></li>
+                        <li class="current"><a href="#" class="smoothscroll">Prashna</a></li>
+                        <li><a href="#" class="smoothscroll">Zodiaks</a></li>
+                        <li><a href="#" class="smoothscroll">Planeten</a></li>
+                        <li><a href="#" class="smoothscroll">Nakshatras</a></li>
+                        <li><a href="" class="smoothscroll">Häuser</a></li>
+                        
+                        <li><a href="#" class="smoothscroll">Aspekte</a></li>
+                       
+                     
                     </ul>
                 </nav>
             </div>
-
+           <br>
+             
+           <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
+            <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Aries</button>
+            <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Taurus</button>
+            <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Gemini</button>
+            <!-- Повторите блок для других кнопок -->
+        </div>
+         
         </header>
 
 
@@ -441,9 +455,16 @@
                 <span class="close" onclick="document.getElementById('modal-01').style.display='none';">&times;</span>
                 <img src="images/portfolio/1.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5 style="color: #ffeb3b;">Zeichen des Tierkreises</h5>
+                    <h5 style="color: #ffffff;">Zeichen des Tierkreises</h5>
+                    <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
+                        <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Aries</button>
+                        <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Taurus</button>
+                        <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Gemini</button>
+                        <!-- Повторите блок для других кнопок -->
+                    </div>
                     <p>Die zwölf Sternzeichen sind viel mehr als bloße astrologische Symbole – sie verkörpern verschiedene Dimensionen menschlicher Erfahrungen und Lebensansätze. Jedes Zeichen, vom feurigen Widder bis zum mystischen Fische, ist einzigartig in seiner Energie, seinen Stärken und Herausforderungen. Die Sternzeichen wirken wie ein Spiegel, der uns unsere inneren Motivationen, Charakterzüge und Verhaltensmuster zeigt. <strong>Sie offenbaren uns, wer wir im Kern sind und was uns antreibt.</strong></p>
                     <p>In der Astrologie hat jedes Zeichen eine tiefe Verbindung zu bestimmten Planeten, Elementen und Qualitäten, die unseren Lebensweg beeinflussen. Der Löwe, geführt von der Sonne, steht für Selbstbewusstsein und Ausdruck; die Waage, geprägt von der Venus, repräsentiert Harmonie und Ästhetik. Indem wir unser Sternzeichen verstehen, können wir auch besser verstehen, welche Stärken und Herausforderungen uns im Leben begleiten und welche Lebensthemen immer wieder in den Vordergrund treten.</p>
+                    
                 </div>
             </div>
         </div>
@@ -453,7 +474,7 @@
                 <span class="close" onclick="document.getElementById('modal-02').style.display='none';">&times;</span>
                 <img src="images/portfolio/2.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5 style="color: #ffeb3b;">Planeten</h5>
+                    <h5 style="color: #ffffff;">Planeten</h5>
                     <p>Die Planeten sind die kraftvollen Akteure in der Astrologie, die unseren Alltag, unsere Persönlichkeit und unsere Lebenserfahrungen tief beeinflussen. Jeder Planet trägt eine besondere Energie und symbolisiert bestimmte Lebensprinzipien. Merkur, der Planet der Kommunikation, prägt unsere Denkweise und Ausdruckskraft, während Venus, der Planet der Liebe, uns in den Bereichen Beziehungen, Ästhetik und Harmonie beeinflusst. Die äußeren Planeten wie Uranus, Neptun und Pluto stehen für kollektive, transformative Kräfte und symbolisieren größere Zyklen, die uns auf tiefere, oft unbewusste Weise prägen.</p>
                     <p><strong>Die Position der Planeten zum Zeitpunkt unserer Geburt bildet eine Art energetischen Fingerabdruck, der uns ein Leben lang begleitet.</strong> Diese planetaren Energien interagieren miteinander und entfalten im Laufe der Zeit unterschiedliche Einflüsse, die sich in Lebensereignissen, inneren Wachstumsprozessen und Beziehungen widerspiegeln.</p>
                 </div>
@@ -465,7 +486,7 @@
                 <span class="close" onclick="document.getElementById('modal-03').style.display='none';">&times;</span>
                 <img src="images/portfolio/6.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5 style="color: #ffeb3b;">Häuser im Horoskop</h5>
+                    <h5 style="color: #ffffff;">Häuser im Horoskop</h5>
                     <p>Die zwölf Häuser im Horoskop repräsentieren die verschiedenen Lebensbereiche, die unser Dasein prägen. Jedes Haus symbolisiert einen bestimmten Aspekt unseres Lebens: Das erste Haus betrifft das Selbst und die persönliche Identität, das vierte Haus steht für Zuhause und Familie, das zehnte für Karriere und öffentliches Ansehen. <strong>Die Häuser sind wie Fenster, durch die wir das Leben in all seinen Facetten erfahren.</strong></p>
                     <p>Planeten, die in bestimmten Häusern positioniert sind, beeinflussen stark, wie wir uns in diesen Lebensbereichen verhalten und welche Herausforderungen oder Geschenke uns dort begegnen.</p>
                 </div>
@@ -477,7 +498,7 @@
                 <span class="close" onclick="document.getElementById('modal-04').style.display='none';">&times;</span>
                 <img src="images/portfolio/3.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5 style="color: #ffeb3b;">Aspekte der Planeten</h5>
+                    <h5 style="color: #ffffff;">Aspekte der Planeten</h5>
                     <p>Die Aspekte der Planeten – die Winkelverhältnisse, die sie zueinander bilden – bringen Bewegung und Dynamik in unser Horoskop. Ein Trigon, ein harmonischer Winkel, zeigt unterstützende Einflüsse an, während ein Quadrat Spannungen und Herausforderungen symbolisiert. Diese Aspekte sind die feinen Verbindungen, die wie unsichtbare Fäden die Energien der Planeten verknüpfen und unsere inneren Entwicklungen steuern.</p>
                 </div>
             </div>
@@ -488,7 +509,7 @@
                 <span class="close" onclick="document.getElementById('modal-05').style.display='none';">&times;</span>
                 <img src="images/portfolio/4.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5 style="color: #ffeb3b;">Planetenperioden</h5>
+                    <h5 style="color: #ffffff;">Planetenperioden</h5>
                     <p>Die Planetenperioden, auch bekannt als Dashas in der vedischen Astrologie, markieren besondere Lebensphasen, die von den Energien eines bestimmten Planeten dominiert werden. Während dieser Perioden kann der Einfluss eines Planeten stark in den Vordergrund treten und unsere Lebensumstände und Entscheidungen beeinflussen.</p>
                 </div>
             </div>
@@ -499,7 +520,7 @@
                 <span class="close" onclick="document.getElementById('modal-06').style.display='none';">&times;</span>
                 <img src="images/portfolio/5.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
-                    <h5 style="color: #ffeb3b;">Nakshatras</h5>
+                    <h5 style="color: #ffffff;">Nakshatras</h5>
                     <p>Die 27 Nakshatras sind die mystischen Mondhäuser der vedischen Astrologie und bieten tiefe Einblicke in unsere emotionale und spirituelle Natur. Jedes Nakshatra trägt einzigartige Energien und offenbart uns spezifische Themen und Qualitäten.</p>
                 </div>
             </div>
@@ -1174,6 +1195,20 @@ section .column.entry {
                              </div> <!-- end about-timelines -->
                              
                          </section> 
+                         <br>
+                         
+                         <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
+                            <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Aries</button>
+                            <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Taurus</button>
+                            <button class="tag btn btn--small" style="background-color: transparent;" onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Gemini</button>
+                            <!-- Повторите блок для других кнопок -->
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
      
                          <section id="contact" class="s-contact target-section">
 
@@ -1236,6 +1271,10 @@ section .column.entry {
             </div>
 
         </footer>
+
+        
+        
+        
 
     </div> <!-- end -s-pagewrap -->
 
@@ -1366,6 +1405,33 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
    </script> 
+<script>
+    function addHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Добавляем фон при hover, если нет класса active
+        }
+    }
+    
+    function removeHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = 'transparent'; // Убираем фон, если нет класса active
+        }
+    }
+    
+    function toggleActive(element) {
+        if (element.classList.contains('active')) {
+            element.classList.remove('active');
+            element.style.backgroundColor = 'transparent'; // Отключаем активное состояние
+        } else {
+            document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.backgroundColor = 'transparent';
+            });
+            element.classList.add('active');
+            element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Активное состояние
+        }
+    }
+    </script>
     
 
 

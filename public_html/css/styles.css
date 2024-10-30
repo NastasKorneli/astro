@@ -2073,6 +2073,35 @@ button.btn--pill {
   padding-right: 3.2rem !important;
   border-radius: 1000px !important;
 }
+/* Small button modifier */
+.btn--small,
+button.btn--small,
+input[type="submit"].btn--small,
+input[type="reset"].btn--small,
+input[type="button"].btn--small {
+  --btn-height: calc(var(--vspace-btn) / 2);  /* Half the usual button height */
+  font-size: calc(var(--text-xs) / 1.2);      /* Slightly smaller font size */
+  padding: 0 1.8rem;                          /* Adjust padding to be half */
+  margin: 0 0.2rem var(--vspace-0_5) 0;       /* Reduce margin to keep buttons closer */
+  line-height: calc(var(--btn-height) - 2px);
+}
+
+/* Optional: Hover effect for small buttons */
+.btn--small:focus,
+button.btn--small:focus,
+input[type="submit"].btn--small:focus,
+input[type="reset"].btn--small:focus,
+input[type="button"].btn--small:focus,
+.btn--small:hover,
+button.btn--small:hover,
+input[type="submit"].btn--small:hover,
+input[type="reset"].btn--small:hover,
+input[type="button"].btn--small:hover {
+  background-color: var(--color-btn-hover);   /* Apply hover effect */
+  border-color: var(--color-btn-hover);
+  color: var(--color-btn-hover-text);
+}
+
 
 /* ===================================================================
  * # TABLE
