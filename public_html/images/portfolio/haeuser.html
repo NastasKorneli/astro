@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="icon" href="images/portfolio/favicon-32x32.png" type="image/x-icon">
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
 
 </head>
 
@@ -66,18 +71,19 @@
             <div class="row wide main-nav-wrap">
                 <nav class="column lg-12 main-nav">
                     <ul>
-                        <li><a href="index.html"  class="home-link current"> 
+                        <li><a href="index.html"  class="home-link "> 
                             <span style="font-size: 2em; vertical-align: middle;">♅</span> Astro.2ix
                         </a></li>
         
-                        <!-- Навигационные ссылки для страниц -->
-                    
                         <li><a href="zodiaks.html">Zodiaks</a></li>
                         <li><a href="planeten.html">Planeten</a></li>
-                        <li><a href="nakshatras.html">Nakshatras</a></li>
-                        <li><a href="haeuser.html">Häuser</a></li>
+                        <li><a href="nakshatras.html"  >Nakshatras</a></li>
+                        <li><a href="haeuser.html" class="current" >Häuser</a></li>
                         <li><a href="aspekte.html">Aspekte</a></li>
                     </ul>
+                    <br>
+          
+                    
                 </nav>
             </div>
         </header>
@@ -134,7 +140,7 @@
                     <div class="column lg-6 md-12">
                         <div class="col mb-4 portfolio-item graphicdesign photography">
                             <a>
-                                <img src="https://i.pinimg.com/originals/bc/68/25/bc68252a5cadefbd6eaebb6a5480519a.gif"
+                                <img src="images/portfolio/4.gif"
                                     class="img-fluid" alt="portfolio"
                                     style=" width: 550px ; height: 550px; object-fit: cover; border-radius: 50%;">
                             </a>
@@ -164,7 +170,20 @@
    </div>
 </section>
 
-
+<div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">1 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">2 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">3 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">4 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">5 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">6 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">7 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">8 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">9 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">10 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">11 Bhava - Haus</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this)">12 Bhava - Haus</button>
+</div>
 <section>                
     <div class="row about-expertise" data-animate-block>
      <div class="column lg-12">
@@ -440,23 +459,15 @@
                 <img src="images/portfolio/1.webp" style="width: 700px;" alt="">
                 <div class="modal-popup__desc">
                     <h5 style="color: #ffffff;">Zeichen des Tierkreises</h5>
-                    
+                    <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
+                        <button class="tag btn btn--small"  onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Aries</button>
+                        <button class="tag btn btn--small"  onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Taurus</button>
+                        <button class="tag btn btn--small"  onmouseover="addHover(this)" onmouseout="removeHover(this)" onclick="toggleActive(this)">Gemini</button>
+                        <!-- Повторите блок для других кнопок -->
+                    </div>
                     <p>Die zwölf Sternzeichen sind viel mehr als bloße astrologische Symbole – sie verkörpern verschiedene Dimensionen menschlicher Erfahrungen und Lebensansätze. Jedes Zeichen, vom feurigen Widder bis zum mystischen Fische, ist einzigartig in seiner Energie, seinen Stärken und Herausforderungen. Die Sternzeichen wirken wie ein Spiegel, der uns unsere inneren Motivationen, Charakterzüge und Verhaltensmuster zeigt. <strong>Sie offenbaren uns, wer wir im Kern sind und was uns antreibt.</strong></p>
                     <p>In der Astrologie hat jedes Zeichen eine tiefe Verbindung zu bestimmten Planeten, Elementen und Qualitäten, die unseren Lebensweg beeinflussen. Der Löwe, geführt von der Sonne, steht für Selbstbewusstsein und Ausdruck; die Waage, geprägt von der Venus, repräsentiert Harmonie und Ästhetik. Indem wir unser Sternzeichen verstehen, können wir auch besser verstehen, welche Stärken und Herausforderungen uns im Leben begleiten und welche Lebensthemen immer wieder in den Vordergrund treten.</p>
-                    <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Aries - Mesha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Taurus - Vrishabha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Gemini - Mithuna</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Cancer - Karka</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Leo - Simha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Virgo - Kanya</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Libra - Tula</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Scorpio - Vrischika</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Sagittarius - Dhanu</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Capricorn - Makara</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Aquarius - Kumbha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Pisces - Meena</button>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -469,17 +480,6 @@
                     <h5 style="color: #ffffff;">Planeten</h5>
                     <p>Die Planeten sind die kraftvollen Akteure in der Astrologie, die unseren Alltag, unsere Persönlichkeit und unsere Lebenserfahrungen tief beeinflussen. Jeder Planet trägt eine besondere Energie und symbolisiert bestimmte Lebensprinzipien. Merkur, der Planet der Kommunikation, prägt unsere Denkweise und Ausdruckskraft, während Venus, der Planet der Liebe, uns in den Bereichen Beziehungen, Ästhetik und Harmonie beeinflusst. Die äußeren Planeten wie Uranus, Neptun und Pluto stehen für kollektive, transformative Kräfte und symbolisieren größere Zyklen, die uns auf tiefere, oft unbewusste Weise prägen.</p>
                     <p><strong>Die Position der Planeten zum Zeitpunkt unserer Geburt bildet eine Art energetischen Fingerabdruck, der uns ein Leben lang begleitet.</strong> Diese planetaren Energien interagieren miteinander und entfalten im Laufe der Zeit unterschiedliche Einflüsse, die sich in Lebensereignissen, inneren Wachstumsprozessen und Beziehungen widerspiegeln.</p>
-                    <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
-                        <button class="tag btn btn--small" style="background: transparent;"  onclick="toggleActive(this)">Venus - Shukra</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Mars - Mangala</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Jupiter - Guru</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Mercury - Budha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Saturn - Shani</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Sun - Surya</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Moon - Chandra</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Rahu - Rahu</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">Ketu - Ketu</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -492,18 +492,6 @@
                     <h5 style="color: #ffffff;">Häuser im Horoskop</h5>
                     <p>Die zwölf Häuser im Horoskop repräsentieren die verschiedenen Lebensbereiche, die unser Dasein prägen. Jedes Haus symbolisiert einen bestimmten Aspekt unseres Lebens: Das erste Haus betrifft das Selbst und die persönliche Identität, das vierte Haus steht für Zuhause und Familie, das zehnte für Karriere und öffentliches Ansehen. <strong>Die Häuser sind wie Fenster, durch die wir das Leben in all seinen Facetten erfahren.</strong></p>
                     <p>Planeten, die in bestimmten Häusern positioniert sind, beeinflussen stark, wie wir uns in diesen Lebensbereichen verhalten und welche Herausforderungen oder Geschenke uns dort begegnen.</p>
-                    <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">1 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">2 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">4 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">6 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">7 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">8 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">9 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">10 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">11 Bhava - Haus</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">12 Bhava - Haus</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -537,35 +525,6 @@
                 <div class="modal-popup__desc">
                     <h5 style="color: #ffffff;">Nakshatras</h5>
                     <p>Die 27 Nakshatras sind die mystischen Mondhäuser der vedischen Astrologie und bieten tiefe Einblicke in unsere emotionale und spirituelle Natur. Jedes Nakshatra trägt einzigartige Energien und offenbart uns spezifische Themen und Qualitäten.</p>
-                    <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">1 Nakshatra - Aschwini</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">2 Nakshatra - Bharani</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">3 Nakshatra - Krittika</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">4 Nakshatra - Rohini</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">5 Nakshatra - Mrigashira</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">6 Nakshatra - Ardra</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">7 Nakshatra - Punarvasu</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">8 Nakshatra - Pushya</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">9 Nakshatra - Aschlesha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">10 Nakshatra - Magha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">11 Nakshatra - Purva Phalguni</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">12 Nakshatra - Uttara Phalguni</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">13 Nakshatra - Hasta</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">14 Nakshatra - Chitra</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">15 Nakshatra - Swati</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">16 Nakshatra - Vishakha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">17 Nakshatra - Anuradha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">18 Nakshatra - Jyeshtha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">19 Nakshatra - Mula</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">20 Nakshatra - Purva Ashadha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">21 Nakshatra - Uttara Ashadha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">22 Nakshatra - Shravana</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">23 Nakshatra - Dhanishtha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">24 Nakshatra - Shatabhisha</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">25 Nakshatra - Purva Bhadrapada</button>
-                        <button class="tag btn btn--small" style="background: transparent;" onclick="toggleActive(this)">26 Nakshatra - Uttara Bhadrapada</button>
-                        <button class="tag btn btn--small"  onclick="toggleActive(this)">27 Nakshatra - Revati</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1241,7 +1200,9 @@ section .column.entry {
                          </section> 
                          <br>
                          
-             
+               
+                        
+                        
                         
                         
                         
@@ -1295,9 +1256,9 @@ section .column.entry {
         <footer class="s-footer">
 
             <div class="row">
-              <div class="column ss-copyright">
-                    <span>© Copyright &nbsp<a href="https://www.astro.2ix.de/"><span style="font-size: 1.5em; vertical-align: middle;">♅ </span> ASTRO.2IX</a>&nbsp 2024</span> 
-                    <span>Photography & Design by <a href="https://www.kn.2ix.de/">Korneli Nastas&nbsp;&nbsp;  </a>| Featured by <a href="https://fotoreisen.2ix.de">Foto Reisen</a></span>
+                <div class="column ss-copyright">
+                    <span>© Copyright <a href="https://www.astro.2ix.de/">ASTRO.2IX</a> 2024</span> 
+                    <span>Photography & Design by <a href="https://www.kn.2ix.de/">Korneli Nastas&nbsp;&nbsp;  </a>| Featured by <a href="https://fotoreisen.2ix.de">Foto Reisen</a>&nbsp;&nbsp;|&nbsp;Open to new <a href="https://www.kn.2ix.de/">projects</a></span>
                 </div>
 
                 <div class="ss-go-top">

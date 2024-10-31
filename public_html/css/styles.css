@@ -1070,9 +1070,11 @@ textarea {
   }
 }
 
+
+
 /* ===================================================================
  * # UTILITY CLASSES
- *
+mu
  *
  * ------------------------------------------------------------------- */
 
@@ -2954,7 +2956,7 @@ img.u-pull-left {
   padding: 0 2rem 0 2.4rem;
 }
 
-.main-nav .current a {
+.main-nav a .current  {
   background-color: var(--color-gray-9);
 }
 
@@ -4208,3 +4210,12 @@ img.u-pull-left {
     right: 6vw;
   }
 }
+.main-nav a.current {
+  background-color: #2c2c2d; /* Цвет фона для активного элемента */
+  color: hsla(359, 50%, 50%, 1);            /* Цвет текста для активного элемента */
+  font-weight: bold;         /* Дополнительное выделение текста */
+  text-decoration: none;     /* Убираем подчеркивание, если оно есть */
+}
+
+
+
