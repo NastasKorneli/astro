@@ -3638,8 +3638,9 @@ img.u-pull-left {
   z-index: 1;
   content: "";
   display: block;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.117);
   position: absolute;
+  border-radius: 50%;
   top: 0;
   left: 0;
   right: 0;
@@ -3653,11 +3654,11 @@ img.u-pull-left {
 .folio-list__item-pic::after {
   z-index: 2;
   display: block;
-  content: "+";
+  content: "☼";
   font-family: var(--font-1);
   font-weight: 300;
-  font-size: 2.2rem;
-  color: black;
+  font-size: 4.2rem;
+  color: #fff;
   text-align: center;
   height: var(--vspace-1);
   width: var(--vspace-1);
@@ -4216,6 +4217,7 @@ img.u-pull-left {
   font-weight: bold;         /* Дополнительное выделение текста */
   text-decoration: none;     /* Убираем подчеркивание, если оно есть */
 }
+
 
 
 
