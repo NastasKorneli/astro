@@ -1203,7 +1203,7 @@ mu
 body {
   font-family: var(--font-1);
   font-size: var(--base-font-size);
-  font-weight: 300;
+  /* font-weight: 300; */
   line-height: var(--vspace-1);
   color: var(--color-text);
 }
@@ -2674,7 +2674,7 @@ img.u-pull-left {
     0 8px 8px rgba(0, 0, 0, 0.08);
   --mailtoui-modal-head-bgcolor: var(--color-1-dark);
   --mailtoui-modal-head-title-color: white;
-  --mailtoui-modal-body-bgcolor: #d65369;
+  --mailtoui-modal-body-bgcolor: #1a55829b;
   --mailtoui-button-bgcolor: rgba(255, 255, 255, 0.728);
   --mailtoui-button-text-color: white;
   --mailtoui-button-bgcolor-hover: var(--color-1-dark);
@@ -2841,7 +2841,7 @@ img.u-pull-left {
 
 .s-pagewrap .circles span {
   display: block;
-  border: 3px solid var(--color-1);
+  border: 5px solid var(--color-1);
   border-radius: 50%;
   opacity: 0.1;
   transform: translate(-50%, -50%);
@@ -4222,5 +4222,103 @@ img.u-pull-left {
   color: #fff;            /* Цвет текста при наведении на элемент */
   font-weight: bold;         /* Дополнительное выделение текста */
   text-decoration: none;     /* Убираем подчеркивание, если оно есть */
+}
+.faq-block {
+  margin: 5px auto;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100vw;
+  width: 80%;
+  background-color: #ffa2b637; /* Белый фон для блока с вопросами */
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.faq-item {
+  border-bottom: 1px solid #cccccc;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #ece9e1; /* Светло-серый фон для вопросов */
+  font-size: 1.1em;
+  color: #fff; /* Темный текст для вопросов */
+  text-align: left;
+  width: 100%;
+  /* border: rgb(255, 255, 255) solid 1px; */
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #fff; /* Чуть более темный фон при наведении */
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  font-size: 1em;
+  color: #555; /* Самый темный текст для ответов */
+  background-color: #ece9e1; /* Белый фон для ответов */
+  margin-top: 5px;
+  /* border: 3px solid #1a55826c;  */
+  border-radius: 10px;
+  text-align: left;
+}
+
+.faq-question.active + .faq-answer {
+  display: block;
+}
+
+.fas.fa-chevron-down {
+  transition: transform 0.2s ease;
+  color: #333333; /* Темная стрелка для хорошей видимости */
+}
+
+.faq-question.active .fas.fa-chevron-down {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+.faq-question i.rotate {
+  transform: rotate(180deg);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.faq-question h3 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.entry__thumb img {
+  width: 100%;            /* Задает ширину изображения, чтобы оно занимало весь контейнер */
+  height: auto;  
+        /* Сохраняет пропорции изображения */
+  border-radius: 10px;     /* Делает изображение кругом */
+  object-fit: cover;      /* Обрезает изображение, чтобы оно заполнило круг */
 }
 

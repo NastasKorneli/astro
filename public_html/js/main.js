@@ -349,3 +349,14 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 });
+
+function toggleAnswer(questionElement) {
+  const answer = questionElement.nextElementSibling;
+
+  // Toggle 'active' class on answer
+  answer.classList.toggle("active");
+
+  // Toggle icon rotation for the chevron
+  const icon = questionElement.querySelector("i");
+  icon.classList.toggle("rotate");
+}
