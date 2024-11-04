@@ -360,3 +360,30 @@ function toggleAnswer(questionElement) {
   const icon = questionElement.querySelector("i");
   icon.classList.toggle("rotate");
 }
+
+    function addHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = '#d65369'; // Добавляем фон при hover, если нет класса active
+        }
+    }
+    
+    function removeHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = ''; // Убираем hover-цвет, возвращая стиль к исходному
+        }
+    }
+    
+    function toggleActive(element) {
+        if (element.classList.contains('active')) {
+            element.classList.remove('active');
+            element.style.backgroundColor = ''; // Возвращаем цвет при отключении активного состояния
+        } else {
+            document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.backgroundColor = '';
+            });
+            element.classList.add('active');
+            element.style.backgroundColor = '#d65369'; // Активное состояние
+        }
+    }
+
