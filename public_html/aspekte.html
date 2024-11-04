@@ -20,6 +20,34 @@
     
       gtag('config', 'G-TTLZ50B2T8');
     </script>
+
+<script>
+    // Отключение контекстного меню правой кнопки мыши
+document.addEventListener('contextmenu', function(e) {
+e.preventDefault();
+});
+
+// Отключение клавиш для просмотра исходного кода и разработчика
+document.addEventListener('keydown', function(e) {
+// Блокировка клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+if (e.key === 'F12' || 
+    (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+    (e.ctrlKey && e.key === 'U')) {
+    e.preventDefault();
+}
+});
+
+// Отключение выделения текста
+document.addEventListener('selectstart', function(e) {
+e.preventDefault();
+});
+
+// Отключение копирования текста
+document.addEventListener('copy', function(e) {
+e.preventDefault();
+});
+
+</script>
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
@@ -147,12 +175,13 @@
                                 Verlier dich nicht in Gedanken
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                                Lass die Sorgen los und tauche in die Welt der Astrologie ein – dein Leben wird dadurch heiterer und klarer.
+                                Lass die Sorgen los und tauche in die Welt der Astrologie ein.
                             </p>
                             <p class="attention-getter" data-animate-el>
-                                Erstelle deine persönliche Horoskop, und du wirst vieles über dich selbst verstehen. Bei Fragen kannst du dich gerne an einen erfahrenen Astrologen wenden.
-                                <a href="mailto:korneli.nastas@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Frag mich zum Beispiel</a>
+                                Erstelle dein persönliches Horoskop, und du wirst vieles über dich selbst besser verstehen. Bei Fragen kannst du dich gerne an einen erfahrenen Astrologen wenden, frag mich zum Beispiel.
+                                <a href="#kundli-container" class="btn btn--medium u-fullwidth contact-btn">dein persönliches Horoskop</a>
                             </p>
+                            
                       
                        
                     </div>
@@ -1483,30 +1512,30 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
     function addHover(element) {
         if (!element.classList.contains('active')) {
-            element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Добавляем фон при hover, если нет класса active
+            element.style.backgroundColor = '#d65369'; // Добавляем фон при hover, если нет класса active
         }
     }
     
     function removeHover(element) {
         if (!element.classList.contains('active')) {
-            element.style.backgroundColor = 'transparent'; // Убираем фон, если нет класса active
+            element.style.backgroundColor = ''; // Убираем hover-цвет, возвращая стиль к исходному
         }
     }
     
     function toggleActive(element) {
         if (element.classList.contains('active')) {
             element.classList.remove('active');
-            element.style.backgroundColor = 'transparent'; // Отключаем активное состояние
+            element.style.backgroundColor = ''; // Возвращаем цвет при отключении активного состояния
         } else {
             document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
                 btn.classList.remove('active');
-                btn.style.backgroundColor = 'transparent';
+                btn.style.backgroundColor = '';
             });
             element.classList.add('active');
-            element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Активное состояние
+            element.style.backgroundColor = '#d65369'; // Активное состояние
         }
     }
-    </script>
+</script>
           
     
     

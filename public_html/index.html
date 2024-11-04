@@ -20,6 +20,34 @@
     
       gtag('config', 'G-TTLZ50B2T8');
     </script>
+
+<script>
+    // Отключение контекстного меню правой кнопки мыши
+document.addEventListener('contextmenu', function(e) {
+e.preventDefault();
+});
+
+// Отключение клавиш для просмотра исходного кода и разработчика
+document.addEventListener('keydown', function(e) {
+// Блокировка клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+if (e.key === 'F12' || 
+    (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+    (e.ctrlKey && e.key === 'U')) {
+    e.preventDefault();
+}
+});
+
+// Отключение выделения текста
+document.addEventListener('selectstart', function(e) {
+e.preventDefault();
+});
+
+// Отключение копирования текста
+document.addEventListener('copy', function(e) {
+e.preventDefault();
+});
+
+</script>
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
@@ -348,6 +376,8 @@
 
 
 </style>
+
+
 <section id="works" class="s-works target-section ">
     <div class="row works-portfolio">
 
@@ -851,7 +881,42 @@ section .column.entry {
                   </section>
               </div>
 
- 
+              <br>
+        <!-- Фон с изображением и наложенным цветом #ece9e1 с прозрачностью -->
+<div style="height: 50vh; background-image: url('images/portfolio/222222.webp'); background-size: cover; background-attachment: fixed; background-position: center; display: flex; align-items: center; justify-content: center; position: relative;">
+
+    <!-- Наложение цвета поверх фонового изображения -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(236, 233, 225, 0);"></div>
+
+    <!-- Оформленный текстовый блок по центру -->
+    <div style="background-color: rgba(0, 0, 0, 0.3);; padding: 20px 40px; border-radius: 10px; text-align: center; max-width: 80%; position: relative; z-index: 1;">
+
+        <!-- Категория -->
+        <div class="folio-list__item-cat" style="color: #efb11d; font-size: 1.2em; font-weight: bold;">
+            Mystik der Sterne
+        </div>
+
+        <!-- Заголовок -->
+        <div class="folio-list__item-title" style="color: #ece9e1; font-size: 2em; font-weight: bold; margin: 10px 0;">
+            Die Geheimnisse des Zodiaks
+        </div>
+
+        <!-- Ссылки -->
+        <div style="margin-top: 15px;">
+          
+            <button class="tag btn btn--small" onclick="toggleActive(this)">Zodiaks</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this)">Planeten</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this)">Nakshatras</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this)">Häuser</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this)">Aspekte</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this)">Blog</button>
+        </div>
+
+    </div>
+</div>
+
+              
+              <br>
 
 
         <section>                
@@ -1534,30 +1599,31 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
     function addHover(element) {
         if (!element.classList.contains('active')) {
-            element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Добавляем фон при hover, если нет класса active
+            element.style.backgroundColor = '#d65369'; // Добавляем фон при hover, если нет класса active
         }
     }
     
     function removeHover(element) {
         if (!element.classList.contains('active')) {
-            element.style.backgroundColor = 'transparent'; // Убираем фон, если нет класса active
+            element.style.backgroundColor = ''; // Убираем hover-цвет, возвращая стиль к исходному
         }
     }
     
     function toggleActive(element) {
         if (element.classList.contains('active')) {
             element.classList.remove('active');
-            element.style.backgroundColor = 'transparent'; // Отключаем активное состояние
+            element.style.backgroundColor = ''; // Возвращаем цвет при отключении активного состояния
         } else {
             document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
                 btn.classList.remove('active');
-                btn.style.backgroundColor = 'transparent';
+                btn.style.backgroundColor = '';
             });
             element.classList.add('active');
-            element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Активное состояние
+            element.style.backgroundColor = '#d65369'; // Активное состояние
         }
     }
-    </script>
+</script>
+
     
 
 

@@ -22,6 +22,33 @@
     </script>
     <!-- CSS
     ================================================== -->
+    <script>
+        // Отключение контекстного меню правой кнопки мыши
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+// Отключение клавиш для просмотра исходного кода и разработчика
+document.addEventListener('keydown', function(e) {
+    // Блокировка клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+    if (e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+        (e.ctrlKey && e.key === 'U')) {
+        e.preventDefault();
+    }
+});
+
+// Отключение выделения текста
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+
+// Отключение копирования текста
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+});
+
+    </script>
    
 
     <link rel="icon" href="images/portfolio/favicon-32x32.png" type="image/x-icon">
@@ -168,12 +195,19 @@
                 
    </div>
 </section>
+
+
+
+
+
+
+
 <div  class="entry-content clearfix" style="padding-left:10%; padding-right: 10%;   ">
     
     <br><br>
     <div class="entry-content clearfix" style="padding-left:10%; padding-right: 10%; text-align: justify;">
         <h2 style="text-align: center;  ">Nakshatra Ashwini</h2>
-        <p><strong>Nakshatra Ashwini</strong> (die 1. von 27 Nakshatras, 0°00′ – 13°20′ des <a href="#">Widders</a>) besteht aus drei hellen Sternen im <a href="#">Sternbild des Widders</a>. Ashwini ist ein <em>deva</em>, ein göttlicher Stern, der von Natur aus günstig ist. Er ist benannt nach den Ashwini Kumars, himmlischen Zwillingsbrüdern und Heilern der Halbgötter, die sich in einem Streitwagen über den Himmel bewegen und Licht und Glück verbreiten. Der Name der Nakshatra kann als „vom Pferd geboren“, „Reiterin“ oder „Pferdefrau“ übersetzt werden.</p>
+        <p><strong>Nakshatra Ashwini</strong> (die 1. von 27 Nakshatras, 0°00′ – 13°20′ des <a href="#"><strong>Widders</strong></a>) besteht aus drei hellen Sternen im <a href="#"><strong>Sternbild des Widders</strong></a>. Ashwini ist ein <em>deva</em>, ein göttlicher Stern, der von Natur aus günstig ist. Er ist benannt nach den Ashwini Kumars, himmlischen Zwillingsbrüdern und Heilern der Halbgötter, die sich in einem Streitwagen über den Himmel bewegen und Licht und Glück verbreiten. Der Name der Nakshatra kann als „vom Pferd geboren“, „Reiterin“ oder „Pferdefrau“ übersetzt werden.</p>
         
         <p><em>„Ashwini ist schön wie ein Lotusblütenblatt und hat einen Pferdekopf. Sie trägt weiße Kleidung, sitzt auf einem Lotus und hält in der linken Hand ein Buch und in der rechten einen Topf voller göttlicher Kräuter.“ (aus „Chaturvarga-Chintamani“ von Hemadri)</em></p>
     
@@ -182,11 +216,11 @@
         <table style="width: 100%; border-collapse: collapse;">
             <tr>
                 <td style="width: 30%; padding: 8px; border: 1px solid #ddd;"><strong>Zodiac</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">0°00′ – 13°20′ <a href="#">des Widders</a></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">0°00′ – 13°20′ <a href="#"><strong>des Widders</strong></a></td>
             </tr>
             <tr>
                 <td style="padding: 8px; border: 1px solid #ddd;"><strong>Regentenplanet</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;"><a href="#">Ketu</a> (der südliche Mondknoten)</td>
+                <td style="padding: 8px; border: 1px solid #ddd;"><a href="#"><strong>Ketu</strong></a> (der südliche Mondknoten)</td>
             </tr>
             <tr>
                 <td style="padding: 8px; border: 1px solid #ddd;"><strong>Gottheit</strong></td>
@@ -250,7 +284,7 @@
             </tr>
             <tr>
                 <td style="padding: 8px; border: 1px solid #ddd;"><strong>Feind</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;"><a href="#">Jyestha</a></td>
+                <td style="padding: 8px; border: 1px solid #ddd;"><a href="#"><strong>Jyestha</strong></a></td>
             </tr>
         </table>
     </div>
@@ -282,6 +316,11 @@
 <p style="text-align: justify;">In der spirituellen Praxis wird Ashwini mit dem Erwecken und der Aktivierung der inneren Kräfte in Verbindung gebracht. Sie eignet sich besonders gut für Anfänge spiritueller oder körperlicher Praktiken wie Yoga, Meditation oder Heilungsrituale. Menschen, die unter Ashwini geboren sind, haben oft eine angeborene Fähigkeit zur Heilung und könnten von Beruf Therapeuten, Ärzte oder spirituelle Lehrer sein.</p>
 </div>
 <br>
+<!-- Секции, которые будут прокручиваться перед GIF -->
+<div style="height: 100vh; background-image: url('https://media.newyorker.com/photos/63ff8fb152969f7a1cd75bf1/master/w_2240,c_limit/230313_r41988web-story.gif'); background-size: cover; background-attachment: fixed; background-position: center;">
+</div>
+<br>
+
 <div class="container">
 <h3 style="text-align: center;  ">Männer-Ashwini</h3>
 <p style="text-align: justify;">Ein attraktives, offenes Gesicht, große, strahlende Augen und eine breite Stirn. Er besitzt eine ruhige und beharrliche Art und ist in der Lage, jede Aufgabe zu Ende zu bringen. Seine Hartnäckigkeit zeigt sich besonders bei denen, die ihre Sonne in Ashwini haben, besonders bei Geburt zwischen dem 14. und 28. April, wenn die Sonne durch ihren Exaltationsgrad in Ashwini geht, oder zwischen dem 14. und 28. Oktober, wenn die Sonne in der Nakshatra Swati geschwächt ist.</p>
@@ -905,33 +944,33 @@
 </style>
 
 <div class="tags-container" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; padding-left: 10%; padding-right: 10%;">
-    <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1 Nakshatra - Ashwini</button>
-    <button class="tag btn btn--small"  onclick="toggleActive(this); window.location.href='https://astro.2ix.de/bharani.html';">2 Nakshatra - Bharani</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">3 Nakshatra - Krittika</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">4 Nakshatra - Rohini</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">5 Nakshatra - Mrigashira</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">6 Nakshatra - Ardra</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">7 Nakshatra - Punarvasu</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">8 Nakshatra - Pushya</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">9 Nakshatra - Ashlesha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">10 Nakshatra - Magha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">11 Nakshatra - Purva Phalguni</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">12 Nakshatra - Uttara Phalguni</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">13 Nakshatra - Hasta</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">14 Nakshatra - Chitra</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">15 Nakshatra - Swati</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">16 Nakshatra - Vishakha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">17 Nakshatra - Anuradha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">18 Nakshatra - Jyeshtha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">19 Nakshatra - Mula</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">20 Nakshatra - Purva Ashadha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">21 Nakshatra - Uttara Ashadha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">22 Nakshatra - Shravana</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">23 Nakshatra - Dhanishtha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">24 Nakshatra - Shatabhisha</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">25 Nakshatra - Purva Bhadrapada</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">26 Nakshatra - Uttara Bhadrapada</button>
-    <button class="tag btn btn--small" onclick="toggleActive(this)">27 Nakshatra - Revati</button>
+    <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
+    <button class="tag btn btn--small"  onclick="toggleActive(this); window.location.href='https://astro.2ix.de/bharani.html';">2  Bharani</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">3  Krittika</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">4  Rohini</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">5  Mrigashira</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">6  Ardra</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">7  Punarvasu</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">8  Pushya</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">9  Ashlesha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">10  Magha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">11  Purva Phalguni</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">12  Uttara Phalguni</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">13  Hasta</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">14  Chitra</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">15  Swati</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">16  Vishakha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">17  Anuradha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">18  Jyeshtha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">19  Mula</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">20  Purva Ashadha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">21  Uttara Ashadha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">22  Shravana</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">23  Dhanishtha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">24  Shatabhisha</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">25  Purva Bhadrapada</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">26  Uttara Bhadrapada</button>
+    <button class="tag btn btn--small" onclick="toggleActive(this)">27  Revati</button>
 </div>      
 <br>    
 <br>
@@ -1407,31 +1446,31 @@ if (!event.target.closest('.modal-popup')) {
 
 </script> 
 <script>
-function addHover(element) {
-if (!element.classList.contains('active')) {
-element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Добавляем фон при hover, если нет класса active
-}
-}
-
-function removeHover(element) {
-if (!element.classList.contains('active')) {
-element.style.backgroundColor = 'transparent'; // Убираем фон, если нет класса active
-}
-}
-
-function toggleActive(element) {
-if (element.classList.contains('active')) {
-element.classList.remove('active');
-element.style.backgroundColor = 'transparent'; // Отключаем активное состояние
-} else {
-document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
-    btn.classList.remove('active');
-    btn.style.backgroundColor = 'transparent';
-});
-element.classList.add('active');
-element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Активное состояние
-}
-}
+    function addHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = '#d65369'; // Добавляем фон при hover, если нет класса active
+        }
+    }
+    
+    function removeHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = ''; // Убираем hover-цвет, возвращая стиль к исходному
+        }
+    }
+    
+    function toggleActive(element) {
+        if (element.classList.contains('active')) {
+            element.classList.remove('active');
+            element.style.backgroundColor = ''; // Возвращаем цвет при отключении активного состояния
+        } else {
+            document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.backgroundColor = '';
+            });
+            element.classList.add('active');
+            element.style.backgroundColor = '#d65369'; // Активное состояние
+        }
+    }
 </script>
 
 

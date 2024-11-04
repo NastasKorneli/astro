@@ -20,6 +20,34 @@
     
       gtag('config', 'G-TTLZ50B2T8');
     </script>
+
+<script>
+    // Отключение контекстного меню правой кнопки мыши
+document.addEventListener('contextmenu', function(e) {
+e.preventDefault();
+});
+
+// Отключение клавиш для просмотра исходного кода и разработчика
+document.addEventListener('keydown', function(e) {
+// Блокировка клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+if (e.key === 'F12' || 
+    (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+    (e.ctrlKey && e.key === 'U')) {
+    e.preventDefault();
+}
+});
+
+// Отключение выделения текста
+document.addEventListener('selectstart', function(e) {
+e.preventDefault();
+});
+
+// Отключение копирования текста
+document.addEventListener('copy', function(e) {
+e.preventDefault();
+});
+
+</script>
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
@@ -132,37 +160,42 @@
 
             <section id="about" class="s-about target-section">
 
+
                 <div class="row about-info wide" data-animate-block>
-            
+
                     <div class="column lg-6 md-12">
                         <div class="col mb-4 portfolio-item graphicdesign photography">
                             <a>
                                 <img src="images/portfolio/uuundulate.svg"
                                     class="img-fluid" alt="portfolio"
-                                    style="width: 550px; height: 550px; object-fit: cover; border-radius: 50%;">
+                                    style=" width: 550px ; height: 550px; object-fit: cover; border-radius: 50%;">
                             </a>
                         </div>
                     </div>
-            
+                    
+                    
+
                     <div class="column lg-6 md-12">
                         <div class="about-info__text">
                             <h2 class="text-pretitle with-line" data-animate-el>
-                                Lass uns einfach anfangen
+                                Verlier dich nicht in Gedanken
                             </h2>
                             <p class="attention-getter" data-animate-el>
-                                Zunächst schauen wir uns an, welches Sternzeichen du bist und welche Eigenschaften dir zugeordnet werden.
-                                Passen diese Beschreibungen zu dir, oder brauchst du vielleicht Hilfe, um deine astrologische Seite besser zu verstehen?
+                                Lass die Sorgen los und tauche in die Welt der Astrologie ein.
                             </p>
                             <p class="attention-getter" data-animate-el>
-                                Wenn du Fragen hast, zögere nicht, dich an mich zu wenden. Ich helfe dir gerne weiter.
-                                <a href="mailto:korneli.nastas@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Frag mich einfach</a>
+                                Erstelle dein persönliches Horoskop, und du wirst vieles über dich selbst besser verstehen. Bei Fragen kannst du dich gerne an einen erfahrenen Astrologen wenden, frag mich zum Beispiel.
+                                <a href="#kundli-container" class="btn btn--medium u-fullwidth contact-btn">dein persönliches Horoskop</a>
                             </p>
-                        </div>
+                            
+                      
+                       
                     </div>
-            
-                </div>
-            
-            </section>
+                    
+                </div> 
+                
+   </div>
+</section>
             
 <div id="houseNav" class="tags-container house-nav-horizontal" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; padding-left: 10%; padding-right: 10%;">
     <button class="tag btn btn--small"  onclick="toggleActive(this)">Aries - Mesha</button>
@@ -1515,32 +1548,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </script> 
 <script>
- function addHover(element) {
-     if (!element.classList.contains('active')) {
-         element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Добавляем фон при hover, если нет класса active
-     }
- }
- 
- function removeHover(element) {
-     if (!element.classList.contains('active')) {
-         element.style.backgroundColor = 'transparent'; // Убираем фон, если нет класса active
-     }
- }
- 
- function toggleActive(element) {
-     if (element.classList.contains('active')) {
-         element.classList.remove('active');
-         element.style.backgroundColor = 'transparent'; // Отключаем активное состояние
-     } else {
-         document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
-             btn.classList.remove('active');
-             btn.style.backgroundColor = 'transparent';
-         });
-         element.classList.add('active');
-         element.style.backgroundColor = 'hsla(51, 30%, 30%, 1)'; // Активное состояние
-     }
- }
- </script>
+    function addHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = '#d65369'; // Добавляем фон при hover, если нет класса active
+        }
+    }
+    
+    function removeHover(element) {
+        if (!element.classList.contains('active')) {
+            element.style.backgroundColor = ''; // Убираем hover-цвет, возвращая стиль к исходному
+        }
+    }
+    
+    function toggleActive(element) {
+        if (element.classList.contains('active')) {
+            element.classList.remove('active');
+            element.style.backgroundColor = ''; // Возвращаем цвет при отключении активного состояния
+        } else {
+            document.querySelectorAll('.tag.btn.btn--small').forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.backgroundColor = '';
+            });
+            element.classList.add('active');
+            element.style.backgroundColor = '#d65369'; // Активное состояние
+        }
+    }
+</script>
  
 
 
