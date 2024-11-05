@@ -611,7 +611,37 @@ e.preventDefault();
 </section>
 
 
+<br>
+<div style="height: 50vh; background-image: url('https://www.fubiz.net/wp-content/uploads/2018/04/Lino-Lago.jpg'); background-size: cover; background-attachment: fixed; background-position: center; display: flex; align-items: center; justify-content: center; position: relative;">
 
+    <!-- Наложение цвета поверх фонового изображения -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(236, 233, 225, 0.077);"></div>
+
+    <!-- Оформленный текстовый блок по центру -->
+    <div style="background-color: rgba(0, 0, 0, 0.3);; padding: 20px 40px; border-radius: 10px; text-align: center; max-width: 80%; position: relative; z-index: 1;">
+
+        <!-- Категория -->
+        <div class="folio-list__item-cat" style="color: #efb11d; font-size: 1.2em; font-weight: bold;">
+            Mystik der Sterne
+        </div>
+
+        <!-- Заголовок -->
+        <div class="folio-list__item-title" style="color: #ece9e1; font-size: 2em; font-weight: bold; margin: 10px 0;">
+            Die Geheimnisse des Zodiaks
+        </div>
+
+        <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
+        <button class="tag btn btn--small"  onclick="toggleActive(this); window.location.href='https://astro.2ix.de/bharani.html';">2  Bharani</button>
+        <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/krittika.html';  ">3  Krittika</button>
+        <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/rohini.html';">4  Rohini</button>
+        <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/mrigashira.html';">5  Mrigashira</button>
+        <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ardra.html'; ">6  Ardra</button>
+        <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/punarvasu.html';">7  Punarvasu</button><!-- Ссылки -->
+   
+
+    </div>
+</div>
+<br>
 
 
 
@@ -830,73 +860,72 @@ section .column.entry {
                <br>    
                
 
-        <section id="faq" style="padding: 40px 20px;">
-            <div class="container" style="max-width: 900px; margin: 0 auto;">
-          
-            
-              <!-- Центрированное изображение -->
-              <!-- <div class="text-center my-4">
-                <img src="https://kn.2ix.de/83006380_2767897389897479_3349479397391335424_n%20(3).jpg" alt="FAQ Image" style="max-width: 100%; height: auto; border-radius: 60px;">
-              </div>
-           -->
-              <!-- Вопросы и ответы золотистым цветом -->
-              <div class="accordion mt-5" id="accordionAstrologyFAQ" style="color: #e43c13;">
-          
-                <!-- Вопрос и ответ 1 -->
-                <div class="accordion-item"> <h2 class="accordion-header" style="font-weight;"> Funktioniert Prashna-Horoskop wirklich? </h2> <br> <p>Absolut! Jede Frage, die gestellt wird, hat eine tiefere kosmische Bedeutung. Im Moment der Fragestellung sind die Planeten so positioniert, dass sie genau das widerspiegeln, was gerade gebraucht wird. Prashna nutzt diese Synchronizität, um eine klare Antwort zu geben – es ist, als würde das Universum direkt sprechen.</p> </div> <!-- Вопрос и Antwort 2 --> <div class="accordion-item mt-4"> <h2 class="accordion-header" ; > Wie genau sind die Antworten? </h2> <br> <p>Die Genauigkeit ist oft verblüffend! Die erstellte Karte zeigt genau die Energien, die umgeben und die aktuelle Situation beeinflussen. Viele Menschen sind überrascht, wie direkt Prashna den Kern ihrer Fragen trifft – ob es um Liebe, Beruf oder persönliche Entscheidungen geht.</p> </div> <!-- Вопрос и Antwort 3 --> <div class="accordion-item mt-4"> <h2 class="accordion-header" > Braucht man das Geburtshoroskop dafür? </h2> <br> <p>Nein, für Prashna braucht es keine Geburtsdaten. Alles, was zählt, ist der Moment der Frage. Dieser Moment enthält bereits alle Antworten, um Klarheit zu schaffen. Natürlich kann das Geburtshoroskop zusätzliche Einblicke geben, aber Prashna ist perfekt für den aktuellen Moment und gibt präzise Antworten ohne Geburtsinformationen.</p> </div> <!-- Вопрос и Antwort 4 --> <div class="accordion-item mt-4"> <h2 class="accordion-header" > Kann man es einfach ausprobieren? </h2> <br> <p>Natürlich! Selbst wenn die Frage "einfach so" gestellt wird, gibt es immer einen tieferen Grund dafür. Wenn die Frage auftaucht, ist es genau der richtige Moment, sie zu stellen. Prashna zeigt, was der Kosmos im Augenblick bereit hat – die Antwort könnte überraschen!</p> </div>
-          
-              </div>
-            </div>
-          </section>
+               <div class="faq-wrapper" style="--space: 0; padding-left: 10%; padding-right: 10%; ">
+
+                <section class="faq-block" style="max-width: 1400px" >
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <h3>Funktioniert Prashna-Horoskop wirklich?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Absolut! Jede Frage, die gestellt wird, hat eine tiefere kosmische Bedeutung. Im Moment der Fragestellung sind die Planeten so positioniert, dass sie genau das widerspiegeln, was gerade gebraucht wird. Prashna nutzt diese Synchronizität, um eine klare Antwort zu geben – es ist, als würde das Universum direkt sprechen.
+          </p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <h3>Wie genau sind die Antworten?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Die Genauigkeit ist oft verblüffend! Die erstellte Karte zeigt genau die Energien, die umgeben und die aktuelle Situation beeinflussen. Viele Menschen sind überrascht, wie direkt Prashna den Kern ihrer Fragen trifft – ob es um Liebe, Beruf oder persönliche Entscheidungen geht.
+          </p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <h3>Braucht man das Geburtshoroskop dafür?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Nein, für Prashna braucht es keine Geburtsdaten. Alles, was zählt, ist der Moment der Frage. Dieser Moment enthält bereits alle Antworten, um Klarheit zu schaffen. Natürlich kann das Geburtshoroskop zusätzliche Einblicke geben, aber Prashna ist perfekt für den aktuellen Moment und gibt präzise Antworten ohne Geburtsinformationen.
+          </p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <h3>Kann man es einfach ausprobieren?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Natürlich! Selbst wenn die Frage "einfach so" gestellt wird, gibt es immer einen tieferen Grund dafür. Wenn die Frage auftaucht, ist es genau der richtige Moment, sie zu stellen. Prashna zeigt, was der Kosmos im Augenblick bereit hat – die Antwort könnte überraschen!
+          </p>
+        </div>
+      </div>
+    </section>
+ </div>
 
 
-
-        <section>
-            <div class="responsive-row">
-                <div class="column entry">
-                    <div class="entry__thumb">
-                        <a href="#" title="Sternzeichen und Häuser">
-                            <img src="images/portfolio/34_result.webp" alt="">
-                            <div class="entry__info">
-                                <div class="folio-list__item-cat" style="color: #efb11d;">Planetenzyklen</div>
-                                <div class="folio-list__item-title" style="color: #ece9e1;" >Transformation und spirituelles Wachstum</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-        
-                <div class="column entry">
-                    <div class="entry__thumb">
-                        <a href="#" title="Nakshatras">
-                            <img src="images/portfolio/24_result.webp" alt="">
-                            <div class="entry__info">
-                                <div class="folio-list__item-cat" style="color: #efb11d;">Kosmische Energien</div>
-                                <div class="folio-list__item-title" style="color: #ece9e1;" >Geheimnisse der Planeteneinflüsse</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-        
-                <div class="column entry">
-                    <div class="entry__thumb">
-                        <a href="#" title="Zeitzyklen der Planeten">
-                            <img src="images/portfolio/33.webp" alt="">
-                            <div class="entry__info">
-                                <div class="folio-list__item-cat" style="color: #efb11d;">Sternenweisheit</div>
-                                <div class="folio-list__item-title" style="color: #ece9e1;" >Astrologische Einblicke und Geheimnisse</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-       
-                
-            </div>
-        </section>
+  
 
         <section>                
             <div class="row about-expertise" data-animate-block>
                 <div class="column lg-12">
-                  
+                    <h2 class="text-pretitle">
+                        Prashna
+                    </h2>
+        
+                    <p class="h1">
+                        Deine persönliche Frage
+                    </p>
                    
                 </div>
             </div>
@@ -1162,27 +1191,46 @@ section .column.entry {
 
         
 
-        <style>
-            #kundli-container {
-            width: 100%;
-            height: 820px;
-            overflow: hidden; /* Обрезает содержимое, которое выходит за рамки контейнера */
-            background-color: #efb11d;
-            
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для более приятного внешнего вида */
-        }
-        
-        #kundliwidgetid iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        </style>
-            <div id="kundli-container">
-                <script type="text/javascript" src="https://kundli.click/widget-embed-js?wid=3f00c3aab3bee68b370222e6906286b4"></script>
-                <div id="kundliwidgetid"></div>
-            </div>
+<style>
+    #kundli-container {
+       
+display: flex;
+flex-direction: row; /* Размещаем элементы по горизонтали */
+justify-content: space-between; /* Распределяем их с промежутком */
+align-items: center; /* Центрируем элементы по вертикали, если требуется */
+padding-right: 20%;
+padding-left: 20%;
+gap: 20px; /* Промежуток между секциями */
+border-radius: 60px;
+}
+
+#kundli-container .left-section,
+#kundli-container .right-section {
+width: 50%;
+
+}
+
+.rounded-image {
+width: 100%;           /* Картинка занимает всю ширину секции */
+height: auto;
+border-radius: 50%;    /* Закругляем до круга */
+object-fit: cover;     /* Обрезка, чтобы заполнить круг */
+}
+
+</style>
+
+<div id="kundli-container" style="margin: 0 auto; max-width: 1400px; padding: 20px 20px; display: flex; justify-content: space-between; align-items: center; background-color: #fff; border: #ffa2b6 15px solid;">
+<!-- Левая секция с виджетом -->
+<div class="left-section" style="width: 50%;">
+<script type="text/javascript" src="https://kundli.click/widget-embed-js?wid=3f00c3aab3bee68b370222e6906286b4"></script>
+<div id="kundliwidgetid"></div>
+</div>
+
+<!-- Правая секция с изображением -->
+<div class="right-section" style="width: 50%;">
+<img src="images/portfolio/uuundulate.svg" alt="Image" class="rounded-image" style="width: 100%; height: auto; border-radius: 50%; object-fit: cover;">
+</div>
+</div>
    
             <section>                
                 <div class="row about-expertise" data-animate-block>
@@ -1278,11 +1326,51 @@ section .column.entry {
                          </section> 
                          <br>
                          
-             
+             <br>
                         
+                         <section>
+                            <div class="responsive-row">
+                                <div class="column entry">
+                                    <div class="entry__thumb">
+                                        <a href="#" title="Sternzeichen und Häuser">
+                                            <img src="images/portfolio/34_result.webp" alt="">
+                                            <div class="entry__info">
+                                                <div class="folio-list__item-cat" style="color: #efb11d;">Planetenzyklen</div>
+                                                <div class="folio-list__item-title" style="color: #ece9e1;" >Transformation und spirituelles Wachstum</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                         
+                                <div class="column entry">
+                                    <div class="entry__thumb">
+                                        <a href="#" title="Nakshatras">
+                                            <img src="images/portfolio/24_result.webp" alt="">
+                                            <div class="entry__info">
+                                                <div class="folio-list__item-cat" style="color: #efb11d;">Kosmische Energien</div>
+                                                <div class="folio-list__item-title" style="color: #ece9e1;" >Geheimnisse der Planeteneinflüsse</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                         
+                                <div class="column entry">
+                                    <div class="entry__thumb">
+                                        <a href="#" title="Zeitzyklen der Planeten">
+                                            <img src="images/portfolio/33.webp" alt="">
+                                            <div class="entry__info">
+                                                <div class="folio-list__item-cat" style="color: #efb11d;">Sternenweisheit</div>
+                                                <div class="folio-list__item-title" style="color: #ece9e1;" >Astrologische Einblicke und Geheimnisse</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                       
+                                
+                            </div>
+                        </section>      
                         
+                        <br>
      
                          <section id="contact" class="s-contact target-section">
 

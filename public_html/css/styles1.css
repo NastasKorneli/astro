@@ -3653,11 +3653,11 @@ img.u-pull-left {
 .folio-list__item-pic::after {
   z-index: 2;
   display: block;
-  content: "+";
+  content: "〄";
   font-family: var(--font-1);
   font-weight: 600;
-  font-size: 4.2rem;
-  color: #d65369;;
+  font-size: 2.2rem;
+  color: #d65369d4;
   text-align: center;
   height: var(--vspace-1);
   width: var(--vspace-1);
