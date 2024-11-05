@@ -69,6 +69,7 @@
   --color-gray-2: #d0d0d0;
   --color-gray-1: #e8e8e8;
   --color-white: #e43c13;
+  
 
   /* text
      */
@@ -2674,16 +2675,18 @@ img.u-pull-left {
     0 8px 8px rgba(0, 0, 0, 0.08);
   --mailtoui-modal-head-bgcolor: var(--color-1-dark);
   --mailtoui-modal-head-title-color: white;
-  --mailtoui-modal-body-bgcolor: #1a55829b;
+  --mailtoui-modal-body-bgcolor: #d65369;
   --mailtoui-button-bgcolor: rgba(255, 255, 255, 0.728);
   --mailtoui-button-text-color: white;
   --mailtoui-button-bgcolor-hover: var(--color-1-dark);
-  --mailtoui-button-text-color-hover: black;
+  --mailtoui-button-text-color-hover: #d65369;
   --mailtoui-button-text-size: 16px;
   --mailtoui-email-address-bgcolor: var(--color-gray-13);
   --mailtoui-email-address-text-color: var(--text-color);
   --border-radius: 0;
   font-family: var(--font-1);
+
+  font-weight: 600;
   background-color: var(--color-body);
   color: white;
 }
@@ -3653,7 +3656,7 @@ img.u-pull-left {
 .folio-list__item-pic::after {
   z-index: 2;
   display: block;
-  content: "〄";
+  content: "◦";
   font-family: var(--font-1);
   font-weight: 600;
   font-size: 2.2rem;
@@ -4320,5 +4323,38 @@ img.u-pull-left {
         /* Сохраняет пропорции изображения */
   border-radius: 10px;     /* Делает изображение кругом */
   object-fit: cover;      /* Обрезает изображение, чтобы оно заполнило круг */
+}
+.portfolio-fixed-bg {
+  width: 100vw; /* Full width of the viewport */
+  height: 50vh;
+ 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: calc((100vw - 100%) / -2); /* Offset any container padding for true full width */
+}
+.entry-content{
+  padding-left:20%; 
+  padding-right: 20%; 
+  text-align: justify;
+}
+
+
+  .container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #f9f9f9;
+  padding:  20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 

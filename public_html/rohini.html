@@ -20,35 +20,35 @@
     
       gtag('config', 'G-TTLZ50B2T8');
     </script>
+        <script>
+            // Отключение контекстного меню правой кнопки мыши
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    
+    // Отключение клавиш для просмотра исходного кода и разработчика
+    document.addEventListener('keydown', function(e) {
+        // Блокировка клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        if (e.key === 'F12' || 
+            (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+            (e.ctrlKey && e.key === 'U')) {
+            e.preventDefault();
+        }
+    });
+    
+    // Отключение выделения текста
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+    });
+    
+    // Отключение копирования текста
+    document.addEventListener('copy', function(e) {
+        e.preventDefault();
+    });
+    
+        </script>
     <!-- CSS
     ================================================== -->
-    <script>
-        // Отключение контекстного меню правой кнопки мыши
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
-
-// Отключение клавиш для просмотра исходного кода и разработчика
-document.addEventListener('keydown', function(e) {
-    // Блокировка клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
-    if (e.key === 'F12' || 
-        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
-        (e.ctrlKey && e.key === 'U')) {
-        e.preventDefault();
-    }
-});
-
-// Отключение выделения текста
-document.addEventListener('selectstart', function(e) {
-    e.preventDefault();
-});
-
-// Отключение копирования текста
-document.addEventListener('copy', function(e) {
-    e.preventDefault();
-});
-
-    </script>
    
 
     <link rel="icon" href="images/portfolio/favicon-32x32.png" type="image/x-icon">
@@ -62,7 +62,7 @@ document.addEventListener('copy', function(e) {
 </head>
 
 
-
+<body id="top">
 
 
     <!-- # preloader
@@ -122,7 +122,7 @@ document.addEventListener('copy', function(e) {
 
             <!-- ### intro
             ================================================== -->
-            <section id="intro" class="s-intro target-section" >
+            <section id="intro" class="s-intro target-section">
 
                 <div class="row intro-content wide">
 
@@ -157,7 +157,7 @@ document.addEventListener('copy', function(e) {
 
             </section> 
 
-            <section id="about" class="s-about target-section" style="background: linear-gradient(to bottom, #ece9e1, #ffffff31);">
+        <section id="about" class="s-about target-section" style="background: linear-gradient(to bottom, #ece9e1, #ffffff31);">
 
 
                 <div class="row about-info wide" data-animate-block>
@@ -197,112 +197,126 @@ document.addEventListener('copy', function(e) {
 </section>
 
 
+        <div class="entry-content">
 
-
-
-
-
-
-
-    <div class="entry-content">
-        <h2 style="text-align: center;  ">Nakshatra Ashwini</h2>
-        <p><strong>Nakshatra Ashwini</strong> (die 1. von 27 Nakshatras, 0°00′ – 13°20′ des <a href="#"><strong>Widders</strong></a>) besteht aus drei hellen Sternen im <a href="#"><strong>Sternbild des Widders</strong></a>. Ashwini ist ein <em>deva</em>, ein göttlicher Stern, der von Natur aus günstig ist. Er ist benannt nach den Ashwini Kumars, himmlischen Zwillingsbrüdern und Heilern der Halbgötter, die sich in einem Streitwagen über den Himmel bewegen und Licht und Glück verbreiten. Der Name der Nakshatra kann als „vom Pferd geboren“, „Reiterin“ oder „Pferdefrau“ übersetzt werden.</p>
+            <br><br>
+            <h2 style="text-align: center;">Nakshatra Rohini</h2>
+            
+            <p><strong>Nakshatra Rohini</strong> (das 4. von 27 Nakshatras, 10° 00′ – 23° 20′ des <a href="#">Stiers</a>) ist durch das Symbol eines Wagens gekennzeichnet und steht unter der Gottheit <strong>Brahma</strong>, dem Schöpfergott. Brahma symbolisiert die Schöpfung und den Ursprung aller Dinge, insbesondere der materiellen Welt. Daher regiert Rohini über Saat und Pflanzen, Wachstum und Entwicklung. Da der Wagen von Rindern gezogen wird, fallen auch Rinder und Fortbewegungsmittel unter die Herrschaft dieser Nakshatra.</p>
+            
+            <p>Rohini ist stark auf alles ausgerichtet, was mit Wachstum und Förderung zu tun hat, und ist subtil mit Aufstieg, Fortschritt und Erhebung verbunden. Diese Nakshatra beseitigt unauffällig Hindernisse und ebnet ihren Weg, doch ihre starke Bindung an die materielle Ebene birgt auch das Potenzial für eine gewisse Neigung zu weltlichen Genüssen.</p>
         
-        <p><em>„Ashwini ist schön wie ein Lotusblütenblatt und hat einen Pferdekopf. Sie trägt weiße Kleidung, sitzt auf einem Lotus und hält in der linken Hand ein Buch und in der rechten einen Topf voller göttlicher Kräuter.“ (aus „Chaturvarga-Chintamani“ von Hemadri)</em></p>
     
-        <h3 style="text-align: center;">Merkmale der Nakshatra Ashwini</h3>
+            <h3 style="text-align: center;">Merkmale der Nakshatra Rohini</h3>
+            
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="width: 30%; padding: 8px; border: 1px solid #ddd;"><strong>Zodiac</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">10° 00′ – 23° 20′ <a href="#">des Stiers</a></td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Regentenplanet</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Mond</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Symbol</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Wagen, von Ochsen gezogen</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Gottheit</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Brahma (Schöpfer des Universums)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Kaste</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Shudra</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ziel</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Moksha</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ursprung</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">menschlich</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Temperament</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">unbeweglich (Dhruva)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Guna</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Rajas</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Geschlecht</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">weiblich</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Qualität</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Beständigkeit</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ayurvedische Konstitution</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Kapha</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Element</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Erde</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Richtung</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Nordwesten, Südosten, Süden</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Körperteile</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Stirn, Knöchel, Unterschenkel, Waden</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Tier</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Schlange</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Laute</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">o, va, vi, vu</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>Feind</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><a href="#">Swati</a></td>
+                </tr>
+            </table>
+        </div>
+        
+
+
+
+
+<br>
+
+<div class="container">
+    <h2 style="text-align: center;">Schlüsselkonzept der Nakshatra Rohini</h2>
     
-        <table style="width: 100%; border-collapse: collapse;">
-            <tr>
-                <td style="width: 30%; padding: 8px; border: 1px solid #ddd;"><strong>Zodiac</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">0°00′ – 13°20′ <a href="#"><strong>des Widders</strong></a></td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Regentenplanet</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;"><a href="#"><strong>Ketu</strong></a> (der südliche Mondknoten)</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Gottheit</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Ashwini Kumars (himmlische Heiler)</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ursprung</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">göttlich</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ziel</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Dharma</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Geschlecht</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">männlich</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Tier</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Pferd</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Element</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Erde</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Richtung</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Zentrum, Osten, Süden, Nordwesten</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Kaste</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Vaishya</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Guna</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Sattwa</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Qualität</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Licht</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Temperament</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">schnell, hell (kshipra)</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ayurvedische Konstitution</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Vata</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Körperteile</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Knie, oberer Teil der Füße</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Symbol</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">Pferdekopf</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Laute</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;">chu, che, cho, la</td>
-            </tr>
-            <tr>
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Feind</strong></td>
-                <td style="padding: 8px; border: 1px solid #ddd;"><a href="#"><strong>Jyestha</strong></a></td>
-            </tr>
-        </table>
-    </div>
+    <p style="text-align: justify;">Rohini steht für Wachstum und die Bestimmung des sozialen Status von sich selbst und anderen. Die vedischen Seher betrachteten Rohini als Kanal kosmischer Energie, die genutzt werden kann, um jedes gewünschte Ziel zu erreichen, da Rohini jenseits des rationalen und logischen Verstands agiert.</p>
 
-        <body>
+    <p style="text-align: justify;">Rohini ist eine äußerst fruchtbare Nakshatra, die jede Form von Wachstum unterstützt. Sie ist an der Schaffung von Ressourcen beteiligt, die für ein zivilisiertes Leben notwendig sind. In ihrer höchsten Form interessiert sich Rohini für die Nutzung natürlicher Materialien; in ihrer niedrigeren Form fördert sie die Produktion künstlicher Erzeugnisse. Menschen, die unter dem Einfluss von Rohini stehen, zeichnen sich durch Umweltbewusstsein aus, während weniger entwickelte Individuen oft schädliche Produkte bewerben, wie dies in der Kosmetikindustrie der Fall ist.</p>
 
+    <p style="text-align: justify;">Personen, die unter der Nakshatra Rohini geboren sind, zeichnen sich durch große, klare Augen, eine dicke Unterlippe und ein freundliches Gesicht aus. Sie haben eine ausdrucksstarke Stimme und eine markante Gestik. Sie sind ruhig, stabil und geerdet, was oft als Sturheit ausgelegt wird. Ihre fließende Art zu sprechen und ihre charmanten Manieren schaffen Vertrauen bei anderen, und sie nutzen ihren Charme oft, um ihre Angelegenheiten zu regeln.</p>
 
-    <div class="container">
-    <h2 style="text-align: center;  ">Schlüsselkonzept der Nakshatra Ashwini</h2>
-    <p style="text-align: justify;">Ashwini symbolisiert Heilung, Genesung und Neuanfänge. Sie steht für die Fähigkeit, Prozesse anzustoßen und das Bewusstsein zu erwecken. Menschen, die unter dem Einfluss dieser Nakshatra stehen, zeichnen sich durch ein hohes Maß an Entschlossenheit und Mut aus, neue Herausforderungen zu meistern.</p>
+    <p style="text-align: justify;">Rohini hilft dabei, Gedanken und Wünsche zu materialisieren und ist daher eine künstlerische Nakshatra. Sie gilt als wahre Beschützerin der Künste, weshalb das Verständnis für Kunst in der Gesellschaft stets vom Entwicklungsstand von Rohini abhängt. Da heute die künstlerischen Standards gesunken sind, zeigt sich, dass sich Rohini bei vielen Menschen auf einem niedrigeren Entwicklungsniveau manifestiert.</p>
 
-<p style="text-align: justify;">Das Sternbild Ashwini ist das erste der 27 Nakshatras und steht symbolisch für einen Aufbruch und die Energie des Anfangs. Die Asvin-Kumaras, zwei göttliche Zwillingsheiler, werden als ihre Schutzgötter betrachtet und bringen heilende Energie zu allem, was sie berühren. Menschen, die unter Ashwini geboren wurden, werden oft von einem inneren Drang angetrieben, Gutes zu tun und Heilung zu fördern, sei es im körperlichen, emotionalen oder spirituellen Bereich.</p>
+    <p style="text-align: justify;">Rohini-Geborene sind unglaublich ausdauernd und zielstrebig und finden erst dann Ruhe, wenn sie ihr Ziel erreicht haben. Familienwerte haben oft eine große Bedeutung für sie, und sie unterstützen diejenigen, die zu ihrem engen Kreis gehören. Andere Menschen können jedoch nur schwer ihr Interesse langfristig aufrechterhalten.</p>
 
-<p style="text-align: justify;">Ashwini ist für ihre Schnelligkeit und Direktheit bekannt. Die Energie dieser Nakshatra ist spontan und ungebunden, was sie zu großartigen Wegbereitern und Abenteurern macht. Dennoch müssen Ashwinis darauf achten, dass ihre impulsive Natur sie nicht davon abhält, Dinge zu Ende zu bringen. Eine Tendenz zur schnellen Umsetzung kann manchmal zu vorschnellen Entscheidungen führen, die nicht immer die besten Ergebnisse bringen.</p>
+    <p style="text-align: justify;">Trotz ihrer statischen Natur lieben sie es, sich unter Menschen zu bewegen, wenn es um soziale und kollektive Interaktionen geht. In ihrer niedrigeren Form macht Rohini Menschen zu kühlen und opportunistischen Persönlichkeiten, die geschickt die Gunst und finanzielle Unterstützung anderer gewinnen.</p>
 
-<p style="text-align: justify;">Charaktereigenschaften, die mit Ashwini verbunden sind, umfassen Unabhängigkeit, Optimismus, Vitalität und ein hohes Maß an Energie. Diese Menschen haben oft eine magnetische Ausstrahlung und ziehen andere durch ihre aufrichtige und dynamische Persönlichkeit an. Sie neigen jedoch dazu, eigensinnig zu sein und können sich schwertun, Anweisungen zu folgen oder Hilfe anzunehmen.</p>
+    <p style="text-align: justify;">Rohini-Persönlichkeiten sind meist konservativ, aber auch offen für neue Einflüsse. Ihre konservative Seite zeigt sich besonders in ihrer Sorge um die Erhaltung ihres Körpers. Personen mit einem starken Rohini-Einfluss achten in der Regel auf ihre Gesundheit und erreichen oft ein hohes Alter. Junge Rohini-Geborene können manchmal Angst vor dem Erwachsenwerden und dem Tod haben.</p>
 
-<p style="text-align: justify;">In der spirituellen Praxis wird Ashwini mit dem Erwecken und der Aktivierung der inneren Kräfte in Verbindung gebracht. Sie eignet sich besonders gut für Anfänge spiritueller oder körperlicher Praktiken wie Yoga, Meditation oder Heilungsrituale. Menschen, die unter Ashwini geboren sind, haben oft eine angeborene Fähigkeit zur Heilung und könnten von Beruf Therapeuten, Ärzte oder spirituelle Lehrer sein.</p>
+    <p style="text-align: justify;">Rohini ist eine der genussorientiertesten Nakshatras — sie glaubt, dass man im Leben alles ausprobieren sollte. Rohini fördert die Erlangung von Erfahrung durch spirituelle Lehrer. Durch diese Nakshatra erfährt man die Früchte seines Handelns.</p>
+
+    <p style="text-align: justify;">Rohini gilt als eine ausgewogene Nakshatra. Menschen, die in produzierenden Tätigkeiten involviert sind, erkennen die Bedeutung des Gleichgewichts für das Erreichen ihrer Ziele. Rohini ist methodisch und ausgeglichen. In ihrem negativen Aspekt kann sie jedoch dazu neigen, das Leben ohne große Abenteuer zu führen und sich ultra-konservativ zu verhalten, was sie daran hindert, Weisheit und Erfahrung zu sammeln. Im positiven Aspekt weiß Rohini, wie man auf dem eigenen Lebensweg ohne unnötige Anstrengungen bleibt.</p>
+
+    <p style="text-align: justify;">Da Rohini Wachstum symbolisiert, bringt diese Nakshatra oft Genuss, Attraktivität und Wohlstand. Sie fördert Fruchtbarkeit, Gesundheit und Ehrlichkeit, kann aber auch Sturheit und eine Neigung zu weltlichen Genüssen mit sich bringen.</p>
+
+    <p style="text-align: justify;"><em>„Der Mond in Rohini verleiht Wahrhaftigkeit, das Fehlen von Habgier, Sauberkeit, eine sanfte Redeweise, starke Ansichten und ein ansprechendes Äußeres“</em> (Varahamihira).</p>
 </div>
+
 <br>
 <div class="portfolio-fixed-bg" style=" background-image: url('images/portfolio/44_result.webp');">
 
@@ -325,10 +339,10 @@ document.addEventListener('copy', function(e) {
         <!-- Ссылки -->
         <div style="margin-top: 15px;">
           
-            <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
+            <button class="tag btn btn--small " onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
             <button class="tag btn btn--small"  onclick="toggleActive(this); window.location.href='https://astro.2ix.de/bharani.html';">2  Bharani</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/krittika.html';  ">3  Krittika</button>
-            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/rohini.html';">4  Rohini</button>
+            <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/rohini.html';">4  Rohini</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/mrigashira.html';">5  Mrigashira</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ardra.html'; ">6  Ardra</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/punarvasu.html';">7  Punarvasu</button>
@@ -357,39 +371,35 @@ document.addEventListener('copy', function(e) {
     </div>
 </div>
 <br>
+<div class="container">
+    <h3 style="text-align: center;">Männer-Rohini</h3>
+    
+    <p style="text-align: justify;">Männer, die unter der Nakshatra Rohini geboren sind, haben oft eine kleinere Körpergröße und eine ansprechende Körperstruktur, auch wenn sie eine Neigung zur Fülle haben. Sie besitzen einen faszinierenden Blick, der andere in ihren Bann zieht.</p>
+    
+    <p style="text-align: justify;">Männer-Rohini zeichnet ein starkes Gefühl für Gerechtigkeit und der Wunsch aus, für die Wahrheit einzutreten. Sie sind vertrauenswürdig und edelmütig und sind bereit, sich für die Liebe zu opfern. Oft lassen sie sich eher vom Herzen als vom Verstand leiten, leben im Hier und Jetzt und ändern ihre Ziele abhängig von ihren Emotionen. Wenn sie zornig werden, verlieren sie leicht den Bezug zur Realität, was eine der Ursachen für eine unruhige Familienbeziehung sein kann.</p>
+    
+    <p style="text-align: justify;">Diese Männer können ein hohes gesellschaftliches Ansehen erreichen, besonders durch Erfolge im Geschäftsleben und in öffentlichen Aktivitäten. Ihre Beziehungen zum Vater sind oft kühl, während sie eine starke Bindung zur Mutter und ihren Verwandten haben.</p>
+    
+    <p style="text-align: justify;">Mögliche gesundheitliche Probleme umfassen das Harn- und Kreislaufsystem.</p>
+</div>
+
+<br>
 
 <div class="container">
-<h3 style="text-align: center;  ">Männer-Ashwini</h3>
-<p style="text-align: justify;">Ein attraktives, offenes Gesicht, große, strahlende Augen und eine breite Stirn. Er besitzt eine ruhige und beharrliche Art und ist in der Lage, jede Aufgabe zu Ende zu bringen. Seine Hartnäckigkeit zeigt sich besonders bei denen, die ihre Sonne in Ashwini haben, besonders bei Geburt zwischen dem 14. und 28. April, wenn die Sonne durch ihren Exaltationsgrad in Ashwini geht, oder zwischen dem 14. und 28. Oktober, wenn die Sonne in der Nakshatra Swati geschwächt ist.</p>
-
-<p style="text-align: justify;">Männer-Ashwini sind loyal und hingebungsvoll gegenüber denen, die sie lieben. Sie sind bereit, sich für andere aufzuopfern und haben eine großzügige Natur. Sie geben gerne Ratschläge, auch wenn sie selbst selten auf die Ratschläge anderer hören. Sie denken gründlich über jeden Schritt nach und bleiben standhaft, selbst wenn sie falsch liegen. Glaube und spirituelle Werte haben einen hohen Stellenwert für sie, und sie vermeiden oft sentimentale Bindungen.</p>
-
-<p style="text-align: justify;">Mit einem entwickelten Intellekt und einer Tendenz zu literarischen Interessen und Musik neigen Männer-Ashwini manchmal zu Übertreibungen. Sie haben oft ein Interesse an Kunst und Kultur, was ihnen hilft, ihre kreative Seite zu entfalten.</p>
-
-<p style="text-align: justify;">Die Geburt unter den Graden von 2 bis 3 im Zeichen Widder kann Stolz und eine Neigung zu Täuschung und problematischem Verhalten fördern.</p>
-
-<p style="text-align: justify;">Männer-Ashwini sind meist sparsam und setzen ihre Ziele mit Entschlossenheit um, manchmal sogar auf Kosten ihrer Finanzen. Sie sind familienorientiert, obwohl ihre Hartnäckigkeit oft zu Spannungen mit nahestehenden Menschen führt. Sie haben häufig ein distanziertes Verhältnis zum Vater, erhalten jedoch Unterstützung von Verwandten, insbesondere von der Familie der Mutter. Eine Ehe zwischen 26 und 30 Jahren ist üblich, mit der Wahrscheinlichkeit, mehr Söhne als Töchter zu haben.</p>
-
-<p style="text-align: justify;">Gesundheitlich sind Männer-Ashwini in der Regel robust, jedoch bei Sonne, Lagna oder Mond in den Graden zwischen 2 und 3 im Widder anfällig für Migräne und Herzkrankheiten.</p>
-
-<p style="text-align: justify;">Bis zum 30. Lebensjahr erleben Männer-Ashwini häufig Herausforderungen und Rückschläge. Zwischen 30 und 55 Jahren stellt sich dann jedoch stabiler Fortschritt und Wachstum ein.</p>
+    <h3 style="text-align: center;">Frauen-Rohini</h3>
+    
+    <p style="text-align: justify;">Frauen, die unter der Nakshatra Rohini geboren sind, zeichnen sich durch eine besondere Schönheit aus, wobei ihr Gesicht außergewöhnlich helle Haut und ausdrucksstarke Augen aufweist.</p>
+    
+    <p style="text-align: justify;">Diese Frauen sind gutherzig, wohlerzogen und praktisch veranlagt und haben ein feines Gespür für Mode. Ihre Persönlichkeit vereint jedoch eine gewisse Unausgeglichenheit mit einer Mischung aus Reizbarkeit und Verschlossenheit. Sie können im Geschäftsbereich erfolgreich sein, insbesondere in der Lebensmittel- oder Hotelbranche.</p>
+    
+    <p style="text-align: justify;">Frauen-Rohini sind normalerweise gute Hausfrauen und glückliche Ehefrauen und Mütter. Die einzige Eigenschaft, die familiäre Beziehungen stören könnte, ist ihr Sturkopf. Männer, die unter der Nakshatra Magha geboren sind, gelten als besonders passende Partner für sie.</p>
+    
+    <p style="text-align: justify;">Im Allgemeinen haben Frauen-Rohini eine gute Gesundheit. Sie neigen jedoch zu Erkältungen im Hals- und Brustbereich und könnten an Schwellungen oder unregelmäßigen Menstruationen leiden.</p>
 </div>
+
 <br>
 <div class="container">
-<h3 style="text-align: center;  ">Frauen-Ashwini</h3>
-<p style="text-align: justify;">Frauen, die unter dem Einfluss von Ashwini geboren wurden, haben einen magnetischen Blick, kleine, strahlende Augen und sind sehr redegewandt. Sie besitzen ein ausgezeichnetes Organisationstalent, respektieren Ältere und sind oft charmant und überzeugend. In Beziehungen neigen sie zu starker Zuneigung und haben eine tiefe Verbindung zu sinnlichen Freuden.</p>
-
-<p style="text-align: justify;">Ashwini-Frauen zeigen große Entschlossenheit und Geduld. Sie sind oft erfolgreich in ihren Unternehmungen und haben eine hohe Arbeitsmoral. Typischerweise erreichen sie bis zum Alter von 50 Jahren eine stabile finanzielle Situation, was ihnen erlaubt, das Arbeitsleben hinter sich zu lassen und sich auf Familie und persönliches Wohl zu konzentrieren.</p>
-
-<p style="text-align: justify;">In der Regel heiraten Frauen-Ashwini zwischen dem 23. und 26. Lebensjahr. Frühe Ehen sind jedoch manchmal von Trennung oder Witwenschaft geprägt. Ihre Kinder sind oft überwiegend weiblich, und sie haben ein starkes Interesse am Wohl ihrer Familie. Ihre Gesundheit ist meist stabil, doch emotionale Belastungen können sich negativ auf ihr Wohlbefinden auswirken.</p>
-
-<p style="text-align: justify;">Ashwini-Frauen sollten besonders vorsichtig im Straßenverkehr sein, da sie für Unfälle anfällig sein können. Bei unkontrollierten Emotionen kann es zu psychischen Belastungen, Krämpfen, Kopfschmerzen oder Problemen mit dem Menstruationszyklus kommen. In den vedischen Schriften wird erwähnt, dass, wenn die erste Menstruation einer Frau unter dem Transit der Mondposition in Ashwini auftritt, dies Wohlstand und Gesundheit verspricht.</p>
-
- </div>
- <br>
-<div class="container">
-    
-    <h2 style="text-align: center;">Die Padas (Viertel) der Nakshatra Ashwini</h2>
+    <h2 style="text-align: center;">Die Padas (Viertel) der Nakshatra Rohini</h2>
 
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
@@ -397,233 +407,267 @@ document.addEventListener('copy', function(e) {
                 <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10°00′ – 13°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa des Widders, regiert von Mars. Hier sind starke Leidenschaften und eine sinnliche Natur zu finden, die oft zur Selbstverwöhnung und Verschwendung neigt. Planeten in dieser Pada streben nach schnellen materiellen Erfolgen, mit Ausnahme von Sonne und Mars. In ihrer höchsten Form kann diese Pada den Nativ zu einem spirituellen Krieger machen, der gegen Ausbeutung auf der Erde kämpft.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13°20′ – 16°40′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa des Stiers, regiert von Venus. Sie reflektiert die besten Eigenschaften der Nakshatra Rohini — feine Manieren, Redekunst und Liebe zur Musik und Kunst im Allgemeinen. Planeten hier bringen Fülle und die Fähigkeit, wie durch Magie das Gewünschte zu manifestieren. Es besteht Potenzial für Erfolg im Tourismus und häufige Ortswechsel, besonders bei Frauen. Starke Planeten hier sind Mond, Merkur, Venus und Sonne.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16°40′ – 20°00′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa der Zwillinge, regiert von Merkur. Sie verleiht mathematische Fähigkeiten, einen scharfen Intellekt, Besonnenheit und eine Neigung zur Wohltätigkeit. Die starken Planeten hier sind Merkur, Venus und Saturn.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">20°00′ – 23°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa des Krebses, regiert von Mond. Sie bringt Reichtum, Bekanntheit und starke Intuition. Planeten in dieser Pada besitzen mütterliche Qualitäten, können aber auch besitzergreifend werden. Am besten wirken hier positiv gestellte Mond und Jupiter.</td>
+            </tr>
+        </tbody>
+    </table>
+
+  
+
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Wenn der Mond in Rohini platziert ist</h2>
+    
+    <p style="text-align: justify;">Eine Person mit dem Mond in Rohini ist wahrheitsliebend, aufrichtig und hat eine sanfte, angenehme Ausdrucksweise. Der Geist ist ruhig, und das Erscheinungsbild oft ansprechend und attraktiv.</p>
+    
+    <p style="text-align: justify;">Der Mond in Rohini verleiht eine kreative Natur und Charisma. Dabei sollte jedoch die Position und die Aspekte des Mondes berücksichtigt werden, da eine günstige Platzierung den gewünschten Aufstieg ermöglicht, während eine ungünstige Positionierung den Erfolg beeinträchtigen könnte.</p>
+    
+    <p style="text-align: justify;">Zu den typischen Merkmalen zählen ein charmantes Aussehen, ein stabiler Geist, musikalisches Talent, Interesse an Tanz und Theater, öffentliche Anziehungskraft, Erfolg in der Karriere, politische Erfolge, Wohlstand, gutes Gesundheitsbild und eine gut entwickelte Muskulatur. Der beste Lebensabschnitt liegt zwischen 30 und 50 Jahren (nach dem Rahu-Zyklus). Es können Probleme in frühen Ehen und Entscheidungsprobleme auftreten.</p>
+
+    <p style="text-align: justify;">Berühmte Persönlichkeiten mit dem Mond in Rohini: Sri Krishna, Sigmund Freud, Königin Victoria.</p>
+
+    <h3 style="text-align: center;">Einfluss der Aspekte auf den Mond in Rohini</h3>
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, Besitz von Immobilien, Einkommen aus der Landwirtschaft und okkulte Fähigkeiten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Wahrhaftigkeit, Respekt, Anziehungskraft auf das andere Geschlecht.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Interesse an Kunst, hoher Intellekt und großes Potenzial für beruflichen Erfolg.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Neigung zur Religion, Respekt vor den Eltern und Verantwortungsbewusstsein.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Besitz von Schmuck und Grundbesitz.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Früher Verlust der Mutter und fehlende Unterstützung vom Vater.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Mond in den verschiedenen Padas (Vierteln) der Nakshatra Rohini</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10°00′ – 13°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Schöne Erscheinung, impulsives Temperament und Neigung zur Gier. Erfolg in Geschäftsbereichen, die mit Lebensmitteln zu tun haben.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13°20′ – 16°40′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Elegante Manieren, Redekunst, Liebe zur Musik und den Künsten. Erfolg im Tourismusgeschäft möglich. Mögliche Lernschwierigkeiten und häufige Wohnortwechsel, besonders bei Frauen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16°40′ – 20°00′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mathematische Fähigkeiten, starker Intellekt, Besonnenheit, Hingabe und Neigung zur Wohltätigkeit. Mögliche Augen- und Halsprobleme.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">20°00′ – 23°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, Bekanntheit und stark ausgeprägte Intuition. Mögliche Gewinne im Edelsteinhandel.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+<div class="container">
+    <h2 style="text-align: center;">Sonne in den verschiedenen Padas (Vierteln) der Nakshatra Rohini</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Geburtsdatum</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">26. – 29. Mai</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Weisheit, Taktgefühl und Dienst an der Gesellschaft. Es kann zu häufigen Kopfschmerzen und Epilepsie kommen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">29. Mai – 1. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Starke, attraktive Persönlichkeit. Gefahr durch Wasser. Erfolg im Ölgeschäft möglich. Risiko von Meningitis.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">1. – 3. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erfolge im öffentlichen Leben, Ruhm und Beliebtheit. Der Horoskopeigner wird jedoch nicht reich. Es besteht Gefahr durch Wasser und mögliche Darmprobleme.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">3. – 7. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Häufige Reisen, Kurzsichtigkeit und mögliche Mundkrankheiten. Wenn der Horoskopeigner ein Mann ist, könnten Frauen großen Einfluss auf ihn haben.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Sonne in den verschiedenen Padas (Vierteln) der Nakshatra Rohini</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Geburtsdatum</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">26. – 29. Mai</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Weisheit, Taktgefühl und Dienst an der Gesellschaft. Es können häufige Kopfschmerzen und Epilepsie auftreten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">29. Mai – 1. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Starke und attraktive Persönlichkeit. Gefahr durch Wasser. Möglicher Erfolg im Ölgeschäft. Risiko von Meningitis.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">1. – 3. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erfolge im öffentlichen Leben, Ruhm und Beliebtheit. Der Horoskopeigner wird jedoch nicht reich. Es besteht Gefahr durch Wasser und mögliche Darmprobleme.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">3. – 7. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Häufige Reisen, Kurzsichtigkeit und mögliche Mundkrankheiten. Wenn der Horoskopeigner ein Mann ist, könnten Frauen großen Einfluss auf ihn haben.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Mars in Rohini und seine Aspekte</h2>
+
+    <h3 style="text-align: center;">Einfluss der Aspekte auf Mars in Rohini</h3>
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Unstabile häusliche Umgebung, Wohnort in bergigen oder hügeligen Gegenden.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Feindliche Beziehung zur Mutter, Neigung zu Frauen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Attraktivität, Wohlstand, Reizbarkeit und Gelehrsamkeit.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Einkommen aus Musik und schönen Künsten, Unterstützung von Verwandten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ruhm und Erfolg in der Politik.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ehrlichkeit, gute Manieren und Möglichkeit, ein Stadtoberhaupt zu werden.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 style="text-align: center;">Mars in den verschiedenen Padas (Vierteln) der Nakshatra Rohini</h3>
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">00°00′ – 3°20′ des Widders</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">In dieser Pada zeigt Ashwini Organisationsfähigkeiten und Entschlossenheit.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10°00′ – 13°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mögliche Erkrankungen des Kehlkopfs, Interesse an Musik und süße Ausdrucksweise.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">3°20′ – 6°40′ des Widders</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Praktisch orientiert mit Schönheitsideal.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13°20′ – 16°40′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erhöhte Emotionalität, Naivität. Mögliche Erkrankungen der Nasenhöhle. Wenn die Sonne in dieser Pada steht, arbeitet der Nativ möglicherweise in der Verteidigungsindustrie oder bei der Polizei.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">6°40′ – 10°00′ des Widders</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Humor und Geselligkeit.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16°40′ – 20°00′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mut, Respekt vor gebildeten Menschen. Wenn der Aszendent auf Ashwini fällt und Mars in dieser Pada steht, ist Verlust von Kindern und Schwierigkeiten mit der Ehefrau möglich. Mögliche Erkrankungen wie Halswirbelsäulenosteoarthritis oder Pharyngitis.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">10°00′ – 13°20′ des Widders</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Verständnis und Empathie.</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <br>
-    
-    <p style="text-align: justify;">Berühmte Ashwinis: Amelia Earhart, Martin Luther King</p>
-</div>
-    <br>
-
-    <div class="container">
-        <h2 style="text-align: center;">Wenn der Mond in Ashwini platziert ist und aspektiert wird</h2>
-
-        <table style="width: 100%; border-collapse: collapse; text-align: left;">
-            <thead>
-                <tr>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Großzügigkeit, Autorität. Der Besitzer des Horoskops ist in der Lage, Kraft zur Erreichung seiner Ziele einzusetzen.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Ohren- und Zahnkrankheiten. Möglicherweise abhängige Position.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Ruhm, Bekanntheit und Wohlstand können kommen.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Gute Bildung und pädagogische Fähigkeiten.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Attraktives Aussehen, gute Gesundheit.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Schlechte Gesundheit, negative Einstellung gegenüber anderen Menschen.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-</div>
-<br>
-<div class="container">
-    <h3 style="text-align: center;">Wenn die Sonne in Ashwini platziert ist und aspektiert wird</h3>
-
-    <table style="width: 100%; border-collapse: collapse; text-align: left;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Grausamkeit.</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Eine starke, attraktive Persönlichkeit. Zwischen 30 und 40 Jahren sind ernsthafte Gesundheitsprobleme möglich.</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Freundlichkeit, Großzügigkeit, Wohlstand, Respekt von anderen Menschen.</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Neigung zu sexuellen Freuden.</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Armut.</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    </div>
-    <br>
-    <div class="container">
-        <h3 style="text-align: center;">Sonne in den Vierteln der Nakshatra Ashwini</h3>
-
-<table style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead>
-        <tr>
-            <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
-            <th style="border: 1px solid #ddd; padding: 8px;">Geburtsdatum</th>
-            <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="border: 1px solid #ddd; padding: 8px;">Erstes Viertel (0° - 3° 20')</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">14. bis 17. April</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">Selbstbewusstsein, Redekunst in Debatten. Gute Gesundheit, Freude an Kindern, Langlebigkeit. Krankheiten des Gallensystems und des Blutsystems sind möglich.</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #ddd; padding: 8px;">Zweites Viertel (3° 20' - 6° 40')</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">18. bis 22. April</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">Ungünstige Position für den Mond. Es wird eine geringe Lebensdauer festgestellt. Der negative Einfluss nimmt zu, wenn weitere ungünstige Aspekte vorhanden sind.</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #ddd; padding: 8px;">Drittes Viertel (6° 40' - 10°)</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">22. bis 25. April</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">Gute Gesundheit, niedrige soziale Stellung.</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #ddd; padding: 8px;">Viertes Viertel (10° - 13° 20')</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">25. bis 28. April</td>
-            <td style="border: 1px solid #ddd; padding: 8px;">Intelligenz, gute Gesundheit, Führungsqualitäten. Neigung zur Religion, Aufrichtigkeit, Charme, Liebe zum Reisen. Nach dem 40. Lebensjahr – Wohlstand. Dies trifft besonders zu, wenn die Sonne zwischen 10° und 11° Widder steht.</td>
-        </tr>
-    </tbody>
-</table>
-
-    </div>
-
-    <br>
-    <div class="container">
-        <h2 style="text-align: center;">Wenn Mars in Ashwini platziert ist und aspektiert wird</h2>
-    
-        <table style="width: 100%; border-collapse: collapse; text-align: left;">
-            <thead>
-                <tr>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
-                    <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Erwartet wird eine hohe Bildung und Respekt gegenüber den Eltern.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Möglicherweise Neigung zu Diebstahl, Unfreundlichkeit gegenüber anderen und häufige Liebesaffären.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Zahlreiche Beziehungen zu Frauen, Handeln zur Selbstdarstellung und äußeren Eindruck.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Gesundheit, Stärke, Einfluss und Autorität. Der Besitzer des Horoskops wird das Familienoberhaupt sein.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Neigung zu außerehelichen Beziehungen, die bekannt werden und dem Besitzer viele Probleme bereiten, jedoch leistet er auch viel für die Gesellschaft.</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">Bruch familiärer Bindungen und Entfremdung von der Familie.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-<br>
-<div class="container">
-    <h2 style="text-align: center;">Mars in den Vierteln der Nakshatra Ashwini</h2>
-
-    <table style="width: 100%; border-collapse: collapse; text-align: left;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Erstes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">0° - 3° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Mittlere Körpergröße, ausgezeichnete Gesundheit, hohes soziales Ansehen, Respekt der Mitmenschen, beruflicher Erfolg, mathematische oder technische Fähigkeiten, gute Bildung. Eine erfolgreiche Karriere im Militär ist möglich.
-                </td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Zweites Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">3° 20' - 6° 40' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Der Besitzer des Horoskops wird sehr rachsüchtig sein, markante Merkmale auf Kopf oder Gesicht haben, schwache Gesundheit und eine Neigung zu entzündlichen Erkrankungen und Fieber. Vorsicht vor Feuer und Unfällen. Möglicherweise wird er kinderlos sein, oder trotz des starken Wunsches nach einem Sohn, wird ihm stattdessen eine Tochter geschenkt.
-                </td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Drittes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">6° 40' - 10° Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Erfolg im Geschäft, besonders im Freien. Der frühe Tod der Mutter ist möglich, es sei denn, es gibt einen Aspekt von Jupiter oder der Sonne.
-                    <br>
-                    Wenn die Sonne Mars in diesem Viertel aspektiert, wird der Besitzer des Horoskops gute Gesundheit, Wohlstand und familiäres Glück haben. (Obwohl die Sonne, die Mars in Widder aspektiert und im Zeichen ihrer Schwäche – Waage – steht, kein hohes Ansehen bringt, bewirkt Mars in Ashwini günstige Eigenschaften, wenn eine weitere schädliche Planet ihn aspektiert.)
-                </td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Viertes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">10° - 13° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Schwache Gesundheit, Kapha-Störungen. Der Besitzer des Horoskops wird gute Kinder haben, mit höherer Wahrscheinlichkeit Töchter als Söhne. Wenn Mars von Jupiter aspektiert wird, kann ein großes Erbe erwartet werden. Wenn Mars zwischen 12° und 13° steht, ist der Besitzer des Horoskops mit Ingenieur- oder Architektentalent gesegnet.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">20°00′ – 23°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum durch illegale Aktivitäten, wechselhaftes Wesen und Neigung zu niederen Leidenschaften. Dieses Mars-Placement wird oft in den Horoskopen von Drogenhändlern und Schmugglern gesehen.</td>
             </tr>
         </tbody>
     </table>
@@ -631,8 +675,9 @@ document.addEventListener('copy', function(e) {
 
 <br>
 <div class="container">
-    <h2 style="text-align: center;">Wenn Merkur in Ashwini platziert ist und aspektiert wird</h2>
+    <h2 style="text-align: center;">Merkur in Rohini und seine Aspekte</h2>
 
+    <h3 style="text-align: center;">Einfluss der Aspekte auf Merkur in Rohini</h3>
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
             <tr>
@@ -643,71 +688,64 @@ document.addEventListener('copy', function(e) {
         <tbody>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer des Horoskops wird ehrlich sein, von seinen Verwandten geliebt und erhält Unterstützung oder Vorteile vom Staat.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Schwache Gesundheit, kein großer Wohlstand, jedoch eine Neigung, anderen zu helfen.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Einkommen durch Musik oder andere schöne Künste, Besitz von Fahrzeugen und einem Haus, Freude am anderen Geschlecht.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Harter Arbeitswille, Wohlstand und Nähe zur herrschenden Klasse.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Nähe zur herrschenden Klasse und alle daraus resultierenden Vorteile.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vorteile vom Staat, jedoch bei Saturn-Einflüssen Strafen durch Behörden möglich.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Familiäres Glück und Wohlstand.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum und Intelligenz, Möglichkeit, eine Stadtführung zu übernehmen.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Ruhm, Reichtum, die Liebe anderer.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Auffälliges und attraktives Aussehen, Neigung zu sinnlichen Freuden.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer des Horoskops wird in sozialen Aktivitäten engagiert sein, einen kräftigen Körperbau haben und ständig mit Familienmitgliedern in Konflikt stehen.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Großes Leiden aufgrund der eigenen Familienmitglieder.</td>
             </tr>
         </tbody>
     </table>
 </div>
+
 <br>
 <div class="container">
-    <h2 style="text-align: center;">Merkur in den Vierteln der Nakshatra Ashwini</h2>
+    <h2 style="text-align: center;">Merkur in den verschiedenen Padas (Vierteln) der Nakshatra Rohini</h2>
 
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
             <tr>
-                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
-            </tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr> 
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Erstes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">0° - 3° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Atheismus, niedriger sozialer Status, Neigung zu Frauen und Alkohol, Unehrlichkeit und Unfähigkeit zur Zusammenarbeit. Wenn der Mond Merkur in diesem Viertel aspektiert, ist der Besitzer des Horoskops charakterlos. Ein Aspekt von Jupiter bringt hohe Bildung, gutes Einkommen, philosophisches Denken und okkulte Fähigkeiten.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10°00′ – 13°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mögliche Sprachstörungen wie Stottern. Der Horoskopeigner erlangt Wohlstand auf ehrlichem Weg. Seine Ehefrau ist eine schöne, elegante Frau.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Zweites Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">3° 20' - 6° 40' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Kinder bringen dem Besitzer großes Glück. Er wird umfassend gebildet sein und könnte nach dem 35. Lebensjahr die weltlichen Angelegenheiten aufgeben. Wenn die Sonne Merkur in diesem Viertel aspektiert, wird der Besitzer edel und fromm sein und ein bekannter Arzt oder Chirurg werden.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13°20′ – 16°40′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ruhm, bescheidener Wohlstand und tiefes Wissen der Veden und Shastras. Es besteht Gefahr durch Feuer und Schusswaffen. Der Horoskopeigner könnte vor der Ehe mehrere Beziehungen haben.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Drittes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">6° 40' - 10° Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Ein Zeichen für göttlichen Schutz und Gnade. Der Besitzer des Horoskops wird sehr erfolgreich, viele Söhne haben und trotz gesundheitlicher Probleme bis zu 60 Jahre alt werden.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16°40′ – 20°00′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Horoskopeigner neigt dazu, seinen sinnlichen Wünschen nachzugeben. Sein Vater könnte eine Strafe oder Sanktion von der Regierung erhalten, und auch die Geschwister könnten ihm Probleme bereiten. Mögliche Erkrankungen des Harnsystems.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Viertes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">10° - 13° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Eine schlechte Position für Merkur, die auf Charakterschwäche und geschäftliche Misserfolge hinweist. Ein Aspekt von Jupiter kann ihn jedoch zu einem Schriftsteller oder Finanzexperten machen.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">20°00′ – 23°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Die Person verdient Geld durch ihre entfernten Verwandten. Die Schwester könnte eine Belastung für ihn werden. Mögliche Erkrankungen der Schilddrüse. Wenn Saturn in dieser Pada steht, könnten ernsthafte Zahnprobleme auftreten.</td>
             </tr>
         </tbody>
     </table>
@@ -715,8 +753,9 @@ document.addEventListener('copy', function(e) {
 
 <br>
 <div class="container">
-    <h2 style="text-align: center;">Wenn Jupiter in Ashwini platziert ist und aspektiert wird</h2>
+    <h2 style="text-align: center;">Jupiter in Rohini und seine Aspekte</h2>
 
+    <h3 style="text-align: center;">Einfluss der Aspekte auf Jupiter in Rohini</h3>
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
             <tr>
@@ -727,27 +766,27 @@ document.addEventListener('copy', function(e) {
         <tbody>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Gottesfurcht und Gesetzestreue, Dienst für das Wohl der Gesellschaft.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Karriere im Militär, speziell in der Marine oder Luftwaffe; Anerkennung durch die Regierung und viele Feinde.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Ruhm und Wohlstand.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Glück, Zufriedenheit, Wahrhaftigkeit und eine positive Charakterbildung.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Zerstörung der Arroganz anderer, Grausamkeit, Nutzen vom Staat.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Hoher sozialer Status und familiäres Glück.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Schlechte Manieren, Liebe zu Streitigkeiten.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Attraktivität, Nähe zu politischen Kreisen und starkes Interesse an kultureller Entwicklung.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Beschäftigung mit Kosmetik und anderen Damenartikeln.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, Glück und eine Neigung zur Wohltätigkeit.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Grausamkeit und Mangel an familiärem Glück.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, Ruhm und Erfolg. Möglichkeit einer hohen Führungsposition. Einer der besten Aspekte.</td>
             </tr>
         </tbody>
     </table>
@@ -755,53 +794,9 @@ document.addEventListener('copy', function(e) {
 
 <br>
 <div class="container">
-    <h2 style="text-align: center;">Jupiter in den Vierteln der Nakshatra Ashwini</h2>
+    <h2 style="text-align: center;">Venus in Rohini und ihre Aspekte</h2>
 
-    <table style="width: 100%; border-collapse: collapse; text-align: left;">
-        <thead>
-            <tr>
-                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Erstes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">0° - 3° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Der Besitzer des Horoskops wird in religiösen, spirituellen und philosophischen Bereichen hochgebildet sein. Mit seiner Redekunst kann er große Massen beeinflussen. Nach dem 35. Lebensjahr wird ihm Ruhm zuteil.
-                </td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Zweites Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">3° 20' - 6° 40' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Eine gute Position, um Schriftsteller zu werden. Der Besitzer des Horoskops wird eine starke Persönlichkeit haben, mit Intelligenz, Ehrlichkeit und Adel, und wird Liebe und Respekt genießen. Allerdings wird sein finanzielles Wohl nicht stabil sein.
-                </td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Drittes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">6° 40' - 10° Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Diese Position von Jupiter wird als „König der Könige“ bezeichnet. Große intellektuelle Fähigkeiten, gute Bildung und materieller Wohlstand werden erwartet. Der Besitzer wird großen Ruhm erlangen, jedoch nur ein kurzes Leben führen.
-                </td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Viertes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">10° - 13° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Die beste Position für Jupiter in Ashwini, die dem Besitzer das volle Lebensglück bringen wird: Ruhm, Reichtum, Macht und Kinderfreuden. Einnahmen aus Aktien und Spekulationen sind möglich.
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<br>
-<div class="container">
-    <h2 style="text-align: center;">Wenn Venus in Ashwini platziert ist und aspektiert wird</h2>
-
+    <h3 style="text-align: center;">Einfluss der Aspekte auf Venus in Rohini</h3>
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
             <tr>
@@ -812,80 +807,78 @@ document.addEventListener('copy', function(e) {
         <tbody>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer wird viele Vorteile vom Staat erhalten, jedoch wird seine Frau ihm viele Probleme bereiten.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Glück kommt durch Frauen, aber das Familienleben ist unglücklich. Besitz von Immobilien und finanzieller Wohlstand.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Hohe soziale Stellung, jedoch ruinierte Reputation durch Beziehungen zu Frauen.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Süße Ausdrucksweise und Neigung zu sinnlichen Freuden.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Armut, Eheprobleme und mangelnde finanzielle Unterstützung von der Familie.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Neigung zur Grausamkeit und Beteiligung an illegalen Aktivitäten.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Neigung zum Diebstahl.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zurückgezogenheit und Verschlossenheit, aber erhabene Charaktereigenschaften.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum und familiäres Glück.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Besitz von Immobilien und Fahrzeugen, glückliches Familienleben.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Geheime Einkommensquellen.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Schwache Gesundheit und Armut.</td>
             </tr>
         </tbody>
     </table>
 </div>
+
+
 <br>
 <div class="container">
-    <h2 style="text-align: center;">Venus in den Vierteln der Nakshatra Ashwini</h2>
+    <h2 style="text-align: center;">Venus in den verschiedenen Padas (Vierteln) der Nakshatra Rohini</h2>
 
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
             <tr>
-                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
-            </tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr> 
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Erstes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">0° - 3° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Kräftiger Körperbau, Freundlichkeit und Wohlwollen, kurze Lebensdauer. Bei günstigen Aspekten kann der Besitzer jedoch ein langes Leben führen und sein Geld durch Tätigkeiten auf See verdienen.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10°00′ – 13°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Horoskopeigner wird Fahrzeuge und ein Haus besitzen und Wohlstand erlangen. Bis zum 35. Lebensjahr können Konflikte und Spannungen in der Ehe auftreten. Wenn die Ehe bis zu diesem Alter bestehen bleibt, wird das spätere Leben glücklich sein, da sich die Sichtweise des Ehepartners stark verändert. Mögliche Erkrankungen der Atemwege, des Verdauungs- und Genitaltrakts.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Zweites Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">3° 20' - 6° 40' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Nach dem 16. Lebensjahr wird der Besitzer des Horoskops durch Glück und Schicksal Reichtum erlangen. Er wird mutig, stark, gesellig und familienorientiert sein. Diese Position der Venus ist häufig bei Künstlern, Schriftstellern oder Maschinenbauingenieuren.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13°20′ – 16°40′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Interesse an Kunst, Theater und Musik. Mögliche Erkrankungen des Kehlkopfs oder der Schilddrüse. Wenn Rahu Venus in dieser Pada aspektiert, erlangt der Horoskopeigner großen Reichtum als Schauspieler oder Dramatiker. Das Familienleben ist harmonisch. Unabhängig von Aspekten oder Konjunktionen deutet Venus hier auf zwei Kinder hin — einen Jungen und ein Mädchen — sowie ein bis drei beabsichtigte Abtreibungen.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Drittes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">6° 40' - 10° Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Ohne günstige oder neutralisierende Aspekte kann der Besitzer eine Gliedmaße verlieren oder hinkend werden. Er wird sehr klug, wohlwollend und von jedem, der ihm begegnet, geliebt. Ein geschickter Arzt oder erstklassiger Politiker ist möglich.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16°20′ – 20°00′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Viele außereheliche und unstrukturierte Beziehungen. Im Alter von 35-36 Jahren besteht die Möglichkeit, von Gelegenheitsbeziehungen erpresst zu werden, sowie ein Risiko für Geschlechtskrankheiten.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Viertes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">10° - 13° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Hervorragende schauspielerische, musikalische und schriftstellerische Fähigkeiten. Der Besitzer des Horoskops wird früh heiraten. Wenn die Sonne Venus in diesem Viertel aspektiert, sind Probleme im Familienleben zu erwarten.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">20°00′ – 23°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Horoskopeigner wird klein und füllig sein, aber eine sehr schöne Frau heiraten und ein großes Vermögen erben. Mögliche Tumore im Halsbereich, Tonsillitis und Bronchitis. Bei einem weiblichen Horoskopeigner deutet Venus in dieser Pada auf einen wohlhabenden und einflussreichen Ehemann hin.</td>
             </tr>
         </tbody>
     </table>
 </div>
 
 <br>
-<div class="container">
-    <h2 style="text-align: center;">Wenn Saturn in Ashwini platziert ist und aspektiert wird</h2>
 
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Saturn in Rohini und seine Aspekte</h2>
+
+    <h3 style="text-align: center;">Einfluss der Aspekte auf Saturn in Rohini</h3>
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
             <tr>
@@ -896,72 +889,65 @@ document.addEventListener('copy', function(e) {
         <tbody>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Tugendhaftigkeit, Einkommen durch Milchprodukte und Vieh.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Armut und materielle Abhängigkeit.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Armut, Grausamkeit und eine unmoralische Ideologie.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, Stärke und Anerkennung durch die Regierung.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer wird gute Ratschläge zu wichtigen Entscheidungen geben können.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Gesprächigkeit, stets lächelnd und mäßiges Einkommen.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Neigung zu illegalen Aktivitäten, Probleme im Familienleben.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Gesellschaft von Menschen mit niedrigen und hinterhältigen Charakterzügen, Neigung zu Lust.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, familiäres Glück und eine hohe Position im Staat.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Harter Arbeitseifer, Neigung zu tugendhaften Handlungen und Wohltätigkeit.</td>
             </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">Viele Reisen und übermäßige Bindung an sinnliche Freuden.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Handel mit Edelsteinen und Gold, Neigung zu Alkoholismus und sexueller Ausschweifung.</td>
             </tr>
         </tbody>
     </table>
 </div>
 
+
 <br>
 <div class="container">
-    <h2 style="text-align: center;">Saturn in den Vierteln der Nakshatra Ashwini</h2>
+    <h2 style="text-align: center;">Saturn in den verschiedenen Padas (Vierteln) der Nakshatra Rohini</h2>
 
     <table style="width: 100%; border-collapse: collapse; text-align: left;">
         <thead>
             <tr>
-                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
-            </tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr> 
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Erstes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">0° - 3° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Der Besitzer wird ein langes Leben führen, unglückliche Kindheitserfahrungen machen, jedoch im Erwachsenenalter Erfolg haben. Er wird von begrenzter Intelligenz sein und vielleicht stottern, aber Interesse an Geschichte haben und ein Schriftsteller werden.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10°00′ – 13°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Religiöse Neigung, jedoch eine Schwäche für Glücksspiel. In der Jugend Verlust einer erheblichen Summe, die nach dem 45. Lebensjahr zurückgewonnen wird. Früher Verlust von Zähnen möglich. Bei ungünstigen Aspekten kann Rachenkrebs auftreten.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Zweites Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">3° 20' - 6° 40' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Der Besitzer mit dieser Saturnposition wird dunkel, dünn, schwach und hitzköpfig sein. Sein Geschäft wird sich auf die Forstwirtschaft beziehen. Geschicklichkeit im Handel, aber mangelndem Urteilsvermögen wird er finanzielle Schwierigkeiten erleben und neigen zur antisozialen Aktivität in der Jugend.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13°20′ – 16°40′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Attraktives Aussehen, Redekunst und hoher Intellekt. Einkommen aus der Viehwirtschaft möglich. Mögliche Erkrankungen der Augen, des Rachens und des Bauchs (evtl. Operation erforderlich), häufige Nasenbluten und Haarausfall.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Drittes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">6° 40' - 10° Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Ambition, Temperament und gute Geschäftsfähigkeiten. Viele Reisen und fürsorgliche Beziehungen zu Untergebenen, Interesse an deren Wohlstand.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16°40′ – 20°00′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Position ist vorteilhaft für Saturn. Hoher Intellekt, Redekunst und Wohlstand sind zu erwarten. Der Horoskopeigner wird religiöse Schriften studieren. Mögliche Erkrankungen des Rachens.</td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 8px;">Viertes Viertel</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">10° - 13° 20' Widder</td>
-                <td style="border: 1px solid #ddd; padding: 8px;">
-                    Religiöses Interesse, Glück und Risikobereitschaft. Wenn die Sonne Saturn in dieser Position aspektiert, wird der Besitzer Land besitzen. In einem weiblichen Horoskop führt ein Sonnenaspekt zu unglücklicher Ehe oder lebenslanger Ehelosigkeit, ein Mondaspekt zu unattraktivem Aussehen und schwachem Charakter.
-                </td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">20°00′ – 23°20′ des Stiers</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Angenehmes und attraktives Wesen, jedoch eine gewisse Unbeständigkeit. Einkommen durch Viehwirtschaft. Diese Position wird oft bei prominenten Politikern gefunden, die ihr Vermögen nutzen, um Einfluss zu gewinnen. Mögliche Erkrankungen der Augen, des Rachens, der Ohren, Nasenbluten und Magengeschwüre.</td>
             </tr>
         </tbody>
     </table>
@@ -969,9 +955,11 @@ document.addEventListener('copy', function(e) {
 
 <br>
 
-</div>
 
- 
+
+
+
+
 <style>
     .btn.active {
         background-color: #d65369; /* Цвет активной кнопки */
@@ -1002,10 +990,10 @@ document.addEventListener('copy', function(e) {
         <!-- Ссылки -->
         <div style="margin-top: 15px;">
           
-            <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
             <button class="tag btn btn--small"  onclick="toggleActive(this); window.location.href='https://astro.2ix.de/bharani.html';">2  Bharani</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/krittika.html';  ">3  Krittika</button>
-            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/rohini.html';">4  Rohini</button>
+            <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/rohini.html';">4  Rohini</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/mrigashira.html';">5  Mrigashira</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ardra.html'; ">6  Ardra</button>
             <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/punarvasu.html';">7  Punarvasu</button>
@@ -1349,7 +1337,6 @@ object-fit: cover;     /* Обрезка, чтобы заполнить круг
                
             
             </section> 
-         
 
 </main> <!-- end s-content -->
 
