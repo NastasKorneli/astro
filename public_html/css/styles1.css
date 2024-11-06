@@ -4354,7 +4354,63 @@ img.u-pull-left {
   background-color: #f9f9f9;
   padding:  20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   
 }
 
+.large-number {
+  font-size: 2em; 
+  font-weight: bold;
+  background-color: #ffa2b6;
+  border-radius: 5px;
+  color: #fff;
+}
+#nakshatras {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#nakshatras table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#nakshatras td,
+#nakshatras th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Адаптивный вид для мобильных устройств */
+@media (max-width: 768px) {
+  #nakshatras table,
+  #nakshatras tbody,
+  #nakshatras tr,
+  #nakshatras td {
+      display: block;
+      width: 100%;
+  }
+  
+  #nakshatras tr {
+      margin-bottom: 10px;
+  }
+
+  #nakshatras td {
+      text-align: left;
+      padding: 15px 10px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+  }
+
+  #nakshatras td a {
+      font-size: 1.2em;
+      font-weight: bold;
+  }
+
+  /* Дополнительное стили для больших чисел */
+  .large-number {
+      font-size: 200%; /* Увеличение для улучшения видимости на мобильных */
+      display: block;
+  }
+}
