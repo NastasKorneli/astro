@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>ASTRO</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTLZ50B2T8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-TTLZ50B2T8');
+    </script>
+        <script>
+            // Отключение контекстного меню правой кнопки мыши
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    
+    // Отключение клавиш для просмотра исходного кода и разработчика
+    document.addEventListener('keydown', function(e) {
+        // Блокировка клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        if (e.key === 'F12' || 
+            (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+            (e.ctrlKey && e.key === 'U')) {
+            e.preventDefault();
+        }
+    });
+    
+    // Отключение выделения текста
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+    });
+    
+    // Отключение копирования текста
+    document.addEventListener('copy', function(e) {
+        e.preventDefault();
+    });
+    
+        </script>
+    <!-- CSS
+    ================================================== -->
+   
+
+    <link rel="icon" href="images/portfolio/favicon-32x32.png" type="image/x-icon">
+    <!-- Подключение CSS Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5/8BXfYWkHZZYL47jI4iT" crossorigin="anonymous">
+
+<!-- Подключение JavaScript Bootstrap и jQuery -->
+
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/styles1.css">
+</head>
+
+
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Astro.2ix</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+        
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li class="logo-wrapper">
+                            <a href="index.html" class="home-link">  <span class="icon" style="font-size: 2em; vertical-align: middle;color: #d65369;">♅ </span>Astro.2ix</a>
+                        </li>
+                        <!-- Навигационные ссылки для страниц -->
+                        <li><a href="zodiaks.html" ><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Zodiaks</a></li>
+                        <li><a href="planeten.html" ><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Planeten</a></li>
+                        <li><a href="nakshatras.html"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Nakshatras</a></li>
+                        <li><a href="haeuser.html" ><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Häuser</a></li>
+                        <li><a href="aspekte.html"  ><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Aspekte</a></li>
+                    </ul>
+                </nav>
+             
+            </div>
+        </header>
+        
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Carl Gustav Jung
+                        </div>
+                    
+                        <h1 class="text-huge-title">
+                            "Wer nach außen <br>
+                            schaut, träumt; <br>
+                             wer nach innen <br>
+                            schaut, <br>
+                            erwacht."
+                        </h1>
+                    </div>
+                    
+                    
+
+                    <ul class="intro-social">
+                        <li><a href="https://www.facebook.com/korneli.nastas/">Facebook</a></li>
+                           
+                        <li><a href="https://x.com/KorneliNastas">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/korneli_nastas/">Instagram</a></li>
+                    </ul>
+
+                </div> 
+
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                </a>
+
+            </section> 
+
+        <section id="about" class="s-about target-section" style="background: linear-gradient(to bottom, #ece9e1, #ffffff31);">
+
+
+                <div class="row about-info wide" data-animate-block>
+
+                    <div class="column lg-6 md-12">
+                        <div class="col mb-4 portfolio-item graphicdesign photography">
+                            <a>
+                                <img src="images/portfolio/uuundulate.svg"
+                                    class="img-fluid" alt="portfolio"
+                                    style=" width: 550px ; height: 550px; object-fit: cover; border-radius: 50%;">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text">
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                Verlier dich nicht in Gedanken
+                            </h2>
+                            <p class="attention-getter" data-animate-el>
+                                Lass die Sorgen los und tauche in die Welt der Astrologie ein.
+                            </p>
+                            <p class="attention-getter" data-animate-el>
+                                Erstelle dein persönliches Horoskop, und du wirst vieles über dich selbst besser verstehen. Bei Fragen kannst du dich gerne an einen erfahrenen Astrologen wenden, frag mich zum Beispiel.
+                                <a href="#kundli-container" class="btn btn--medium u-fullwidth contact-btn">dein persönliches Horoskop</a>
+                            </p>
+                            
+                      
+                       
+                    </div>
+                    
+                </div> 
+                
+   </div>
+</section>
+
+
+
+<div class="entry-content">
+    <h2 style="text-align: center;">Nakshatra Ardra</h2>
+
+    <p><strong>Nakshatra Ardra</strong> (die 6. von 27 Nakshatras, 6° 40′ – 20° 00′ der <a href="#">Zwillinge</a>) ist bekannt für ihre intensiven und herausfordernden Energien. Diese Nakshatra wird von Rudra, dem Gott des Sturms, beherrscht, und steht für Zerstörung, aber auch für Reinigung und Erneuerung. Ardra symbolisiert die transformierenden Kräfte, die uns zu Wachstum und Veränderung zwingen.</p>
+
+    <p><em>„Der Mond in Ardra deutet auf eine Person hin, die reizbar, undankbar, ruhelos und zur Heuchelei geneigt ist und Freude daran findet, anderen Schaden zuzufügen.“</em> (Varahamihira)</p>
+
+
+    <h3 style="text-align: center;">Merkmale der Nakshatra Ardra</h3>
+
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td style="width: 30%; padding: 8px; border: 1px solid #ddd;"><strong>Zodiac</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">6° 40′ – 20° 00′ der <a href="#">Zwillinge</a></td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Regentenplanet</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;"><a href="#">Rahu</a></td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Symbol</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Menschlicher Kopf, Träne</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Gottheit</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Rudra (Gott der Stürme, jüngerer Bruder von Indra)</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Kaste</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Henker, Metzger</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ziel</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Kama (Leidenschaft)</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ursprung</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">menschlich</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Temperament</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">zornig, scharf (tikshna)</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Guna</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Tamas</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Geschlecht</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">weiblich</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Qualität</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Schärfe</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Ayurvedische Konstitution</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Vata</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Element</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Wasser</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Richtung</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Südwesten, Westen, Norden</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Körperteile</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Hinterkopf, Stirn, Augen, Schädel</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Tier</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Hund</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Laute</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">ku, gha, nga, cha</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><strong>Feind</strong></td>
+            <td style="padding: 8px; border: 1px solid #ddd;"><a href="#">Shravana</a></td>
+        </tr>
+    </table>
+</div>
+
+
+
+<body>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Schlüsselkonzept der Nakshatra Ardra</h2>
+    <p style="text-align: justify;">Ardra symbolisiert die Befreiung von Leiden durch die richtige Anwendung der eigenen Fähigkeiten, ohne sich übermäßig zu belasten. Diese Nakshatra ist futuristisch und versucht, uns von Altlasten zu befreien durch eine Reihe von intensiven Ereignissen, ähnlich einem Sturm. Solche „Stürme“ sind oft kurzlebig und führen zu einer Erneuerung, wie die Frische eines Blattes nach dem Regen. Zum Beispiel kann jemand, der seinen Job verloren hat, eine neue Gelegenheit finden, seiner Berufung zu folgen und Erfolg zu haben.</p>
+
+    <p style="text-align: justify;">Der Charakter von Ardra ähnelt dem eines Kindes. Menschen, die unter dieser Nakshatra geboren sind, können ihre Emotionen innerhalb weniger Minuten von intensiver Freude zu tiefer Traurigkeit oder einem mittleren Zustand wechseln. Ardra ist die erste Nakshatra, die versucht, Maya auf intellektueller Ebene zu verstehen. Diese Nakshatra liebt es, die Ursachen von Ereignissen zu erforschen, und daher besitzen Ardra-Persönlichkeiten oft einen neugierigen und forschenden Geist.</p>
+
+    <p style="text-align: justify;">Ardra ist mit Yatna-Shakti – der Fähigkeit, sich auf ein Ziel zu konzentrieren und es zu erreichen – verbunden. Das Ergebnis der Anstrengungen von Ardra ist Erfolg und Erreichen.</p>
+
+    <p style="text-align: justify;">Ardra entwickelt Empfänglichkeit und Sensibilität, da das Schicksal, das durch diese Nakshatra hervorgerufen wird, den Geist aktiviert und aktiv hält. Diese Qualitäten machen Ardra-Persönlichkeiten empfindlich gegenüber allen Arten von Leid und fördern das Mitgefühl für andere, die leiden.</p>
+
+    <p style="text-align: justify;">In Ardra treffen Emotionen auf den Verstand, und ein Gleichgewicht zwischen beiden ist für sie unerlässlich.</p>
+
+    <p style="text-align: justify;">Ardra-Geborene sind unermüdliche Beobachter ihrer selbst und ihrer Umgebung. Diese Qualität und ihre Tendenz, das zu sagen, was sie denken, lassen sie oft unhöflich und kritisch erscheinen. Ihr Sarkasmus kann anderen Schmerzen zufügen. Weniger entwickelte Ardras haben eine kindliche Neigung, ihren egoistischen Wünschen durch Lügen und Prinzipienlosigkeit nachzugehen, zeigen jedoch gleichzeitig Mut und Widerstandskraft.</p>
+
+    <p style="text-align: justify;">Durch Rahus Verbindung mit der Illusion kann Ardra Verwirrung und Energieverschwendung auf nutzlose Aktivitäten verursachen. Ardra-Persönlichkeiten neigen in der heutigen materialistischen Welt dazu, sich auf weltliche Wissenschaften zu konzentrieren, die selten spirituelle Weiterentwicklung fördern. Obwohl Ardra-Geborene oft die Chance haben, ihr Leben zu verbessern, ist das in der gegenwärtigen Ära voller Illusionen keine leichte Aufgabe.</p>
+
+    <p style="text-align: justify;">Für hochentwickelte Seelen testet Ardra das Verständnis und die Entschlossenheit, indem sie ihnen schwierige Situationen auferlegt.</p>
+
+    <p style="text-align: justify;">Ein Symbol von Ardra ist die Träne, die alles Leid verkörpert und die negative Seite Rahus zeigt. Ein weiteres Symbol ist das frische Blatt nach dem Regen, das Erfolg durch Schwierigkeiten repräsentiert. Ardra zeigt die zerstörerische Natur Shivas und ist wie ein Sturm, der uns aus der Vergangenheit ins Neue führt. Akzeptanz der Reinigung eröffnet neue Möglichkeiten. Ein weiteres Symbol ist der Diamant, der unter enormem Druck entsteht.</p>
+
+    <p style="text-align: justify;">Die Kombination von Merkur und Rahu, wie ein Diamant, strahlt in vielen Facetten und ist besonders intellektuell.</p>
+
+    <p style="text-align: justify;">Ardra ist eine sehr schnelle Nakshatra, vergleichbar mit einem Schlangenbiss. Sie verleiht scharfen Verstand und Intelligenz, oft begleitet von Sarkasmus. Selbst wenn Ardra positive Ergebnisse bringt, können sie in ungewöhnlicher Form erscheinen. Ardra-Geborene haben viele versteckte Emotionen und durchleben in ihrer ersten Lebenshälfte oft viele innere Stürme. Mit der Zeit wachsen und entwickeln sie sich, auch wenn dies oft über stürmische Phasen geschieht.</p>
+
+    <p style="text-align: justify;"><em>„Der Mond in Ardra deutet auf eine Person hin, die unehrlich, aufbrausend, undankbar und zu Gewalt neigend ist.“</em> (Varahamihira)</p>
+</div>
+
+
+<br>
+<div class="portfolio-fixed-bg" style=" background-image: url('images/portfolio/44_result.webp');">
+
+    <!-- Наложение цвета поверх фонового изображения -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(236, 233, 225, 0);"></div>
+
+    <!-- Оформленный текстовый блок по центру -->
+    <div style="background-color: rgba(0, 0, 0, 0.3);; padding: 20px 40px; border-radius: 10px; text-align: center; max-width: 80%; position: relative; z-index: 1;">
+
+        <!-- Категория -->
+        <div class="folio-list__item-cat" style="color: #efb11d; font-size: 1.2em; font-weight: bold;">
+            Mystik der Sterne
+        </div>
+
+        <!-- Заголовок -->
+        <div class="folio-list__item-title" style="color: #ece9e1; font-size: 2em; font-weight: bold; margin: 10px 0;">
+            Die Geheimnisse des Zodiaks
+        </div>
+
+        <!-- Ссылки -->
+        <div style="margin-top: 15px;">
+          
+            <button class="tag btn btn--small " onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
+            <button class="tag btn btn--small"  onclick="toggleActive(this); window.location.href='https://astro.2ix.de/bharani.html';">2  Bharani</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/krittika.html';  ">3  Krittika</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/rohini.html';">4  Rohini</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/mrigashira.html';">5  Mrigashira</button>
+            <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ardra.html'; ">6  Ardra</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/punarvasu.html';">7  Punarvasu</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/pushya.html';">8  Pushya</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashlesha.html';">9  Ashlesha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/magha.html';">10  Magha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/purva-phalguni.html';">11  Purva Phalguni</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/uttara-phalguni.html';">12  Uttara Phalguni</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/hasta.html';">13  Hasta</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/chitra.html';">14  Chitra</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/swati.html';">15  Swati</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/vishakha.html'">16  Vishakha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/anuradha.html'">17  Anuradha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/jyeshtha.html'">18  Jyeshtha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/mula.html'">19  Mula</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/purva-ashadha.html'">20  Purva Ashadha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/uttara-ashadha.html'">21  Uttara Ashadha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/shravana.html'">22  Shravana</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/dhanishtha.html'">23  Dhanishtha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/satabhisha.html' ">24  Shatabhisha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/purva-bhadrapada.html'">25  Purva Bhadrapada</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/uttara-bhadrapada.html'">26  Uttara Bhadrapada</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/revati.html'">27  Revati</button>
+        </div>
+
+    </div>
+</div>
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Merkmale der Männer in der Nakshatra Ardra</h2>
+
+    <p style="text-align: justify;">Männer, die unter der Nakshatra Ardra geboren sind, können entweder schlank oder korpulent sein. Sie sind herzlich im Umgang mit Freunden und Verwandten und zu edlen Taten fähig. Ihre starke Intuition und ihr ausgezeichneter Sinn für Humor erlauben es ihnen, sich von konventionellen Verhaltensmustern zu lösen. Sie erledigen ihnen anvertraute Aufgaben verantwortungsvoll und mit Begeisterung und Inspiration.</p>
+
+    <p style="text-align: justify;">Ardra-Männer sind inkonsequent und lieben es, Wissen anzusammeln, nutzen es jedoch oft nicht praktisch. Sie neigen dazu, mehrere Dinge gleichzeitig zu tun. Ihre Ruhe und Gelassenheit in schwierigen Situationen rufen bei anderen Liebe und Respekt hervor. Oft verdienen sie Geld fern von ihrem Geburtsort. Für sie ist die Zeitspanne von 32 bis 42 Jahren besonders günstig.</p>
+
+    <p style="text-align: justify;">Heiraten sie spät, ist die Ehe meistens stabil und glücklich.</p>
+
+    <p style="text-align: justify;">Es können Zahnprobleme auftreten. In einigen Fällen leiden sie unter Hörproblemen und Herzschmerzen.</p>
+</div>
+
+<br>
+
+<div class="container">
+    <h2 style="text-align: center;">Merkmale der Frauen in der Nakshatra Ardra</h2>
+
+    <p style="text-align: justify;">Frauen, die unter der Nakshatra Ardra geboren sind, haben oft eine markante Nase, schöne Augen und eine ansprechende Figur.</p>
+
+    <p style="text-align: justify;">Ihr starker Intellekt führt zu Erfolgen in den Bereichen Bildung, Wissenschaft, Beratung und Pädagogik. Sie haben ein gutes Verständnis für die Probleme anderer und neigen dazu, anderen zu helfen.</p>
+
+    <p style="text-align: justify;">Die Ehe findet selten früh statt und ist oft nicht glücklich — wenig Liebe vom Partner und mögliche Verluste des Ehepartners aus verschiedenen Gründen. Sie neigen zu Frauenkrankheiten sowie zu Problemen mit der Leber und dem Kreislaufsystem.</p>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Die Padas (Viertel) der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Pada</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Beschreibung</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">6° 40′ – 10° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa des Schützen, regiert von Jupiter. Sie steht für die forschende und neugierige Seite von Ardra. Charakteristisch sind Wahrhaftigkeit und emotionale Kontrolle. Planeten hier haben einen unbeschwerten Charakter, sind jedoch anfällig für materielle Übertreibungen. Der Sturm beginnt, und die Bedingungen sind noch nicht die schlechtesten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10° 00′ – 13° 20′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa des Steinbocks, regiert von Saturn. Sie fördert das Streben nach materiellen Errungenschaften und führt dann zu Enttäuschung über das Erreichte. Viele negative Eigenschaften der Nakshatra zeigen sich hier. Der Sturm nimmt an Stärke zu, und die hier platzierten Planeten werden zur Quelle anhaltender Probleme und Schwierigkeiten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13° 20′ – 16° 40′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa des Wassermanns, regiert von Saturn. Sie steht in Verbindung mit Wissenschaft und Forschung, insbesondere Elektrizität. Der Sturm ist in vollem Gange, Blitze leuchten, und die hier platzierten Planeten bringen kurze, plötzliche Inspirationen. Mentale Aktivität erreicht ihren Höhepunkt. Gute Redefähigkeiten, jedoch auch Neigung zu Verleumdung und Grobheit.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16° 40′ – 20° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Diese Pada fällt in die Navamsa der Fische, regiert von Jupiter. Es handelt sich um eine Pushkara-Navamsa. Sie repräsentiert den sensiblen und mitfühlenden Aspekt von Ardra. Der Sturm endet, und die Bedingungen sind im Vergleich zu den beiden vorherigen Padas ruhig und friedlich. Planeten in dieser Pada bringen meist positive Ergebnisse. Eigenschaften wie Extravaganz und Missgunst können auftreten. Familiäres Glück ist fraglich.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Aspekte auf den Mond in der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Kenntnis der metaphysischen Wissenschaften, Armut.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Weitblick und breiter Horizont.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Unterstützung durch die Regierung.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Gute Bildung; der Besitzer des Horoskops kann Lehrer oder Dozent werden.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Wohlstand.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Armut.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss des Mondes in den Vierteln der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">6° 40′ – 10° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Wahrhaftigkeit, Intellekt, emotionale Kontrolle. Möglicher Rheumatismus in Armen und Schultern. Wenn der Aszendent auf Revati fällt und Jupiter mit dem Mond verbunden ist, wird der Besitzer des Horoskops eine hohe Position im Leben erreichen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10° 00′ – 13° 20′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Grobheit, Stolz, Direktheit, anfällig für Krankheiten. Möglicher Bronchitis oder Asthma. Wenn Venus den Mond in diesem Viertel aspektiert, wird der Besitzer musikalische Fähigkeiten besitzen oder ein Meister von Musikinstrumenten werden.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13° 20′ – 16° 40′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Grobheit, Neigung zu Verleumdung und Lästerung, gute Redefähigkeiten. Wenn der Aszendent auf Rohini fällt, erwartet den Besitzer des Horoskops Reichtum.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16° 40′ – 20° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Extravaganz, schlechter Charakter, Feindseligkeit, mangelndes familiäres Glück.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Aspekte auf die Sonne in der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Probleme durch Verwandte, Leben fern von der Heimat.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Viele Feinde.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Glückliche und erfolgreiche Kinder.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Interesse an tantrischen Praktiken. Der Besitzer des Horoskops ist zu Wanderungen geneigt und wenig an das Familienleben angepasst.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erfolgreiche Emigration.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Unglück durch Frauen.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Sonne in den Vierteln der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Geburtszeitraum</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">21. Juni – 25. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Gute Bildung, mathematische Fähigkeiten, möglicherweise Reichtum. Der Besitzer des Horoskops könnte ein guter Astrologe werden.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">25. Juni – 28. Juni</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Redefähigkeit. Der Besitzer des Horoskops ist ein Familienliebling. Befindet sich auch Jupiter hier, kann eine hohe Position in der Regierung erwartet werden. Wenn die Sonne mit Saturn verbunden ist, besteht eine Gefahr für die Ehefrau und Kinder.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">28. Juni – 1. Juli</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vielseitige Bildung. Mögliche Erkrankungen der Lunge, Bronchitis.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">2. Juli – 4. Juli</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Edelmut, gute Erziehung, Attraktivität und Reichtum. Der Besitzer des Horoskops könnte ein guter Astrologe werden. Männer heiraten in der Regel nach dem 25. Lebensjahr, Frauen im Alter von 23 Jahren. Nach dem 39. Lebensjahr könnte der Horoskopeigner Ruhm erlangen.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Aspekte auf Mars in der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Tapferkeit, Reichtum. Beruf im Zusammenhang mit der Forst- oder Verteidigungsindustrie.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer des Horoskops wird das Gesellschaft von Frauen leichten Lebens bevorzugen und könnte an Geschlechtskrankheiten leiden. Mögliche Arbeit in der Strafverfolgung.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Familienglück, gute Kinder. Der Besitzer des Horoskops wird ein geschickter Astrologe.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Familienglück, Tätigkeiten im Schreiben oder Verlagswesen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Die Ehefrau des Horoskopeigners könnte mehr verdienen als er selbst.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Guter Ehepartner, aber der Horoskopeigner ist unehrlich und in illegale Arbeit verwickelt.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+<div class="container">
+    <h2 style="text-align: center;">Einfluss von Mars in den Vierteln der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">6° 40′ – 10° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Gute Bildung, Liebe zur Poesie, Wunsch, im Ausland zu leben. Wenn der Aszendent in Krittika oder Rohini liegt, wird der Besitzer des Horoskops viele Entbehrungen erleiden, und seine Geschwister sowie Ehefrau könnten gefährdet sein.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10° 00′ – 13° 20′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Horoskopeigner wird gebildet, reich und mutig sein. Er liebt Wälder und Bäume und wird versuchen, seine berufliche Laufbahn mit der Natur zu verbinden.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13° 20′ – 16° 40′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Fähigkeiten in Mathematik und Poesie, Auslandseinsätze, unglückliches Alter. Mögliche Erkrankungen des Darms oder der Lunge.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16° 40′ – 20° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer des Horoskops wird eine hohe Bildung erreichen, besonders in Jura oder Chemie. Auch in der Astrologie kann er bedeutende Kenntnisse erwerben, wenn er sich damit beschäftigt. Vorsicht mit Feuer und Schusswaffen ist geboten. Mögliche Tumorbildung im Halsbereich.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Aspekte auf Merkur in der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Viel Unterstützung durch Vorgesetzte und Arbeit in einer Regierungsbehörde.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Gute organisatorische Fähigkeiten, Arbeit in der Stadtverwaltung, Respekt von vielen Menschen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Horoskopeigner ist wohlhabend, vernünftig und verdient seinen Lebensunterhalt als Buchhalter oder Finanzexperte.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Fähigkeiten in der Chemie; der Ehepartner bringt viele Probleme und Leid.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ehre und Würde, Respekt und Ansehen.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss von Merkur in den Vierteln der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">6° 40′ – 10° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Gelehrsamkeit, Kenntnis der heiligen Schriften, Interesse und Kompetenz in der Astrologie, außereheliche Beziehungen. Der Besitzer des Horoskops kann als „Alleskönner“ bezeichnet werden. Mögliche Hörprobleme.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10° 00′ – 13° 20′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Eine günstige Position für Merkur, die Reichtum, Redefähigkeit, Geschick und Meisterschaft in jeglicher Handwerkskunst verleiht. Wenn der Besitzer des Horoskops Astrologie betreibt, kann er ein hohes Niveau erreichen. Er wird mehr Söhne als Töchter haben. Mögliche Blut- oder Lungenerkrankungen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13° 20′ – 16° 40′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Hohe Intelligenz. Wenn auch der Aszendent in dieses Viertel fällt, sind Reichtum, Familienglück und verschiedene Vorteile durch Geschwister zu erwarten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16° 40′ – 20° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur zeigt hier ähnliche Ergebnisse wie im ersten Viertel. Zusätzlich können Lungenerkrankungen und Neuralgien auftreten.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Aspekte auf Jupiter in der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, Respekt und Familienglück.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Hoher administrativer Posten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Beruf in Verbindung mit Autos oder Flugzeugen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Fähigkeiten in Mathematik und Astrologie.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer des Horoskops ist wohlhabend, aber er nutzt sein Geld nicht für ein komfortables Leben.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ruhm, enormes Vermögen, wunderschöne Ehefrau und Kinder.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss von Jupiter in den Vierteln der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">6° 40′ – 10° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Horoskopeigner hat ein ausgeprägtes Verantwortungsbewusstsein und einen Sinn für Gerechtigkeit und besitzt pädagogisches Talent. Er kann an einer Hochschule unterrichten, Jurist werden oder in verschiedenen Kunstbereichen hervorragende Fähigkeiten entwickeln. Mögliche Leber- oder Lungenerkrankungen.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10° 00′ – 13° 20′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sehr hohe soziale Stellung, Glück mit den Kindern.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13° 20′ – 16° 40′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Wenn die Dasha von Jupiter vor dem 15. Lebensjahr stattfindet, wird der Horoskopeigner in seiner Jugend Schwierigkeiten und Entbehrungen erleben. Eine gewisse Stabilität in Ansichten und finanzieller Lage wird erst nach der Heirat eintreten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16° 40′ – 20° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Wenn der Aszendent ebenfalls in dieses Viertel fällt, ist der Horoskopeigner eine außergewöhnliche Persönlichkeit. Er wird zudem eine sehr stabile und harmonische Ehe haben. Mögliche Lungenerkrankungen.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<br>
+
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Aspekte auf Venus in der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer des Horoskops wird Arzt und könnte zwei Ehen haben.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erfolg beim anderen Geschlecht trotz Unentschlossenheit und Schüchternheit.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Glück und Erfolg.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Hohe Intelligenz, gute Bildung und hohe soziale Stellung.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Saturn</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Trennung von der Familie, Neigung zur Erfüllung sexueller Wünsche und Möglichkeit von Geschlechtskrankheiten.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+<div class="container">
+    <h2 style="text-align: center;">Einfluss von Venus in den Vierteln der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">6° 40′ – 10° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Im Horoskop einer Frau kann Venus in diesem Viertel zu einem freizügigen Charakter führen; wenn Venus nicht von einem wohltätigen Planeten aspektiert oder begleitet wird, könnte die Besitzerin des Horoskops ihren Lebensunterhalt durch Prostitution verdienen. Im Horoskop eines Mannes zeigt Venus in diesem Viertel eine Neigung zur Wissenschaft, eine hohe Bildung sowie Fähigkeiten in Musik und Kunst.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10° 00′ – 13° 20′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Langes Leben, Attraktivität, Intelligenz und wissenschaftliche Fähigkeiten, besonders im Bereich der Chemie. Wenn Jupiter Venus nicht aspektiert, wird das Familienleben des Horoskopeigners voller Probleme und Spannungen sein. Mögliche Blutkrankheiten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13° 20′ – 16° 40′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reichtum, hohe Intelligenz und Vorteile durch die Regierung. Der Besitzer des Horoskops könnte bedeutende Summen durch Frauen verlieren. Seine religiösen Ansichten werden eher orthodox sein. Mögliche Blutkrankheiten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16° 40′ – 20° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dies ist die beste Position für Venus und weist auf außergewöhnliches Talent als Schauspieler oder Musiker hin. Der Besitzer des Horoskops wird Anerkennung und großen Reichtum durch sein Talent erlangen. Der Höhepunkt seiner Karriere wird zwischen dem 40. und 49. Lebensjahr liegen. Mögliche Tumoren im Halsbereich und Erkrankungen des linken Auges.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+<div class="container">
+    <h2 style="text-align: center;">Einfluss der Aspekte auf Saturn in der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Aspektierender Planet</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Sonne</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Schlechte Beziehung zum Vater.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mond</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Die jüngere Schwester des Horoskopeigners wird Witwe und finanziell von ihm abhängig sein.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Mars</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Bedrohung des väterlichen Vermögens sowie für Geschwister durch den Horoskopeigner.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Merkur</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Hohes Bildungsniveau, wissenschaftliche Forschungen, unglückliches Eheleben.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Jupiter</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ehre und Respekt.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Venus</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zwei Ehen. Der Besitzer des Horoskops könnte Juwelier werden oder mit dem Kauf und Verkauf verschiedener Metalle handeln.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div class="container">
+    <h2 style="text-align: center;">Einfluss von Saturn in den Vierteln der Nakshatra Ardra</h2>
+
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Viertel</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Gradbereich</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Einfluss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Erste Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">6° 40′ – 10° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ungünstige Position für Saturn, die viele Schulden, niedere Arbeiten oder Neigung zu Diebstahl und illegalen Aktivitäten bringt. Der Horoskopeigner wird von moralischen Prinzipien wenig geleitet.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Zweite Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10° 00′ – 13° 20′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Besitzer des Horoskops wird keine Unterstützung von seinem Vater erhalten und sein Vermögen auf Kosten des Ruins anderer erwerben. Nur der Aspekt des Mondes auf Saturn kann Respekt, Reichtum, Ruhm und Bekanntheit bringen. Saturn in Ardra hat meist negative Auswirkungen, aber im zweiten Viertel und unter dem Einfluss des Mondes können positive Ergebnisse auftreten.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Dritte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">13° 20′ – 16° 40′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Der Horoskopeigner könnte von klein auf in schlechten Gesellschaften landen, ein elendes Leben führen, schlechte Beziehungen zur Ehefrau haben und möglicherweise Anführer einer kriminellen Gruppe werden.</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Vierte Pada</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">16° 40′ – 20° 00′ der Zwillinge</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Neigung zu Alkoholismus, finanzielle Abhängigkeit vom Ehepartner, der möglicherweise in illegale Aktivitäten verwickelt ist, drohende gerichtliche Verfahren und – ohne mildernde Aspekte – Inhaftierung.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+
+
+
+
+
+<style>
+    .btn.active {
+        background-color: #d65369; /* Цвет активной кнопки */
+        color: white; /* Цвет текста активной кнопки */
+        border: 1px solid #d65369;
+    }
+</style>
+
+<br>
+<div class="portfolio-fixed-bg" style=" background-image: url('images/portfolio/44_result.webp');">
+
+    <!-- Наложение цвета поверх фонового изображения -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(236, 233, 225, 0);"></div>
+
+    <!-- Оформленный текстовый блок по центру -->
+    <div style="background-color: rgba(0, 0, 0, 0.3);; padding: 20px 40px; border-radius: 10px; text-align: center; max-width: 80%; position: relative; z-index: 1;">
+
+        <!-- Категория -->
+        <div class="folio-list__item-cat" style="color: #efb11d; font-size: 1.2em; font-weight: bold;">
+            Mystik der Sterne
+        </div>
+
+        <!-- Заголовок -->
+        <div class="folio-list__item-title" style="color: #ece9e1; font-size: 2em; font-weight: bold; margin: 10px 0;">
+            Die Geheimnisse des Zodiaks
+        </div>
+
+        <!-- Ссылки -->
+        <div style="margin-top: 15px;">
+          
+            <button class="tag btn btn--small " onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashwini.html';">1  Ashwini</button>
+            <button class="tag btn btn--small"  onclick="toggleActive(this); window.location.href='https://astro.2ix.de/bharani.html';">2  Bharani</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/krittika.html';  ">3  Krittika</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/rohini.html';">4  Rohini</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/mrigashira.html';">5  Mrigashira</button>
+            <button class="tag btn btn--small active" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ardra.html'; ">6  Ardra</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/punarvasu.html';">7  Punarvasu</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/pushya.html';">8  Pushya</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/ashlesha.html';">9  Ashlesha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/magha.html';">10  Magha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/purva-phalguni.html';">11  Purva Phalguni</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/uttara-phalguni.html';">12  Uttara Phalguni</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/hasta.html';">13  Hasta</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/chitra.html';">14  Chitra</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/swati.html';">15  Swati</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/vishakha.html'">16  Vishakha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/anuradha.html'">17  Anuradha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/jyeshtha.html'">18  Jyeshtha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/mula.html'">19  Mula</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/purva-ashadha.html'">20  Purva Ashadha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/uttara-ashadha.html'">21  Uttara Ashadha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/shravana.html'">22  Shravana</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/dhanishtha.html'">23  Dhanishtha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/satabhisha.html' ">24  Shatabhisha</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/purva-bhadrapada.html'">25  Purva Bhadrapada</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/uttara-bhadrapada.html'">26  Uttara Bhadrapada</button>
+            <button class="tag btn btn--small" onclick="toggleActive(this); window.location.href='https://astro.2ix.de/revati.html'">27  Revati</button>
+        </div>
+
+    </div>
+</div>
+<br> 
+<br>
+<div class="faq-wrapper" style="--space: 0; padding-left: 10%; padding-right: 10%; ">
+
+               <section class="faq-block" style="max-width: 1400px" >
+     <div class="faq-item">
+       <div class="faq-question" onclick="toggleAnswer(this)">
+         <h3>Funktioniert Prashna-Horoskop wirklich?</h3>
+         <i class="fas fa-chevron-down"></i>
+       </div>
+       <div class="faq-answer">
+         <p>
+           Absolut! Jede Frage, die gestellt wird, hat eine tiefere kosmische Bedeutung. Im Moment der Fragestellung sind die Planeten so positioniert, dass sie genau das widerspiegeln, was gerade gebraucht wird. Prashna nutzt diese Synchronizität, um eine klare Antwort zu geben – es ist, als würde das Universum direkt sprechen.
+         </p>
+       </div>
+     </div>
+   
+     <div class="faq-item">
+       <div class="faq-question" onclick="toggleAnswer(this)">
+         <h3>Wie genau sind die Antworten?</h3>
+         <i class="fas fa-chevron-down"></i>
+       </div>
+       <div class="faq-answer">
+         <p>
+           Die Genauigkeit ist oft verblüffend! Die erstellte Karte zeigt genau die Energien, die umgeben und die aktuelle Situation beeinflussen. Viele Menschen sind überrascht, wie direkt Prashna den Kern ihrer Fragen trifft – ob es um Liebe, Beruf oder persönliche Entscheidungen geht.
+         </p>
+       </div>
+     </div>
+   
+     <div class="faq-item">
+       <div class="faq-question" onclick="toggleAnswer(this)">
+         <h3>Braucht man das Geburtshoroskop dafür?</h3>
+         <i class="fas fa-chevron-down"></i>
+       </div>
+       <div class="faq-answer">
+         <p>
+           Nein, für Prashna braucht es keine Geburtsdaten. Alles, was zählt, ist der Moment der Frage. Dieser Moment enthält bereits alle Antworten, um Klarheit zu schaffen. Natürlich kann das Geburtshoroskop zusätzliche Einblicke geben, aber Prashna ist perfekt für den aktuellen Moment und gibt präzise Antworten ohne Geburtsinformationen.
+         </p>
+       </div>
+     </div>
+   
+     <div class="faq-item">
+       <div class="faq-question" onclick="toggleAnswer(this)">
+         <h3>Kann man es einfach ausprobieren?</h3>
+         <i class="fas fa-chevron-down"></i>
+       </div>
+       <div class="faq-answer">
+         <p>
+           Natürlich! Selbst wenn die Frage "einfach so" gestellt wird, gibt es immer einen tieferen Grund dafür. Wenn die Frage auftaucht, ist es genau der richtige Moment, sie zu stellen. Prashna zeigt, was der Kosmos im Augenblick bereit hat – die Antwort könnte überraschen!
+         </p>
+       </div>
+     </div>
+   </section>
+</div>
+
+
+
+
+<section>                
+<div class="row about-expertise" data-animate-block>
+ <div class="column lg-12">
+ 
+         <h2 class="text-pretitle">
+             Prashna
+         </h2>
+
+         <p class="h1">
+             Deine persönliche Frage
+         </p>
+
+   
+    
+ </div>
+</div>
+<div class="row about-timelines" data-animate-block>
+ <div class="column lg-6 tab-12">
+     <h2 class="text-pretitle" data-animate-el>Nutzen der Prashna-Astrologie</h2>
+     <div class="timeline" data-animate-el>
+         <div class="timeline__block">
+             <div class="timeline__bullet"></div>
+             <div class="timeline__header">
+                 <h4 class="timeline__title">Schnelle Einsicht</h4>
+                 <h5 class="timeline__meta">Antworten im Moment</h5>
+                 <p class="timeline__timeframe">Sofort verfügbar</p>
+             </div>
+             <div class="timeline__desc">
+                 <p>Prashna-Astrologie ist eine vedische Methode, die das Stellen von Fragen und das Erhalten präziser Antworten anhand der Planetenkonstellationen zum Zeitpunkt der Frage ermöglicht. </p>
+             </div>
+         </div>
+         <div class="timeline__block">
+             <div class="timeline__bullet"></div>
+             <div class="timeline__header">
+                 <h4 class="timeline__title">Analyse der Prashna-Astrologie</h4>
+                 <h5 class="timeline__meta">Deutung des Aszendenten</h5>
+                 <p class="timeline__timeframe">Präzise Analyse</p>
+             </div>
+             <div class="timeline__desc">
+                 <p>In der Prashna-Astrologie wird der Aszendent (Lagna) analysiert, um den Verlauf einer Situation zu verstehen. Der Lagnesh, also der Herrscher des Aszendenten, liefert durch seine Stellung im Zeichen und im Haus wichtige Hinweise auf den Ausgang der Frage. Aspekte anderer Planeten und ihre Einflüsse auf den Lagnesh ermöglichen es dem Astrologen, präzise Vorhersagen zu treffen und fundierte Schlussfolgerungen zu ziehen.</p>
+             </div>
+         </div>
+     </div> <!-- end timeline -->
+ </div> <!-- end column -->
+ <div class="column lg-6 tab-12">
+     <h2 class="text-pretitle" data-animate-el>Grundlagen der Prashna-Astrologie</h2>
+     <div class="timeline" data-animate-el>
+         <div class="timeline__block">
+             <div class="timeline__bullet"></div>
+             <div class="timeline__header">
+                 <h4 class="timeline__title">Astrologische Software</h4>
+                 <h5 class="timeline__meta">Präzise Berechnung der Prashna</h5>
+                 <p class="timeline__timeframe">Jetzt ausprobieren</p>
+             </div>
+             <div class="timeline__desc">
+                 <p>Vor dir steht eine astrologische Software, die es ermöglicht, Prashna-Astrologie völlig präzise zu berechnen. Du kannst dich selbst ausprobieren und sehen, wie großartig diese Methode ist, indem du Fragen stellst und ihre Genauigkeit überprüfst.</p>
+             </div>
+         </div>
+         <div class="timeline__block">
+             <div class="timeline__bullet"></div>
+             <div class="timeline__header">
+                 <h4 class="timeline__title">Aspekte und Häuser</h4>
+                 <h5 class="timeline__meta">Wichtige Planetenaspekte</h5>
+                 <p class="timeline__timeframe">Genauer Einblick</p>
+             </div>
+             <div class="timeline__desc">
+                 <p>Die Aspekte der Planeten auf den Lagnesh sowie ihre Position in den Häusern liefern tiefgehende Einsichten in die Natur der Frage. Diese Analyse zeigt, welche planetarischen Energien die Situation unterstützen oder behindern. Der Zustand des Lagnesh, seine Würde und die Aspekte, die auf ihn einwirken, sind entscheidend für das Verständnis der Fragestellung.</p>
+             </div>
+         </div>
+     </div> <!-- end timeline -->
+ </div> <!-- end column -->
+</div> <!-- end about-timelines -->
+</section>
+<br>
+<br>
+<style>
+    #kundli-container {
+       
+display: flex;
+flex-direction: row; /* Размещаем элементы по горизонтали */
+justify-content: space-between; /* Распределяем их с промежутком */
+align-items: center; /* Центрируем элементы по вертикали, если требуется */
+padding-right: 20%;
+padding-left: 20%;
+gap: 20px; /* Промежуток между секциями */
+border-radius: 60px;
+}
+
+#kundli-container .left-section,
+#kundli-container .right-section {
+width: 50%;
+
+}
+
+.rounded-image {
+width: 100%;           /* Картинка занимает всю ширину секции */
+height: auto;
+border-radius: 50%;    /* Закругляем до круга */
+object-fit: cover;     /* Обрезка, чтобы заполнить круг */
+}
+
+</style>
+
+<div id="kundli-container" style="margin: 0 auto; max-width: 1400px; padding: 20px 20px; display: flex; justify-content: space-between; align-items: center; background-color: #fff; border: #ffa2b6 15px solid;">
+<!-- Левая секция с виджетом -->
+<div class="left-section" style="width: 50%;">
+<script type="text/javascript" src="https://kundli.click/widget-embed-js?wid=3f00c3aab3bee68b370222e6906286b4"></script>
+<div id="kundliwidgetid"></div>
+</div>
+
+<!-- Правая секция с изображением -->
+<div class="right-section" style="width: 50%;">
+<img src="images/portfolio/uuundulate.svg" alt="Image" class="rounded-image" style="width: 100%; height: auto; border-radius: 50%; object-fit: cover;">
+</div>
+</div>
+
+
+<section>                
+    <div class="row about-expertise" data-animate-block>
+     <div class="column lg-12">
+         <h2 class="text-pretitle" data-animate-el>Janma Patrika </h2>
+         <ul class="skills-list h1" data-animate-el>
+             <li>Hauptbestandteile - Geburtsdetails</li>
+             
+         </ul>
+     </div>
+ </div>
+                 <div class="row about-timelines" data-animate-block>
+ 
+                     <div class="column lg-6 tab-12">
+                 
+                         <h2 class="text-pretitle" data-animate-el>
+                            Erstellung
+                         </h2>
+                 
+                         <div class="timeline" data-animate-el>
+                 
+                             <div class="timeline__block">
+                                 <div class="timeline__bullet"></div>
+                                 <div class="timeline__header">
+                                     <h4 class="timeline__title">Panchang</h4>
+                                     <h5 class="timeline__meta">detaillierte Informationen</h5>
+                                     <p class="timeline__timeframe">astrologischer Almanach</p>
+                                 </div>
+                                 <div class="timeline__desc">
+                                     <p>Ein Panchang ist ein wichtiger astrologischer Kalender in der vedischen Astrologie, der detaillierte Informationen über astronomische und astrologische Aspekte eines bestimmten Tages liefert. </p> <p>  Insgesamt ist der Panchang ein komplexes und vielseitiges Instrument, das tief in der indischen Kultur und Astrologie verwurzelt ist und auch heute noch von vielen Menschen für die Planung und Orientierung im Alltag genutzt wird.</p>
+                                 </div>
+                             </div>
+                 
+                             <div class="timeline__block">
+                                 <div class="timeline__bullet"></div>
+                                 <div class="timeline__header">
+                                     <h4 class="timeline__title">Lagna-Diagramm</h4>
+                                     <h5 class="timeline__meta">Aszendent-Diagramm</h5>
+                                     <p class="timeline__timeframe">Interpretation</p>
+                                 </div>
+                                 <div class="timeline__desc">
+                                     <p>Das Lagna und seine Position in einem bestimmten Rashi (Tierkreiszeichen) und Nakshatra (Mondhaus) geben Aufschluss über verschiedene Aspekte des Lebens
+                                        Der Lagna-Herrscher (der Planet, der das Zeichen des Aszendenten regiert) spielt ebenfalls eine wichtige Rolle in der Interpretation</p> <p> Es dient als Grundlage für die Erstellung anderer wichtiger Diagramme wie das Navamsa-Diagramm.</p>
+                                 </div>
+                             </div>
+                 
+                         </div> <!-- end timeline -->
+                 
+                     </div> <!-- end column -->
+                 
+                     <div class="column lg-6 tab-12">
+                 
+                         <h2 class="text-pretitle" data-animate-el>
+                            Entwicklung
+                         </h2>
+                 
+                         <div class="timeline" data-animate-el>
+                 
+                             <div class="timeline__block">
+                                 <div class="timeline__bullet"></div>
+                                 <div class="timeline__header">
+                                     <h4 class="timeline__title">Rasi Diagramm</h4>
+                                     <h5 class="timeline__meta">Janma Rashi / Geburts-Rashi</h5>
+                                     <p class="timeline__timeframe">Definition und Bedeutung</p>
+                                 </div>
+                                 <div class="timeline__desc">
+                                     <p>Das Rasi-Diagramm zeigt die Position der Planeten in den zwölf Tierkreiszeichen (Rashis) zum Zeitpunkt der Geburt.
+                                        Es wird auch als Mond-Diagramm bezeichnet, da es auf der Position des Mondes basiert. </p> <p> Die Positionen der Planeten in den verschiedenen Häusern und ihre Beziehungen zueinander werden analysiert.
+                                            Besondere Aufmerksamkeit gilt dem Haus, in dem sich der Mond befindet, da es als Geburts-Rashi gilt.</p>
+                                 </div>
+                             </div>
+                 
+                             <div class="timeline__block">
+                                 <div class="timeline__bullet"></div>
+                                 <div class="timeline__header">
+                                     <h4 class="timeline__title">Navamsa Diagramm</h4>
+                                     <h5 class="timeline__meta">D9-Diagramm</h5>
+                                     <p class="timeline__timeframe">spiritueller Entwicklung</p>
+                                 </div>
+                                 <div class="timeline__desc">
+                                     <p>Das Navamsa-Diagramm wird oft als "Frucht" des Geburtshoroskops bezeichnet.
+                                        Es gibt Aufschluss über die Qualität und Stärke der Planetenpositionen im Geburtshoroskop.</p> <p> Besonders wichtig ist es für die Analyse von Ehe und Partnerschaft.
+                                            Es wird auch zur Beurteilung der spirituellen Entwicklung und des Karmas einer Person herangezogen.</p>
+                                 </div>
+                             </div>
+                 
+                         </div> <!-- end timeline -->
+                 
+                     </div> <!-- end column -->
+                 
+                 </div> <!-- end about-timelines -->
+                 
+             </section> 
+             <br>
+             
+ <br>
+
+
+
+            <br>
+            
+            
+            
+
+             <section id="contact" class="s-contact target-section">
+
+                <div class="row contact-top">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">
+                            Kontakt aufnehmen
+                        </h2>
+            
+                        <p class="h1">
+                            Ich freue mich, von dir zu hören. Ob du eine Frage zur Astrologie hast oder Hilfe brauchst, um die Ergebnisse deines Horoskops besser zu verstehen – schreib mir.
+                        </p>
+                    </div>
+                </div> <!-- end contact-top -->
+            
+                <div class="row contact-bottom">
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Kontakt</h3>
+                        <p class="contact-links">
+                            <a href="mailto:korneli.nastas@gmail.com" class="mailtoui">korneli.nastas@gmail.com</a> <br>
+                            <a href="tel:+1975432345">0157 381 81 756</a>
+                        </p>
+                    </div>
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Soziale Netzwerke</h3>
+                        <ul class="contact-social">
+                            <li><a href="https://www.facebook.com/korneli.nastas/">Facebook</a></li>
+                           
+                            <li><a href="https://x.com/KorneliNastas">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/korneli_nastas/">Instagram</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="column lg-4 md-12 contact-block">
+                        <a href="mailto:korneli.nastas@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Sag Hallo.</a>
+                    </div>
+                </div> <!-- end contact-bottom -->
+               
+            
+            </section> 
+
+</main> <!-- end s-content -->
+
+
+<!-- ## footer
+================================================== -->
+<footer class="s-footer">
+
+<div class="row">
+  <div class="column ss-copyright">
+        <span>© Copyright &nbsp<a href="https://www.astro.2ix.de/"><span style="font-size: 1.5em; vertical-align: middle;">♅ </span> ASTRO.2IX</a>&nbsp 2024</span> 
+        <span>Photography & Design by <a href="https://www.kn.2ix.de/">Korneli Nastas&nbsp;&nbsp;  </a>|&nbsp; Featured by <a href="https://fotoreisen.2ix.de">Foto Reisen</a></span>
+    </div>
+
+    <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+        </a>
+    </div>
+</div>
+
+</footer>
+
+
+
+
+
+</div> <!-- end -s-pagewrap -->
+
+
+<!-- Java Script
+================================================== -->
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+// Функция для открытия модального окна
+function openModal(modalId) {
+const modal = document.getElementById(modalId);
+if (modal) {
+    modal.style.display = "block";
+}
+}
+
+// Функция для закрытия модального окна
+function closeModal(modalId) {
+const modal = document.getElementById(modalId);
+if (modal) {
+    modal.style.display = "none";
+}
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+// Навешиваем событие для всех ссылок с атрибутом data-modal
+document.querySelectorAll('[data-modal]').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+        const modalId = this.getAttribute('data-modal'); // Получаем значение data-modal
+        openModal(modalId); // Открываем модальное окно с соответствующим ID
+    });
+});
+
+// Закрытие модального окна при клике вне его области
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', function(event) {
+        if (!event.target.closest('.modal-popup')) {
+            closeModal(modal.id); // Закрываем модальное окно
+        }
+    });
+});
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+let currentModal = null; // Переменная для отслеживания открытого модального окна
+
+// Находим все ссылки с атрибутом data-modal
+document.querySelectorAll('.folio-list__item-link').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        // Определяем ID модального окна, которое нужно открыть
+        const modalId = link.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+
+        // Закрываем текущее модальное окно, если оно открыто
+        if (currentModal && currentModal !== modal) {
+            currentModal.style.display = 'none';
+        }
+
+        // Открываем новое модальное окно
+        modal.style.display = 'block';
+        currentModal = modal; // Обновляем текущее модальное окно
+
+        // Закрытие модального окна при клике на "X"
+        modal.querySelector('.close').onclick = () => {
+            modal.style.display = 'none';
+            currentModal = null; // Сбрасываем текущее модальное окно
+        };
+    });
+});
+
+// Закрытие модального окна при клике вне окна
+window.addEventListener('click', (event) => {
+    if (currentModal && event.target === currentModal) {
+        currentModal.style.display = 'none';
+        currentModal = null; // Сбрасываем текущее модальное окно
+    }
+});
+});
+</script>
+
+<script>
+function openModal(modalId) {
+const modal = document.getElementById(modalId);
+if (modal) {
+closeAllModals();  // Закрыть все открытые модальные окна
+modal.style.display = "block";  // Открыть нужное окно
+modal.scrollIntoView({ behavior: "smooth", block: "center" });  // Прокрутка к модальному окну
+}
+}
+
+function closeAllModals() {
+document.querySelectorAll('.modal').forEach(modal => {
+modal.style.display = "none";
+});
+}
+
+function closeModal(modalId) {
+const modal = document.getElementById(modalId);
+if (modal) {
+modal.style.display = "none";
+}
+}
+
+// Обработчики событий для открытия модальных окон
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('[data-modal]').forEach(button => {
+button.addEventListener('click', function(event) {
+event.preventDefault();
+const modalId = this.getAttribute('data-modal');
+openModal(modalId);
+});
+});
+
+// Закрытие модального окна при клике вне его области
+document.querySelectorAll('.modal').forEach(modal => {
+modal.addEventListener('click', function(event) {
+if (!event.target.closest('.modal-popup')) {
+    closeModal(modal.id);
+}
+});
+});
+});
+
+</script> 
+
+
+
+
+
+</body>
+</html>
