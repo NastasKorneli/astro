@@ -685,50 +685,7 @@ e.preventDefault();
     
 
 </section> 
-<style>
-    section .responsive-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки для двух рядов по 3 элемента */
-   
-    max-width: 1200px; /* Центрирование и ограничение ширины */
-    margin: 0 auto; /* Центрируем на странице */
-}
 
-section .column.entry {
-    max-width: 100%; /* Ширина блока подстраивается под сетку */
-    box-sizing: border-box;
-}
-
-.entry__thumb {
-    position: relative;
-    width: 100%;
-    height: 240px;
-    overflow: hidden;
-}
-
-.entry__thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.entry__info {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    color: white;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: left;
-}
-/* Default styling for text */
-
-
-
-
-</style>
             <br>
             <br>
             <section >
@@ -1208,56 +1165,7 @@ section .column.entry {
 </div>
 
 
-        
 
-        <!-- <style>
-            #kundli-container {
-            width: 100%;
-            height: 820px;
-            overflow: hidden; /* Обрезает содержимое, которое выходит за рамки контейнера */
-            background-color: #efb11d;
-            
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для более приятного внешнего вида */
-        }
-        
-        #kundliwidgetid iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        </style> -->
-            <!-- <div id="kundli-container" style="padding-right: 20%;    padding-left: 20%;">
-                <script type="text/javascript" src="https://kundli.click/widget-embed-js?wid=3f00c3aab3bee68b370222e6906286b4"></script>
-                <div id="kundliwidgetid"></div>
-            </div> -->
-            <style>
-                #kundli-container {
-                   
-  display: flex;
-  flex-direction: row; /* Размещаем элементы по горизонтали */
-  justify-content: space-between; /* Распределяем их с промежутком */
-  align-items: center; /* Центрируем элементы по вертикали, если требуется */
-  padding-right: 20%;
-  padding-left: 20%;
-  gap: 20px; /* Промежуток между секциями */
-  border-radius: 60px;
-}
-
-#kundli-container .left-section,
-#kundli-container .right-section {
-  width: 50%;
- 
-}
-
-.rounded-image {
-  width: 100%;           /* Картинка занимает всю ширину секции */
-  height: auto;
-  border-radius: 50%;    /* Закругляем до круга */
-  object-fit: cover;     /* Обрезка, чтобы заполнить круг */
-}
-
-            </style>
 
 <div id="kundli-container" style="margin: 0 auto; max-width: 1400px; padding: 20px 20px; display: flex; justify-content: space-between; align-items: center; background-color: #fff; border: #ffa2b6 15px solid;">
     <!-- Левая секция с виджетом -->

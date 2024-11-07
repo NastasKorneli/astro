@@ -4353,7 +4353,7 @@ img.u-pull-left {
   flex-wrap: wrap;
 
   background-color: #f9f9f9;
-  padding:  20px;
+  padding: 30px 60px;
   border-radius: 8px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   
@@ -4419,3 +4419,68 @@ img.u-pull-left {
 .entry__thumb:hover .folio-list__item-title {
     color: #efb11d;/* change to gold on hover */
 }
+
+    section .responsive-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки для двух рядов по 3 элемента */
+   
+    max-width: 1200px; /* Центрирование и ограничение ширины */
+    margin: 0 auto; /* Центрируем на странице */
+}
+
+section .column.entry {
+    max-width: 100%; /* Ширина блока подстраивается под сетку */
+    box-sizing: border-box;
+}
+
+.entry__thumb {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.entry__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.entry__info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+#kundli-container {
+                   
+  display: flex;
+  flex-direction: row; /* Размещаем элементы по горизонтали */
+  justify-content: space-between; /* Распределяем их с промежутком */
+  align-items: center; /* Центрируем элементы по вертикали, если требуется */
+  padding-right: 20%;
+  padding-left: 20%;
+  gap: 20px; /* Промежуток между секциями */
+  border-radius: 60px;
+}
+
+#kundli-container .left-section,
+#kundli-container .right-section {
+  width: 50%;
+ 
+}
+
+.rounded-image {
+  width: 100%;           /* Картинка занимает всю ширину секции */
+  height: auto;
+  border-radius: 50%;    /* Закругляем до круга */
+  object-fit: cover;     /* Обрезка, чтобы заполнить круг */
+}
+
+
+
