@@ -4341,6 +4341,7 @@ img.u-pull-left {
   padding-left:20%; 
   padding-right: 20%; 
   text-align: justify;
+
 }
 
 
@@ -4413,4 +4414,8 @@ img.u-pull-left {
       font-size: 200%; /* Увеличение для улучшения видимости на мобильных */
       display: block;
   }
+}
+.entry__thumb:hover .folio-list__item-cat,
+.entry__thumb:hover .folio-list__item-title {
+    color: #efb11d;/* change to gold on hover */
 }
