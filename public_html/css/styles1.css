@@ -4372,20 +4372,23 @@ img.u-pull-left {
 }
 
 
+
 .large-number:hover {
-  background-color:#d65369;
+  background-color: #d65369;
   color: #fff;
-  display: inline-block; /* Убедимся, что элемент поддается трансформации */
-  animation: pulse 1.5s ease-in-out infinite; /* Добавляем анимацию */
+  display: inline-block;
+  animation: shadowPop 0.3s ease-in-out forwards;
 }
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
+
+@keyframes shadowPop {
+  0% {
+    box-shadow: 0px 0px 0px #333;
   }
-  50% {
-    transform: scale(1.1); /* Увеличение масштаба до 110% в середине */
+  100% {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 }
+
 .nak{
 
   padding: 16px;
