@@ -4374,19 +4374,35 @@ img.u-pull-left {
 
 
 .large-number:hover {
-  background-color: #d65369;
-  color: #fff;
-  display: inline-block;
-  animation: shadowPop 0.3s ease-in-out forwards;
+  background-color:#fff;
+  color: #d65369;
+  
+ 
 }
 
-@keyframes shadowPop {
-  0% {
-    box-shadow: 0px 0px 0px #333;
-  }
-  100% {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
+
+.large-number1 {  
+  background-color:#ece9e1;
+ border-left: #72737315 2px solid;
+ padding: 10px 20px; /* Добавляем отступы сверху/снизу и слева/справа */
+ width: 150px; /* Устанавливаем фиксированную ширину для расширения */
+ text-align: center; 
+ 
+}
+td {
+  vertical-align: middle; /* Выровнять содержимое по вертикали */
+  text-align:left; /* Центрировать содержимое по горизонтали */
+  padding: 10px; /* Добавить отступы для эстетики */
+}
+
+
+
+
+
+td p {
+  margin: 0; /* Убрать отступы у абзацев внутри ячеек */
+  font-size: 0.9em; /* Сделать текст описания немного меньше */
+  color: #555; /* Немного приглушить цвет текста для эстетики */
 }
 
 .nak{
