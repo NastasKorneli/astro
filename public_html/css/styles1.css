@@ -4607,5 +4607,52 @@ section .column.entry {
 .gallery-link:hover .hover-text {
   opacity: 1; /* Показываем текст при наведении */
 }
+.swiper-container .swiper-wrapper {
+  display: flex; /* Делаем элементы в строку */
+  justify-content: space-between; /* Расстояние между элементами */
+  align-items: stretch; /* Все элементы растягиваются до одинаковой высоты */
+  gap: 20px; /* Зазор между элементами */
+}
+
+.testimonial-slider__slide {
+  flex: 1; /* Элементы равномерно растягиваются */
+  text-align: left; /* Текст выравнивается по левому краю */
+  padding: 20px; /* Отступы внутри карточки */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+  border-radius: 8px; /* Скругленные углы */
+  background-color: #f9f9f9; /* Фон карточек */
+  display: flex; /* Включаем флексбокс внутри карточки */
+  flex-direction: column; /* Контент внутри располагается вертикально */
+  justify-content: space-between; /* Равномерное распределение контента */
+  height: 180px; /* Устанавливаем фиксированную высоту */
+}
+
+.testimonial-slider__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-slider__cite {
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonial-slider__slide p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0; /* Убираем дополнительные отступы */
+  overflow: hidden; /* Прячем текст, если он выходит за пределы блока */
+  text-overflow: ellipsis; /* Добавляем многоточие, если текст слишком длинный */
+}
+
+.swiper-container {
+  margin-bottom: 30px; /* Для визуального отступа от других блоков */
+}
+
 
 
