@@ -113,3 +113,64 @@ function toggleActive(element) {
     element.style.backgroundColor = "#d65369";
   }
 }
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+        function addSpans() {
+            const wall = document.getElementById("wall");
+            const words = wall.textContent.split(" "); // Split the text into words
+    
+            // Create spans for each letter in each word
+            const spanWords = words.map((word, wordIndex) => {
+                return [...word].map(letter => {
+                    const spanClass = wordIndex % 2 === 0 ? "oddWord" : "evenWord";
+                    return `<span class="${spanClass}">${letter}</span>`;
+                }).join(""); // Join the letters back as a word
+            });
+    
+            wall.innerHTML = spanWords.join(" "); // Replace wall content with spans
+        }
+
+        function animateWall() {
+            // GSAP Animation for spans
+            gsap.fromTo(
+                "span",
+                {
+                    opacity: 0, // Start invisible
+                    scale: 0, // Start collapsed
+                },
+                {
+                    opacity: 1, // Fully visible
+                    scale: 1, // Full size
+                    stagger: {
+                        each: 0.05, // Delay for sequential animation
+                        from: "random" // Animate in random order
+                    },
+                    duration: 1.5,
+                    ease: "power2.out" // Smooth easing for the animation
+                }
+            );
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            addSpans();
+
+            const wallContainer = document.getElementById("wall-container");
+
+            // Intersection Observer to trigger animation when in view
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateWall(); // Start animation
+                        observer.unobserve(entry.target); // Stop observing after animation starts
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            // Observe the wall container
+            observer.observe(wallContainer);
+        });

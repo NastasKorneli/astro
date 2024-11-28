@@ -98,11 +98,11 @@ e.preventDefault();
                             <a href="index.html" class="home-link">  <span class="icon" style="font-size: 2em; vertical-align: middle;color: #d65369;">♅ </span>Astro.2ix</a>
                         </li>
                         <!-- Навигационные ссылки для страниц -->
-                        <li><a href="zodiaks.html"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Zodiaks</a></li>
-                        <li><a href="planeten.html" ><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Planeten</a></li>
-                        <li><a href="nakshatras.html"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Nakshatras</a></li>
-                        <li><a href="haeuser.html" class="current"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Häuser</a></li>
-                        <li><a href="aspekte.html"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♅</span> Aspekte</a></li>
+                        <li><a href="zodiaks.html" ><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">☉</span> Zodiaks</a></li>
+                        <li><a href="planeten.html" ><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♀</span> Planeten</a></li>
+                        <li><a href="nakshatras.html"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">☽</span> Nakshatras</a></li>
+                        <li><a href="haeuser.html" class="current"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♄</span> Häuser</a></li>
+                        <li><a href="aspekte.html"><span class="icon" style="font-size: 2em;vertical-align: middle; opacity: 0;">♃</span> Aspekte</a></li>
                     </ul>
                 </nav>
             </div>
@@ -1385,7 +1385,70 @@ object-fit: cover;     /* Обрезка, чтобы заполнить круг
    
      </main> <!-- end s-content -->
 
-
+     <div id="wall-container">
+        <p id="wall">"Die Astrologie bietet uns die Möglichkeit, die verborgenen Muster unseres Lebens zu erkennen und unser Potenzial zu entfalten. Ich bin bereit, dir dabei zu helfen, dies zu verstehen und zu nutzen."</p>
+    </div>
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        function addSpans() {
+            const wall = document.getElementById("wall");
+            const words = wall.textContent.split(" "); // Split the text into words
+    
+            // Create spans for each letter in each word
+            const spanWords = words.map((word, wordIndex) => {
+                return [...word].map(letter => {
+                    const spanClass = wordIndex % 2 === 0 ? "oddWord" : "evenWord";
+                    return `<span class="${spanClass}">${letter}</span>`;
+                }).join(""); // Join the letters back as a word
+            });
+    
+            wall.innerHTML = spanWords.join(" "); // Replace wall content with spans
+        }
+    
+        function animateWall() {
+            // GSAP Animation for spans
+            gsap.fromTo(
+                "span",
+                {
+                    opacity: 0, // Start invisible
+                    scale: 0, // Start collapsed
+                },
+                {
+                    opacity: 1, // Fully visible
+                    scale: 1, // Full size
+                    stagger: {
+                        each: 0.05, // Delay for sequential animation
+                        from: "random" // Animate in random order
+                    },
+                    duration: 1.5,
+                    ease: "power2.out" // Smooth easing for the animation
+                }
+            );
+        }
+    
+        document.addEventListener("DOMContentLoaded", () => {
+            addSpans();
+    
+            const wallContainer = document.getElementById("wall-container");
+    
+            // Intersection Observer to trigger animation when in view
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateWall(); // Start animation
+                        observer.unobserve(entry.target); // Stop observing after animation starts
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+    
+            // Observe the wall container
+            observer.observe(wallContainer);
+        });
+    </script>
      <!-- ## footer
      ================================================== -->
      <footer class="s-footer">

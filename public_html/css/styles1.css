@@ -4653,6 +4653,47 @@ section .column.entry {
 .swiper-container {
   margin-bottom: 30px; /* Для визуального отступа от других блоков */
 }
+:root {
+  --hue: 220; /* Base color */
+}
 
+/* Container styling */
+#wall-container {
+  position: relative;
+  padding: 20px;
+}
 
+/* Grid styling for wall */
+#wall-container #wall {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr); /* Adjust number of columns as needed */
+  grid-gap: 2px; /* Space between grid items */
+  margin: 0;
+  text-align: center;
+}
 
+/* Span elements styling */
+#wall-container span {
+  display: inline-block;
+  opacity: 0; /* Hidden initially for animation */
+  width: 100%; /* Occupy full grid cell */
+  height: 100%; /* Match the cell height */
+  text-align: center;
+  color: hsl(var(--hue), 40%, 70%);
+  font-size: 1vw;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  line-height: 2; /* Vertical alignment */
+  background-color: transparent;
+ 
+}
+
+/* Odd and even word classes */
+#wall-container .oddWord {
+  background-color: hsl(var(--hue), 40%, 20%);
+}
+
+#wall-container .evenWord {
+  background-color: hsl(var(--hue), 40%, 40%);
+}
