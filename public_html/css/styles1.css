@@ -4654,8 +4654,10 @@ section .column.entry {
   margin-bottom: 30px; /* Для визуального отступа от других блоков */
 }
 :root {
-  --hue: 220; /* Base color */
+  --hue: 220; 
 }
+
+
 
 /* Container styling */
 #wall-container {
@@ -4680,9 +4682,11 @@ section .column.entry {
   width: 100%; /* Occupy full grid cell */
   height: 100%; /* Match the cell height */
   text-align: center;
-  color: hsl(var(--hue), 40%, 70%);
-  font-size: 1vw;
+  /* color: hsl(var(--hue), 40%, 70%); */
+  color: white;
+  font-size: 1.2vw;
   font-family: "Fira Code", monospace;
+  
   font-weight: bold;
   line-height: 2; /* Vertical alignment */
   background-color: transparent;
