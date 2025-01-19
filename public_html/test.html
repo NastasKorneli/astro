@@ -3,10 +3,38 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/portfolio/favicon-32x32.png" type="image/x-icon">
         <title> ASTRO.2IX - Beratung</title>
         
     </head>
     <body>
+  
+        <br>
+    <a href="https://astro.2ix.de/planeten.html" target="_blank" class="gallery-link">
+      <article class="gallery">
+        <img src="images/portfolio/venus.webp" alt="Venus" data-url="https://link-to-venus.com" />
+        <img src="images/portfolio/mars.webp" alt="Mars" data-url="https://link-to-mars.com" />
+        <img src="images/portfolio/sun.webp" alt="Sun" data-url="https://link-to-sun.com" />
+        <img src="images/portfolio/moon.webp" alt="Moon" data-url="https://link-to-moon.com" />
+        <img src="images/portfolio/mercury.webp" alt="Mercury" data-url="https://link-to-mercury.com" />
+        <img src="images/portfolio/jupiter.webp" alt="Jupiter" data-url="https://link-to-jupiter.com" />
+        <img src="https://i.pinimg.com/originals/9d/9b/e9/9d9be9279765b239a72a0a9a79fd59b3.gif" alt="Saturn" data-url="https://link-to-saturn.com" />
+        <img src="images/portfolio/rahu.webp" alt="Rahu" data-url="https://link-to-rahu.com" />
+        <img src="images/portfolio/ketu.webp" alt="Ketu" data-url="https://link-to-mercury.com" />
+        <img src="images/portfolio/uranus.webp" alt="Uranus" data-url="https://link-to-jupiter.com" />
+        <img src="images/portfolio/saturn.webp" alt="Saturn" data-url="https://link-to-saturn.com" />
+        <img src="images/portfolio/Neptune.webp" alt="  Neptune" data-url="https://link-to-rahu.com" />
+        <img src="images/portfolio/pluto.webp" alt="Pluto" data-url="https://link-to-rahu.com" />
+        
+      </article>
+       <span class="hover-text"><div id="houseNav" class="tags-container house-nav-horizontal" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; padding-left: 10%; padding-right: 10%;">
+        <button class="btn--small" style="background: #d65369 ;">Entdecke die faszinierende Welt der Planeten</button>
+       
+     
+    </div> </span>
+    </a>
+  </section>
+  <br>
       
             <header>
                 <h1 class="fluid">Entfalte dein <br /><a href="http://www.astro.2ix.de" style="color:#FC0089; text-decoration: none;">astro</a>logisches Potenzial.</h1>
@@ -14,6 +42,7 @@
 
               </header>
               <main>
+                
                 <section class="content fluid">
                   <h2><span aria-hidden="true">Entdecke&nbsp;</span>
                     <span class="sr-only">you can ship things.</span>
@@ -43,13 +72,190 @@
                     <li style="--i: 21">Energie.</li>
                   </ul>
                 </section>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHB-sgRgjvGCLNAORmVGBwrWM65YFsiSoKqkNNZiEQcZZ69w/viewform?embedded=true" width="100%" height="1600"  frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
                 <section>
                   <h2 class="fluid" style="color:#FC0089;">
-                    +49 157 381 81 756</h2>
+                    0157 381 81 756</h2>
                 </section>
-              
-             
+                <h1 class="fluid">Die erste astrologische Beratung ist <span style="color:#FC0089;">kostenlos</span> für dich.</h1>
               </main>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br> <br>
+              <br>
+              <br> <br>
+              <br>
+              <br>
+
+              <br>
+              <style>
+                .rounded-image {
+  width: 100%;           /* Картинка занимает всю ширину секции */
+  height: auto;
+  border-radius: 50%;    /* Закругляем до круга */
+  object-fit: cover;     /* Обрезка, чтобы заполнить круг */
+}
+
+.planets {
+  margin: 0;
+  min-height: 20vh;
+  display: grid;
+  place-items: center;
+}
+
+.gallery {
+  --size: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, var(--size));
+  grid-auto-rows: var(--size);
+  margin-bottom: var(--size);
+  place-items: start center;
+  gap: 5px;
+  
+  &:has(:hover) img:not(:hover),
+  &:has(:focus) img:not(:focus){
+    filter: brightness(0.5) contrast(0.5);
+  }
+ 
+
+  & img {
+    object-fit: cover;
+    width: calc(var(--size) * 2);
+    height: calc(var(--size) * 2);
+    clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+    transition: clip-path 0.25s, filter 0.75s;
+    grid-column: auto / span 2;
+    border-radius: 5px;
+
+    &:nth-child(5n - 1) { 
+      grid-column: 2 / span 2 
+    }
+
+    &:hover,
+    &:focus {
+      clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+      z-index: 1;
+      transition: clip-path 0.25s, filter 0.25s;
+    }
+    
+    &:focus {
+      outline: 1px dashed black;
+      outline-offset: -5px;
+    }
+  }
+}
+
+.gallery-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.gallery-link .hover-text {
+  position: absolute;
+  top: -10%; /* Центрируем текст по вертикали */
+  left: 50%; /* Центрируем текст по горизонтали */
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  background-color: #efb01d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0; /* По умолчанию скрыто */
+  transition: opacity 0.3s;
+  pointer-events: none; /* Убираем взаимодействие с текстом */
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.gallery-link:hover .hover-text {
+  opacity: 1; /* Показываем текст при наведении */
+}
+.swiper-container .swiper-wrapper {
+  display: flex; /* Делаем элементы в строку */
+  justify-content: space-between; /* Расстояние между элементами */
+  align-items: stretch; /* Все элементы растягиваются до одинаковой высоты */
+  gap: 20px; /* Зазор между элементами */
+}
+
+.testimonial-slider__slide {
+  flex: 1; /* Элементы равномерно растягиваются */
+  text-align: left; /* Текст выравнивается по левому краю */
+  padding: 20px; /* Отступы внутри карточки */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+  border-radius: 8px; /* Скругленные углы */
+  background-color: #f9f9f9; /* Фон карточек */
+  display: flex; /* Включаем флексбокс внутри карточки */
+  flex-direction: column; /* Контент внутри располагается вертикально */
+  justify-content: space-between; /* Равномерное распределение контента */
+  height: 180px; /* Устанавливаем фиксированную высоту */
+}
+
+.testimonial-slider__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-slider__cite {
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonial-slider__slide p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0; /* Убираем дополнительные отступы */
+  overflow: hidden; /* Прячем текст, если он выходит за пределы блока */
+  text-overflow: ellipsis; /* Добавляем многоточие, если текст слишком длинный */
+}
+
+.swiper-container {
+  margin-bottom: 30px; /* Для визуального отступа от других блоков */
+}
+:root {
+  --hue: 220; 
+}
+
+
+              </style>
+<section class="planets">
+    <a href="https://astro.2ix.de/zodiaks.html" target="_blank" class="gallery-link">
+      <article class="gallery">
+        <img src="images/portfolio/aries-svgrepo-com.svg" alt="Venus" data-url="https://link-to-venus.com" />
+        <img src="images/portfolio/taurus-svgrepo-com.svg" alt="Mars" data-url="https://link-to-mars.com" />
+        <img src="images/portfolio/gemini-svgrepo-com.svg" alt="Sun" data-url="https://link-to-sun.com" />
+    
+        <img src="images/portfolio/leo-svgrepo-com.svg" alt="Mercury" data-url="https://link-to-mercury.com" />
+        <img src="images/portfolio/cancer-svgrepo-com.svg" alt="Moon" data-url="https://link-to-moon.com" />
+        <img src="images/portfolio/virgo-svgrepo-com.svg" alt="Jupiter" data-url="https://link-to-jupiter.com" />
+        <img src="https://i.pinimg.com/originals/84/f2/05/84f20553fcd3f3532d6ec66b321bf139.gif" alt="Saturn" data-url="https://link-to-saturn.com" />
+        <img src="images/portfolio/libra-svgrepo-com.svg" alt="Rahu" data-url="https://link-to-rahu.com" />
+        <img src="images/portfolio/scorpio-svgrepo-com.svg" alt="Ketu" data-url="https://link-to-mercury.com" />
+        <img src="images/portfolio/sagittarius-svgrepo-com.svg" alt="Uranus" data-url="https://link-to-jupiter.com" />
+        <img src="images/portfolio/capricornus-svgrepo-com.svg" alt="Saturn" data-url="https://link-to-saturn.com" />
+        <img src="images/portfolio/aquarius-svgrepo-com.svg" alt="  Neptune" data-url="https://link-to-rahu.com" />
+        <img src="images/portfolio/pisces-svgrepo-com.svg" alt="Pluto" data-url="https://link-to-rahu.com" />
+        
+      </article>
+       <span class="hover-text"><div  class="tags-container house-nav-horizontal" style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; padding-left: 10%; padding-right: 10%;">
+    <button class="btn--small" style="background: #d65369 ;">Die Sternzeichen – ein Schlüssel zu deiner Persönlichkeit.</button>
+   
+ 
+</div> </span>
+    </a>
+  </section>
+
+<br>
+
               <footer>
                 <span style="font-size: 1.5em; color: white;">© Copyright &nbsp;
                   <a href="https://www.astro.2ix.de/" style="color: #FC0089; text-decoration: none;">
@@ -300,7 +506,7 @@
   }
 
   html {
-    color-scheme:dark;
+    color-scheme: light;
   }
 
   [data-theme='light'] {

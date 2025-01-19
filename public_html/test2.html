@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <header>
+      <br>
+      <section class="index-page">
+        <div class="container22 ">
+          <br>
+           <p class="grid22">
+             <div style= "display: inline-block; " > <span style="padding-left: 1vw;" class="reisen1">welt</span><span style="padding-left: 1vw;" class="photo1">weit</span></div>
+             
+     <div style="display: inline-block; ">      <span class="photo">foto</span><span class="reisen">reisen</span></div>
+             
+     </p>
+   
+       <br>
+     </div> 
+        <nav class="navbar" id="navbar">
+          <div class="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nlist">
+            <li>
+              <a href="index.html" class="nav-link" title="Startseite">Start</a>
+            </li>
+
+            <li>
+              <a href="reiseplan.html" class="nav-link" title="Reiseplan"
+                >Reiseplan</a
+              >
+            </li>
+
+            <li>
+              <a href="model.html" class="nav-link" title="Myanmar in Farben"
+                >Myanmar in Farben</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+      body {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 200;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      .question {
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: larger;
+        color: dodgerblue;
+      }
+      .answer {
+        display: block;
+        margin: 5px 0;
+      }
+      .correct {
+        color: darkcyan;
+      }
+      .incorrect {
+        color: red;
+      }
+      .question-block {
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      .hidden {
+        display: none;
+      }
+      #content {
+        display: none;
+      }
+    </style>
+    <title>Q&A-Suche</title>
+  </head>
+  <body>
+    <h1 style="font-size: xx-large">Q&A-Suche</h1>
+    <p style="color: darkcyan">
+      Die Suchmaschine durchsucht Fragen und Antworten in Echtzeit und zeigt nur
+      die passenden Ergebnisse an, basierend auf dem eingegebenen Suchbegriff.
+      Nicht zutreffende Inhalte werden ausgeblendet.
+    </p>
+
+    <div id="passwordPrompt">
+      <label for="password">Passwort eingeben:</label>
+      <input type="password" id="password" />
+      <button onclick="checkPassword()">Eingeben</button>
+    </div>
+
+    <div id="content">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Suche..."
+        onkeyup="searchQuestions()"
+      />
+      <style>
+        p {
+            color: rgb(0, 0, 0);
+        }
+      </style>
+
+      <div id="questions">
+        <title>Q&A-Suche</title>
+     
+        <div class="question-block">
+            <p class="question">2. Welche der folgenden Aussagen sind richtig?</p>
+            <p class="answer incorrect">❌ JavaScript wird häufig als Textauszeichnungssprache eingesetzt.</p>
+            <p class="answer correct">✔ JavaScript kann auf Client und Server eingesetzt werden.</p>
+            <p class="answer correct">✔ Mit JavaScript lassen sich Roboter steuern.</p>
+            <p class="answer correct">✔ Die Bildbearbeitungssoftware Adobe Photoshop kann mit JavaScript gescriptet werden.</p>
+            <p class="answer incorrect">❌ JavaScript läuft nur im Browser.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">3. Wie versetzt du JS in den strikten Modus?</p>
+            <p class="answer incorrect">❌ Durch den Aufruf der Funktion useStrict() am Anfang des Codes.</p>
+            <p class="answer correct">✔ Durch 'use strict' am Anfang des Codes.</p>
+            <p class="answer incorrect">❌ Durch 'strict' am Anfang des Codes.</p>
+            <p class="answer incorrect">❌ Starte Chrome mit der Kommandozeilen-Option --strict.</p>
+            <p class="answer incorrect">❌ Wähle strict mode aus dem Developer-Menü des Browsers.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">4. Welche der folgenden Zeilen sind syntaktisch korrekt?</p>
+            <p class="answer incorrect">❌ console.log 'Hello'</p>
+            <p class="answer incorrect">❌ console.log 'Hello';</p>
+            <p class="answer correct">✔ console.log("Hello")</p>
+            <p class="answer correct">✔ console.log('Hello')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">5. Bestimme den Rückgabewert des folgenden Ausdrucks: typeof typeof 42</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer correct">✔ string</p>
+            <p class="answer incorrect">❌ object</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">6. Bestimme den Rückgabewert des folgenden Ausdrucks: 'Hello'.length</p>
+            <p class="answer correct">✔ 5</p>
+            <p class="answer incorrect">❌ 6</p>
+            <p class="answer incorrect">❌ 4</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">7. Markiere gültige Literale.</p>
+            <p class="answer correct">✔ " ' "</p>
+            <p class="answer incorrect">❌ 3 * 5</p>
+            <p class="answer correct">✔ '3 * 5'</p>
+            <p class="answer correct">✔ 'Hello'</p>
+            <p class="answer incorrect">❌ "Hello".length</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">8. Bestimme den Datentyp des Rückgabewerts des folgenden Ausdrucks: '3 * 4'</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer correct">✔ string</p>
+            <p class="answer incorrect">❌ object</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">9. Bestimme den Rückgabewert des folgenden Ausdrucks: typeof '1 + 2'</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer correct">✔ string</p>
+            <p class="answer incorrect">❌ operator</p>
+            <p class="answer incorrect">❌ literal</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">10. Bestimme den Rückgabewert des folgenden Ausdrucks: '123'.length</p>
+            <p class="answer correct">✔ 3</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ operator</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">11. Bestimme den Wert des folgenden Ausdrucks: 2 + 3 / 2 + 3</p>
+            <p class="answer correct">✔ 6.5</p>
+            <p class="answer incorrect">❌ 1</p>
+            <p class="answer incorrect">❌ Der Ausdruck ist syntaktisch falsch.</p>
+            <p class="answer incorrect">❌ 6</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">12. Der Wert der Variablen laenge soll auf das Doppelte erhöht werden. Welche Anweisung ermöglicht das?</p>
+            <p class="answer incorrect">❌ laenge = laenge ** 2</p>
+            <p class="answer correct">✔ laenge += laenge</p>
+            <p class="answer correct">✔ laenge *= 2</p>
+            <p class="answer incorrect">❌ laenge += 2</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">13. Eine geplante einstündige Beratung dauert insgesamt
+                85 Minuten. Wie ermittelst du, wie viele Minuten die
+                Beratung überzogen wurde?</p>
+            <p class="answer correct">✔ let restMinuten = dauer % 60</p>
+            <p class="answer incorrect">❌ let restMinuten = dauer * 60</p>
+            <p class="answer incorrect">❌ let restMinuten = dauer / 60</p>
+            <p class="answer correct">✔ let restMinuten = dauer - 60</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">14. Als was bezeichnet man den Teil a = 3 + b?</p>
+            <p class="answer correct">✔ Zuweisung</p>
+            <p class="answer incorrect">❌ Variablendefinition</p>
+            <p class="answer incorrect">❌ Ausdruck</p>
+            <p class="answer incorrect">❌ Schlüsselwort</p>
+          </div>
+          <div class="question-block">
+            <p class="question">15. Als was bezeichnet man let in folgender Codezeile: let a = 3 + b</p>
+            <p class="answer correct">✔ Schlüsselwort</p>
+            <p class="answer incorrect">❌ Ausdruck</p>
+            <p class="answer incorrect">❌ Bezeichner</p>
+            <p class="answer incorrect">❌ Zuweisung</p>
+            <p class="answer incorrect">❌ Variablendefinition</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">16. Welches ist die typischerweise zu verwendende Schreibweise für Variablenbezeichner in JavaScript?</p>
+            <p class="answer correct">✔ wegLaenge</p>
+            <p class="answer incorrect">❌ WegLaenge</p>
+            <p class="answer incorrect">❌ weg_Laenge</p>
+            <p class="answer incorrect">❌ WEG_LAENGE</p>
+            <p class="answer incorrect">❌ WEGLAENGE</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">17. Welche der folgenden Aussagen sind richtig?</p>
+            <p class="answer incorrect">❌ Du solltest immer Abkürzungen verwenden, um den Code kompakter zu gestalten.</p>
+            <p class="answer correct">✔ Gebräuchliche Abkürzungen zu verwenden kann sinnvoll sein.</p>
+            <p class="answer correct">✔ Bezeichner sind in JavaScript case-sensitive.</p>
+            <p class="answer incorrect">❌ Abkürzungen sind verboten.</p>
+            <p class="answer incorrect">❌ Bezeichner sind in JavaScript case-insensitive.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">18. Gib C:\files in der Browser-Konsole aus.</p>
+            <p class="answer incorrect">❌ console.log('C:\files')</p>
+            <p class="answer correct">✔ console.log(`C:\\files`)</p>
+            <p class="answer correct">✔ console.log("C:\\files")</p>
+            <p class="answer incorrect">❌ console.log("C:\files")</p>
+            <p class="answer correct">✔ console.log('C:\\files')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">19. Welche Ausgabe erzeugt die folgende Anweisung? console.log(`${10 + 1}`)</p>
+            <p class="answer incorrect">❌ ${10 + 1}</p>
+            <p class="answer incorrect">❌ 10 + 1</p>
+            <p class="answer incorrect">❌ Keine! Es erscheint eine Fehlermeldung.</p>
+            <p class="answer correct">✔ '11'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">20. Bestimme den Datentyp des Rückgabewerts des folgenden Ausdrucks: '3' + '4'</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer correct">✔ string</p>
+            <p class="answer incorrect">❌ NaN</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+
+          <div class="question-block">
+            <p class="question">22. Welchen Rückgabewert liefert folgender Ausdruck? ('is' + 3) * 7</p>
+            <p class="answer correct">✔ NaN</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">23. Welchen Rückgabewert hat der folgende Ausdruck? `${3 * 4}`</p>
+            <p class="answer incorrect">❌ 12 (number)</p>
+            <p class="answer correct">✔ 12 (string)</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer incorrect">❌ string</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">24. Bestimme den Datentyp des Rückgabewerts: '10' / 'Hallo'</p>
+            <p class="answer incorrect">❌ NaN</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">25. Bestimme den Datentyp des Rückgabewerts: '3 * 4'</p>
+            <p class="answer incorrect">❌ 12 (string)</p>
+            <p class="answer correct">✔ string</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer incorrect">❌ 12</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">26. Bestimme den Rückgabewert: '9' / '2'</p>
+            <p class="answer correct">✔ 4.5 (number)</p>
+            <p class="answer incorrect">❌ NaN</p>
+            <p class="answer incorrect">❌ 4.5 (string)</p>
+            <p class="answer incorrect">❌ string</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">27. Bestimme den Datentyp des Rückgabewerts: 3 + 4</p>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ 7</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">28. Bestimme den Datentyp des Rückgabewerts des folgenden Ausdrucks: '3' * '4'</p>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ 12</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ 7</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">29. Welchen Rückgabewert liefert folgender Ausdruck? 'is' + 3 * 7</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer incorrect">❌ NaN</p>
+            <p class="answer correct">✔ is21 (string)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">30. Welchen Rückgabewert hat der folgende Ausdruck? '4' + 5</p>
+            <p class="answer incorrect">❌ 9</p>
+            <p class="answer incorrect">❌ 45 (number)</p>
+            <p class="answer correct">✔ 45 (string)</p>
+            <p class="answer incorrect">❌ string</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">31. Bestimme den Datentyp des Rückgabewerts: '10' / 2</p>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ 5</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ '5'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">32. Bestimme den Datentyp des Rückgabewerts: Number('Nothing')</p>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ NaN</p>
+            <p class="answer incorrect">❌ undefined</p>
+            <p class="answer incorrect">❌ string</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">33. Welchen Rückgabewert hat der folgende Ausdruck? '10' + 5</p>
+            <p class="answer correct">✔ 105 (string)</p>
+            <p class="answer incorrect">❌ 105 (number)</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ NaN</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">34. Bestimme den Datentyp des Rückgabewerts: '3' + '4'</p>
+            <p class="answer incorrect">❌ 7</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer correct">✔ string</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">35. Welchen Rückgabewert hat der folgende Ausdruck? 3 * '4Hallo'</p>
+            <p class="answer correct">✔ NaN</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer incorrect">❌ 12Hallo</p>
+            <p class="answer incorrect">❌ '34Hallo'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">36. Bestimme den Datentyp des Rückgabewerts: 'Alle' / 'Einen'</p>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ NaN</p>
+            <p class="answer incorrect">❌ 'Alle/Einen'</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">37. Bestimme den Rückgabewert: '9 CPUs' / '2 CPUs'</p>
+            <p class="answer correct">✔ NaN</p>
+            <p class="answer incorrect">❌ number</p>
+            <p class="answer incorrect">❌ '9 CPUs / 2 CPUs'</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">38. Bestimme den Datentyp des Rückgabewerts: Number(Number(10))</p>
+            <p class="answer incorrect">❌ 10</p>
+            <p class="answer incorrect">❌ NaN</p>
+            <p class="answer incorrect">❌ undefined</p>
+            <p class="answer correct">✔ number</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">39. Bestimme den Datentyp des Rückgabewerts: 'Hello' * 'World'</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ undefined</p>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ NaN</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">40. Mit welchem JavaScript-Code berechnest du die 2. Wurzel (Quadratwurzel) von 7 und rundest das Ergebnis auf 5 Stellen nach dem Komma?</p>
+            <p class="answer correct">✔ Math.sqrt(7).toFixed(5)</p>
+            <p class="answer incorrect">❌ sqrt(7).comma(5)</p>
+            <p class="answer incorrect">❌ Math.sqrt(7).roundTo(5)</p>
+            <p class="answer incorrect">❌ math.sqrt(7).toFixed(5)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">41. Beim modernen europäischen Roulette gibt es die Zahlen von 1 bis 36 und die 0. Entwickle einen Zufallsgenerator, der das Roulette simuliert.</p>
+            <p class="answer correct">✔ Math.floor(Math.random() * 37) + 0</p>
+            <p class="answer incorrect">❌ Math.floor(math.random() * 36) + 0</p>
+            <p class="answer incorrect">❌ Math.floor(Math.random() * 37) + 1</p>
+            <p class="answer incorrect">❌ Math.floor(math.random() * 36) + 1</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">42. Mit welchem JavaScript-Code berechnest du 1.7 hoch 4 und rundest das Ergebnis auf 3 Stellen nach dem Komma?</p>
+            <p class="answer correct">✔ Math.pow(1.7, 4).toFixed(3)</p>
+            <p class="answer incorrect">❌ Math.pow(1.7).Math.pow(4).toFixed(3)</p>
+            <p class="answer incorrect">❌ Math.pow(4, 1.7).toFixed(3)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">43. Math bezeichnet man in JavaScript als</p>
+            <p class="answer incorrect">❌ Function</p>
+            <p class="answer correct">✔ Object</p>
+            <p class="answer incorrect">❌ Konstante</p>
+            <p class="answer incorrect">❌ Variable</p>
+            <p class="answer incorrect">❌ String</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">44. Bei Lotto werden Zahlen von 1 bis 49 verwendet. Entwickle einen passenden Zufallsgenerator.</p>
+            <p class="answer correct">✔ Math.floor(Math.random() * 49) + 1</p>
+            <p class="answer incorrect">❌ Math.floor(Math.random() * 50) + 0</p>
+            <p class="answer incorrect">❌ Math.floor(Math.random() * 48) + 1</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">45. Welchen Rückgabewert hat der folgende Ausdruck? 'Computer' === 'Probleme'</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">46. Welchen Rückgabewert hat der folgende Ausdruck? 19 >= 19</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">47. Welchen Rückgabewert hat der folgende Ausdruck? 19 >= 19.2</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">48. Welchen Rückgabewert hat der folgende Ausdruck? 5 * 7 === 36 - 1</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">49. Welchen Rückgabewert hat der folgende Ausdruck? 3 + 3 !== 2 * 3</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">50. Welchen Rückgabewert hat der folgende Ausdruck? '42' === 42</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">51. Welchen Rückgabewert hat der folgende Ausdruck? '42' + 1 === 43</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">52. Welchen Rückgabewert hat der folgende Ausdruck? '2' * '4' === Number(17 / 2)</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">53. Welchen Rückgabewert hat der folgende Ausdruck? '42' === 'zweiundvierzig'</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">54. Welchen Rückgabewert hat der folgende Ausdruck? isNaN('3' + '4')</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">55. Welchen Rückgabewert hat der folgende Ausdruck? 'zwei' < 'drei'</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">56. Welchen Rückgabewert hat der folgende Ausdruck? 'seven' < 'nine'</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">57. Welchen Rückgabewert hat der folgende Ausdruck? 'nine' < 'seven'</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">58. Welches Ergebnis liefert folgender Ausdruck? 'is' + (3 < 7)</p>
+            <p class="answer correct">✔ 'istrue'</p>
+            <p class="answer incorrect">❌ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">59. Schreibe folgenden Code um, sodass kein if oder if-else mehr benötigt wird:</p>
+            <p class="code">
+              let isAccessGrantedText;<br>
+              if (password === '123456') { isAccessGrantedText = 'yes' }<br>
+              else { isAccessGrantedText = 'no' }
+            </p>
+            <p class="answer correct">✔ let isAccessGranted = password === '123456' ? 'yes' : 'no'</p>
+            <p class="answer incorrect">❌ let isAccessGranted = password === '123456' ? 'no' : 'yes'</p>
+            <p class="answer incorrect">❌ let isAccessGranted = password === 123456 ? 'yes' : 'no'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">60. Schreibe folgenden Code um, sodass kein if oder if-else mehr benötigt wird:</p>
+            <p class="code">
+              let isAccessGrantedText;<br>
+              if (password === 'secret') { isAccessGrantedText = 'yes' }<br>
+              else { isAccessGrantedText = 'no' }
+            </p>
+            <p class="answer correct">✔ let isAccessGranted = password === 'secret' ? 'yes' : 'no'</p>
+            <p class="answer incorrect">❌ let isAccessGranted = password === 'secret' ? 'no' : 'yes'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">61. Welche der folgenden Codezeilen verwenden die korrekte Syntax der If-Anweisung?</p>
+            <p class="answer correct">✔ if (a > 1) { a = a - 1 }</p>
+            <p class="answer correct">✔ if (a > 1) { a -= 1 }</p>
+            <p class="answer incorrect">❌ if a > 1 { a = a - 1 }</p>
+            <p class="answer incorrect">❌ if {a > 1} { a -= 1 }</p>
+            <p class="answer incorrect">❌ if a > 1 { a -= 1 }</p>
+            <p class="answer incorrect">❌ if {a > 1} { a = a - 1 }</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">62. Welches Ergebnis liefert folgender Ausdruck? '' || false</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ ''</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">63. Welches Ergebnis liefert folgender Ausdruck? false || ''</p>
+            <p class="answer correct">✔ ''</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">64. Welches Ergebnis liefert folgender Ausdruck? false && (true || false)</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">65. Welches Ergebnis liefert folgender Ausdruck? false && (false || true)</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">66. Welches Ergebnis liefert folgender Ausdruck? true && (false || true)</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">67. Bestimme den Rückgabewert folgender Ausdrücke: !(6 < 7)</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ true</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">68. Bestimme den Rückgabewert folgender Ausdrücke: 'HALLO' < 'hallo' && Math.floor(1.1) === 1</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">69. Bestimme den Rückgabewert folgender Ausdrücke: 3 * 2 === 3 + 2 || 'a' !== 'b'</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">70. Bestimme den Rückgabewert des folgenden Ausdrucks: 4 < 3 || ('a' != 'b' && Math.ceil(1.1) === 2)</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">71. Bestimme den Rückgabewert des folgenden Ausdrucks: 'Zahl' && 'Wort'</p>
+            <p class="answer correct">✔ 'Wort'</p>
+            <p class="answer incorrect">❌ 'Zahl'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">72. Bestimme den Rückgabewert des folgenden Ausdrucks: false && 'Zahl'</p>
+            <p class="answer correct">✔ false</p>
+            <p class="answer incorrect">❌ 'Zahl'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">73. Welche der folgenden sind gültige JavaScript-Operatoren?</p>
+            <p class="answer correct">✔ &&</p>
+            <p class="answer correct">✔ ||</p>
+            <p class="answer correct">✔ !</p>
+            <p class="answer incorrect">❌ !&</p>
+            <p class="answer incorrect">❌ |&</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">74. Bestimme den Rückgabewert des folgenden Ausdrucks: '' && false</p>
+            <p class="answer correct">✔ ''</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">75. Bestimme den Rückgabewert des folgenden Ausdrucks: !(4 < 3)</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">76. Bestimme den Rückgabewert des folgenden Ausdrucks: 'a' < 'b' && Math.ceil(1.1) === 2</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">77. Bestimme den Rückgabewert des folgenden Ausdrucks: 3 * 2 === 3 + 3 || 'x' === 'y'</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">78. Welches Ergebnis liefert folgender Ausdruck? 'Hello Goldy'.includes('old' + 'y')</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">79. Welches Ergebnis liefert folgender Ausdruck? 'Hello Goldy'.substr(0,1).toLowerCase()</p>
+            <p class="answer correct">✔ 'h'</p>
+            <p class="answer incorrect">❌ 'e'</p>
+            <p class="answer incorrect">❌ ''</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">80. Welches Ergebnis liefert folgender Ausdruck? 'Hello Goldy'.charAt(1).repeat(3)</p>
+            <p class="answer correct">✔ 'eee'</p>
+            <p class="answer incorrect">❌ 'HHH'</p>
+            <p class="answer incorrect">❌ ''</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">81. Welches Ergebnis liefert folgender Ausdruck? 'Hello Goldy'.lastIndexOf('l')</p>
+            <p class="answer correct">✔ 8</p>
+            <p class="answer incorrect">❌ 9</p>
+            <p class="answer incorrect">❌ 7</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">82. Bestimme den Rückgabewert des folgenden Ausdrucks: 'some string'.substr(3, 2).length</p>
+            <p class="answer correct">✔ 2</p>
+            <p class="answer incorrect">❌ 3</p>
+            <p class="answer incorrect">❌ 1</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">83. Bestimme den Rückgabewert des folgenden Ausdrucks: 'Ladislaus'.includes('ad' + 'i' + 's')</p>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">84. Bestimme den Rückgabewert des folgenden Ausdrucks: 'Ladislaus'.substr(1,2).toUpperCase()</p>
+            <p class="answer correct">✔ 'AD'</p>
+            <p class="answer incorrect">❌ 'LA'</p>
+            <p class="answer incorrect">❌ 'DI'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">85. Bestimme den Rückgabewert des folgenden Ausdrucks: 'Ladislaus'.charAt(3).repeat(1)</p>
+            <p class="answer correct">✔ 'i'</p>
+            <p class="answer incorrect">❌ 'd'</p>
+            <p class="answer incorrect">❌ 's'</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">86. Bestimme den Rückgabewert des folgenden Ausdrucks: 'this is a short text'.substr(4, 5).trim().length</p>
+            <p class="answer correct">✔ 4</p>
+            <p class="answer incorrect">❌ 5</p>
+            <p class="answer incorrect">❌ 3</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">87. Ergänze den folgenden regulären Ausdruck, sodass nur Nutzernamen gültig sind, welche aus Kleinbuchstaben und Sonderzeichen außer dem # bestehen. Zudem sollen nur Nutzernamen mit einer Mindestlänge von 5 Zeichen akzeptiert werden.</p>
+            <p class="answer correct">✔ [^#\dA-Z]{5,}</p>
+            <p class="answer incorrect">❌ [ #\d - ]{ }</p>
+            <p class="answer incorrect">❌ [,#\da-z]{5,}</p>
+            <p class="answer incorrect">❌ [^#\dA-Z]{6,}</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">88. Untersuche die folgenden Strings auf korrekte Entsprechung zum regulären Ausdruck: ^[a-z][\w]*@[\w]+.[a-z]+$</p>
+            <p class="answer correct">✔ max23mustermann@mail12.com</p>
+            <p class="answer incorrect">❌ max.mustermann@mail.com</p>
+            <p class="answer incorrect">❌ max-mustermann@mail.com</p>
+            <p class="answer correct">✔ maxmustermann@mail.com</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">89. Untersuche die folgenden Strings auf vollständige korrekte Entsprechung zum regulären Ausdruck: /[a-z0-9]{3,}/g</p>
+            <p class="answer correct">✔ javascript</p>
+            <p class="answer incorrect">❌ JAVASCRIPT</p>
+            <p class="answer incorrect">❌ ES6</p>
+            <p class="answer incorrect">❌ JavaScript</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">90. Schreibe eine Funktion logProduct in der Arrow-Notation, die a als ersten Parameter und b als zweiten Parameter entgegennimmt und ihr Produkt in der Konsole ausgibt:</p>
+            <p class="answer correct">✔ let logProduct = (a, b) => { return console.log(a * b) }</p>
+            <p class="answer incorrect">❌ let logProduct = (a, b) => console.log(a * b)</p>
+            <p class="answer incorrect">❌ let logProduct = (A, B) => console.log(a * b)</p>
+            <p class="answer incorrect">❌ let logProduct = (a, b) == console.log(a * b)</p>
+            <p class="answer correct"> ✔ let logProduct = (a, b) => {
+                return console.log(a * b)
+                
+                }</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">91. Schreibe eine Funktion greetMeByName in der Arrow-Notation, die greeting als ersten Parameter und name als zweiten Parameter entgegennimmt und eine Begrüßung in der Konsole ausgibt.</p>
+            <p class="answer correct">✔ const greetMeByName = (greeting, name) => { return console.log(`${greeting} ${name}!`) }</p>
+            <p class="answer incorrect">❌ const greetMeByName = (greeting, name) => console.log(`${greeting} ${name}!`)</p>
+            <p class="answer correct">✔ const greetMeByName = (greeting, name) => console.log(`${Greeting} ${Name}!`)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">92. Schreibe eine Funktion, die dir den letzten Buchstaben eines Strings zurückgibt:</p>
+            <p class="answer correct">✔ let lastLetter = (str) => str.charAt(str.length - 1)</p>
+            <p class="answer correct">✔ let lastLetter = str => str.charAt(str.length - 1)</p>
+            <p class="answer incorrect">❌ let lastLetter = (string) => str.charAt(str.length - 1)</p>
+          </div>
+          <div class="question-block">
+            <p class="question">Was gibt folgender Code in der JavaScript-Konsole des Browsers aus?</p>
+            <pre class="code">console.log([14, 10, 20].every((el) => el % 2 === 0))</pre>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">93. Welche der folgenden Ausdrücke geben den String 'S' zurück?</p>
+            <p class="answer correct">✔ 's'.toUpperCase()</p>
+            <p class="answer incorrect">❌ 'JavaScript'.substr(1, 4)</p>
+            <p class="answer correct">✔ 'JavaScript'.substr(4, 1)</p>
+            <p class="answer incorrect">❌ 'JavaScript'.charAt(5)</p>
+            <p class="answer incorrect">❌ ['a', 'b', 'c', 'd']['JavaScript'.indexOf('S')]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">94. Was gibt folgender Code in der JavaScript-Konsole des Browsers aus?</p>
+            <p class="code">
+              let a = [1, 7, 17];<br>
+              console.log(a[2]);
+            </p>
+            <p class="answer correct">✔ 17</p>
+            <p class="answer incorrect">❌ undefined</p>
+            <p class="answer incorrect">❌ 7</p>
+            <p class="answer incorrect">❌ 1</p>
+          </div>
+
+          <div class="question-block">
+            <p class="question">Was gibt folgender Code in der JavaScript-Konsole des Browsers aus?</p>
+            <pre class="code">console.log([14, 10, 20].every((el) => el % 2 === 0))</pre>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Was liefert der folgende Ausdruck zurück?</p>
+            <pre class="code">[1, 2].map((a) => 3)</pre>
+            <p class="answer correct">✔ [3, 3]</p>
+            <p class="answer incorrect">❌ [a, a]</p>
+            <p class="answer incorrect">❌ [undefined, undefined]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">95. Welche der folgenden Ausdrücke ergeben 'c'?</p>
+            <p class="answer correct">✔ 'chris'.substr(0, 1)</p>
+            <p class="answer correct">✔ ['a', 'b', 'c', 'd']['chris'.indexOf('c') + 2]</p>
+            <p class="answer correct">✔ 'chris'.charAt(0)</p>
+            <p class="answer incorrect">❌ 'chris'.charAt(1)</p>
+            <p class="answer incorrect">❌ 'chris'.substr(1, 0)</p>
+            <p class="answer incorrect">❌ ['a', 'b', 'c', 'd']['chris'.indexOf('c') + 1]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">96. Für eine Reihe von Messwerten wird jeweils das Quadrat benötigt. Verwerfe Ergebnisse über 10.</p>
+            <p class="answer correct">✔ [5, 3, 2, 5, 8, 1].map(x => x * x).filter((x) => x <= 10)</p>
+            <p class="answer incorrect">❌ [5, 3, 2, 5, 8, 1].map(x => Math.sqrt(x)).filter((x) => x <= 10)</p>
+            <p class="answer incorrect">❌ [5, 3, 2, 5, 8, 1].forEach(x => x * x).filter((x) => x <= 10)</p>
+            <p class="answer incorrect">❌ [5, 3, 2, 5, 8, 1].forEach(x => Math.sqrt(x)).filter((x) => x <= 10)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">97. Welcher Ausdruck ist richtig, um folgende Ausgabe zu erhalten? Ausgabe: false</p>
+            <p class="answer correct">✔ console.log([3, 16, 27].every((el) => el % 3 === 0))</p>
+            <p class="answer incorrect">❌ console.log([3, 16, 27].some((el) => el % 3 === 0))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">98. Was liefert der folgende Ausdruck zurück? [2, 3, 4].reduce((a, b) => a * b - 1)</p>
+            <p class="answer correct">✔ Ergebnis: 19</p>
+            <p class="answer incorrect">❌ Ergebnis: 20</p>
+            <p class="answer incorrect">❌ Ergebnis: 12</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">99. Welche Higher-Order-Funktion, die auf JS-Arrays verfügbar ist, benötigst du, um herauszufinden, ob wenigstens ein Element in einem Array einer bestimmten Bedingung genügt? Es soll nur true oder false zurückgegeben werden.</p>
+            <p class="answer correct">✔ some</p>
+            <p class="answer incorrect">❌ every</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">100. Welcher Ausdruck ist richtig, um folgende Ausgabe zu erhalten? Ausgabe: true</p>
+            <p class="answer correct">✔ console.log([14, 10, 19].some((el) => el % 2 === 0))</p>
+            <p class="answer incorrect">❌ console.log([14, 10, 19].every((el) => el % 2 === 0))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">101. Was liefert der nachfolgende Ausdruck zurück? [1].map(() => { 2 })</p>
+            <p class="answer correct">✔ Ein Array mit einem Element, das den Wert undefined hat</p>
+            <p class="answer incorrect">❌ Einen nicht definierten Wert</p>
+            <p class="answer incorrect">❌ Ein Array mit einem Element, das den Wert 2 hat</p>
+            <p class="answer incorrect">❌ Ein Array mit einem Element, das den Wert 1 hat</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Was gibt folgender Code in der JavaScript-Konsole des Browsers aus?</p>
+            <pre class="code">
+          console.log([14, 10, 20].every((el) => el % 2 === 0));
+            </pre>
+            <p class="answer correct">✔ true</p>
+            <p class="answer incorrect">❌ false</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Was liefert der folgende Ausdruck zurück?</p>
+            <pre class="code">
+          [1, 2].map((a) => 3);
+            </pre>
+            <p class="answer correct">✔ [3, 3]</p>
+            <p class="answer incorrect">❌ [a, a]</p>
+            <p class="answer incorrect">❌ [undefined, undefined]</p>
+          </div>
+          
+
+          <div class="question-block">
+            <p class="question">102. Für eine Reihe von Messwerten wird jeweils die Quadratwurzel benötigt. Welcher Ausdruck ist richtig?</p>
+            <p class="answer correct">✔ [-1, 49, 9, 25, -3, 9].filter((x) => x > 0).map(Math.sqrt)</p>
+            <p class="answer incorrect">❌ [-1, 49, 9, 25, -3, 9].filter((x) => x < 0).map(Math.sqrt)</p>
+            <p class="answer incorrect">❌ [-1, 49, 9, 25, -3, 9].filter((x) => x > 0).map((x) => x * x)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">103. Welche Higher-Order-Funktion, die auf JS-Arrays
+                verfügbar ist, benötigst du, um herauszu nden, ob alle
+                Elemente in einem Array einer bestimmten Bedingung
+                genügen? Es soll nur true oder false zurückgegeben
+                werden.</p>
+            <p class="answer correct">✔ every</p>
+            <p class="answer incorrect">❌ some</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">106. Welche Ausgabe erzeugt folgender Code?</p>
+            <p class="code">
+              'use strict'<br>
+              let x = () => (a = 3);<br>
+              let y = () => (a = 5);<br>
+              let z = () => console.log(a);<br>
+              x();<br>
+              y();<br>
+              z();
+            </p>
+            <p class="answer correct">✔ Keine Ausgabe. Das Programm bricht mit einer Fehlermeldung ab.</p>
+            <p class="answer incorrect">❌ 3</p>
+            <p class="answer incorrect">❌ 5</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">107. Welche Ausgabe erzeugt folgender Code?</p>
+            <p class="code">
+              let x = () => (a = 3);<br>
+              let y = () => (a = 5);<br>
+              let z = () => console.log(a);<br>
+              x();<br>
+              y();<br>
+              z();
+            </p>
+            <p class="answer correct">✔ 5</p>
+            <p class="answer incorrect">❌ 3</p>
+            <p class="answer incorrect">❌ Keine Ausgabe. Das Programm bricht mit einer Fehlermeldung ab.</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">108. Was ist der Wert von total, nachdem dieses Codefragment ausgeführt wurde?</p>
+            <p class="code">
+              let total = 10;<br>
+              let f = () => {<br>
+                [3, 4, 3].forEach((el) => { total += el; });<br>
+              };
+            </p>
+            <p class="answer correct">✔ 10</p>
+            <p class="answer incorrect">❌ 20</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">109. Die Fähigkeit einer Funktion, sich selbst aufzurufen, nennt man:</p>
+            <p class="answer correct">✔ Rekursion</p>
+            <p class="answer incorrect">❌ Callback</p>
+            <p class="answer incorrect">❌ Funktionsaufruf</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">110. Bestimme die Ausgabe des folgenden Skriptes:</p>
+            <p class="code">
+              const calc = (x) => (x > 100 ? 100 : calc(x * 2));<br>
+              console.log(calc(3) + 1);
+            </p>
+            <p class="answer correct">✔ 101</p>
+            <p class="answer incorrect">❌ 7</p>
+            <p class="answer incorrect">❌ 100</p>
+            <p class="answer incorrect">❌ Infinity</p>
+            <p class="answer incorrect">❌ Es gibt keine Ausgabe, das Programm bleibt hängen.</p>
+          </div>
+          <div class="question-block">
+            <p class="question">Bestimme die Ausgabe des folgenden Skriptes:</p>
+            <pre class="code">
+          const calc = (x) => calc(x) * 2
+          console.log(calc(3) + 1)
+            </pre>
+            <p class="answer correct">✔ Es gibt keine Ausgabe, das Programm bleibt hängen.</p>
+            <p class="answer incorrect">❌ 7</p>
+            <p class="answer incorrect">❌ 3</p>
+            <p class="answer incorrect">❌ Infinity</p>
+            <p class="answer incorrect">❌ 2</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">111. Welche Funktion berechnet rekursiv die Summe aller Zahlen in einem Array?</p>
+            <p class="answer correct">✔ const sum = (arr) => arr.length === 0 ? 0 : arr[0] + sum(arr.slice(1))</p>
+            <p class="answer incorrect">❌ const sum = (arr) => arr.length === 0 ? 0 : arr[1] + sum(arr.slice(1))</p>
+            <p class="answer incorrect">❌ const sum = (arr) => arr.length === 0 ? 0 : arr[0] + sum(arr.slice(0))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">112. Welche Funktion ist korrekt?</p>
+            <p class="code">
+              showTodoList(['find batteries', 'save world', 'get out of house']);
+            </p>
+            <p class="answer correct">✔ const showTodoList = (todos, startChars = '->') => console.log(todos.map(t => `${startChars} ${t}`).join('\n'))</p>
+            <p class="answer incorrect">❌ const showTodoList = (Todos, startChars = '->') => console.log(todos.map(t => `${startChars} ${t}`).join('\n'))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">113. Welche Funktion ist korrekt?</p>
+            <p class="code">
+              showTodoList('*');
+            </p>
+            <p class="answer correct">✔ const showTodoList = (startChar, todos = ['get some milk']) => console.log(todos.map(t => `${startChar} ${t}`).join('\n'))</p>
+            <p class="answer incorrect">❌ const showTodoList = (startChar, todos) => console.log(todos.map(t => `${startChar} ${t}`).join('\n'))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">114. Welcher Ausdruck erzeugt aus dem String 'abc' den String '3a-2b-1c'?</p>
+            <p class="answer correct">✔ 'abc'.split('').map((x, i, a) => `${a.length - i}${x}`).join('-')</p>
+            <p class="answer incorrect">❌ 'abc'.split('').map((a, b, c) => `${a.length - i}${x}`).join('-')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">115. Welcher Ausdruck erzeugt aus dem String 'xyz' den String 'x1-y2-z3'?</p>
+            <p class="answer correct">✔ 'xyz'.split('').map((x, i) => `${x}${i+1}`).join('-')</p>
+            <p class="answer incorrect">❌ 'xyz'.split('').map((x, i) => `${x}${i-1}`).join('-')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Gib <code>x</code> zurück:</p>
+            <pre class="code">
+          const letters = [
+            ['a', 'b', 'c'],
+            ['x', 'y', 'z']
+          ];
+          letters[1][0];
+            </pre>
+            <p class="answer correct">✔ letters[1][0]</p>
+            <p class="answer incorrect">❌ letters[0][1]</p>
+            <p class="answer incorrect">❌ letters[1][1]</p>
+          </div>
+          <div class="question-block">
+            <p class="question">Bestimme den Inhalt von <code>a</code> und <code>b</code> nach dem Ausführen der folgenden Anweisung:</p>
+            <pre class="code">
+          const [b, a] = [3, 2, 1];
+            </pre>
+            <p class="answer correct">✔ a = 2, b = 3</p>
+            <p class="answer incorrect">❌ a = 3, b = 2</p>
+            <p class="answer incorrect">❌ a = 1, b = 2</p>
+            <p class="answer incorrect">❌ a = 3, b = 1</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">118. Gib c zurück:</p>
+            <p class="code">
+              const letters = [<br>
+                ['a', 'b', 'c'],<br>
+                ['x', 'y', 'z']<br>
+              ];<br>
+              letters[0][2];
+            </p>
+            <p class="answer correct">✔ letters[0][2]</p>
+            <p class="answer incorrect">❌ letters[1][1]</p>
+            <p class="answer incorrect">❌ letters[2][1]</p>
+            <p class="answer incorrect">❌ letters[0][3]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">119. Bestimme den Rückgabewert von folgendem Code:</p>
+            <p class="code">Number(Object.keys({1: 2, 3: 4})[1])</p>
+            <p class="answer correct">✔ 3</p>
+            <p class="answer incorrect">❌ 4</p>
+            <p class="answer incorrect">❌ 1</p>
+            <p class="answer incorrect">❌ 2</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">120. Bestimme den Rückgabewert von folgendem Code:</p>
+            <p class="code">Object.values({1: 2, 3: 4})[1]</p>
+            <p class="answer correct">✔ 4</p>
+            <p class="answer incorrect">❌ 3</p>
+            <p class="answer incorrect">❌ 1</p>
+            <p class="answer incorrect">❌ 2</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">121. Bestimme den Rückgabewert von folgendem Code:</p>
+            <p class="code">Object.entries({5: 6, 7: 8}).map(x => x[1])</p>
+            <p class="answer correct">✔ [6, 8]</p>
+            <p class="answer incorrect">❌ [5, 7]</p>
+            <p class="answer incorrect">❌ [6, 6]</p>
+            <p class="answer incorrect">❌ [8, 8]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">122. Bestimme den Inhalt von b und c nach dem Ausführen der folgenden Anweisung:</p>
+            <p class="code">const [b, c] = [1, 2]</p>
+            <p class="answer correct">✔ b = 1, c = 2</p>
+            <p class="answer incorrect">❌ b = 2, c = 1</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">123. Bestimme den Inhalt von a und b nach dem Ausführen der folgenden Anweisung:</p>
+            <p class="code">const [b, a] = [1, 2, 3]</p>
+            <p class="answer correct">✔ a = 2, b = 1</p>
+            <p class="answer incorrect">❌ a = 1, b = 2</p>
+            <p class="answer incorrect">❌ a = 3, b = 1</p>
+            <p class="answer incorrect">❌ a = 2, b = 3</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Bestimme den Rückgabewert von folgendem Ausdruck:</p>
+            <pre class="code">document.querySelectorAll('div img').length</pre>
+            <p class="question">Zu folgendem HTML-Codeschnipsel:</p>
+           
+            <p class="answer correct">✔ 5</p>
+            <p class="answer incorrect">❌ 1</p>
+            <p class="answer incorrect">❌ 3</p>
+            <p class="answer incorrect">❌ 4</p>
+            <p class="answer incorrect">❌ 0</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">Bestimme den Rückgabewert von folgendem Ausdruck:</p>
+            <pre class="code">document.querySelectorAll('.span img').length</pre>
+            <p class="question">Zu folgendem HTML-Fragment:</p>
+            
+            <p class="answer correct">✔ 0</p>
+            <p class="answer incorrect">❌ 5</p>
+            <p class="answer incorrect">❌ 1</p>
+            <p class="answer incorrect">❌ 3</p>
+            <p class="answer incorrect">❌ 4</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">Welches sind geeignete Selektoren, um nur das erste Bild des nachfolgenden HTML-Fragments zu finden?</p>
+            
+            <p class="answer correct">✔ document.querySelector('img[src$=gif]')</p>
+            <p class="answer correct">✔ document.querySelector('img[src^=gif]')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('img[src$=gif]')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('img[gif]')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('img[src^=gif]')</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">Bestimme den Rückgabewert von folgendem Ausdruck:</p>
+            <pre class="code">document.querySelectorAll('span > img').length</pre>
+            <p class="question">Zu folgendem HTML-Codeschnipsel:</p>
+            
+            <p class="answer correct">✔ 3</p>
+            <p class="answer incorrect">❌ 5</p>
+            <p class="answer incorrect">❌ 1</p>
+            <p class="answer incorrect">❌ 4</p>
+            <p class="answer incorrect">❌ 0</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">128. Finde alle Überschriften h2, die unmittelbar nach einem Bild (img) folgen:</p>
+            <p class="answer correct">✔ document.querySelectorAll('img + h2')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('img h2')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('img < h2')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">129. Entferne die CSS-Klasse animated von allen numerischen Eingabefeldern:</p>
+            <p class="answer correct">✔ document.querySelectorAll('input[type="number"]').forEach((input) => input.classList.remove('animated'))</p>
+            <p class="answer incorrect">❌ document.querySelector('input[type="number"]').forEach((input) => input.classList.remove('animated'))</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('input[type="number"]').forEach((input) => input.remove('animated'))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">131. Finde heraus, ob das Element mit der ID nav über die CSS-Klasse centered verfügt.</p>
+            <p class="answer correct">✔ document.querySelector('#nav').classList.contains('centered')</p>
+            <p class="answer incorrect">❌ document.querySelector('.nav').classList.contains('centered')</p>
+            <p class="answer incorrect">❌ document.querySelector('#nav').contains('centered')</p>
+            <p class="answer incorrect">❌ document.querySelector('.nav').contains('centered')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">132. Ordne allen div-Elementen die CSS-Klasse foo zu ohne Verwendung der $ bzw. $$-Funktion.</p>
+            <p class="answer correct">✔ document.querySelectorAll('div').forEach(a => a.classList.add('foo'))</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('div').forEach(a.classes += 'foo')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('div').forEach(d => d.classes.add('foo'))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Gegeben ist folgendes HTML-Fragment:</p>
+            <pre class="code">&lt;p class="very special person"&gt;Anna&lt;/p&gt;</pre>
+            <p class="question">Ermittle die CSS-Klasse <code>special</code> vom <code>p</code>-Element der CSS-Klasse <code>person</code>.</p>
+            <p class="answer correct">✔ document.querySelector('p.person').classList.item(1)</p>
+            <p class="answer incorrect">❌ document.querySelector('p.special').classList.item(0)</p>
+            <p class="answer incorrect">❌ document.querySelector('p.person').classList.item(2)</p>
+            <p class="answer incorrect">❌ document.querySelector('p.very').classList.item(2)</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">134. Lade die JavaScript-Datei main.js, sodass es das Laden von HTML nicht verzögert und sofort nach dem Laden ausgeführt wird.</p>
+            <p class="answer correct">✔ &lt;script src="main.js" async="async" /&gt;</p>
+            <p class="answer correct">✔ &lt;script src="main.js" async /&gt;</p>
+            <p class="answer incorrect">❌ &lt;script src="main.js" defer /&gt;</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">135. Welches HTML-Attribut erlaubt das parallele Laden von JS-Dateien und führt sie sofort nach dem Laden aus?</p>
+            <p class="answer correct">✔ async</p>
+            <p class="answer incorrect">❌ defer</p>
+            <p class="answer incorrect">❌ type="module"</p>
+          </div>
+
+          <div class="question-block">
+            <p class="question">Welches HTML-Attribut verzögert die Ausführung von JavaScript, bis das DOM geladen ist?</p>
+            <p class="answer correct">✔ defer</p>
+            <p class="answer correct">✔ type="module"</p>
+            <p class="answer incorrect">❌ async</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">Gegeben sind die folgenden Hilfsfunktionen. Registriere eine Funktion, die <code>Hello World</code> in der JavaScript-Konsole des Browsers ausgibt, auf dem Doppelklick aller <code>button</code>-Tags.</p>
+            <pre class="code">
+          const $ = (q) => document.querySelector(q);
+          const $$ = (q) => Array.from(document.querySelectorAll(q));
+          const $on = (element, event, func) =>
+            Array.isArray(element)
+              ? element.forEach((currentElement) => $on(currentElement, event, func))
+              : element.addEventListener(event, func);
+            </pre>
+            <p class="answer correct">✔ $on($$('button'), 'dblclick', e => console.log('Hello World'))</p>
+            <p class="answer correct">✔ $$('button').forEach(el => $on(el, 'dblclick', e => console.log('Hello World')))</p>
+            <p class="answer incorrect">❌ $$('button').addEventListener(e => console.log('Hello World', 'dblclick'))</p>
+            <p class="answer incorrect">❌ $on($('button'), 'dblclick', console.log('Hello World'))</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">Gegeben sind die folgenden Hilfsfunktionen. Registriere eine Funktion auf dem <code>keydown</code>-Event aller <code>textarea</code>-Tags. Die Funktion soll <code>Hello World</code> in der JavaScript-Konsole des Browsers ausgeben.</p>
+            <pre class="code">
+          const $ = (q) => document.querySelector(q);
+          const $$ = (q) => Array.from(document.querySelectorAll(q));
+          const $on = (element, event, func) =>
+            Array.isArray(element)
+              ? element.forEach((currentElement) => $on(currentElement, event, func))
+              : element.addEventListener(event, func);
+            </pre>
+            <p class="answer correct">✔ $on($$('textarea'), 'keydown', e => console.log('Hello World'))</p>
+            <p class="answer incorrect">❌ $($$('textarea'), 'keydown', e => console.log('Hello World'))</p>
+            <p class="answer incorrect">❌ $on($('textarea'), 'keydown', e => console.log('Hello World'))</p>
+            <p class="answer incorrect">❌ $($$('textarea'), 'keydown', e => console.log('Hello World'))</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">138. Die Funktion logMouseX soll die X-Koordinate des Mauszeigers in der JavaScript-Konsole des Browsers ausgeben.</p>
+            <p class="answer correct">✔ const logMouseX = e => console.log(e.screenX)</p>
+            <p class="answer incorrect">❌ const logMouseX = e => console.log(e.screenY)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">139. Der Button mit der ID 'my_button' ist ausgegraut/deaktiviert (disabled). Aktiviere den Button wieder!</p>
+            <p class="answer correct">✔ document.querySelector('#my_button').removeAttribute('disabled')</p>
+            <p class="answer correct">✔ document.querySelector('#my_button').disabled = false</p>
+            <p class="answer incorrect">❌ document.querySelector('#my_button').remove('disabled')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">In einem HTML-Element gibt es folgenden Fortschrittsbalken:</p>
+            <pre class="code">
+          <progress id="my_progress" value="4" max="5">
+          </progress>
+            </pre>
+            <p class="question">Welchen Wert gibt folgender Ausdruck zurück, wenn er im Kontext des angegebenen HTML-Arguments aufgerufen wird?</p>
+            <pre class="code">document.querySelector('#my_progress').max + 1</pre>
+            <p class="answer correct">✔ 6</p>
+            <p class="answer incorrect">❌ 5</p>
+            <p class="answer incorrect">❌ undefined</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">In einem HTML-Element gibt es folgenden Fortschrittsbalken:</p>
+            <pre class="code">
+          <progress id="my_progress" value="4" max="5"></progress>
+            </pre>
+            <p class="question">Welchen Wert gibt folgender Ausdruck zurück, wenn er im Kontext des angegebenen HTML-Arguments aufgerufen wird?</p>
+            <pre class="code">document.querySelector('#my_progress').getAttribute('value') + 1</pre>
+            <p class="answer correct">✔ 41 (string)</p>
+            <p class="answer incorrect">❌ 41 (number)</p>
+            <p class="answer incorrect">❌ 5 (number)</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">Gegeben ist folgender HTML-Codeschnipsel:</p>
+            <pre class="code">&lt;ol start="3"&gt;&lt;li /&gt;&lt;/ol&gt;</pre>
+            <p class="question">Welchen Typ hat der Rückgabewert des folgenden Ausdrucks?</p>
+            <pre class="code">document.querySelector('ol').start</pre>
+            <p class="answer correct">✔ number</p>
+            <p class="answer incorrect">❌ string</p>
+            <p class="answer incorrect">❌ object</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">143. Gegeben ist folgender HTML-Codeschnipsel: <ol
+                start="3"><li /></ol>. Welchen Typ hat der
+                Rückgabewert des folgenden Ausdrucks?</p>
+            <p class="code">document.querySelector('ol').getAttribute('start')</p>
+            <p class="answer correct">✔ string</p>
+            <p class="answer incorrect">❌ number</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">144. Ändere die Schriftgröße aller h1-Tags auf 3em.</p>
+            <p class="answer correct">✔ document.querySelectorAll('h1').forEach(e => e.style.fontSize = '3em')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('h1').forEach(e => e.fontSize = '3em')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">145. Welcher Ausdruck färbt alle Absätze, die direkt auf ein h2-Tag folgen, rot ein?</p>
+            <p class="answer correct">✔ document.querySelectorAll('h2 + p').forEach(e => e.style.color = 'red')</p>
+            <p class="answer incorrect">❌ document.querySelectorAll('h2 p').forEach(e => e.style.color = 'red')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">147. Welchen Datentyp hat ein dataset?</p>
+            <p class="answer correct">✔ DOMStringMap</p>
+            <p class="answer incorrect">❌ HTMLElement</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">148. Die Währung Euro eines Geldbetrags soll unter currency aus einem dataset abrufbar sein. Welcher Ausdruck ist korrekt?</p>
+            <p class="answer correct">✔ &lt;span class="price" data-currency="Euro"&gt;100&lt;/span&gt;</p>
+            <p class="answer incorrect">❌ &lt;span class="price" "data-currency"="Euro"&gt;100&lt;/span&gt;</p>
+            <p class="answer incorrect">❌ &lt;span class="price" data-currency="euro"&gt;100&lt;/span&gt;</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">149. Füge zum Ende des HTML-Bodys einen br-Tag hinzu.</p>
+            <p class="answer correct">✔ const br = document.createElement('br'); document.body.appendChild(br)</p>
+            <p class="answer incorrect">❌ const br = document.createElement('<br>'); document.body.appendChild(br)</p>
+            <p class="answer incorrect">❌ const br = window.createElement('br'); document.body.appendChild(br)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">150. Mit welcher Eigenschaft greifst du auf das Elternelement eines DOM-Knotens zu?</p>
+            <p class="answer correct">✔ parentNode</p>
+            <p class="answer incorrect">❌ ancestorNode</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">151. Mit welcher Eigenschaft greifst du auf das vorherige Geschwisterelement eines DOM-Knotens zu?</p>
+            <p class="answer correct">✔ previousElementSibling</p>
+            <p class="answer incorrect">❌ previousNodeSibling</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">152. Mit welcher Eigenschaft greifst du auf das nächste Geschwisterelement eines DOM-Knotens zu?</p>
+            <p class="answer correct">✔ nextElementSibling</p>
+            <p class="answer incorrect">❌ nextNodeSibling</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">153. Gegeben ist eine unordered List mit der ID my_
+                list, die
+                5 li-Elemente enthält. Finde per JavaScript anhand der ID die Anzahl der li-Elemente (5) heraus.</p>
+            <p class="answer correct">✔ console.log(document.querySelector('#my_list').childElementCount)</p>
+            <p class="answer incorrect">❌ console.log(document.querySelector('#my_list').elementCount)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">154. Wozu dient der Node Package Executor?</p>
+            <p class="answer correct">✔ Mit ihm können Packages einmalig verwendet werden, ohne sie extra installieren zu müssen.</p>
+            <p class="answer incorrect">❌ Der Node Package Executor dient zum Ausführen von lokalen Node-Projekten während der Entwicklung.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">155. Mit welchem Befehl kannst du ein Node-Package installieren?</p>
+            <p class="answer correct">✔ npm install [package-name]</p>
+            <p class="answer correct">✔ npm i [package-name]</p>
+            <p class="answer incorrect">❌ node install [package-name]</p>
+            <p class="answer incorrect">❌ npx install [package-name]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">156. Verkürze den folgenden Node-Befehl so stark wie möglich:</p>
+            <p class="code">n un g express</p>
+            <p class="answer correct">✔ npm un -g express</p>
+            <p class="answer incorrect">❌ npm un --global express</p>
+            <p class="answer incorrect">❌ npm uninstall -g express</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">157. Welche Aussagen über require() und import sind korrekt?</p>
+            <p class="answer correct">✔ Beide beschreiben verschiedene Wege, wie eine JavaScript-Datei in eine andere JavaScript-Datei eingebunden werden kann.</p>
+            <p class="answer correct">✔ Mit require() können Dateien konditional eingebunden werden, während dies mit import nicht möglich ist.</p>
+            <p class="answer correct">✔ import ist der Standardweg zum Einbinden von JavaScript-Dateien im ES6-Standard, wohingegen require() ausschließlich für Node-Packages verwendet werden kann.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">158.Welche Datei enthält die wichtigsten Informationen
+                eines Packages und genügt allein, um alle für dieses
+                Package benötigten Abhängigkeiten zu installieren?</p>
+            <p class="answer correct">✔ package.json</p>
+            <p class="answer incorrect">❌ node.config</p>
+            <p class="answer incorrect">❌ node_modules.js</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Wie definierst du Packages als Abhängigkeiten in der <code>package.json</code>?</p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          {
+            "dependencies": {
+              "bcrypt": "^5.1.0",
+              "jsonwebtoken": "^8.5.11",
+              "passport": "^0.6.0",
+              "passport-jwt": "^4.0.0"
+            }
+          }
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          {
+            "dependencies": [
+              "bcrypt": "^5.1.0",
+              "jsonwebtoken": "^8.5.11",
+              "passport": "^0.6.0",
+              "passport-jwt": "^4.0.0"
+            ]
+          }
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          {
+            dependencies: [
+              bcrypt: ^5.1.0,
+              jsonwebtoken: ^8.5.11,
+              passport: ^0.6.0,
+              passport-jwt: ^4.0.0
+            ]
+          }
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          {
+            dependencies: [
+              bcrypt, jsonwebtoken, passport, passport-jwt
+            ]
+          }
+            </pre>
+            </p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">160. Wie importierst du die Funktionen readFileSync() und writeFileSync() korrekt aus dem Node-Package fs?</p>
+            <p class="answer correct">✔ const { readFileSync, writeFileSync } = require('fs')</p>
+            <p class="answer correct">✔ const { readFileSync } = require('fs')</p>
+            <p class="answer correct">✔ const { writeFileSync } = require('fs')</p>
+            <p class="answer incorrect">❌ require readFileSync, writeFileSync from 'fs'</p>
+            <p class="answer incorrect">❌ import readFileSync, writeFileSync from fs</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">162. Was bewirkt die Methode app.set() in Express?</p>
+            <p class="answer correct">✔ Mit manchen vorreservierten Keys kann Express durch Key-Value-Paare konfiguriert werden.</p>
+            <p class="answer correct">✔ Mit der Methode app.set() kann ich beliebige Key-Value-Paare abspeichern.</p>
+            <p class="answer incorrect">❌ Mit der Methode app.set() kann ich eine Middleware für eine bestimmte Route festlegen.</p>
+            <p class="answer incorrect">❌ Mit der Methode app.set() kann ich die IP-Adresse des Servers festlegen.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">163. Über welches Attribut des Request-Objekts erhältst du Zugriff auf die Route-Parameter?</p>
+            <p class="answer correct">✔ Über das Attribut params.</p>
+            <p class="answer incorrect">❌ Über das Attribut parameter.</p>
+            <p class="answer incorrect">❌ Über gar keins, ich muss die Methode getParams() verwenden.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">164. Welche Aussagen über REST sind korrekt?</p>
+            <p class="answer correct">✔ REST beschreibt einen Style der Softwarearchitektur.</p>
+            <p class="answer correct">✔ REST sieht einen zustandslosen Server vor.</p>
+            <p class="answer correct">✔ REST steht für: REpresentational State Transfer.</p>
+            <p class="answer incorrect">❌ Ein REST-Server besitzt keine konkreten Schnittstellen.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">165. Wie definierst du korrekt einen Router?</p>
+            <p class="answer correct">✔ const express = require('express'); const router = express.Router(); module.exports = router;</p>
+            <p class="answer incorrect">❌ const express = require('express'); const router = express.router();</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">166. Mit welcher Methode des Response-Objekts kannst du einen Client auf eine andere Seite weiterleiten?</p>
+            <p class="answer correct">✔ Mit der Methode redirect().</p>
+            <p class="answer incorrect">❌ Mit der Methode continue().</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">167. Welche Aussagen über AJAX sind korrekt?</p>
+            <p class="answer correct">✔ AJAX ist ein Konzept der asynchronen Datenübertragung.</p>
+            <p class="answer correct">✔ AJAX steht für: Asynchronous JavaScript And XML.</p>
+            <p class="answer correct">✔ AJAX ermöglicht das Nachladen von Informationen ohne Neuladen der Seite.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">168. Wie erstellst du eine Datenbank in der MongoDB-Shell?</p>
+            <p class="answer correct">✔ Indem ich mit der Anweisung use [database-name] die neu zu erstellende Datenbank auswähle und anschließend ein Document erstelle.</p>
+            <p class="answer incorrect">❌ Mit der Anweisung: db.create([database-name])</p>
+          </div>
+
+          <div class="question-block">
+            <p class="question">Wie änderst du den Namen eines existierenden Nutzers?</p>
+            <p class="answer correct">✔ db.users.updateOne({ name: { $regex: "Dave" }}, { $set: { name: "Peter" }})</p>
+            <p class="answer correct">✔ db.users.updateMany({ name: { $regex: "Jill" }}, { $set: { name: "Megan" }})</p>
+            <p class="answer incorrect">❌ db.users.change({ name: { $from: "Lisa", $to: "Laura" }})</p>
+            <p class="answer incorrect">❌ db.users.change({ name: { $regex: "Till" }}, { name: "Frank" })</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">169. Welche Anweisung findet alle Nutzer mit dem Teilstring 'mann' in ihrem Namen?</p>
+            <p class="answer correct">✔ db.users.find({ name: { $regex: /mann/ }})</p>
+            <p class="answer incorrect">❌ db.users.get({ name: { $regex: /mann/ }})</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">170. Mit welcher Methode kannst du auf fehlgeschlagene Promises reagieren?</p>
+            <p class="answer correct">✔ catch()</p>
+            <p class="answer incorrect">❌ handle()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">171. Mit welcher Methode kannst du ein Document löschen?</p>
+            <p class="answer correct">✔ deleteMany()</p>
+            <p class="answer correct">✔ deleteOne()</p>
+            <p class="answer incorrect">❌ remove()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Wie erstellst du korrekt ein vollständiges Model mit Mongoose?</p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          const { Schema, model, SchemaTypes } = require('mongoose');
+          const userSchema = new Schema({
+            userId: {
+              type: String,
+              immutable: true,
+            },
+            friends: [
+              {
+                type: SchemaTypes.ObjectId,
+                ref: 'User',
+              },
+            ],
+          });
+          module.exports = model('User', userSchema);
+            </pre>
+            </p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          const { Schema, model } = require('mongoose');
+          const user = new Schema({
+            userId: String,
+          });
+          module.exports = model('User', user);
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          const { Schema, model } = require('mongoose');
+          const userSchema = new Schema({
+            userId: {
+              type: String,
+            },
+            friends: {
+              model: 'User',
+            },
+          });
+          module.exports = model(userSchema, 'User');
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          const { schema, model } = require('mongoose');
+          const userSchema = new Schema({
+            userId: String,
+            friends: 'User',
+          });
+          module.exports = model('User', userSchema);
+            </pre>
+            </p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">Welches Codebeispiel zeigt die korrekte Verwendung einer Datenbank-Middleware mit Mongoose?</p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          userSchema.pre('deleteOne', { document: true, query: false }, function (next) {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          userSchema.post(['deleteOne', 'deleteMany'], { document: true }, function () {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          userSchema.pre('deleteOne', true, false, function (next) {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          userSchema.validate('delete', function (next) {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">174. Wie kannst du Werte in allen EJS-Templates verfügbar machen?</p>
+            <p class="answer correct">✔ Indem ich das app.locals-Objekt in der app.js-Datei mit Key-Value-Paaren belege.</p>
+            <p class="answer incorrect">❌ Gar nicht, ich kann Werte nur für eine bestimmte View explizit übergeben.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">175. Welches ist kein valides EJS-Tag?</p>
+            <p class="answer correct">✔ &lt;%/</p>
+            <p class="answer incorrect">❌ &lt;%%</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">177. Wie konvertierst du eine über die fetch-API erhaltene JSON-Response in ein JavaScript-Objekt?</p>
+            <p class="answer correct">✔ Indem ich die json()-Methode der Response aufrufe.</p>
+            <p class="answer incorrect">❌ Indem ich die javascript()-Methode der Response aufrufe.</p>
+            <p class="answer incorrect">❌ Indem ich die format()-Methode der Response aufrufe.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">178. Wie bindest du andere EJS-Dateien in deine aktuelle ejs-Datei ein?</p>
+            <p class="answer correct">✔ Mit einer Kombination aus &lt;%-Tag und include()-Funktion.</p>
+            <p class="answer incorrect">❌ Mit dem &lt;%include-Tag.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">179. Welche Aussage über die Verwendung von JWTs zur Nutzerauthentifizierung sind korrekt?</p>
+            <p class="answer correct">✔ JWTs bestehen aus einem Datensatz und einem geheimen Zusatz.</p>
+            <p class="answer correct">✔ Jeder, der Zugriff auf einen JWT hat, kann sich als der zugehörige Nutzer ausgeben.</p>
+            <p class="answer incorrect">❌ JWTs werden beim Verlassen einer Website automatisch gelöscht.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">180. Welche Aussagen über Hashs und das Hashing sind korrekt?</p>
+            <p class="answer correct">✔ Eine Hashfunktion liefert bei gleichen Parametern immer das gleiche Ergebnis.</p>
+            <p class="answer correct">✔ Eine Hashfunktion kann Hashs nur erzeugen, sie aber nicht wieder rückgängig machen.</p>
+            <p class="answer correct">✔ Ein Hash ist das Ergebnis einer Hashfunktion.</p>
+          </div>
+
+          <div class="question-block">
+            <p class="question">Angenommen, du hast die Middleware <code>verifyToken</code>, wie kannst du diese für eine Route festlegen?</p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          app.use('/api/todos', verifyToken);
+          app.get('/api/todos', (req, res) => {
+            // Route handler
+          });
+            </pre>
+            </p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          app.get('/api/todos', [verifyToken], (req, res) => {
+            // Route handler
+          });
+            </pre>
+            </p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          app.get('/api/todos', verifyToken, (req, res) => {
+            // Route handler
+          });
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          app.middleware('/api/todos', verifyToken);
+          app.get('/api/todos', (req, res) => {
+            // Route handler
+          });
+            </pre>
+            </p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">181. Wie kannst du mehrere Middlewares für eine Route festlegen?</p>
+            <p class="answer correct">✔ Indem ich der app.use()-Methode den zu überwachenden Endpoint und ein Array mit allen Middlewares übergebe.</p>
+            <p class="answer correct">✔ Indem ich die Middlewares in einem Array als zweiten Parameter bei der Route-Definition übergebe.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">182. Warum sollten JWTs immer eine begrenzte Lebensdauer besitzen?</p>
+            <p class="answer correct">✔ Damit ein Dieb des JWTs nicht endlos Zugriff auf den gestohlenen Account besitzt.</p>
+            <p class="answer correct">✔ Damit ein Nutzer, der vergessen hat, sich abzumelden, nicht endlos angemeldet bleibt.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">183. Wie legst du in Express die View Engine fest?</p>
+            <p class="answer correct">✔ Indem ich der Methode app.set() in der app.js-Datei den String 'view engine' und den Namen der zu verwendenden Template-Engine übergebe.</p>
+            <p class="answer correct">✔ Indem ich Express mit dem Express-Generator erstelle und das Flag view mit dem Namen der Template-Engine belege.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">184. Welche Aussagen zum this-Kontext und zu this sind zutreffend?</p>
+            <p class="answer correct">✔ Der this-Kontext bezieht sich auf alle Attribute und Methoden, die durch this verwaltet werden.</p>
+            <p class="answer correct">✔ Wenn es keinen this-Kontext in einer Funktion gibt und der strict-Modus aktiviert ist, dann ist this undefined.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">185. Was ist ein Game Object in Phaser?</p>
+            <p class="answer correct">✔ Ein Game Object ist die Instanz eines Elements.</p>
+            <p class="answer incorrect">❌ Ein Game Object ist die Instanz eines Spiels.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">186. Was versteht man unter Rendering?</p>
+            <p class="answer correct">✔ Das Rendering beschreibt den Prozess der Darstellung von Grafiken auf dem Bildschirm.</p>
+            <p class="answer incorrect">❌ Beim Rendering handelt es sich um eine Methode, mit der die Performance gesteigert werden kann.</p>
+            <p class="answer incorrect">❌ Das Rendering beschreibt den Prozess der Anpassung eines Spiels an mobile Endgeräte.</p>
+            <p class="answer incorrect">❌ Beim Rendering werden Grafiken komprimiert, damit sie schneller dargestellt werden können.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">187. Was für ein Webserver wird für die Entwicklung eines Spiels empfohlen?</p>
+            <p class="answer correct">✔ Es wird ein WAMP- oder MAMP-Webserver empfohlen.</p>
+            <p class="answer incorrect">❌ Es wird ein PHP- oder Python-Webserver empfohlen.</p>
+            <p class="answer incorrect">❌ Es wird kein spezieller Webserver empfohlen, Phaser ist mit allen aktuellen Webservern kompatibel.</p>
+            <p class="answer incorrect">❌ Für die Entwicklung wird noch kein Webserver benötigt, erst für das spätere Hosting.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">188. Welcher Funktionsaufruf platziert ein Hintergrundbild so, dass die linke obere Ecke des Bildes im Koordinatenursprung liegt?</p>
+            <p class="answer correct">✔ this.add.image(0, 0, 'background').setOrigin(0, 0)</p>
+            <p class="answer incorrect">❌ this.add.image(width/2, height/2, 'background')</p>
+            <p class="answer incorrect">❌ this.add.image(-width, -height, 'background')</p>
+            <p class="answer correct">✔ this.add.image(config.width/2, config.height/2, 'background')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">189. Welcher Code lädt eine PNG-Datei mit dem Namen Spieler korrekt?</p>
+            <p class="answer correct">✔ this.load.image('spieler_sprite', 'assets/Spieler.png')</p>
+            <p class="answer incorrect">❌ this.add.image('spieler_sprite', 'assets/Spieler.png')</p>
+            <p class="answer incorrect">❌ this.add.image('spieler_sprite', 'assets/Spieler')</p>
+            <p class="answer incorrect">❌ this.load.image('spieler_sprite', 'assets/Spieler')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">190. Gegeben sind die Game Objects player und sword. Welcher Code erstellt einen Collider, der Kollisionen wahrnimmt und das Attribut health des Spielers verringert?</p>
+            <p class="answer correct">✔ this.physics.add.collider(this.player, this.sword, (player) => { player.health -= 10 })</p>
+            <p class="answer incorrect">❌ this.add.collider(this.player, this.sword, (player) => { player.health -= 10 })</p>
+            <p class="answer incorrect">❌ this.physics.add.collider(this.player, this.sword, (player) => { player -= 10 })</p>
+            <p class="answer incorrect">❌ this.add.collider(this.player, this.sword, (player) => { player -= 10 })</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">192. Welcher Code erstellt ein Sprite Game Object, das auf die Physik des Spiels reagiert? Es soll an der Position
+                100, 100 erstellt werden und ein Bild mit dem Key
+                player zur Darstellung verwenden.</p>
+            <p class="answer correct">✔ this.physics.add.sprite(100, 100, 'player')</p>
+            <p class="answer incorrect">❌ this.physics.add.sprite('player', 100, 100)</p>
+            <p class="answer incorrect">❌ physics.add.sprite(100, 100, 'player')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">193. Welcher Code erstellt eine dynamische Gruppe?</p>
+            <p class="answer correct">✔ this.physics.add.group()</p>
+            <p class="answer incorrect">❌ this.physics.add.dynamicGroup()</p>
+            <p class="answer incorrect">❌ physics.add.group()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">194. Gegeben sei die Gruppe enemies.  Welcher Code iteriert über jedes Element der Gruppe enemies und setzt das Attribut active auf false?</p>
+            <p class="answer correct">✔ this.enemies.children.iterate(enemy => enemy.active = false)</p>
+            <p class="answer incorrect">❌ this.enemies.iterate(enemy => enemy.active = false)</p>
+            <p class="answer incorrect">❌ this.enemies.children.iterate(enemy => enemy = false)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">195. Wie unterscheiden sich in Phaser dynamische Game Objects von statischen Game Objects?</p>
+            <p class="answer correct">✔ Der Body von dynamischen Game Objects wird lila gezeichnet, der von statischen Game Objects blau.</p>
+            <p class="answer correct">✔ Dynamische Game Objects bewegen sich, statische Game Objects bleiben starr.</p>
+            <p class="answer incorrect">❌ Dynamische Game Objects können zerstört werden, statische sind unzerstörbar.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">196. Mit welcher Funktion kannst du dafür sorgen, dass die Kamera einem Game Object folgt?</p>
+            <p class="answer correct">✔ this.cameras.main.startFollow()</p>
+            <p class="answer incorrect">❌ this.cameras[0].startFollow()</p>
+            <p class="answer incorrect">❌ this.camera.startFollow()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">197. Welche Funktionen starten die Bewegung eines Game Objects?</p>
+            <p class="answer correct">✔ setVelocityX() und setVelocityY()</p>
+            <p class="answer incorrect">❌ moveToPosition()</p>
+            <p class="answer incorrect">❌ goTo()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">198. Welche Aussage ist in Bezug auf Animationen in Phaser korrekt?</p>
+            <p class="answer correct">✔ Animationen sind in Phaser nicht an ein Game Object gebunden.</p>
+            <p class="answer correct">✔ Während einer Animation wird das eigentliche Game Object nicht bewegt, lediglich der Sprite ändert sich.</p>
+            <p class="answer incorrect">❌ Animationen können nur mit Spritesheets erstellt werden.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">199. Mit welchem Code kannst du die Distanz zwischen zwei Game Objects berechnen, die beide die gleiche y-Koordinate besitzen?</p>
+            <p class="answer correct">✔ Math.abs(obj1.x - obj2.x)</p>
+            <p class="answer correct">✔ Math.abs(obj1.body.x - obj2.body.x)</p>
+            <p class="answer correct">✔ obj1.body.center.distance(obj2.body.center)</p>
+            <p class="answer incorrect">❌ obj1.center.distance(obj2.center)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">200. Welcher Code berechnet eine Zahl zwischen einschließlich 1 und einschließlich 10?</p>
+            <p class="answer correct">✔ Phaser.Math.Between(1, 10)</p>
+            <p class="answer incorrect">❌ Phaser.Math.Between(0, 10)</p>
+            <p class="answer incorrect">❌ Phaser.Math.Between(1, 11)</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">201. Welcher Code deklariert die Klasse für eine eigene neue Szene mit dem Namen MainScene?</p>
+            <p class="answer correct">✔ class MainScene extends Phaser.Scene</p>
+            <p class="answer incorrect">❌ class MainScene extends Phaser</p>
+            <p class="answer incorrect">❌ class MainScene extend Phaser.Scene</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">202. Welcher Code "zerstört" das Spiel?</p>
+            <p class="answer correct">✔ this.game.destroy()</p>
+            <p class="answer incorrect">❌ this.gameInstance.destroy()</p>
+            <p class="answer incorrect">❌ this.game.delete()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">203. Welcher Code startet die Szene MainScene?</p>
+            <p class="answer correct">✔ this.scene.start('MainScene')</p>
+            <p class="answer incorrect">❌ this.scene.startScene('MainScene')</p>
+            <p class="answer incorrect">❌ this.scene.new('MainScene')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Welcher Code passt den Value des Keys <code>scene</code> der gegebenen Szenenkonfiguration so an, dass nach der <code>MainScene</code> noch eine <code>SettingsScene</code> geladen wird?</p>
+            <pre class="code">
+          const config = {
+            type: Phaser.WEBGL,
+            width: 1920,
+            height: 1080,
+            physics: {
+              default: 'arcade',
+              arcade: {
+                gravity: 200,
+              },
+            },
+            scene: [new MainScene(), new SettingsScene()],
+          };
+            </pre>
+            <p class="answer correct">✔ scene: [new MainScene(), new SettingsScene()]</p>
+            <p class="answer incorrect">❌ scene: [new SettingsScene(), new MainScene()]</p>
+            <p class="answer incorrect">❌ scene: [new MainScene(), SettingsScene()]</p>
+          </div>
+          
+
+          <div class="question-block">
+            <p class="question">204. Die Szene MainScene wurde mit der Funktion
+                this.scene.pause() pausiert. Welcher Code setzt die
+                Szene wieder fort?</p>
+            <p class="answer correct">✔ this.scene.resume()</p>
+            <p class="answer incorrect">❌ this.scene.restart()</p>
+            <p class="answer incorrect">❌ this.scene.play()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">205. Welcher Code ergänzt das data-Objekt mit dem Wert 3
+                vom Datentyp Integer für das Attribut lives und gibt
+                es an die Szene GameScene weiter?</p>
+            <p class="answer correct">✔ this.scene.start('GameScene', { lives: 3 })</p>
+            <p class="answer incorrect">❌ this.start('GameScene', { lives: 3 })</p>
+            <p class="answer incorrect">❌ this.scene.start({ lives: 3 }, 'GameScene')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">207. In welchen Funktionen kannst du auf das data-Objekt der Funktionen des SceneManagers zugreifen?</p>
+            <p class="answer correct">✔ init()</p>
+            <p class="answer correct">✔ create()</p>
+            <p class="answer incorrect">❌ update()</p>
+            <p class="answer incorrect">❌ preload()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">208. Wo kannst du auf geladene Assets zugreifen?</p>
+            <p class="answer correct">✔ Überall innerhalb der Szene, in der sie geladen wurden.</p>
+            <p class="answer correct">✔ Überall in jeder Szene.</p>
+            <p class="answer incorrect">❌ Nur in der Szene, in der sie geladen wurden.</p>
+            <p class="answer incorrect">❌ Nur in der create()-Funktion, allerdings in jeder Szene.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">209. Wie lautet die Funktion, um einen neuen Tween zu erstellen?</p>
+            <p class="answer correct">✔ this.tweens.add()</p>
+            <p class="answer incorrect">❌ this.tweens.create()</p>
+            <p class="answer incorrect">❌ this.tween.add()</p>
+            <p class="answer incorrect">❌ this.tween.create()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">210. Mit welchem Code können Sounddateien korrekt geladen werden?</p>
+            <p class="answer correct">✔ this.load.audio('hit', [ 'assets/sounds/hit.wav', 'assets/sounds/hit.mp3', 'assets/sounds/hit.ogg' ])</p>
+            <p class="answer correct">✔ this.load.audio('hit', 'assets/sounds/hit.wav')</p>
+            <p class="answer incorrect">❌ this.load.audio('hit', { wav: 'assets/sounds/hit.wav', mp3: 'assets/sounds/hit.mp3', ogg: 'assets/sounds/hit.ogg' })</p>
+            <p class="answer incorrect">❌ this.load.sound('hit', 'assets/sounds/hit.mp3')</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">211. Was versteht man in der Spieleentwicklung unter Playtesting?</p>
+            <p class="answer correct">✔ Das Abstandnehmen vom Code und Betrachten des eigentlichen Spiels.</p>
+            <p class="answer correct">✔ Das Spielen des Spiels mit dem Ziel, Fehler zu finden.</p>
+            <p class="answer incorrect">❌ Das Schreiben von Tests.</p>
+            <p class="answer incorrect">❌ Beim Playtesting wird lediglich geprüft, ob das Spiel unterhaltsam ist.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">212. Mit welchen Funktionen kannst du das Erscheinungsbild eines Grafikobjekts manipulieren?</p>
+            <p class="answer correct">✔ fillStyle()</p>
+            <p class="answer correct">✔ fillRect()</p>
+            <p class="answer incorrect">❌ drwaRect()</p>
+            <p class="answer incorrect">❌ setStyle()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">213. Welche Funktion wird mit jedem Durchlauf der Game Loop automatisch von Phaser ausgeführt?</p>
+            <p class="answer correct">✔ Die update()-Funktion einer Szene.</p>
+            <p class="answer incorrect">❌ Die create()-Funktion einer Szene.</p>
+            <p class="answer incorrect">❌ Die physics()-Funktion einer Szene.</p>
+            <p class="answer incorrect">❌ Die extend()-Funktion einer Szene.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">214. Welche Funktion(en) benötigt die Funktion CreateSceneFromObjectConfig() zum Erstellen einer Szene?</p>
+            <p class="answer correct">✔ Es muss eine Implementierung von mindestens einer der Funktionen init(), preload(), create(), update() und extend() übergeben werden.</p>
+            <p class="answer incorrect">❌ Es wird nur eine Implementierung der Funktion create() benötigt.</p>
+            <p class="answer incorrect">❌ Es muss je eine Implementierung der Funktionen preload(), create() und update() übergeben werden.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">215. Welcher Code erstellt ein Key Object für die Taste A?</p>
+            <p class="answer correct">✔ this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);</p>
+            <p class="answer correct">✔ this.input.keyboard.addKey('A');</p>
+            <p class="answer incorrect">❌ this.add.key(Phaser.Input.Keyboard.KeyCodes.A);</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">216. Welche Funktion sorgt dafür, dass Phaser die Position eines statischen Bodys aktualisiert?</p>
+            <p class="answer correct">✔ refreshBody()</p>
+            <p class="answer incorrect">❌ refreshPosition()</p>
+            <p class="answer incorrect">❌ refresh()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">217. Welche der folgenden Funktionen gibt es in Phaser nicht?</p>
+            <p class="answer correct">✔ this.scene.continue()</p>
+            <p class="answer incorrect">❌ this.scene.launch()</p>
+            <p class="answer incorrect">❌ this.scene.start()</p>
+            <p class="answer incorrect">❌ this.scene.stop()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">Welche Methode speichert korrekt die als Parameter übergebenen Werte in der Registry ab?</p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          saveDate(data) {
+            this.registry.set(data);
+          }
+            </pre>
+            </p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          saveDate(data) {
+            const dataToSave = Object.entries(data);
+            dataToSave.forEach(elem => this.registry.set(elem[0], elem[1]));
+          }
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          saveDate(data) {
+            this.registry.save(data);
+          }
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          saveDate(data) {
+            this.set(data);
+          }
+            </pre>
+            </p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">219. Mit welchem Attribut kannst du dafür sorgen, dass ein Game Object nicht mehr angezeigt wird?</p>
+            <p class="answer correct">✔ visible</p>
+            <p class="answer incorrect">❌ show</p>
+            <p class="answer incorrect">❌ render</p>
+            <p class="answer incorrect">❌ hide</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">220. Welche der folgenden Funktionen gibt es nicht?</p>
+            <p class="answer correct">✔ this.sounds.get();</p>
+            <p class="answer correct">✔ this.sound.start();</p>
+            <p class="answer correct">✔ this.sound.all();</p>
+            <p class="answer incorrect">❌ this.sound.resume();</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">221. Mit welchem Code wird korrekt ein Loaderevent registriert, durch das die Szene MainScene gestartet wird, sobald alle Ressourcen geladen wurden?</p>
+            <p class="answer correct">✔ this.load.on('complete', () => { this.scene.start('MainScene'); });</p>
+            <p class="answer correct">✔ this.load.once('complete', () => { this.scene.start('MainScene'); });</p>
+            <p class="answer incorrect">❌ this.load.on('finish', () => { this.scene.start('MainScene'); });</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">222. Welcher der nachfolgenden Befehle ist kein valider Node-Befehl?</p>
+            <p class="answer correct">✔ node uninstall [package-name]</p>
+            <p class="answer incorrect">❌ npm exec [package-name]</p>
+            <p class="answer incorrect">❌ npm up [package-name]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">223. Welche Aussagen zu Objekten und Klassen in der objektorientierten Programmierung sind zutreffend?</p>
+            <p class="answer correct">✔ Klassen sind wie ein Bauplan für Objekte.</p>
+            <p class="answer correct">✔ Ein Objekt ist die Instanziierung einer Klasse.</p>
+            <p class="answer incorrect">❌ Objekte mit ähnlichen Eigenschaften werden einer Klasse zugeordnet.</p>
+            <p class="answer incorrect">❌ Die Begriffe Klasse und Objekt können synonym verwendet werden.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">224. Welche Aussagen zu Funktionen sind zutreffend?</p>
+            <p class="answer correct">✔ Wenn eine Funktion im aktuellen Kontext verfügbar ist, kann diese über ihren Namen aufgerufen werden.</p>
+            <p class="answer correct">✔ Abhängig vom strict-Modus bezieht sich der this-Kontext einer Funktion auf die Funktion selbst oder das globale Objekt.</p>
+            <p class="answer incorrect">❌ Funktionen und Objektinstanzen können nicht miteinander interagieren.</p>
+          </div>
+
+          <div class="question-block">
+            <p class="question">Welche Aussagen zu Funktionen sind zutreffend? Es können eine oder mehrere Antworten richtig sein.</p>
+            <p class="answer correct">✔ Methoden sind Funktionen, die nur über eine Objektinstanz aufgerufen werden können.</p>
+            <p class="answer correct">✔ Der <code>this</code>-Kontext einer Methode bezieht sich auf die zugehörige Objektinstanz.</p>
+            <p class="answer incorrect">❌ Methoden sind anders als Funktionen in jeder Datei verfügbar.</p>
+            <p class="answer incorrect">❌ Methoden geben immer das zugehörige Objekt zurück.</p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">225. Welche Aussagen zur Vererbung in JavaScript sind zutreffend?</p>
+            <p class="answer correct">✔ Private Attribute werden nicht vererbt.</p>
+            <p class="answer correct">✔ Wenn die Elternklasse Parameter erwartet, dann müssen diese in der Kindklasse auch erwartet und über das super()-Keyword an die Elternklasse weitergegeben werden.</p>
+            <p class="answer correct">✔ Du kannst Methoden der Elternklasse überschreiben.</p>
+            <p class="answer incorrect">❌ Um von einer Klasse zu erben, schreibt man dessen Namen mit einem führenden Doppelpunkt hinter den neuen Klassennamen.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">226. Welche der folgenden Namen benennen bekannte JavaScript-Client-Frameworks?</p>
+            <p class="answer correct">✔ React</p>
+            <p class="answer correct">✔ Angular</p>
+            <p class="answer incorrect">❌ AJAX</p>
+            <p class="answer incorrect">❌ Postgres</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">227. Welche der folgenden Zeilen enthält korrektes JSON?</p>
+            <p class="answer correct">✔ ["a",{"b":{"c":1,"d":2}},{}]</p>
+            <p class="answer incorrect">❌ ["a":{"b":{"c":1,"d":2}},{}]</p>
+            <p class="answer incorrect">❌ ("a",{"b":{"c":1,"d":2}},{})</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">228. Wie definiert man, dass das Verzeichnis public/ für statischen Content verwendet werden soll?</p>
+            <p class="answer correct">✔ mit app.use(express.static('public'))</p>
+            <p class="answer incorrect">❌ mit app.listen(express.static('public'))</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">229. In welchem Format werden Datenstrukturen in JavaScript meist verwaltet?</p>
+            <p class="answer correct">✔ JSON</p>
+            <p class="answer incorrect">❌ RSS</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">230. Welche HTTP-Anfragetypen ändern in einer REST-API Daten am Server?</p>
+            <p class="answer correct">✔ POST</p>
+            <p class="answer correct">✔ PUT</p>
+            <p class="answer correct">✔ DELETE</p>
+            <p class="answer incorrect">❌ GET</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">231. Wie unterscheidet sich eine HTTP-Anfrage vom Typ POST von einer Anfrage vom Typ GET?</p>
+            <p class="answer correct">✔ Die Daten werden im HTTP-Body übertragen und nicht in der URL kodiert.</p>
+            <p class="answer incorrect">❌ Es wird ein anderer Port verwendet.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">232. Wer hat den REST-Ansatz vorgeschlagen?</p>
+            <p class="answer correct">✔ Roy Thomas Fielding</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">233. Wie sieht in einer REST-Schnittstelle eine Anfrage aus, um einen Kommentar abzurufen?</p>
+            <p class="answer correct">✔ GET /comment/123</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">234. Wofür steht die Abkürzung CRUD?</p>
+            <p class="answer correct">✔ create, read, update, delete</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">235. Welche Funktionen aus dem fs-Modul der Node.js-
+                Standardbibliothek dienen zum Schreiben von
+                Dateien?</p>
+            <p class="answer correct">✔ writeFileSync() und writeFile()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">237. Mit welcher Methode kannst du auf das Ergebnis eines Promises warten und anschließend mit diesem weiterarbeiten?</p>
+            <p class="answer correct">✔ then()</p>
+            <p class="answer correct">✔ finally()</p>
+            <p class="answer incorrect">❌ await()</p>
+            <p class="answer incorrect">❌ resolve()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">238. Mit welcher Methode kannst du auf fehlgeschlagene Promises reagieren?</p>
+            <p class="answer correct">✔ catch()</p>
+            <p class="answer incorrect">❌ resolve()</p>
+            <p class="answer incorrect">❌ handle()</p>
+            <p class="answer incorrect">❌ error()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">239. Welche Codebeispiele zeigen eine korrekte Verwendung von Promises?</p>
+            <p class="answer correct">✔ const promise = new Promise((resolve, reject) => { resolve('success'); }); promise.then((result) => { console.log(result); });</p>
+            <p class="answer correct">✔ new Promise((resolve, reject) => { if (4 < 2) { reject('your math is broken'); } resolve('success'); }).then((result) => { console.log(result); }).catch((error) => { console.error(error); });</p>
+            <p class="answer correct">✔ const promise = new Promise((resolve, reject) => { resolve('success'); }); promise.then((result) => { console.log(result); }).finally(() => { console.log('done'); }).catch((err) => { console.log(err); });</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">240. Wie erstellst du eine Datenbank in der MongoDB-Shell?</p>
+            <p class="answer correct">✔ Indem ich mit der Anweisung use [database-name] die neu zu erstellende Datenbank auswähle und anschließend ein Document erstelle.</p>
+            <p class="answer incorrect">❌ Mit der Anweisung: db.create([database-name])</p>
+            <p class="answer incorrect">❌ Mit der Anweisung: new [database-name]</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">241. Welche Anweisung findet alle Nutzer mit dem Teilstring 'mann' in ihrem Namen?</p>
+            <p class="answer correct">✔ db.users.find({ name: { $regex: /mann/ }})</p>
+            <p class="answer incorrect">❌ db.users.get({ name: { $regex: /mann/ }})</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">242. Wie änderst du den Namen eines existierenden Nutzers?</p>
+            <p class="answer correct">✔ db.users.updateMany({ name: { $regex: "Jill" }}, { $set: { name: "Megan" }})</p>
+            <p class="answer correct">✔ db.users.updateOne({ name: { $regex: "Dave" }}, { $set: { name: "Peter" }})</p>
+            <p class="answer incorrect">❌ db.users.change({ name: { $from: "Lisa", $to: "Laura" }})</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">243. Mit welcher Methode kannst du ein Document löschen?</p>
+            <p class="answer correct">✔ deleteOne()</p>
+            <p class="answer correct">✔ deleteMany()</p>
+            <p class="answer incorrect">❌ delete()</p>
+          </div>
+
+          <div class="question-block">
+            <p class="question">Welches Codebeispiel zeigt die korrekte Verwendung einer Datenbank-Middleware mit Mongoose?</p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          userSchema.pre('deleteOne', { document: true, query: false }, function (next) {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+            <p class="answer correct">✔ 
+            <pre class="code">
+          userSchema.post(['deleteOne', 'deleteMany'], { document: true }, function () {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          userSchema.validate('delete', function (next) {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+            <p class="answer incorrect">❌ 
+            <pre class="code">
+          userSchema.pre('deleteOne', true, false, function (next) {
+            console.log(this);
+            next();
+          });
+            </pre>
+            </p>
+          </div>
+          
+          
+          <div class="question-block">
+            <p class="question">244. Welche Aussage über Hashs und das Hashing sind korrekt?</p>
+            <p class="answer correct">✔ Ein Hash ist das Ergebnis einer Hashfunktion.</p>
+            <p class="answer correct">✔ Eine Hashfunktion kann Hashs nur erzeugen, sie aber nicht wieder rückgängig machen.</p>
+            <p class="answer correct">✔ Eine Hashfunktion liefert bei gleichen Parametern immer das gleiche Ergebnis.</p>
+            <p class="answer incorrect">❌ Ein Hash kann nur mit dem korrekten Key ausgelesen werden.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">245. Wie wird mit dem Modul validator die Länge eines Strings validiert?</p>
+            <p class="answer correct">✔ validator.isLength()</p>
+            <p class="answer incorrect">❌ validator.hasLength()</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">246. Wie wird mit der Fetch-API ein JSON Web Token übergeben?</p>
+            <p class="answer correct">✔ Als Header im Authorization-Header mit dem Wert Bearer &lt;token&gt;.</p>
+            <p class="answer incorrect">❌ Die Fetch-API unterstützt keine Autorisierung.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">247. Wie kannst du mehrere Middlewares für eine Route festlegen?</p>
+            <p class="answer correct">✔ Indem ich die Middlewares in einem Array als zweiten Parameter bei der Route-Definition übergebe.</p>
+            <p class="answer correct">✔ Indem ich der app.use()-Methode den zu überwachenden Endpoint und ein Array mit allen Middlewares übergebe.</p>
+            <p class="answer incorrect">❌ Indem ich sie nacheinander und durch Kommata getrennt bei der Route-Definition übergebe.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">248. Welche Aussage über die Verwendung von JWTs zur Nutzer-Authentifizierung sind korrekt?</p>
+            <p class="answer correct">✔ JWTs bestehen aus einem Datensatz und einem geheimen Zusatz.</p>
+            <p class="answer correct">✔ Jeder, der Zugriff auf einen JWT hat, kann sich als der zugehörige Nutzer ausgeben.</p>
+            <p class="answer incorrect">❌ Ein JWT leitet eine Nutzersession ein.</p>
+          </div>
+          
+          <div class="question-block">
+            <p class="question">249. Warum sollten JWTs immer eine begrenzte Lebensdauer besitzen?</p>
+            <p class="answer correct">✔ Damit ein Hacker des JWTs nicht endlos Zugriff auf den gestohlenen Account besitzt.</p>
+            <p class="answer correct">✔ Damit ein Nutzer, der vergessen hat, sich abzumelden, nicht endlos angemeldet bleibt.</p>
+            <p class="answer incorrect">❌ Um die Speicherkapazitäten des Browsers nicht zu überlasten.</p>
+          </div>
+          
+                    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+        </div>
+   
+   
+
+    <script>
+      function checkPassword() {
+        const enteredPassword = document.getElementById('password').value;
+        const correctPassword = 'pfetten98'; // Задай свое пароль здесь
+
+        if (enteredPassword === correctPassword) {
+          document.getElementById('passwordPrompt').style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+        } else {
+          alert('Falsches Passwort. Bitte erneut versuchen.');
+        }
+      }
+
+      function searchQuestions() {
+        const input = document
+          .getElementById('searchInput')
+          .value.toLowerCase();
+        const questionBlocks = document.querySelectorAll('.question-block');
+
+        questionBlocks.forEach((block) => {
+          const question = block
+            .querySelector('.question')
+            .textContent.toLowerCase();
+          const answers = Array.from(block.querySelectorAll('.answer')).map(
+            (a) => a.textContent.toLowerCase()
+          );
+          const combinedText = [question, ...answers].join(' ');
+
+          if (combinedText.includes(input)) {
+            block.classList.remove('hidden');
+          } else {
+            block.classList.add('hidden');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

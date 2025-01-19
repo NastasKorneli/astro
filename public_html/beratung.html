@@ -42,6 +42,8 @@
                     <li style="--i: 21">do it.</li>
                   </ul>
                 </section>
+                <div formsappId="67576611a3f2a3c0847df231"></div>
+<script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('67576611a3f2a3c0847df231', 'standard', {'width':'100vw','height':'1600px'}, 'https://rxr4m65f.forms.app');"></script>
                 <section>
                   <h2 class="fluid">
                     0157 381 81 756</h2>
@@ -49,63 +51,7 @@
               </main>
               <footer><span>© Copyright &nbsp<a href="https://www.astro.2ix.de/"><span style="font-size: 1.5em; vertical-align: middle;">♅ </span> ASTRO.2IX</a>&nbsp 2024</span></footer>
            
-              <!-- <a
-                class="bear-link"
-                href="https://twitter.com/intent/follow?screen_name=jh3yy"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg
-                  class="w-9"
-                  viewBox="0 0 969 955"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="161.191"
-                    cy="320.191"
-                    r="133.191"
-                    stroke="currentColor"
-                    stroke-width="20"
-                  ></circle>
-                  <circle
-                    cx="806.809"
-                    cy="320.191"
-                    r="133.191"
-                    stroke="currentColor"
-                    stroke-width="20"
-                  ></circle>
-                  <circle
-                    cx="695.019"
-                    cy="587.733"
-                    r="31.4016"
-                    fill="currentColor"
-                  ></circle>
-                  <circle
-                    cx="272.981"
-                    cy="587.733"
-                    r="31.4016"
-                    fill="currentColor"
-                  ></circle>
-                  <path
-                    d="M564.388 712.083C564.388 743.994 526.035 779.911 483.372 779.911C440.709 779.911 402.356 743.994 402.356 712.083C402.356 680.173 440.709 664.353 483.372 664.353C526.035 664.353 564.388 680.173 564.388 712.083Z"
-                    fill="currentColor"
-                  ></path>
-                  <rect
-                    x="310.42"
-                    y="448.31"
-                    width="343.468"
-                    height="51.4986"
-                    fill="#FF1E1E"
-                  ></rect>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M745.643 288.24C815.368 344.185 854.539 432.623 854.539 511.741H614.938V454.652C614.938 433.113 597.477 415.652 575.938 415.652H388.37C366.831 415.652 349.37 433.113 349.37 454.652V511.741L110.949 511.741C110.949 432.623 150.12 344.185 219.845 288.24C289.57 232.295 384.138 200.865 482.744 200.865C581.35 200.865 675.918 232.295 745.643 288.24Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </a> -->
+   
               <style>
                 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import url('https://unpkg.com/normalize.css') layer(normalize);
@@ -455,151 +401,40 @@ div.tp-dfwv {
 
               </style>
     
-        <script>
-         import { Pane } from 'https://cdn.skypack.dev/tweakpane@4.0.4'
-import gsap from 'https://cdn.skypack.dev/gsap@3.12.0'
-import ScrollTrigger from 'https://cdn.skypack.dev/gsap@3.12.0/ScrollTrigger'
-
-const config = {
-  theme: 'dark',
-  start: gsap.utils.random(0, 100, 1),
-  end: gsap.utils.random(900, 1000, 1),
-  scroll: true,
-}
-
-const ctrl = new Pane({
-  title: 'Config',
-  expanded: true,
-})
-
-const update = () => {
-  document.documentElement.dataset.theme = config.theme
-  document.documentElement.dataset.syncScrollbar = config.scroll
-  document.documentElement.style.setProperty('--start', config.start)
-  document.documentElement.style.setProperty('--scroller', config.start)
-  document.documentElement.style.setProperty('--end', config.end)
-}
-
-const sync = (event) => {
-  if (
-    !document.startViewTransition ||
-    event.target.controller.view.labelElement.innerText !== 'Theme'
-  )
-    return update()
-  document.startViewTransition(() => update())
-}
-
-ctrl.addBinding(config, 'start', {
-  label: 'Hue Start',
-  min: 0,
-  max: 1000,
-  step: 1,
-})
-ctrl.addBinding(config, 'end', {
-  label: 'Hue End',
-  min: 0,
-  max: 1000,
-  step: 1,
-})
-ctrl.addBinding(config, 'scroll', {
-  label: 'Scrollbar',
-})
-
-ctrl.addBinding(config, 'theme', {
-  label: 'Theme',
-  options: {
-    System: 'system',
-    Light: 'light',
-    Dark: 'dark',
-  },
-})
-
-ctrl.on('change', sync)
-update()
-
-// backfill the scroll functionality with GSAP
-if (
-  !CSS.supports('(animation-timeline: scroll()) and (animation-range: 0% 100%)')
-) {
-  gsap.registerPlugin(ScrollTrigger)
-  const items = gsap.utils.toArray('ul li')
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i]
-    gsap.set(item, { opacity: i !== 0 ? 0.2 : 1 })
-    gsap
-      .timeline({
-        scrollTrigger: {
-          scrub: 0.25,
-          trigger: item,
-          start: 'center center+=4lh',
-          end: 'center center-=4lh',
-        },
-      })
-      .to(item, {
-        opacity: 1,
-        ease: 'none',
-        duration: 0.1,
-      })
-      .to(item, {
-        opacity: i !== items.length - 1 ? 0.2 : 1,
-        ease: 'none',
-        duration: 0.1,
-      })
-  }
-  // register scrollbar changer
-  gsap.fromTo(
-    document.documentElement,
-    {
-      '--scroller': config.start,
-    },
-    {
-      '--scroller': config.end,
-      ease: 'none',
-      scrollTrigger: {
-        scrub: 0.1,
-        trigger: 'ul',
-        start: 'top center-=1lh',
-        end: 'bottom center+=1lh',
-      },
-    }
-  )
-  gsap.fromTo(
-    document.documentElement,
-    {
-      '--chroma': 0,
-    },
-    {
-      '--chroma': 0.3,
-      duration: 0.1,
-      ease: 'none',
-      scrollTrigger: {
-        scrub: 0.2,
-        trigger: 'ul',
-        start: 'top center-=2lh',
-        end: 'top center',
-      },
-    }
-  )
-  gsap.fromTo(
-    document.documentElement,
-    {
-      '--chroma': 0.3,
-    },
-    {
-      '--chroma': 0,
-      duration: 0.1,
-      ease: 'none',
-      scrollTrigger: {
-        scrub: 0.2,
-        trigger: 'ul',
-        start: 'bottom center+=2lh',
-        end: 'bottom center+=1lh',
-      },
-    }
-  )
-}
-
-            
-        </script>
+    <script>
+        const listItems = document.querySelectorAll("#scroll-list li");
+  
+        const applyScrollEffect = () => {
+          const viewportHeight = window.innerHeight;
+          const center = viewportHeight / 2;
+  
+          listItems.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            const itemCenter = rect.top + rect.height / 2;
+  
+            const distance = Math.abs(center - itemCenter);
+            const activationRange = viewportHeight / 6; // Distance to activate "active" class
+            const nearRange = activationRange * 1.5;
+  
+            if (distance < activationRange) {
+              item.classList.add("active");
+              item.classList.remove("near");
+            } else if (distance < nearRange) {
+              item.classList.add("near");
+              item.classList.remove("active");
+            } else {
+              item.classList.remove("active", "near");
+            }
+          });
+        };
+  
+        // Привязка скролла
+        window.addEventListener("scroll", () => {
+          requestAnimationFrame(applyScrollEffect);
+        });
+  
+        // Инициализация
+        applyScrollEffect();
+      </script>
     </body>
 </html>
